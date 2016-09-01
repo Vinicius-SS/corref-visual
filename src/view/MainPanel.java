@@ -97,7 +97,7 @@ public class MainPanel extends JPanel
         jMenuBarMain.add(jMenuArquivo);
         jMenuBarMain.add(jMenuConfigurações);
         jMenuBarMain.add(jMenuAjuda);
-        jMenuBarMain.add(jMenuSort);
+        //jMenuBarMain.add(jMenuSort);
         tP = new JTextPane();
         tP.setEditable(false);
 
