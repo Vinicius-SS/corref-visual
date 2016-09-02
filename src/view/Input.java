@@ -19,7 +19,7 @@ public class Input extends javax.swing.JFrame
     {
         initComponents();
         String barra;
-        txtCaminhoUnico.setText("/home/pln/Downloads/Maycon");
+        txtCaminhoUnico.setText("/home/pln/Downloads/Vinicius");
     }
 
     /**

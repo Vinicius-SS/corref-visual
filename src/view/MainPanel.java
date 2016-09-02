@@ -13,31 +13,25 @@ import java.io.PrintWriter;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.HashMap;
-import java.util.Iterator;
 import java.util.Random;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.activation.*;
-import javax.swing.*;
+import javax.swing.JList;
+import javax.swing.JPanel;
 import static javax.swing.TransferHandler.MOVE;
-import javax.swing.text.AttributeSet;
-import javax.swing.text.SimpleAttributeSet;
-import javax.swing.text.StyleConstants;
-import javax.swing.text.StyleContext;
-import javax.swing.text.StyledDocument;
-import javax.swing.text.TabSet;
-import javax.swing.text.TabStop;
-import javax.swing.text.html.HTMLDocument;
-import javax.swing.text.html.HTMLEditorKit;
+import javax.swing.*;
+import javax.swing.text.*;
 import model.Grupo;
 import model.Sintagma;
 
 public class MainPanel extends JPanel
 {
-
+    public  Random cores = new Random();
     private Fachada fachada = Fachada.getInstance();
     private ArrayList<Sintagma> listaSintagma, listaOriginal;
     private ArrayList<String> sentencas;
@@ -293,7 +287,26 @@ public class MainPanel extends JPanel
                             JList jListSintagma = makeList(h, g.getListaSintagmas());
                             jlistas.add(jListSintagma);
                             JScrollPane jsp = new JScrollPane(jListSintagma);
+                            
+                            JComboBox<String> categorias = new JComboBox();
+                            Color cadeiaColor = new Color(cores.nextInt(256),cores.nextInt(256),cores.nextInt(256));
+                            categorias.addItem("PER");
+                            categorias.addItem("OTH");
+                            
+                            categorias.setRenderer(new DefaultListCellRenderer() 
+                            {
+                                @Override
+                                public void paint(Graphics g) 
+                                {
+                                    setBackground(cadeiaColor);
+                                    setForeground(cadeiaColor);
+                                    super.paint(g);
+                                }
+                            });                    
+                            
+                            jsp.setColumnHeaderView(categorias);
                             cont.add(createPanelForComponent(jsp, ""));
+                             
                             jListSintagma.setSelectionModel(new DefaultListSelectionModel()
                             {
                                 @Override
@@ -629,6 +642,7 @@ public class MainPanel extends JPanel
         try
         {
             UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
+            
         } catch (ClassNotFoundException | InstantiationException | IllegalAccessException | UnsupportedLookAndFeelException ex)
         {
         }

@@ -1,5 +1,6 @@
 package model;
 
+import java.awt.Color;
 import java.io.Serializable;
 import java.util.ArrayList;
 
@@ -28,6 +29,7 @@ public class Sintagma implements Serializable
     public ArrayList<Integer> paiDe;
     public int filhoDe;
     public int globalID;
+    public Color cor;
 
     public Sintagma(String textName, String sn, int sentenca, ArrayList<Word> words, int set, int snID, String nucleo, String lemma, boolean prop, String genero, String numero, boolean nucleoPronome, String groupedBy, boolean shallow, ArrayList<Integer> paiDe, int filhoDe)
     {
