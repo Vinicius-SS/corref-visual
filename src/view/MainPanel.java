@@ -25,6 +25,8 @@ import javax.swing.JList;
 import javax.swing.JPanel;
 import static javax.swing.TransferHandler.MOVE;
 import javax.swing.*;
+import javax.swing.plaf.ColorUIResource;
+import javax.swing.plaf.basic.BasicComboPopup;
 import javax.swing.text.*;
 import model.Grupo;
 import model.Sintagma;
@@ -286,24 +288,22 @@ public class MainPanel extends JPanel
                         {
                             JList jListSintagma = makeList(h, g.getListaSintagmas());
                             jlistas.add(jListSintagma);
-                            JScrollPane jsp = new JScrollPane(jListSintagma);
-                            
+                            JScrollPane jsp = new JScrollPane(jListSintagma);                           
                             JComboBox<String> categorias = new JComboBox();
-                            Color cadeiaColor = new Color(cores.nextInt(256),cores.nextInt(256),cores.nextInt(256));
-                            categorias.addItem("PER");
-                            categorias.addItem("OTH");
-                            
+                            categorias.addItem("<html><body style=\"background-color:red;\">PER</body></html>");
+                            categorias.addItem("OTH"); 
+                            ((BasicComboPopup)categorias.getAccessibleContext().getAccessibleChild(0)).
+                                            getList().setSelectionBackground(g.getColor());
                             categorias.setRenderer(new DefaultListCellRenderer() 
                             {
                                 @Override
-                                public void paint(Graphics g) 
+                                public void paint(Graphics grafix) 
                                 {
-                                    setBackground(cadeiaColor);
-                                    setForeground(cadeiaColor);
-                                    super.paint(g);
+                                    //setBackground(g.getColor());
+                                    //setForeground(g.getColor());
+                                    super.paint(grafix);
                                 }
                             });                    
-                            
                             jsp.setColumnHeaderView(categorias);
                             cont.add(createPanelForComponent(jsp, ""));
                              
@@ -330,7 +330,7 @@ public class MainPanel extends JPanel
 
                         jlistas.add(jListSnSolitarios);
 
-                        cont.repaint();
+                        //cont.repaint();
 
                         for (JList jl : jlistas)
                         {
@@ -666,7 +666,14 @@ public class MainPanel extends JPanel
         if (firstIndex >= 0)
         {
             int lastIndex = firstIndex + sentenca.length() + 2;
-            onHighlightSintagma(s.sn, firstIndex, lastIndex, c);
+            if(s.cor == null)
+            {
+                for(Grupo g : fachada.getGrupos())
+                    for(Sintagma si : g.getListaSintagmas())
+                        if(si.equals(s))
+                            s.cor=g.getColor();
+            }
+            onHighlightSintagma(s.sn, firstIndex, lastIndex, s.cor);
         }
     }
 
