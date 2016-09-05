@@ -78,7 +78,6 @@ public class MainPanel extends JPanel
         jMenuExportar = new javax.swing.JMenuItem();
         jMenuItem_EntradaDeDados = new javax.swing.JMenuItem();
         jMenuArquivo.setText("Arquivo");
-        jMenuConfigurações.setText("Configurações");
         jMenuAjuda.setText("Ajuda");
         jMenuSort.setText("Ordenar sintagmas por...");
         jMenuItem_ApariçãoNoTexto = new javax.swing.JMenuItem();
@@ -210,28 +209,27 @@ public class MainPanel extends JPanel
 
             private void jMenuImportarActionPerformed(ActionEvent evt)
             {
-                if ("".equals(path) || path == null)
-                    JOptionPane.showMessageDialog(null, "Voce não configurou nenhum diretorio.");
-                else
-                {
                     JFileChooser chooser = new JFileChooser();
-                    chooser.setCurrentDirectory(new File(path + barra + "texts"));
+                    chooser.setCurrentDirectory(new File("/home/pln/Downloads/Vinicius"));
                     chooser.showOpenDialog(null);
                     File f = chooser.getSelectedFile();
-                    File fSent = new File(path + barra + "sentences" + barra + f.getName() + ".dat");
-                    File fBin = new File(path + barra + "binaries" + barra + f.getName() + ".dat");
+                    File fParent = f.getParentFile().getParentFile();
+                    System.out.println(fParent);
+                    File fSent = new File(fParent+"/sentences/"+f.getName()+".dat");
+                    System.out.println(fSent);
+                    File fBin = new File(fParent+"/binaries/"+f.getName()+".dat");
+                    System.out.println(fBin);
                     if (!fSent.exists() || !fBin.exists() || !f.exists())
                     {
                         JOptionPane.showMessageDialog(null, "O arquivo " + f.getName() + ".dat não existe!");
                         return;
                     }
-
                     try
                     {
-                        String arquivoSentenca = path + barra + "sentences" + barra + f.getName() + ".dat";
-                        String arquivoTexto = path + barra + "texts" + barra + f.getName();
-                        String arquivoBinario = path + barra + "binaries" + barra + f.getName() + ".dat";
-
+                        String arquivoSentenca = fSent.getAbsolutePath();
+                        String arquivoTexto = f.getAbsolutePath();
+                        String arquivoBinario = fBin.getAbsolutePath();
+                                
                         botao.setEnabled(true);
 
                         String textoLido = (String) getText.invoke(leitor.newInstance(), arquivoTexto);
@@ -379,7 +377,6 @@ public class MainPanel extends JPanel
                     {
                         Logger.getLogger(MainPanel.class.getName()).log(Level.SEVERE, null, ex);
                     }
-                }
                 splitAllPane.revalidate();
                 splitAllPane.repaint();
             }
