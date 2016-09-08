@@ -30,8 +30,9 @@ public class Sintagma implements Serializable
     public int filhoDe;
     public int globalID;
     public Color cor;
+    public String categoriaSemantica;
 
-    public Sintagma(String textName, String sn, int sentenca, ArrayList<Word> words, int set, int snID, String nucleo, String lemma, boolean prop, String genero, String numero, boolean nucleoPronome, String groupedBy, boolean shallow, ArrayList<Integer> paiDe, int filhoDe)
+    public Sintagma(String textName, String sn, int sentenca, ArrayList<Word> words, int set, int snID, String nucleo, String lemma, boolean prop, String genero, String numero, boolean nucleoPronome, String groupedBy, boolean shallow, ArrayList<Integer> paiDe, int filhoDe, String categoriaSemantica)
     {
         this.textName = textName;
         this.sn = sn;

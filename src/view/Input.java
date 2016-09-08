@@ -131,7 +131,7 @@ public class Input extends javax.swing.JFrame
     }//GEN-LAST:event_btAlterarUnicoActionPerformed
 
     private void txtCaminhoUnicoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtCaminhoUnicoActionPerformed
-        // TODO add your handling code here:
+
     }//GEN-LAST:event_txtCaminhoUnicoActionPerformed
 
     /**

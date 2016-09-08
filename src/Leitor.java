@@ -12,11 +12,9 @@ public class Leitor {
 
         for (Sintagma s : lista) {
             ArrayList<model.Word> words = new ArrayList<>();
-            for (Word w : s.words) {
-                model.Word word = new model.Word(w.word, w.pos, w.morfo, w.lemma, w.sentenca);
-                words.add(word);
-            }
-            model.Sintagma sintagma = new model.Sintagma(s.TextName, s.sn, s.sentenca, words, s.set, s.snID, s.nucleo, s.lemma, s.prop, s.genero, s.numero, s.NucleoPronome, s.groupedBy, s.shallow, s.Pai_De, s.Filho_De);
+            for (Word w : s.words) 
+                words.add(new model.Word(w.word, w.pos, w.morfo, w.lemma, w.sentenca));
+            model.Sintagma sintagma = new model.Sintagma(s.TextName, s.sn, s.sentenca, words, s.set, s.snID, s.nucleo, s.lemma, s.prop, s.genero, s.numero, s.NucleoPronome, s.groupedBy, s.shallow, s.Pai_De, s.Filho_De,s.CategoriaSemantica);
             result.add(sintagma);
         }
         return result;

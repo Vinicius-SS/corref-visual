@@ -25,7 +25,6 @@ import javax.swing.JList;
 import javax.swing.JPanel;
 import static javax.swing.TransferHandler.MOVE;
 import javax.swing.*;
-import javax.swing.plaf.ColorUIResource;
 import javax.swing.plaf.basic.BasicComboPopup;
 import javax.swing.text.*;
 import model.Grupo;
@@ -33,7 +32,8 @@ import model.Sintagma;
 
 public class MainPanel extends JPanel
 {
-    public  Random cores = new Random();
+
+    public Random cores = new Random();
     private Fachada fachada = Fachada.getInstance();
     private ArrayList<Sintagma> listaSintagma, listaOriginal;
     private ArrayList<String> sentencas;
@@ -47,11 +47,9 @@ public class MainPanel extends JPanel
     private JButton botao;
     private JTextPane tP;
     private JMenuBar jMenuBarMain;
-    private JMenu jMenuArquivo, jMenuAjuda, jMenuConfigurações, jMenuSort;
-    private JMenuItem jMenuImportar, jMenuExportar, jMenuItem_EntradaDeDados,
-            jMenuItem_ApariçãoNoTexto;
+    private JMenu jMenuArquivo, jMenuAjuda;
+    private JMenuItem jMenuImportar, jMenuExportar;
     private TransferHandler h;
-    private Input entradaDados;
     public static int maiorSet;
     private static String path;
     public static MainPanel m;
@@ -67,32 +65,19 @@ public class MainPanel extends JPanel
     private MainPanel() throws ClassNotFoundException, NoSuchMethodException
     {
         super(new BorderLayout());
-        entradaDados = new Input();
-
         jMenuArquivo = new javax.swing.JMenu();
         jMenuAjuda = new javax.swing.JMenu();
-        jMenuConfigurações = new javax.swing.JMenu();
-        jMenuSort = new javax.swing.JMenu();
         jMenuBarMain = new javax.swing.JMenuBar();
         jMenuImportar = new javax.swing.JMenuItem();
         jMenuExportar = new javax.swing.JMenuItem();
-        jMenuItem_EntradaDeDados = new javax.swing.JMenuItem();
         jMenuArquivo.setText("Arquivo");
         jMenuAjuda.setText("Ajuda");
-        jMenuSort.setText("Ordenar sintagmas por...");
-        jMenuItem_ApariçãoNoTexto = new javax.swing.JMenuItem();
-        jMenuItem_ApariçãoNoTexto.setText("Aparição no texto");
-        jMenuItem_EntradaDeDados.setText("Entrada de Dados");
         jMenuImportar.setText("Importar texto");
         jMenuExportar.setText("Exportar alterações");
         jMenuArquivo.add(jMenuImportar);
-        jMenuConfigurações.add(jMenuItem_EntradaDeDados);
-        jMenuSort.add(jMenuItem_ApariçãoNoTexto);
         jMenuArquivo.add(jMenuExportar);
         jMenuBarMain.add(jMenuArquivo);
-        jMenuBarMain.add(jMenuConfigurações);
         jMenuBarMain.add(jMenuAjuda);
-        //jMenuBarMain.add(jMenuSort);
         tP = new JTextPane();
         tP.setEditable(false);
 
@@ -149,7 +134,6 @@ public class MainPanel extends JPanel
                 jlistas.add(jListSintagma);
                 JScrollPane jsp = new JScrollPane(jListSintagma);
                 cont.add(createPanelForComponent(jsp, ""), 0);
-                //TODO
                 jListSintagma.setSelectionModel(new DefaultListSelectionModel()
                 {
                     @Override
@@ -209,62 +193,106 @@ public class MainPanel extends JPanel
 
             private void jMenuImportarActionPerformed(ActionEvent evt)
             {
-                    JFileChooser chooser = new JFileChooser();
-                    chooser.setCurrentDirectory(new File("/home/pln/Downloads/Vinicius"));
-                    chooser.showOpenDialog(null);
-                    File f = chooser.getSelectedFile();
-                    File fParent = f.getParentFile().getParentFile();
-                    System.out.println(fParent);
-                    File fSent = new File(fParent+"/sentences/"+f.getName()+".dat");
-                    System.out.println(fSent);
-                    File fBin = new File(fParent+"/binaries/"+f.getName()+".dat");
-                    System.out.println(fBin);
-                    if (!fSent.exists() || !fBin.exists() || !f.exists())
+                JFileChooser chooser = new JFileChooser();
+                chooser.setCurrentDirectory(new File("/home/pln/Downloads/summit-correfvisual/texts"));
+                chooser.showOpenDialog(null);
+                File f = chooser.getSelectedFile();
+                File fParent = f.getParentFile().getParentFile();
+                File fSent = new File(fParent + "/sentences/" + f.getName() + ".dat");
+                File fBin = new File(fParent + "/binaries/" + f.getName() + ".dat");
+                if (!fSent.exists() || !fBin.exists() || !f.exists())
+                {
+                    JOptionPane.showMessageDialog(null, "O arquivo " + f.getName() + ".dat não existe!");
+                    return;
+                }
+                try
+                {
+                    String arquivoSentenca = fSent.getAbsolutePath();
+                    String arquivoTexto = f.getAbsolutePath();
+                    String arquivoBinario = fBin.getAbsolutePath();
+
+                    botao.setEnabled(true);
+
+                    String textoLido = (String) getText.invoke(leitor.newInstance(), arquivoTexto);
+                    sentencas = (ArrayList<String>) lerSentencas.invoke(leitor.newInstance(), arquivoSentenca);
+                    listaSintagma = (ArrayList<Sintagma>) getSintagmas.invoke(leitor.newInstance(), arquivoBinario);
+                    listaOriginal = new ArrayList<>();
+
+                    setTexto(textoLido);
+                    fachada.getGrupos().clear();
+                    fachada.getGrupoSolitario().getListaSintagmas().clear();
+                    maiorSet = -1;
+
+                    for (Sintagma s : listaSintagma)
                     {
-                        JOptionPane.showMessageDialog(null, "O arquivo " + f.getName() + ".dat não existe!");
-                        return;
+                        //System.out.println(s.sn+" : ");
+                        if (s.set > maiorSet)
+                            maiorSet = s.set;
+                        s.sn = fachada.trataString(s.sn);
+                        if (s.sn.startsWith(" "))
+                            s.sn = s.sn.substring(1);
+                        if (s.sn.endsWith(" "))
+                            s.sn = s.sn.substring(0, s.sn.length() - 1);
+                        fachada.addSintagmaNoGrupo(s);
                     }
-                    try
+                    fachada.organizaGrupos();
+                    fachada.ordenaPorQtdFilhos();
+
+                    for (Sintagma s : listaSintagma)
+                        listaOriginal.add(new Sintagma(s.textName, s.sn, s.sentenca, s.words, s.set, s.snID, s.nucleo, s.lemma, s.prop, s.genero, s.numero, s.nucleoPronome, s.groupedBy, s.shallow, s.paiDe, s.filhoDe,s.categoriaSemantica));
+
+                    cont.removeAll();
+                    rightGroupPanel.removeAll();
+                    jListSnSolitarios = makeList(h, fachada.getGrupoSolitario().getListaSintagmas());
+                    rightGroupPanel.add(createPanelForComponent(new JScrollPane(jListSnSolitarios), ""));
+                    jListSnSolitarios.setSelectionModel(new DefaultListSelectionModel()
                     {
-                        String arquivoSentenca = fSent.getAbsolutePath();
-                        String arquivoTexto = f.getAbsolutePath();
-                        String arquivoBinario = fBin.getAbsolutePath();
-                                
-                        botao.setEnabled(true);
-
-                        String textoLido = (String) getText.invoke(leitor.newInstance(), arquivoTexto);
-                        sentencas = (ArrayList<String>) lerSentencas.invoke(leitor.newInstance(), arquivoSentenca);
-                        listaSintagma = (ArrayList<Sintagma>) getSintagmas.invoke(leitor.newInstance(), arquivoBinario);
-                        listaOriginal = new ArrayList<>();
-
-                        setTexto(textoLido);
-                        fachada.getGrupos().clear();
-                        fachada.getGrupoSolitario().getListaSintagmas().clear();
-                        maiorSet = -1;
-
-                        for (Sintagma s : listaSintagma)
+                        @Override
+                        public void setSelectionInterval(int start, int end)
                         {
-                            //System.out.println(s.sn+" "+s.snID);
-                            if (s.set > maiorSet)
-                                maiorSet = s.set;
-                            s.sn = fachada.trataString(s.sn);
-                            if (s.sn.startsWith(" "))
-                                s.sn = s.sn.substring(1);
-                            if (s.sn.endsWith(" "))
-                                s.sn = s.sn.substring(0, s.sn.length() - 1);
-                            fachada.addSintagmaNoGrupo(s);
+                            if (start != end)
+                                super.setSelectionInterval(start, end);
+                            else if (isSelectedIndex(start))
+                            {
+                                removeSelectionInterval(start, end);
+                                highlightSelecionados();
+                            } else
+                            {
+                                addSelectionInterval(start, end);
+                                highlightSelecionados();
+                            }
                         }
-                        fachada.organizaGrupos();
-                        fachada.ordenaPorQtdFilhos();
+                    });
+                    for (Grupo g : fachada.getGrupos())
+                    {
+                        JList jListSintagma = makeList(h, g.getListaSintagmas());
+                        jlistas.add(jListSintagma);
+                        JScrollPane jsp = new JScrollPane(jListSintagma);                 
+                        JComboBox<String> categorias = new JComboBox();
+                        for(model.CategoriasSemanticas categs : model.CategoriasSemanticas.values())
+                            categorias.addItem(categs.getCateg());
+                        
+//                        categorias.addItem("<html><body style=\"background-color:rgb("
+//                                + g.getColor().getRed() + ","
+//                                + g.getColor().getGreen() + ","
+//                                + g.getColor().getBlue() + ");\">PER</body></html>");
+//                        categorias.addItem("OTH");
+                        ((BasicComboPopup) categorias.getAccessibleContext().getAccessibleChild(0)).
+                                getList().setSelectionBackground(g.getColor());
+                        categorias.setRenderer(new DefaultListCellRenderer()
+                        {
+                            @Override
+                            public void paint(Graphics grafix)
+                            {
+                                //setBackground(g.getColor());
+                                //setForeground(g.getColor());
+                                super.paint(grafix);
+                            }
+                        });
+                        jsp.setColumnHeaderView(categorias);
+                        cont.add(createPanelForComponent(jsp, ""));
 
-                        for (Sintagma s : listaSintagma)
-                            listaOriginal.add(new Sintagma(s.textName, s.sn, s.sentenca, s.words, s.set, s.snID, s.nucleo, s.lemma, s.prop, s.genero, s.numero, s.nucleoPronome, s.groupedBy, s.shallow, s.paiDe, s.filhoDe));
-
-                        cont.removeAll();
-                        rightGroupPanel.removeAll();
-                        jListSnSolitarios = makeList(h, fachada.getGrupoSolitario().getListaSintagmas());
-                        rightGroupPanel.add(createPanelForComponent(new JScrollPane(jListSnSolitarios), ""));
-                        jListSnSolitarios.setSelectionModel(new DefaultListSelectionModel()
+                        jListSintagma.setSelectionModel(new DefaultListSelectionModel()
                         {
                             @Override
                             public void setSelectionInterval(int start, int end)
@@ -282,101 +310,59 @@ public class MainPanel extends JPanel
                                 }
                             }
                         });
-                        for (Grupo g : fachada.getGrupos())
-                        {
-                            JList jListSintagma = makeList(h, g.getListaSintagmas());
-                            jlistas.add(jListSintagma);
-                            JScrollPane jsp = new JScrollPane(jListSintagma);                           
-                            JComboBox<String> categorias = new JComboBox();
-                            categorias.addItem("<html><body style=\"background-color:red;\">PER</body></html>");
-                            categorias.addItem("OTH"); 
-                            ((BasicComboPopup)categorias.getAccessibleContext().getAccessibleChild(0)).
-                                            getList().setSelectionBackground(g.getColor());
-                            categorias.setRenderer(new DefaultListCellRenderer() 
-                            {
-                                @Override
-                                public void paint(Graphics grafix) 
-                                {
-                                    //setBackground(g.getColor());
-                                    //setForeground(g.getColor());
-                                    super.paint(grafix);
-                                }
-                            });                    
-                            jsp.setColumnHeaderView(categorias);
-                            cont.add(createPanelForComponent(jsp, ""));
-                             
-                            jListSintagma.setSelectionModel(new DefaultListSelectionModel()
-                            {
-                                @Override
-                                public void setSelectionInterval(int start, int end)
-                                {
-                                    if (start != end)
-                                        super.setSelectionInterval(start, end);
-                                    else if (isSelectedIndex(start))
-                                    {
-                                        removeSelectionInterval(start, end);
-                                        highlightSelecionados();
-                                    } else
-                                    {
-                                        addSelectionInterval(start, end);
-                                        highlightSelecionados();
-                                    }
-                                }
-                            });
 
-                        }
-
-                        jlistas.add(jListSnSolitarios);
-
-                        //cont.repaint();
-
-                        for (JList jl : jlistas)
-                        {
-                            String ACTION_KEY = "theAction";
-                            Action actionListener = new AbstractAction()
-                            {
-                                @Override
-                                public void actionPerformed(ActionEvent actionEvent)
-                                {
-                                    for (JList jlista : jlistas)
-                                    {
-                                        jlista.clearSelection();
-                                        highlightSelecionados();
-                                    }
-                                }
-                            };
-                            KeyStroke enter = KeyStroke.getKeyStroke(KeyEvent.VK_ESCAPE, 0, true);
-                            InputMap inputMap = jl.getInputMap();
-                            inputMap.put(enter, ACTION_KEY);
-                            ActionMap actionMap = jl.getActionMap();
-                            actionMap.put(ACTION_KEY, actionListener);
-                            jl.setActionMap(actionMap);
-                        }
-
-                        Component[] component = cont.getComponents();
-
-                        for (int i = 0; i < component.length; i++)
-                            if (component[i] instanceof JPanel)
-                            {
-                                JPanel jp = (JPanel) component[i];
-                                jp.setForeground(colors.get(i));
-                                jp.setBackground(colors.get(i));
-                            }
-
-                        Component[] componentSolitarios = rightGroupPanel.getComponents();
-
-                        for (Component componentSolitario : componentSolitarios)
-                            if (componentSolitario instanceof JPanel)
-                            {
-                                JPanel jp = (JPanel) componentSolitario;
-                                jp.setForeground(colors.get(colors.size() - 1));
-                                jp.setBackground(colors.get(colors.size() - 1));
-                            }
-
-                    } catch (SecurityException | IllegalAccessException | IllegalArgumentException | InvocationTargetException | InstantiationException ex)
-                    {
-                        Logger.getLogger(MainPanel.class.getName()).log(Level.SEVERE, null, ex);
                     }
+
+                    jlistas.add(jListSnSolitarios);
+
+                    //cont.repaint();
+                    for (JList jl : jlistas)
+                    {
+                        String ACTION_KEY = "theAction";
+                        Action actionListener = new AbstractAction()
+                        {
+                            @Override
+                            public void actionPerformed(ActionEvent actionEvent)
+                            {
+                                for (JList jlista : jlistas)
+                                {
+                                    jlista.clearSelection();
+                                    highlightSelecionados();
+                                }
+                            }
+                        };
+                        KeyStroke enter = KeyStroke.getKeyStroke(KeyEvent.VK_ESCAPE, 0, true);
+                        InputMap inputMap = jl.getInputMap();
+                        inputMap.put(enter, ACTION_KEY);
+                        ActionMap actionMap = jl.getActionMap();
+                        actionMap.put(ACTION_KEY, actionListener);
+                        jl.setActionMap(actionMap);
+                    }
+
+                    Component[] component = cont.getComponents();
+
+                    for (int i = 0; i < component.length; i++)
+                        if (component[i] instanceof JPanel)
+                        {
+                            JPanel jp = (JPanel) component[i];
+                            jp.setForeground(colors.get(i));
+                            jp.setBackground(colors.get(i));
+                        }
+
+                    Component[] componentSolitarios = rightGroupPanel.getComponents();
+
+                    for (Component componentSolitario : componentSolitarios)
+                        if (componentSolitario instanceof JPanel)
+                        {
+                            JPanel jp = (JPanel) componentSolitario;
+                            jp.setForeground(colors.get(colors.size() - 1));
+                            jp.setBackground(colors.get(colors.size() - 1));
+                        }
+
+                } catch (SecurityException | IllegalAccessException | IllegalArgumentException | InvocationTargetException | InstantiationException ex)
+                {
+                    Logger.getLogger(MainPanel.class.getName()).log(Level.SEVERE, null, ex);
+                }
                 splitAllPane.revalidate();
                 splitAllPane.repaint();
             }
@@ -395,7 +381,7 @@ public class MainPanel extends JPanel
             private void jMenuExportarActionPerformed(ActionEvent evt)
             {
                 JFileChooser chooser = new JFileChooser();
-                chooser.setCurrentDirectory(new File(path + barra + "binaries" + barra));
+                chooser.setCurrentDirectory(null);
                 chooser.showSaveDialog(null);
                 File f = chooser.getSelectedFile();
 
@@ -460,37 +446,6 @@ public class MainPanel extends JPanel
                 {
                     Logger.getLogger(MainPanel.class.getName()).log(Level.SEVERE, null, ex);
                 }
-            }
-        });
-
-        jMenuItem_ApariçãoNoTexto.addActionListener(new ActionListener()
-        {
-            @Override
-            public void actionPerformed(ActionEvent evt)
-            {
-                ordenador = (Sintagma s1, Sintagma s2) -> new Integer(s1.snID).compareTo(s2.snID);
-                //TODO arrumar a ordenação  
-                ArrayList<Sintagma> toBeSorted = fachada.getGrupoSolitario().getListaSintagmas();
-                Collections.sort(
-                        toBeSorted,
-                        ordenador);
-                jListSnSolitarios = makeList(h, toBeSorted);
-                rightGroupPanel.add(createPanelForComponent(new JScrollPane(jListSnSolitarios), ""));
-                cont.repaint();
-            }
-        });
-
-        jMenuItem_EntradaDeDados.addActionListener(new java.awt.event.ActionListener()
-        {
-            @Override
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
-                jMenuItem_EntradaDeDadosActionPerformed(evt);
-            }
-
-            private void jMenuItem_EntradaDeDadosActionPerformed(ActionEvent evt)
-            {
-                entradaDados.setVisible(true);
             }
         });
     }
@@ -639,7 +594,7 @@ public class MainPanel extends JPanel
         try
         {
             UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
-            
+
         } catch (ClassNotFoundException | InstantiationException | IllegalAccessException | UnsupportedLookAndFeelException ex)
         {
         }
@@ -663,13 +618,11 @@ public class MainPanel extends JPanel
         if (firstIndex >= 0)
         {
             int lastIndex = firstIndex + sentenca.length() + 2;
-            if(s.cor == null)
-            {
-                for(Grupo g : fachada.getGrupos())
-                    for(Sintagma si : g.getListaSintagmas())
-                        if(si.equals(s))
-                            s.cor=g.getColor();
-            }
+            if (s.cor == null)
+                for (Grupo g : fachada.getGrupos())
+                    for (Sintagma si : g.getListaSintagmas())
+                        if (si.equals(s))
+                            s.cor = g.getColor();
             onHighlightSintagma(s.sn, firstIndex, lastIndex, s.cor);
         }
     }
@@ -764,28 +717,51 @@ public class MainPanel extends JPanel
             try
             {
                 Object[] values = (Object[]) info.getTransferable().getTransferData(localObjectFlavor);
+                Color oldColor = null;
                 for (Object value : values)
                 {
+                    if (((Sintagma) value).cor != null)
+                        oldColor = ((Sintagma) value).cor;
                     int idx = index++;
                     listModel.add(idx, value);
-                    target.addSelectionInterval(idx, idx);           
-                    //TODO arrumar a ordenação  
-
+                    target.addSelectionInterval(idx, idx);
                     if (listModel.size() <= 1)
                         ((Sintagma) value).set = MainPanel.maiorSet++;
                     else
                         ((Sintagma) value).set = ((Sintagma) listModel.get(0)).set;
                 }
+
                 addCount = target.equals(source) ? values.length : 0;
                 Object[] modelToArray = listModel.toArray();
                 ArrayList<Sintagma> sints = new ArrayList<>();
+                boolean foundColor = false;
+                Color newColor = null;
                 for (Object obj : modelToArray)
+                {//descobre a cor dos sintagmas;
                     sints.add((model.Sintagma) obj);
+                    if (!foundColor && ((model.Sintagma) obj).cor != oldColor)
+                    {
+                        newColor = ((model.Sintagma) obj).cor;
+                        if (((model.Sintagma) obj).cor != null)
+                            foundColor = true;
+                    }
+                }
                 ordenador = (model.Sintagma s1, model.Sintagma s2) -> new Integer(s1.snID).compareTo(s2.snID);
                 Collections.sort(sints, ordenador);
                 listModel.clear();
+                /*se newColor tiver chegado até aqui null, tem alguma coisa
+                MUITO errada pq daí VÁRIOS sintagmas sem cor foram selecionados
+                então é melhor simplesmente dar uma cor nova para tudo de uma vez
+                pq deu pau
+                 */
+                if (newColor == null)
+                    newColor
+                            = new Color(cores.nextInt(256), cores.nextInt(256), cores.nextInt(256));
                 for (model.Sintagma sint : sints)
-                    listModel.addElement(sint);            
+                {//arruma as cores
+                    sint.cor = newColor;
+                    listModel.addElement(sint);
+                }
                 return true;
             } catch (UnsupportedFlavorException | IOException ex)
             {
