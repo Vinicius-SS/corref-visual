@@ -1,0 +1,692 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<CIENCIA_2000_6380.txt>
+
+<Texto conteudo="Astrônomos brasileiros esperam fotografar os primeiros planetas fora do Sistema Solar com a ajuda do maior telescópio do mundo, o Gemini, a partir do ano que vem.
+A informação foi dada na conferência &quot;Da Origem do Universo aos Grandes Telescópios&quot;, ministrada ontem por João Steiner, astrofísico da USP, durante a 52ª Reunião Anual da Sociedade Brasileira para o Progresso da Ciência. A reunião começou anteontem no campus da UnB (Universidade de Brasília).
+O planeta mais distante até hoje fotografado é Plutão. &quot;Imagine alguém de fora da nossa galáxia que tente fotografar o Sol. Essa pessoa não perceberia a Terra, que seria ofuscada pela luminosidade solar&quot;, explicou Steiner. O mesmo acontece atualmente com os astrônomos que fotografam estrelas muito distantes.
+No entanto, o Gemini poderá &quot;enxergar&quot; planetas. Isso porque, além de medir luz, o telescópio mede calor, por meio de radiação infravermelha. E, embora não emitam luz, planetas geram calor.
+O projeto Gemini, resultado de um consórcio de sete países, envolve a construção de dois telescópios com um espelho de oito metros de diâmetro.
+Um dos telescópios já está pronto e em funcionamento no Havaí, EUA. O outro entrará em operação no ano que vem, em Atacama, Chile, e o Brasil terá direito a usá-lo 14 noites por ano.
+Segundo Steiner, os telescópios Gemini têm capacidade científica de observação e qualidade de imagem dez vezes superiores às de um telescópio espacial.
+" ></Texto>
+
+<Tokens> 
+<word_0 token="Astrônomos" lemma="astrônomo" pos="n" features="M=P" ></word_0>
+<word_1 token="brasileiros" lemma="brasileiro" pos="adj" features="M=P" ></word_1>
+<word_2 token="esperam" lemma="esperar" pos="v-fin" features="PR=3P=IND" ></word_2>
+<word_3 token="fotografar" lemma="fotografar" pos="v-inf" features="-" ></word_3>
+<word_4 token="os" lemma="o" pos="art" features="M=P" ></word_4>
+<word_5 token="primeiros" lemma="" pos="adj" features="M=P" ></word_5>
+<word_6 token="planetas" lemma="planeta" pos="n" features="M=P" ></word_6>
+<word_7 token="fora_do" lemma="" pos="prp" features="-" ></word_7>
+<word_8 token="o" lemma="o" pos="art" features="M=S" ></word_8>
+<word_9 token="Sistema_Solar" lemma="" pos="prop" features="M=S" ></word_9>
+<word_10 token="com" lemma="com" pos="prp" features="-" ></word_10>
+<word_11 token="a" lemma="o" pos="art" features="F=S" ></word_11>
+<word_12 token="ajuda" lemma="ajuda" pos="n" features="F=S" ></word_12>
+<word_13 token="de" lemma="de" pos="prp" features="-" ></word_13>
+<word_14 token="o" lemma="o" pos="art" features="M=S" ></word_14>
+<word_15 token="maior" lemma="maior" pos="adj" features="M=S" ></word_15>
+<word_16 token="telescópio" lemma="telescópio" pos="n" features="M=S" ></word_16>
+<word_17 token="de" lemma="de" pos="prp" features="-" ></word_17>
+<word_18 token="o" lemma="o" pos="art" features="M=S" ></word_18>
+<word_19 token="mundo" lemma="mundo" pos="n" features="M=S" ></word_19>
+<word_20 token="," lemma="" pos="," features="-" ></word_20>
+<word_21 token="o" lemma="o" pos="art" features="M=S" ></word_21>
+<word_22 token="Gemini" lemma="" pos="prop" features="M=S" ></word_22>
+<word_23 token="," lemma="" pos="," features="-" ></word_23>
+<word_24 token="a_partir_do" lemma="" pos="prp" features="-" ></word_24>
+<word_25 token="o" lemma="o" pos="art" features="M=S" ></word_25>
+<word_26 token="ano" lemma="ano" pos="n" features="M=S" ></word_26>
+<word_27 token="que" lemma="que" pos="pron-indp" features="M=S" ></word_27>
+<word_28 token="vem" lemma="vir" pos="v-fin" features="PR=3S=IND" ></word_28>
+<word_29 token="." lemma="." pos="." features="-" ></word_29>
+<word_30 token="A" lemma="o" pos="art" features="F=S" ></word_30>
+<word_31 token="informação" lemma="informação, informar" pos="n" features="F=S" ></word_31>
+<word_32 token="foi" lemma="ir, ser" pos="v-fin" features="PS=3S=IND" ></word_32>
+<word_33 token="dada" lemma="dar" pos="v-pcp" features="F=S" ></word_33>
+<word_34 token="em" lemma="em" pos="prp" features="-" ></word_34>
+<word_35 token="a" lemma="o" pos="art" features="F=S" ></word_35>
+<word_36 token="conferência" lemma="conferência" pos="n" features="F=S" ></word_36>
+<word_37 token="&quot;" lemma="&quot;" pos="&quot;" features="-" ></word_37>
+<word_38 token="de" lemma="de" pos="prp" features="-" ></word_38>
+<word_39 token="a" lemma="o" pos="art" features="F=S" ></word_39>
+<word_40 token="Origem" lemma="" pos="prop" features="F=S" ></word_40>
+<word_41 token="de" lemma="de" pos="prp" features="-" ></word_41>
+<word_42 token="o" lemma="o" pos="art" features="M=S" ></word_42>
+<word_43 token="Universo" lemma="universo" pos="n" features="M=S" ></word_43>
+<word_44 token="a" lemma="a" pos="prp" features="-" ></word_44>
+<word_45 token="os" lemma="o" pos="art" features="M=P" ></word_45>
+<word_46 token="Grandes_Telescópios" lemma="" pos="prop" features="M=P" ></word_46>
+<word_47 token="&quot;" lemma="&quot;" pos="&quot;" features="-" ></word_47>
+<word_48 token="," lemma="" pos="," features="-" ></word_48>
+<word_49 token="ministrada" lemma="ministrar" pos="v-pcp" features="F=S" ></word_49>
+<word_50 token="ontem" lemma="ontem" pos="adv" features="-" ></word_50>
+<word_51 token="por" lemma="por" pos="prp" features="-" ></word_51>
+<word_52 token="João_Steiner" lemma="" pos="prop" features="M=S" ></word_52>
+<word_53 token="," lemma="" pos="," features="-" ></word_53>
+<word_54 token="astrofísico" lemma="astrofísico" pos="n" features="M=S" ></word_54>
+<word_55 token="de" lemma="de" pos="prp" features="-" ></word_55>
+<word_56 token="a" lemma="o" pos="art" features="F=S" ></word_56>
+<word_57 token="USP" lemma="" pos="prop" features="F=S" ></word_57>
+<word_58 token="," lemma="" pos="," features="-" ></word_58>
+<word_59 token="durante" lemma="durante" pos="prp" features="-" ></word_59>
+<word_60 token="a" lemma="o" pos="art" features="F=S" ></word_60>
+<word_61 token="52ª" lemma="" pos="n" features="F=S" ></word_61>
+<word_62 token="Reunião_Anual" lemma="" pos="prop" features="F=S" ></word_62>
+<word_63 token="de" lemma="de" pos="prp" features="-" ></word_63>
+<word_64 token="a" lemma="o" pos="art" features="F=S" ></word_64>
+<word_65 token="Sociedade_Brasileira" lemma="" pos="prop" features="F=S" ></word_65>
+<word_66 token="para" lemma="para" pos="prp" features="-" ></word_66>
+<word_67 token="o" lemma="o" pos="art" features="M=S" ></word_67>
+<word_68 token="Progresso_da_Ciência" lemma="" pos="prop" features="M=S" ></word_68>
+<word_69 token="." lemma="." pos="." features="-" ></word_69>
+<word_70 token="A" lemma="o" pos="art" features="F=S" ></word_70>
+<word_71 token="reunião" lemma="reunião" pos="n" features="F=S" ></word_71>
+<word_72 token="começou" lemma="começar" pos="v-fin" features="PS=3S=IND" ></word_72>
+<word_73 token="anteontem" lemma="anteontem" pos="adv" features="-" ></word_73>
+<word_74 token="em" lemma="em" pos="prp" features="-" ></word_74>
+<word_75 token="o" lemma="o" pos="art" features="M=S" ></word_75>
+<word_76 token="campus" lemma="" pos="n" features="M=S" ></word_76>
+<word_77 token="de" lemma="de" pos="prp" features="-" ></word_77>
+<word_78 token="a" lemma="o" pos="art" features="F=S" ></word_78>
+<word_79 token="UnB" lemma="" pos="prop" features="F=S" ></word_79>
+<word_80 token="(" lemma="(" pos="(" features="-" ></word_80>
+<word_81 token="Universidade_de_Brasília" lemma="" pos="prop" features="M=S" ></word_81>
+<word_82 token=")" lemma=")" pos=")" features="-" ></word_82>
+<word_83 token="." lemma="." pos="." features="-" ></word_83>
+<word_84 token="O" lemma="o" pos="art" features="M=S" ></word_84>
+<word_85 token="planeta" lemma="planeta" pos="n" features="M=S" ></word_85>
+<word_86 token="mais" lemma="mais" pos="adv" features="-" ></word_86>
+<word_87 token="distante" lemma="distante, distar" pos="adj" features="M=S" ></word_87>
+<word_88 token="até" lemma="até" pos="prp" features="-" ></word_88>
+<word_89 token="hoje" lemma="hoje" pos="adv" features="-" ></word_89>
+<word_90 token="fotografado" lemma="fotografar" pos="v-pcp" features="M=S" ></word_90>
+<word_91 token="é" lemma="ser" pos="v-fin" features="PR=3S=IND" ></word_91>
+<word_92 token="Plutão" lemma="Plutão" pos="prop" features="M=S" ></word_92>
+<word_93 token="." lemma="." pos="." features="-" ></word_93>
+<word_94 token="&quot;" lemma="&quot;" pos="&quot;" features="-" ></word_94>
+<word_95 token="Imagine" lemma="" pos="prop" features="M=S" ></word_95>
+<word_96 token="alguém" lemma="alguém" pos="pron-indp" features="M=S" ></word_96>
+<word_97 token="de" lemma="de" pos="prp" features="-" ></word_97>
+<word_98 token="fora" lemma="fora" pos="adv" features="-" ></word_98>
+<word_99 token="de" lemma="de" pos="prp" features="-" ></word_99>
+<word_100 token="a" lemma="o" pos="art" features="F=S" ></word_100>
+<word_101 token="nossa" lemma="nosso" pos="pron-det" features="F=S" ></word_101>
+<word_102 token="galáxia" lemma="galáxia" pos="n" features="F=S" ></word_102>
+<word_103 token="que" lemma="que" pos="pron-indp" features="F=S" ></word_103>
+<word_104 token="tente" lemma="tentar" pos="v-fin" features="PR=3S=SUBJ" ></word_104>
+<word_105 token="fotografar" lemma="fotografar" pos="v-inf" features="-" ></word_105>
+<word_106 token="o" lemma="o" pos="art" features="M=S" ></word_106>
+<word_107 token="Sol" lemma="sol" pos="n" features="M=S" ></word_107>
+<word_108 token="." lemma="." pos="." features="-" ></word_108>
+<word_109 token="Essa" lemma="esse" pos="pron-det" features="F=S" ></word_109>
+<word_110 token="pessoa" lemma="pessoa" pos="n" features="F=S" ></word_110>
+<word_111 token="não" lemma="não" pos="adv" features="-" ></word_111>
+<word_112 token="perceberia" lemma="perceber" pos="v-fin" features="COND=3S" ></word_112>
+<word_113 token="a" lemma="o" pos="art" features="F=S" ></word_113>
+<word_114 token="Terra" lemma="terra" pos="n" features="F=S" ></word_114>
+<word_115 token="," lemma="" pos="," features="-" ></word_115>
+<word_116 token="que" lemma="que" pos="pron-indp" features="F=S" ></word_116>
+<word_117 token="seria" lemma="seriar, ser" pos="v-fin" features="COND=3S" ></word_117>
+<word_118 token="ofuscada" lemma="ofuscar" pos="v-pcp" features="F=S" ></word_118>
+<word_119 token="por" lemma="por" pos="prp" features="-" ></word_119>
+<word_120 token="a" lemma="o" pos="art" features="F=S" ></word_120>
+<word_121 token="luminosidade" lemma="luminosidade, luminoso" pos="n" features="F=S" ></word_121>
+<word_122 token="solar" lemma="solar" pos="adj" features="F=S" ></word_122>
+<word_123 token="&quot;" lemma="&quot;" pos="&quot;" features="-" ></word_123>
+<word_124 token="," lemma="" pos="," features="-" ></word_124>
+<word_125 token="explicou" lemma="explicar" pos="v-fin" features="PS=3S=IND" ></word_125>
+<word_126 token="Steiner" lemma="" pos="prop" features="M=S" ></word_126>
+<word_127 token="." lemma="." pos="." features="-" ></word_127>
+<word_128 token="O" lemma="o" pos="art" features="M=S" ></word_128>
+<word_129 token="mesmo" lemma="mesmo" pos="pron-det" features="M=S" ></word_129>
+<word_130 token="acontece" lemma="acontecer" pos="v-fin" features="PR=3S=IND" ></word_130>
+<word_131 token="atualmente" lemma="atual" pos="adv" features="-" ></word_131>
+<word_132 token="com" lemma="com" pos="prp" features="-" ></word_132>
+<word_133 token="os" lemma="o" pos="art" features="M=P" ></word_133>
+<word_134 token="astrônomos" lemma="astrônomo" pos="n" features="M=P" ></word_134>
+<word_135 token="que" lemma="que" pos="pron-indp" features="M=P" ></word_135>
+<word_136 token="fotografam" lemma="fotografar" pos="v-fin" features="PR=3P=IND" ></word_136>
+<word_137 token="estrelas" lemma="estrela" pos="n" features="F=P" ></word_137>
+<word_138 token="muito" lemma="muito" pos="adv" features="-" ></word_138>
+<word_139 token="distantes" lemma="distante, distar" pos="adj" features="F=P" ></word_139>
+<word_140 token="." lemma="." pos="." features="-" ></word_140>
+<word_141 token="em" lemma="em" pos="prp" features="-" ></word_141>
+<word_142 token="o" lemma="o" pos="art" features="M=S" ></word_142>
+<word_143 token="entanto" lemma="entanto" pos="adv" features="-" ></word_143>
+<word_144 token="," lemma="" pos="," features="-" ></word_144>
+<word_145 token="o" lemma="o" pos="art" features="M=S" ></word_145>
+<word_146 token="Gemini" lemma="" pos="prop" features="M=S" ></word_146>
+<word_147 token="poderá" lemma="poder" pos="v-fin" features="FUT=3S=IND" ></word_147>
+<word_148 token="&quot;" lemma="&quot;" pos="&quot;" features="-" ></word_148>
+<word_149 token="enxergar" lemma="enxergar" pos="v-inf" features="-" ></word_149>
+<word_150 token="&quot;" lemma="&quot;" pos="&quot;" features="-" ></word_150>
+<word_151 token="planetas" lemma="planeta" pos="n" features="M=P" ></word_151>
+<word_152 token="." lemma="." pos="." features="-" ></word_152>
+<word_153 token="Isso" lemma="isso" pos="pron-indp" features="M=S" ></word_153>
+<word_154 token="porque" lemma="porque" pos="conj-s" features="-" ></word_154>
+<word_155 token="," lemma="" pos="," features="-" ></word_155>
+<word_156 token="além_de" lemma="" pos="prp" features="-" ></word_156>
+<word_157 token="medir" lemma="medir" pos="v-inf" features="-" ></word_157>
+<word_158 token="luz" lemma="luz" pos="n" features="F=S" ></word_158>
+<word_159 token="," lemma="" pos="," features="-" ></word_159>
+<word_160 token="o" lemma="o" pos="art" features="M=S" ></word_160>
+<word_161 token="telescópio" lemma="telescópio" pos="n" features="M=S" ></word_161>
+<word_162 token="mede" lemma="medir" pos="v-fin" features="PR=3S=IND" ></word_162>
+<word_163 token="calor" lemma="calor" pos="n" features="M=S" ></word_163>
+<word_164 token="," lemma="" pos="," features="-" ></word_164>
+<word_165 token="por" lemma="por" pos="prp" features="-" ></word_165>
+<word_166 token="meio" lemma="meio" pos="n" features="M=S" ></word_166>
+<word_167 token="de" lemma="de" pos="prp" features="-" ></word_167>
+<word_168 token="radiação" lemma="radiação, radiar" pos="n" features="F=S" ></word_168>
+<word_169 token="infravermelha" lemma="infravermelho" pos="adj" features="F=S" ></word_169>
+<word_170 token="." lemma="." pos="." features="-" ></word_170>
+<word_171 token="E" lemma="e" pos="conj-c" features="-" ></word_171>
+<word_172 token="," lemma="" pos="," features="-" ></word_172>
+<word_173 token="embora" lemma="embora" pos="conj-s" features="-" ></word_173>
+<word_174 token="não" lemma="não" pos="adv" features="-" ></word_174>
+<word_175 token="emitam" lemma="emitir" pos="v-fin" features="IMP=3P" ></word_175>
+<word_176 token="luz" lemma="luz" pos="n" features="F=S" ></word_176>
+<word_177 token="," lemma="" pos="," features="-" ></word_177>
+<word_178 token="planetas" lemma="planeta" pos="n" features="M=P" ></word_178>
+<word_179 token="geram" lemma="gerar" pos="v-fin" features="PR=3P=IND" ></word_179>
+<word_180 token="calor" lemma="calor" pos="n" features="M=S" ></word_180>
+<word_181 token="." lemma="." pos="." features="-" ></word_181>
+<word_182 token="O" lemma="o" pos="art" features="M=S" ></word_182>
+<word_183 token="projeto" lemma="projeto" pos="n" features="M=S" ></word_183>
+<word_184 token="Gemini" lemma="" pos="prop" features="M=S" ></word_184>
+<word_185 token="," lemma="" pos="," features="-" ></word_185>
+<word_186 token="resultado" lemma="resultado" pos="n" features="M=S" ></word_186>
+<word_187 token="de" lemma="de" pos="prp" features="-" ></word_187>
+<word_188 token="um" lemma="um" pos="art" features="M=S" ></word_188>
+<word_189 token="consórcio" lemma="consórcio" pos="n" features="M=S" ></word_189>
+<word_190 token="de" lemma="de" pos="prp" features="-" ></word_190>
+<word_191 token="sete" lemma="sete" pos="num" features="M=P" ></word_191>
+<word_192 token="países" lemma="país" pos="n" features="M=P" ></word_192>
+<word_193 token="," lemma="" pos="," features="-" ></word_193>
+<word_194 token="envolve" lemma="envolver" pos="v-fin" features="PR=3S=IND" ></word_194>
+<word_195 token="a" lemma="o" pos="art" features="F=S" ></word_195>
+<word_196 token="construção" lemma="construção" pos="n" features="F=S" ></word_196>
+<word_197 token="de" lemma="de" pos="prp" features="-" ></word_197>
+<word_198 token="dois" lemma="dois" pos="num" features="M=P" ></word_198>
+<word_199 token="telescópios" lemma="telescópio" pos="n" features="M=P" ></word_199>
+<word_200 token="com" lemma="com" pos="prp" features="-" ></word_200>
+<word_201 token="um" lemma="um" pos="art" features="M=S" ></word_201>
+<word_202 token="espelho" lemma="espelho" pos="n" features="M=S" ></word_202>
+<word_203 token="de" lemma="de" pos="prp" features="-" ></word_203>
+<word_204 token="oito" lemma="oito" pos="num" features="M=P" ></word_204>
+<word_205 token="metros" lemma="metro" pos="n" features="M=P" ></word_205>
+<word_206 token="de" lemma="de" pos="prp" features="-" ></word_206>
+<word_207 token="diâmetro" lemma="diâmetro" pos="n" features="M=S" ></word_207>
+<word_208 token="." lemma="." pos="." features="-" ></word_208>
+<word_209 token="Um" lemma="um" pos="num" features="M=S" ></word_209>
+<word_210 token="de" lemma="de" pos="prp" features="-" ></word_210>
+<word_211 token="os" lemma="o" pos="art" features="M=P" ></word_211>
+<word_212 token="telescópios" lemma="telescópio" pos="n" features="M=P" ></word_212>
+<word_213 token="já" lemma="já" pos="adv" features="-" ></word_213>
+<word_214 token="está" lemma="estar" pos="v-fin" features="PR=3S=IND" ></word_214>
+<word_215 token="pronto" lemma="pronto" pos="adj" features="M=S" ></word_215>
+<word_216 token="e" lemma="e" pos="conj-c" features="-" ></word_216>
+<word_217 token="em" lemma="em" pos="prp" features="-" ></word_217>
+<word_218 token="funcionamento" lemma="funcionar" pos="n" features="M=S" ></word_218>
+<word_219 token="em" lemma="em" pos="prp" features="-" ></word_219>
+<word_220 token="o" lemma="o" pos="art" features="M=S" ></word_220>
+<word_221 token="Havaí" lemma="" pos="prop" features="M=S" ></word_221>
+<word_222 token="," lemma="" pos="," features="-" ></word_222>
+<word_223 token="EUA" lemma="EUA" pos="prop" features="M=P" ></word_223>
+<word_224 token="." lemma="." pos="." features="-" ></word_224>
+<word_225 token="O" lemma="o" pos="art" features="M=S" ></word_225>
+<word_226 token="outro" lemma="outro" pos="pron-det" features="M=S" ></word_226>
+<word_227 token="entrará" lemma="entrar" pos="v-fin" features="FUT=3S=IND" ></word_227>
+<word_228 token="em" lemma="em" pos="prp" features="-" ></word_228>
+<word_229 token="operação" lemma="operação, operar" pos="n" features="F=S" ></word_229>
+<word_230 token="em" lemma="em" pos="prp" features="-" ></word_230>
+<word_231 token="o" lemma="o" pos="art" features="M=S" ></word_231>
+<word_232 token="ano" lemma="ano" pos="n" features="M=S" ></word_232>
+<word_233 token="que" lemma="que" pos="pron-indp" features="M=S" ></word_233>
+<word_234 token="vem" lemma="vir" pos="v-fin" features="PR=3S=IND" ></word_234>
+<word_235 token="," lemma="" pos="," features="-" ></word_235>
+<word_236 token="em" lemma="em" pos="prp" features="-" ></word_236>
+<word_237 token="Atacama" lemma="" pos="prop" features="M=S" ></word_237>
+<word_238 token="," lemma="" pos="," features="-" ></word_238>
+<word_239 token="Chile" lemma="Chile" pos="prop" features="M=S" ></word_239>
+<word_240 token="," lemma="" pos="," features="-" ></word_240>
+<word_241 token="e" lemma="e" pos="conj-c" features="-" ></word_241>
+<word_242 token="o" lemma="o" pos="art" features="M=S" ></word_242>
+<word_243 token="Brasil" lemma="Brasil" pos="prop" features="M=S" ></word_243>
+<word_244 token="terá" lemma="ter" pos="v-fin" features="FUT=3S=IND" ></word_244>
+<word_245 token="direito" lemma="direito" pos="n" features="M=S" ></word_245>
+<word_246 token="a" lemma="a" pos="prp" features="-" ></word_246>
+<word_247 token="usá" lemma="" pos="v-inf" features="-" ></word_247>
+<word_248 token="-lo" lemma="" pos="pron-pers" features="-" ></word_248>
+<word_249 token="14" lemma="" pos="num" features="F=P" ></word_249>
+<word_250 token="noites" lemma="noite" pos="n" features="F=P" ></word_250>
+<word_251 token="por" lemma="por" pos="prp" features="-" ></word_251>
+<word_252 token="ano" lemma="ano" pos="n" features="M=S" ></word_252>
+<word_253 token="." lemma="." pos="." features="-" ></word_253>
+<word_254 token="Segundo" lemma="segundo" pos="prp" features="-" ></word_254>
+<word_255 token="Steiner" lemma="" pos="prop" features="M=S" ></word_255>
+<word_256 token="," lemma="" pos="," features="-" ></word_256>
+<word_257 token="os" lemma="o" pos="art" features="M=P" ></word_257>
+<word_258 token="telescópios" lemma="telescópio" pos="n" features="M=P" ></word_258>
+<word_259 token="Gemini" lemma="" pos="prop" features="M=S" ></word_259>
+<word_260 token="têm" lemma="ter" pos="v-fin" features="PR=3P=IND" ></word_260>
+<word_261 token="capacidade" lemma="capacidade, capaz" pos="n" features="F=S" ></word_261>
+<word_262 token="científica" lemma="científico" pos="adj" features="F=S" ></word_262>
+<word_263 token="de" lemma="de" pos="prp" features="-" ></word_263>
+<word_264 token="observação" lemma="observação, observar" pos="n" features="F=S" ></word_264>
+<word_265 token="e" lemma="e" pos="conj-c" features="-" ></word_265>
+<word_266 token="qualidade" lemma="qualidade" pos="n" features="F=S" ></word_266>
+<word_267 token="de" lemma="de" pos="prp" features="-" ></word_267>
+<word_268 token="imagem" lemma="imagem" pos="n" features="F=S" ></word_268>
+<word_269 token="dez" lemma="dez" pos="num" features="F=P" ></word_269>
+<word_270 token="vezes" lemma="vez" pos="n" features="F=P" ></word_270>
+<word_271 token="superiores" lemma="superior" pos="adj" features="F=P" ></word_271>
+<word_272 token="a" lemma="a" pos="prp" features="-" ></word_272>
+<word_273 token="as" lemma="o" pos="art" features="F=P" ></word_273>
+<word_274 token="de" lemma="de" pos="prp" features="-" ></word_274>
+<word_275 token="um" lemma="um" pos="art" features="M=S" ></word_275>
+<word_276 token="telescópio" lemma="telescópio" pos="n" features="M=S" ></word_276>
+<word_277 token="espacial" lemma="espacial" pos="adj" features="M=S" ></word_277>
+<word_278 token="." lemma="." pos="." features="-" ></word_278>
+</Tokens> 
+
+<Cadeias> 
+
+<Cadeia_21> 
+<sn id="18" tokens="62...62" nucleo="Reunião_Anual" sintagma="Reunião Anual" Categoria="EN_LOC/PAIS" sentenca="2">
+<word_62 token="Reunião_Anual" lemma="" pos="prop" features="F=S" ></word_62>
+</sn>
+<sn id="21" tokens="70...71" nucleo="reunião" sintagma="A reunião" Categoria="EN_LOC/PAIS" sentenca="3">
+<word_70 token="A" lemma="o" pos="art" features="F=S" ></word_70>
+<word_71 token="reunião" lemma="reunião" pos="n" features="F=S" ></word_71>
+</sn>
+</Cadeia_21>
+
+<Cadeia_23> 
+<sn id="23" tokens="78...79" nucleo="UnB" sintagma="a UnB" Categoria="EN_ORG" sentenca="3">
+<word_78 token="a" lemma="o" pos="art" features="F=S" ></word_78>
+<word_79 token="UnB" lemma="" pos="prop" features="F=S" ></word_79>
+</sn>
+<sn id="24" tokens="81...81" nucleo="Universidade_de_Brasília" sintagma="Universidade de Brasília" Categoria="EN_ORG" sentenca="3">
+<word_81 token="Universidade_de_Brasília" lemma="" pos="prop" features="M=S" ></word_81>
+</sn>
+</Cadeia_23>
+
+<Cadeia_38> 
+<sn id="0" tokens="0...1" nucleo="Astrônomos" sintagma="Astrônomos brasileiros" Categoria="EN_SER" sentenca="1">
+<word_0 token="Astrônomos" lemma="astrônomo" pos="n" features="M=P" ></word_0>
+<word_1 token="brasileiros" lemma="brasileiro" pos="adj" features="M=P" ></word_1>
+</sn>
+<sn id="38" tokens="133...134" nucleo="astrônomos" sintagma="os astrônomos" Categoria="EN_SER" sentenca="7">
+<word_133 token="os" lemma="o" pos="art" features="M=P" ></word_133>
+<word_134 token="astrônomos" lemma="astrônomo" pos="n" features="M=P" ></word_134>
+</sn>
+</Cadeia_38>
+
+<Cadeia_45> 
+<sn id="4" tokens="14...16" nucleo="telescópio" sintagma="o maior telescópio" Categoria="EN_LOC/HIDRO" sentenca="1">
+<word_14 token="o" lemma="o" pos="art" features="M=S" ></word_14>
+<word_15 token="maior" lemma="maior" pos="adj" features="M=S" ></word_15>
+<word_16 token="telescópio" lemma="telescópio" pos="n" features="M=S" ></word_16>
+</sn>
+<sn id="45" tokens="160...161" nucleo="telescópio" sintagma="o telescópio" Categoria="EN_LOC/HIDRO" sentenca="9">
+<word_160 token="o" lemma="o" pos="art" features="M=S" ></word_160>
+<word_161 token="telescópio" lemma="telescópio" pos="n" features="M=S" ></word_161>
+</sn>
+</Cadeia_45>
+
+<Cadeia_49> 
+<sn id="44" tokens="158...158" nucleo="luz" sintagma="luz" Categoria="EN_LOC" sentenca="9">
+<word_158 token="luz" lemma="luz" pos="n" features="F=S" ></word_158>
+</sn>
+<sn id="49" tokens="176...176" nucleo="luz" sintagma="luz" Categoria="EN_LOC" sentenca="10">
+<word_176 token="luz" lemma="luz" pos="n" features="F=S" ></word_176>
+</sn>
+</Cadeia_49>
+
+<Cadeia_51> 
+<sn id="46" tokens="163...163" nucleo="calor" sintagma="calor" Categoria="--" sentenca="9">
+<word_163 token="calor" lemma="calor" pos="n" features="M=S" ></word_163>
+</sn>
+<sn id="51" tokens="180...180" nucleo="calor" sintagma="calor" Categoria="--" sentenca="10">
+<word_180 token="calor" lemma="calor" pos="n" features="M=S" ></word_180>
+</sn>
+</Cadeia_51>
+
+<Cadeia_56> 
+<sn id="1" tokens="4...9" nucleo="planetas" sintagma="os primeiros planetas fora do o Sistema Solar" Categoria="EN_LOC" sentenca="1">
+<word_4 token="os" lemma="o" pos="art" features="M=P" ></word_4>
+<word_5 token="primeiros" lemma="" pos="adj" features="M=P" ></word_5>
+<word_6 token="planetas" lemma="planeta" pos="n" features="M=P" ></word_6>
+<word_7 token="fora_do" lemma="" pos="prp" features="-" ></word_7>
+<word_8 token="o" lemma="o" pos="art" features="M=S" ></word_8>
+<word_9 token="Sistema_Solar" lemma="" pos="prop" features="M=S" ></word_9>
+</sn>
+<sn id="5" tokens="18...19" nucleo="mundo" sintagma="o mundo" Categoria="EN_LOC" sentenca="1">
+<word_18 token="o" lemma="o" pos="art" features="M=S" ></word_18>
+<word_19 token="mundo" lemma="mundo" pos="n" features="M=S" ></word_19>
+</sn>
+<sn id="6" tokens="21...22" nucleo="Gemini" sintagma="o Gemini" Categoria="EN_LOC" sentenca="1">
+<word_21 token="o" lemma="o" pos="art" features="M=S" ></word_21>
+<word_22 token="Gemini" lemma="" pos="prop" features="M=S" ></word_22>
+</sn>
+<sn id="12" tokens="42...43" nucleo="Universo" sintagma="o Universo" Categoria="EN_LOC" sentenca="2">
+<word_42 token="o" lemma="o" pos="art" features="M=S" ></word_42>
+<word_43 token="Universo" lemma="universo" pos="n" features="M=S" ></word_43>
+</sn>
+<sn id="25" tokens="84...90" nucleo="planeta" sintagma="O planeta mais distante até hoje fotografado" Categoria="EN_LOC" sentenca="4">
+<word_84 token="O" lemma="o" pos="art" features="M=S" ></word_84>
+<word_85 token="planeta" lemma="planeta" pos="n" features="M=S" ></word_85>
+<word_86 token="mais" lemma="mais" pos="adv" features="-" ></word_86>
+<word_87 token="distante" lemma="distante, distar" pos="adj" features="M=S" ></word_87>
+<word_88 token="até" lemma="até" pos="prp" features="-" ></word_88>
+<word_89 token="hoje" lemma="hoje" pos="adv" features="-" ></word_89>
+<word_90 token="fotografado" lemma="fotografar" pos="v-pcp" features="M=S" ></word_90>
+</sn>
+<sn id="33" tokens="113...115" nucleo="Terra" sintagma="a Terra" Categoria="EN_LOC" sentenca="6">
+<word_113 token="a" lemma="o" pos="art" features="F=S" ></word_113>
+<word_114 token="Terra" lemma="terra" pos="n" features="F=S" ></word_114>
+<word_115 token="," lemma="" pos="," features="-" ></word_115>
+</sn>
+<sn id="41" tokens="145...146" nucleo="Gemini" sintagma="o Gemini" Categoria="EN_LOC" sentenca="8">
+<word_145 token="o" lemma="o" pos="art" features="M=S" ></word_145>
+<word_146 token="Gemini" lemma="" pos="prop" features="M=S" ></word_146>
+</sn>
+<sn id="42" tokens="150...151" nucleo="planetas" sintagma=" planetas" Categoria="EN_LOC" sentenca="8">
+<word_151 token="planetas" lemma="planeta" pos="n" features="M=P" ></word_151>
+</sn>
+<sn id="50" tokens="178...178" nucleo="planetas" sintagma="planetas" Categoria="EN_LOC" sentenca="10">
+<word_178 token="planetas" lemma="planeta" pos="n" features="M=P" ></word_178>
+</sn>
+<sn id="52" tokens="182...193" nucleo="projeto" sintagma="O projeto Gemini , resultado de um consórcio de sete países" Categoria="EN_LOC" sentenca="11">
+<word_182 token="O" lemma="o" pos="art" features="M=S" ></word_182>
+<word_183 token="projeto" lemma="projeto" pos="n" features="M=S" ></word_183>
+<word_184 token="Gemini" lemma="" pos="prop" features="M=S" ></word_184>
+<word_185 token="," lemma="" pos="," features="-" ></word_185>
+<word_186 token="resultado" lemma="resultado" pos="n" features="M=S" ></word_186>
+<word_187 token="de" lemma="de" pos="prp" features="-" ></word_187>
+<word_188 token="um" lemma="um" pos="art" features="M=S" ></word_188>
+<word_189 token="consórcio" lemma="consórcio" pos="n" features="M=S" ></word_189>
+<word_190 token="de" lemma="de" pos="prp" features="-" ></word_190>
+<word_191 token="sete" lemma="sete" pos="num" features="M=P" ></word_191>
+<word_192 token="países" lemma="país" pos="n" features="M=P" ></word_192>
+<word_185 token="," lemma="" pos="," features="-" ></word_185>
+</sn>
+<sn id="79" tokens="259...259" nucleo="Gemini" sintagma="Gemini" Categoria="EN_LOC" sentenca="14">
+<word_259 token="Gemini" lemma="" pos="prop" features="M=S" ></word_259>
+</sn>
+</Cadeia_56>
+
+<Cadeia_62> 
+<sn id="13" tokens="45...46" nucleo="Grandes_Telescópios" sintagma="os Grandes Telescópios" Categoria="--" sentenca="2">
+<word_45 token="os" lemma="o" pos="art" features="M=P" ></word_45>
+<word_46 token="Grandes_Telescópios" lemma="" pos="prop" features="M=P" ></word_46>
+</sn>
+<sn id="58" tokens="198...199" nucleo="telescópios" sintagma="dois telescópios" Categoria="--" sentenca="11">
+<word_198 token="dois" lemma="dois" pos="num" features="M=P" ></word_198>
+<word_199 token="telescópios" lemma="telescópio" pos="n" features="M=P" ></word_199>
+</sn>
+<sn id="62" tokens="209...212" nucleo="telescópios" sintagma="Um dos telescópios" Categoria="--" sentenca="12">
+<word_209 token="Um" lemma="um" pos="num" features="M=S" ></word_209>
+<word_210 token="de" lemma="de" pos="prp" features="-" ></word_210>
+<word_211 token="os" lemma="o" pos="art" features="M=P" ></word_211>
+<word_212 token="telescópios" lemma="telescópio" pos="n" features="M=P" ></word_212>
+</sn>
+</Cadeia_62>
+
+<Cadeia_76> 
+<sn id="7" tokens="25...26" nucleo="ano" sintagma="o ano" Categoria="EN_MISC/UNID" sentenca="1">
+<word_25 token="o" lemma="o" pos="art" features="M=S" ></word_25>
+<word_26 token="ano" lemma="ano" pos="n" features="M=S" ></word_26>
+</sn>
+<sn id="68" tokens="231...232" nucleo="ano" sintagma="o ano" Categoria="EN_MISC/UNID" sentenca="13">
+<word_231 token="o" lemma="o" pos="art" features="M=S" ></word_231>
+<word_232 token="ano" lemma="ano" pos="n" features="M=S" ></word_232>
+</sn>
+<sn id="76" tokens="232...232" nucleo="ano" sintagma="ano" Categoria="EN_MISC/UNID" sentenca="13">
+<word_232 token="ano" lemma="ano" pos="n" features="M=S" ></word_232>
+</sn>
+</Cadeia_76>
+
+<Cadeia_77> 
+<sn id="14" tokens="52...52" nucleo="João_Steiner" sintagma="João Steiner" Categoria="EN_SER" sentenca="2">
+<word_52 token="João_Steiner" lemma="" pos="prop" features="M=S" ></word_52>
+</sn>
+<sn id="36" tokens="126...126" nucleo="Steiner" sintagma="Steiner" Categoria="EN_SER" sentenca="6">
+<word_126 token="Steiner" lemma="" pos="prop" features="M=S" ></word_126>
+</sn>
+<sn id="77" tokens="255...255" nucleo="Steiner" sintagma="Steiner" Categoria="EN_SER" sentenca="14">
+<word_255 token="Steiner" lemma="" pos="prop" features="M=S" ></word_255>
+</sn>
+</Cadeia_77>
+
+</Cadeias><Mencoes_Unicas><sn id="2" tokens="8...9" nucleo="Sistema_Solar" sintagma="o Sistema Solar" sentenca="1">
+<word_8 token="o" lemma="o" pos="art" features="M=S" ></word_8>
+<word_9 token="Sistema_Solar" lemma="" pos="prop" features="M=S" ></word_9>
+</sn>
+<sn id="8" tokens="27...27" nucleo="que" sintagma="que" sentenca="1">
+<word_27 token="que" lemma="que" pos="pron-indp" features="M=S" ></word_27>
+</sn>
+<sn id="9" tokens="30...31" nucleo="informação" sintagma="A informação" sentenca="2">
+<word_30 token="A" lemma="o" pos="art" features="F=S" ></word_30>
+<word_31 token="informação" lemma="informação, informar" pos="n" features="F=S" ></word_31>
+</sn>
+<sn id="10" tokens="35...36" nucleo="conferência" sintagma="a conferência" sentenca="2">
+<word_35 token="a" lemma="o" pos="art" features="F=S" ></word_35>
+<word_36 token="conferência" lemma="conferência" pos="n" features="F=S" ></word_36>
+</sn>
+<sn id="11" tokens="39...40" nucleo="Origem" sintagma="a Origem" sentenca="2">
+<word_39 token="a" lemma="o" pos="art" features="F=S" ></word_39>
+<word_40 token="Origem" lemma="" pos="prop" features="F=S" ></word_40>
+</sn>
+<sn id="15" tokens="54...54" nucleo="astrofísico" sintagma="astrofísico" sentenca="2">
+<word_54 token="astrofísico" lemma="astrofísico" pos="n" features="M=S" ></word_54>
+</sn>
+<sn id="16" tokens="56...57" nucleo="USP" sintagma="a USP" sentenca="2">
+<word_56 token="a" lemma="o" pos="art" features="F=S" ></word_56>
+<word_57 token="USP" lemma="" pos="prop" features="F=S" ></word_57>
+</sn>
+<sn id="17" tokens="60...61" nucleo="52ª" sintagma="a 52ª" sentenca="2">
+<word_60 token="a" lemma="o" pos="art" features="F=S" ></word_60>
+<word_61 token="52ª" lemma="" pos="n" features="F=S" ></word_61>
+</sn>
+<sn id="19" tokens="64...65" nucleo="Sociedade_Brasileira" sintagma="a Sociedade Brasileira" sentenca="2">
+<word_64 token="a" lemma="o" pos="art" features="F=S" ></word_64>
+<word_65 token="Sociedade_Brasileira" lemma="" pos="prop" features="F=S" ></word_65>
+</sn>
+<sn id="20" tokens="67...68" nucleo="Progresso_da_Ciência" sintagma="o Progresso da Ciência" sentenca="2">
+<word_67 token="o" lemma="o" pos="art" features="M=S" ></word_67>
+<word_68 token="Progresso_da_Ciência" lemma="" pos="prop" features="M=S" ></word_68>
+</sn>
+<sn id="22" tokens="75...76" nucleo="campus" sintagma="o campus" sentenca="3">
+<word_75 token="o" lemma="o" pos="art" features="M=S" ></word_75>
+<word_76 token="campus" lemma="" pos="n" features="M=S" ></word_76>
+</sn>
+<sn id="26" tokens="92...92" nucleo="Plutão" sintagma="Plutão" sentenca="4">
+<word_92 token="Plutão" lemma="Plutão" pos="prop" features="M=S" ></word_92>
+</sn>
+<sn id="27" tokens="95...103" nucleo="Imagine" sintagma="Imagine alguém de fora da nossa galáxia que" sentenca="5">
+<word_95 token="Imagine" lemma="" pos="prop" features="M=S" ></word_95>
+<word_96 token="alguém" lemma="alguém" pos="pron-indp" features="M=S" ></word_96>
+<word_97 token="de" lemma="de" pos="prp" features="-" ></word_97>
+<word_98 token="fora" lemma="fora" pos="adv" features="-" ></word_98>
+<word_99 token="de" lemma="de" pos="prp" features="-" ></word_99>
+<word_100 token="a" lemma="o" pos="art" features="F=S" ></word_100>
+<word_101 token="nossa" lemma="nosso" pos="pron-det" features="F=S" ></word_101>
+<word_102 token="galáxia" lemma="galáxia" pos="n" features="F=S" ></word_102>
+<word_103 token="que" lemma="que" pos="pron-indp" features="F=S" ></word_103>
+</sn>
+<sn id="28" tokens="96...96" nucleo="alguém" sintagma="alguém" sentenca="5">
+<word_96 token="alguém" lemma="alguém" pos="pron-indp" features="M=S" ></word_96>
+</sn>
+<sn id="29" tokens="100...102" nucleo="nossa" sintagma="a nossa galáxia" sentenca="5">
+<word_100 token="a" lemma="o" pos="art" features="F=S" ></word_100>
+<word_101 token="nossa" lemma="nosso" pos="pron-det" features="F=S" ></word_101>
+<word_102 token="galáxia" lemma="galáxia" pos="n" features="F=S" ></word_102>
+</sn>
+<sn id="30" tokens="103...103" nucleo="que" sintagma="que" sentenca="5">
+<word_103 token="que" lemma="que" pos="pron-indp" features="F=S" ></word_103>
+</sn>
+<sn id="31" tokens="106...107" nucleo="Sol" sintagma="o Sol" sentenca="5">
+<word_106 token="o" lemma="o" pos="art" features="M=S" ></word_106>
+<word_107 token="Sol" lemma="sol" pos="n" features="M=S" ></word_107>
+</sn>
+<sn id="32" tokens="109...110" nucleo="Essa" sintagma="Essa pessoa" sentenca="6">
+<word_109 token="Essa" lemma="esse" pos="pron-det" features="F=S" ></word_109>
+<word_110 token="pessoa" lemma="pessoa" pos="n" features="F=S" ></word_110>
+</sn>
+<sn id="34" tokens="116...116" nucleo="que" sintagma="que" sentenca="6">
+<word_116 token="que" lemma="que" pos="pron-indp" features="F=S" ></word_116>
+</sn>
+<sn id="35" tokens="120...122" nucleo="luminosidade" sintagma="a luminosidade solar" sentenca="6">
+<word_120 token="a" lemma="o" pos="art" features="F=S" ></word_120>
+<word_121 token="luminosidade" lemma="luminosidade, luminoso" pos="n" features="F=S" ></word_121>
+<word_122 token="solar" lemma="solar" pos="adj" features="F=S" ></word_122>
+</sn>
+<sn id="37" tokens="128...129" nucleo="mesmo" sintagma="O mesmo" sentenca="7">
+<word_128 token="O" lemma="o" pos="art" features="M=S" ></word_128>
+<word_129 token="mesmo" lemma="mesmo" pos="pron-det" features="M=S" ></word_129>
+</sn>
+<sn id="39" tokens="135...135" nucleo="que" sintagma="que" sentenca="7">
+<word_135 token="que" lemma="que" pos="pron-indp" features="M=P" ></word_135>
+</sn>
+<sn id="40" tokens="137...139" nucleo="estrelas" sintagma="estrelas muito distantes" sentenca="7">
+<word_137 token="estrelas" lemma="estrela" pos="n" features="F=P" ></word_137>
+<word_138 token="muito" lemma="muito" pos="adv" features="-" ></word_138>
+<word_139 token="distantes" lemma="distante, distar" pos="adj" features="F=P" ></word_139>
+</sn>
+<sn id="43" tokens="153...154" nucleo="Isso" sintagma="Isso porque" sentenca="9">
+<word_153 token="Isso" lemma="isso" pos="pron-indp" features="M=S" ></word_153>
+<word_154 token="porque" lemma="porque" pos="conj-s" features="-" ></word_154>
+</sn>
+<sn id="47" tokens="166...166" nucleo="meio" sintagma="meio" sentenca="9">
+<word_166 token="meio" lemma="meio" pos="n" features="M=S" ></word_166>
+</sn>
+<sn id="48" tokens="168...169" nucleo="radiação" sintagma="radiação infravermelha" sentenca="9">
+<word_168 token="radiação" lemma="radiação, radiar" pos="n" features="F=S" ></word_168>
+<word_169 token="infravermelha" lemma="infravermelho" pos="adj" features="F=S" ></word_169>
+</sn>
+<sn id="54" tokens="186...186" nucleo="resultado" sintagma="resultado" sentenca="11">
+<word_186 token="resultado" lemma="resultado" pos="n" features="M=S" ></word_186>
+</sn>
+<sn id="55" tokens="188...189" nucleo="consórcio" sintagma="um consórcio" sentenca="11">
+<word_188 token="um" lemma="um" pos="art" features="M=S" ></word_188>
+<word_189 token="consórcio" lemma="consórcio" pos="n" features="M=S" ></word_189>
+</sn>
+<sn id="57" tokens="195...207" nucleo="construção" sintagma="a construção de dois telescópios com um espelho de oito metros de diâmetro" sentenca="11">
+<word_195 token="a" lemma="o" pos="art" features="F=S" ></word_195>
+<word_196 token="construção" lemma="construção" pos="n" features="F=S" ></word_196>
+<word_197 token="de" lemma="de" pos="prp" features="-" ></word_197>
+<word_198 token="dois" lemma="dois" pos="num" features="M=P" ></word_198>
+<word_199 token="telescópios" lemma="telescópio" pos="n" features="M=P" ></word_199>
+<word_200 token="com" lemma="com" pos="prp" features="-" ></word_200>
+<word_201 token="um" lemma="um" pos="art" features="M=S" ></word_201>
+<word_202 token="espelho" lemma="espelho" pos="n" features="M=S" ></word_202>
+<word_203 token="de" lemma="de" pos="prp" features="-" ></word_203>
+<word_204 token="oito" lemma="oito" pos="num" features="M=P" ></word_204>
+<word_205 token="metros" lemma="metro" pos="n" features="M=P" ></word_205>
+<word_206 token="de" lemma="de" pos="prp" features="-" ></word_206>
+<word_207 token="diâmetro" lemma="diâmetro" pos="n" features="M=S" ></word_207>
+</sn>
+<sn id="59" tokens="201...202" nucleo="espelho" sintagma="um espelho" sentenca="11">
+<word_201 token="um" lemma="um" pos="art" features="M=S" ></word_201>
+<word_202 token="espelho" lemma="espelho" pos="n" features="M=S" ></word_202>
+</sn>
+<sn id="60" tokens="204...205" nucleo="metros" sintagma="oito metros" sentenca="11">
+<word_204 token="oito" lemma="oito" pos="num" features="M=P" ></word_204>
+<word_205 token="metros" lemma="metro" pos="n" features="M=P" ></word_205>
+</sn>
+<sn id="61" tokens="207...207" nucleo="diâmetro" sintagma="diâmetro" sentenca="11">
+<word_207 token="diâmetro" lemma="diâmetro" pos="n" features="M=S" ></word_207>
+</sn>
+<sn id="63" tokens="215...222" nucleo="funcionamento" sintagma="pronto e em funcionamento no Havaí" sentenca="12">
+<word_215 token="pronto" lemma="pronto" pos="adj" features="M=S" ></word_215>
+<word_216 token="e" lemma="e" pos="conj-c" features="-" ></word_216>
+<word_217 token="em" lemma="em" pos="prp" features="-" ></word_217>
+<word_218 token="funcionamento" lemma="funcionar" pos="n" features="M=S" ></word_218>
+<word_219 token="em" lemma="em" pos="prp" features="-" ></word_219>
+<word_220 token="o" lemma="o" pos="art" features="M=S" ></word_220>
+<word_221 token="Havaí" lemma="" pos="prop" features="M=S" ></word_221>
+<word_222 token="," lemma="" pos="," features="-" ></word_222>
+</sn>
+<sn id="64" tokens="220...221" nucleo="Havaí" sintagma="o Havaí" sentenca="12">
+<word_220 token="o" lemma="o" pos="art" features="M=S" ></word_220>
+<word_221 token="Havaí" lemma="" pos="prop" features="M=S" ></word_221>
+</sn>
+<sn id="65" tokens="223...223" nucleo="EUA" sintagma="EUA" sentenca="12">
+<word_223 token="EUA" lemma="EUA" pos="prop" features="M=P" ></word_223>
+</sn>
+<sn id="66" tokens="225...226" nucleo="outro" sintagma="O outro" sentenca="13">
+<word_225 token="O" lemma="o" pos="art" features="M=S" ></word_225>
+<word_226 token="outro" lemma="outro" pos="pron-det" features="M=S" ></word_226>
+</sn>
+<sn id="67" tokens="229...229" nucleo="operação" sintagma="operação" sentenca="13">
+<word_229 token="operação" lemma="operação, operar" pos="n" features="F=S" ></word_229>
+</sn>
+<sn id="69" tokens="233...233" nucleo="que" sintagma="que" sentenca="13">
+<word_233 token="que" lemma="que" pos="pron-indp" features="M=S" ></word_233>
+</sn>
+<sn id="70" tokens="237...237" nucleo="Atacama" sintagma="Atacama" sentenca="13">
+<word_237 token="Atacama" lemma="" pos="prop" features="M=S" ></word_237>
+</sn>
+<sn id="71" tokens="239...239" nucleo="Chile" sintagma="Chile" sentenca="13">
+<word_239 token="Chile" lemma="Chile" pos="prop" features="M=S" ></word_239>
+</sn>
+<sn id="72" tokens="242...243" nucleo="Brasil" sintagma="o Brasil" sentenca="13">
+<word_242 token="o" lemma="o" pos="art" features="M=S" ></word_242>
+<word_243 token="Brasil" lemma="Brasil" pos="prop" features="M=S" ></word_243>
+</sn>
+<sn id="73" tokens="245...246" nucleo="direito" sintagma="direito a" sentenca="13">
+<word_245 token="direito" lemma="direito" pos="n" features="M=S" ></word_245>
+<word_246 token="a" lemma="a" pos="prp" features="-" ></word_246>
+</sn>
+<sn id="74" tokens="248...248" nucleo="-lo" sintagma="-lo" sentenca="13">
+<word_248 token="-lo" lemma="" pos="pron-pers" features="-" ></word_248>
+</sn>
+<sn id="78" tokens="257...259" nucleo="telescópios" sintagma="os telescópios Gemini" sentenca="14">
+<word_257 token="os" lemma="o" pos="art" features="M=P" ></word_257>
+<word_258 token="telescópios" lemma="telescópio" pos="n" features="M=P" ></word_258>
+<word_259 token="Gemini" lemma="" pos="prop" features="M=S" ></word_259>
+</sn>
+<sn id="80" tokens="261...277" nucleo="capacidade" sintagma="capacidade científica de observação e qualidade de imagem dez vezes superiores às de um telescópio espacial" sentenca="14">
+<word_261 token="capacidade" lemma="capacidade, capaz" pos="n" features="F=S" ></word_261>
+<word_262 token="científica" lemma="científico" pos="adj" features="F=S" ></word_262>
+<word_263 token="de" lemma="de" pos="prp" features="-" ></word_263>
+<word_264 token="observação" lemma="observação, observar" pos="n" features="F=S" ></word_264>
+<word_265 token="e" lemma="e" pos="conj-c" features="-" ></word_265>
+<word_266 token="qualidade" lemma="qualidade" pos="n" features="F=S" ></word_266>
+<word_267 token="de" lemma="de" pos="prp" features="-" ></word_267>
+<word_268 token="imagem" lemma="imagem" pos="n" features="F=S" ></word_268>
+<word_269 token="dez" lemma="dez" pos="num" features="F=P" ></word_269>
+<word_270 token="vezes" lemma="vez" pos="n" features="F=P" ></word_270>
+<word_271 token="superiores" lemma="superior" pos="adj" features="F=P" ></word_271>
+<word_272 token="a" lemma="a" pos="prp" features="-" ></word_272>
+<word_273 token="as" lemma="o" pos="art" features="F=P" ></word_273>
+<word_274 token="de" lemma="de" pos="prp" features="-" ></word_274>
+<word_275 token="um" lemma="um" pos="art" features="M=S" ></word_275>
+<word_276 token="telescópio" lemma="telescópio" pos="n" features="M=S" ></word_276>
+<word_277 token="espacial" lemma="espacial" pos="adj" features="M=S" ></word_277>
+</sn>
+<sn id="81" tokens="264...264" nucleo="observação" sintagma="observação" sentenca="14">
+<word_264 token="observação" lemma="observação, observar" pos="n" features="F=S" ></word_264>
+</sn>
+<sn id="82" tokens="266...266" nucleo="qualidade" sintagma="qualidade" sentenca="14">
+<word_266 token="qualidade" lemma="qualidade" pos="n" features="F=S" ></word_266>
+</sn>
+<sn id="83" tokens="268...268" nucleo="imagem" sintagma="imagem" sentenca="14">
+<word_268 token="imagem" lemma="imagem" pos="n" features="F=S" ></word_268>
+</sn>
+<sn id="84" tokens="269...271" nucleo="vezes" sintagma="dez vezes superiores" sentenca="14">
+<word_269 token="dez" lemma="dez" pos="num" features="F=P" ></word_269>
+<word_270 token="vezes" lemma="vez" pos="n" features="F=P" ></word_270>
+<word_271 token="superiores" lemma="superior" pos="adj" features="F=P" ></word_271>
+</sn>
+<sn id="85" tokens="275...277" nucleo="telescópio" sintagma="um telescópio espacial" sentenca="14">
+<word_275 token="um" lemma="um" pos="art" features="M=S" ></word_275>
+<word_276 token="telescópio" lemma="telescópio" pos="n" features="M=S" ></word_276>
+<word_277 token="espacial" lemma="espacial" pos="adj" features="M=S" ></word_277>
+</sn>
+</Mencoes_Unicas>
+</CIENCIA_2000_6380.txt>

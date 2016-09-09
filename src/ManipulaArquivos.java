@@ -11,27 +11,7 @@ import java.util.ArrayList;
 
 public class ManipulaArquivos {
 
-	public ArrayList<Sintagma> lerSintagmas(String file) {
-		try {
-			ObjectInputStream lerArquivo = new ObjectInputStream(new FileInputStream(file));
-			ArrayList<Sintagma> lista = (ArrayList<Sintagma>) lerArquivo.readObject();
-			lerArquivo.close();
-			return lista;
-		} catch (IOException | ClassNotFoundException e) {
-			System.out.println("Não foi possível ler o arquivo!");
-			return null;
-		}
-	}
-	
-	public void salvarSintagmas(ArrayList<Sintagma> lista, File file) {
-		try {
-			ObjectOutputStream salvarArquivo = new ObjectOutputStream(new FileOutputStream(file));
-			salvarArquivo.writeObject(lista);
-			salvarArquivo.close();
-		} catch (IOException e) {
-			System.out.println("Não foi possível salvar o arquivo!");
-		}
-	}
+
 
 	public String lerTexto(String path) {
 		String texto = "";

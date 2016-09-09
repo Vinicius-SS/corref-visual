@@ -17,6 +17,7 @@ import java.util.List;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.HashMap;
+import java.util.Iterator;
 import java.util.Random;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -29,6 +30,9 @@ import javax.swing.plaf.basic.BasicComboPopup;
 import javax.swing.text.*;
 import model.Grupo;
 import model.Sintagma;
+import org.jdom2.input.SAXBuilder;
+import org.jdom2.Document;
+import org.jdom2.JDOMException;
 
 public class MainPanel extends JPanel
 {
@@ -87,18 +91,6 @@ public class MainPanel extends JPanel
         gerarCores(10);
 
         leitor = Class.forName("Acesso");
-        Method getText = leitor.getMethod("getText", new Class[]
-        {
-            String.class
-        });
-        Method getSintagmas = leitor.getMethod("getSintagmas", new Class[]
-        {
-            String.class
-        });
-        Method lerSentencas = leitor.getMethod("lerSentencas", new Class[]
-        {
-            String.class
-        });
 
         upPanel = createHorizontalBoxPanel(150, 100);
         upPanel.add(jMenuBarMain);
@@ -188,41 +180,98 @@ public class MainPanel extends JPanel
             @Override
             public void actionPerformed(java.awt.event.ActionEvent evt)
             {
-                jMenuImportarActionPerformed(evt);
-            }
 
-            private void jMenuImportarActionPerformed(ActionEvent evt)
-            {
-                JFileChooser chooser = new JFileChooser();
-                chooser.setCurrentDirectory(new File("/home/pln/Downloads/summit-correfvisual/texts"));
-                chooser.showOpenDialog(null);
-                File f = chooser.getSelectedFile();
-                File fParent = f.getParentFile().getParentFile();
-                File fSent = new File(fParent + "/sentences/" + f.getName() + ".dat");
-                File fBin = new File(fParent + "/binaries/" + f.getName() + ".dat");
-                if (!fSent.exists() || !fBin.exists() || !f.exists())
-                {
-                    JOptionPane.showMessageDialog(null, "O arquivo " + f.getName() + ".dat não existe!");
-                    return;
-                }
-                try
-                {
-                    String arquivoSentenca = fSent.getAbsolutePath();
-                    String arquivoTexto = f.getAbsolutePath();
-                    String arquivoBinario = fBin.getAbsolutePath();
-
-                    botao.setEnabled(true);
-
-                    String textoLido = (String) getText.invoke(leitor.newInstance(), arquivoTexto);
-                    sentencas = (ArrayList<String>) lerSentencas.invoke(leitor.newInstance(), arquivoSentenca);
-                    listaSintagma = (ArrayList<Sintagma>) getSintagmas.invoke(leitor.newInstance(), arquivoBinario);
-                    listaOriginal = new ArrayList<>();
-
-                    setTexto(textoLido);
+                {//faxina tudo antes de importar o próximo texto
+                    cont.removeAll();
+                    //listaOriginal.clear(); //acredito que tenha que limpar isso aqui tb
+                    rightGroupPanel.removeAll();
                     fachada.getGrupos().clear();
                     fachada.getGrupoSolitario().getListaSintagmas().clear();
                     maiorSet = -1;
-
+                }
+                try
+                {
+                    JFileChooser chooser = new JFileChooser();
+                    chooser.setCurrentDirectory(new File("XMLs"));
+                    chooser.showOpenDialog(null);
+                    File xml = chooser.getSelectedFile();
+                    botao.setEnabled(true);
+                    Document document = new SAXBuilder().build(xml);
+                    String texto = document.getRootElement().getChildren().get(0).getAttributeValue("conteudo");
+                    ArrayList<Sintagma> listaSintagma = new ArrayList<>();
+                    List<org.jdom2.Element> cadeias = document.getRootElement().getChildren().get(2).getChildren();                  
+                    List<org.jdom2.Element> mencoes_unicas = document.getRootElement().getChildren().get(3).getChildren();
+                    
+                    for(org.jdom2.Element mencao_unica : mencoes_unicas)
+                    {
+                        //para cada sintagma
+                            //cria as words
+                            boolean prop = false;
+                            boolean featured = false;
+                            String genero = "";
+                            String numero = "";
+                            ArrayList<model.Word> words = new ArrayList<>();
+                            for (org.jdom2.Element word : mencao_unica.getChildren())
+                            {
+                                model.Word w = new model.Word(word.getAttributeValue("token"),
+                                        word.getAttributeValue("pos"), word.getAttributeValue("features"),
+                                        word.getAttributeValue("lemma"), Integer.parseInt(mencao_unica.getAttributeValue("sentenca")));
+                                words.add(w);
+                                if (w.pos.equals("prop"))
+                                    prop = true;
+                                if (!featured && w.morfo.contains("="))
+                                {
+                                    String[] morfos = w.morfo.split("=");
+                                    genero = morfos[0];
+                                    numero = morfos[1];
+                                    featured = true;
+                                }
+                            }
+                            //cria o sintagma
+                            Sintagma s = new Sintagma(document.getRootElement().getName(), mencao_unica.getAttributeValue("sintagma"),
+                                    Integer.parseInt(mencao_unica.getAttributeValue("sentenca")), words,
+                                    Integer.parseInt(mencao_unica.getAttributeValue("id")), Integer.parseInt(mencao_unica.getAttributeValue("id")),
+                                    mencao_unica.getAttributeValue("nucleo"), mencao_unica.getAttributeValue("lemma"), prop,
+                                    genero, numero, false, "", false, new ArrayList<>(), new Integer(0), "");
+                            listaSintagma.add(s);
+                            System.out.println();
+                    }
+                                           
+                    for (org.jdom2.Element cadeia : cadeias)//para cada cadeia
+                        for (org.jdom2.Element sintagma : cadeia.getChildren())
+                        {//para cada sintagma
+                            //cria as words
+                            boolean prop = false;
+                            boolean featured = false;
+                            String genero = "";
+                            String numero = "";
+                            ArrayList<model.Word> words = new ArrayList<>();
+                            for (org.jdom2.Element word : sintagma.getChildren())
+                            {
+                                model.Word w = new model.Word(word.getAttributeValue("token"),
+                                        word.getAttributeValue("pos"), word.getAttributeValue("features"),
+                                        word.getAttributeValue("lemma"), Integer.parseInt(sintagma.getAttributeValue("sentenca")));
+                                words.add(w);
+                                if (w.pos.equals("prop"))
+                                    prop = true;
+                                if (!featured && w.morfo.contains("="))
+                                {
+                                    String[] morfos = w.morfo.split("=");
+                                    genero = morfos[0];
+                                    numero = morfos[1];
+                                    featured = true;
+                                }
+                            }
+                            //cria o sintagma
+                            Sintagma s = new Sintagma(document.getRootElement().getName(), sintagma.getAttributeValue("sintagma"),
+                                    Integer.parseInt(sintagma.getAttributeValue("sentenca")), words,
+                                    Integer.parseInt(cadeia.getName().split("_")[1]), Integer.parseInt(sintagma.getAttributeValue("id")),
+                                    sintagma.getAttributeValue("nucleo"), sintagma.getAttributeValue("lemma"), prop,
+                                    genero, numero, false, "", false, new ArrayList<>(), new Integer(0), "");
+                            listaSintagma.add(s);
+                            System.out.println();
+                        }
+                    setTexto(texto);
                     for (Sintagma s : listaSintagma)
                     {
                         //System.out.println(s.sn+" : ");
@@ -238,14 +287,14 @@ public class MainPanel extends JPanel
                     fachada.organizaGrupos();
                     fachada.ordenaPorQtdFilhos();
 
+                    //guarda os originais antes de qualquer alteração
+                    listaOriginal = new ArrayList<>();
                     for (Sintagma s : listaSintagma)
-                        listaOriginal.add(new Sintagma(s.textName, s.sn, s.sentenca, s.words, s.set, s.snID, s.nucleo, s.lemma, s.prop, s.genero, s.numero, s.nucleoPronome, s.groupedBy, s.shallow, s.paiDe, s.filhoDe,s.categoriaSemantica));
+                        listaOriginal.add(s);
 
-                    cont.removeAll();
-                    rightGroupPanel.removeAll();
                     jListSnSolitarios = makeList(h, fachada.getGrupoSolitario().getListaSintagmas());
                     rightGroupPanel.add(createPanelForComponent(new JScrollPane(jListSnSolitarios), ""));
-                    jListSnSolitarios.setSelectionModel(new DefaultListSelectionModel()
+                  jListSnSolitarios.setSelectionModel(new DefaultListSelectionModel()
                     {
                         @Override
                         public void setSelectionInterval(int start, int end)
@@ -358,13 +407,20 @@ public class MainPanel extends JPanel
                             jp.setForeground(colors.get(colors.size() - 1));
                             jp.setBackground(colors.get(colors.size() - 1));
                         }
-
-                } catch (SecurityException | IllegalAccessException | IllegalArgumentException | InvocationTargetException | InstantiationException ex)
+//
+//                } catch (SecurityException | IllegalAccessException | IllegalArgumentException | InvocationTargetException | InstantiationException ex)
+//                {
+//                    Logger.getLogger(MainPanel.class.getName()).log(Level.SEVERE, null, ex);
+//                }
+//                splitAllPane.revalidate();
+//                splitAllPane.repaint();
+                } catch (JDOMException ex)
+                {
+                    Logger.getLogger(MainPanel.class.getName()).log(Level.SEVERE, null, ex);
+                } catch (IOException ex)
                 {
                     Logger.getLogger(MainPanel.class.getName()).log(Level.SEVERE, null, ex);
                 }
-                splitAllPane.revalidate();
-                splitAllPane.repaint();
             }
 
         });
@@ -738,15 +794,15 @@ public class MainPanel extends JPanel
                 Color newColor = null;
                 for (Object obj : modelToArray)
                 {//descobre a cor dos sintagmas;
-                    sints.add((model.Sintagma) obj);
-                    if (!foundColor && ((model.Sintagma) obj).cor != oldColor)
+                    sints.add((Sintagma) obj);
+                    if (!foundColor && ((Sintagma) obj).cor != oldColor)
                     {
-                        newColor = ((model.Sintagma) obj).cor;
-                        if (((model.Sintagma) obj).cor != null)
+                        newColor = ((Sintagma) obj).cor;
+                        if (((Sintagma) obj).cor != null)
                             foundColor = true;
                     }
                 }
-                ordenador = (model.Sintagma s1, model.Sintagma s2) -> new Integer(s1.snID).compareTo(s2.snID);
+                ordenador = (Sintagma s1, Sintagma s2) -> new Integer(s1.snID).compareTo(s2.snID);
                 Collections.sort(sints, ordenador);
                 listModel.clear();
                 /*se newColor tiver chegado até aqui null, tem alguma coisa
@@ -757,7 +813,7 @@ public class MainPanel extends JPanel
                 if (newColor == null)
                     newColor
                             = new Color(cores.nextInt(256), cores.nextInt(256), cores.nextInt(256));
-                for (model.Sintagma sint : sints)
+                for (Sintagma sint : sints)
                 {//arruma as cores
                     sint.cor = newColor;
                     listModel.addElement(sint);

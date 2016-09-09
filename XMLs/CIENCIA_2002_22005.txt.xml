@@ -1,0 +1,1350 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<CIENCIA_2002_22005.txt>
+
+<Texto conteudo="Eles não acharam nenhum tesouro de pirata, nem esmeraldas, rubis ou moedas de ouro e prata. Acharam vários pedaços de madeira e cordas apodrecendo, alguns em melhor estado. Mas a equipe internacional de arqueólogos subaquáticos, incluindo brasileiros, que trabalhou na foz do rio Arade, no sul de Portugal, já pôde pelo menos sepultar um mito _o de que ali haveria um navio viking naufragado.
+Os brasileiros _Gilson Rambelli, Paulo Bava de Camargo e Flávio Rizzi, pesquisadores do Museu de Arqueologia e Etnologia (MAE) da USP_ acharam mesmo restos de um ou dois navios antigos, possivelmente portugueses dos século 15 ou 16, da chamada tradição ibero-atlântica.
+Eles encontraram uma quilha (a espinha dorsal de uma embarcação) com quase quatro metros de comprimento, e a ponta de uma caverna, peça encaixada transversalmente à quilha que forma o esqueleto do navio.
+Mesmo sem confirmar o relato histórico feito por um cronista árabe, no ano de 996, de que navios vikings teriam afundado a caminho de atacar a cidade de Silves, os arqueólogos puderam encontrar um tesouro de outro tipo: a riqueza de artefatos de várias origens ali depositados pelas sucessivas levas de ocupantes do território português.
+&quot;O rio Arade foi a principal rota de acesso a Silves desde a implantação dos estabelecimentos fenícios no Algarve&quot;, escrevem os três brasileiros em artigo a ser publicado na revista do MAE.
+Segundo os arqueólogos, &quot;durante a escavação foram encontrados inúmeros fragmentos, principalmente cerâmicos, que vão desde ânforas romanas até utensílios inteiros do século 16, passando pela cerâmica árabe&quot;.
+Entre as peças mais bem preservadas está um raro cadernal, uma caixa achatada de madeira com duas fendas, em cada uma das quais há uma roldana móvel. O cadernal poderia fazer parte do sistema de cabos (cordas) que sustentaria um dos mastros.
+A escavação deste ano, realizada em julho e agosto, foi organizada pelo Centro Nacional de Arqueologia Náutica e Subaquática do Instituto Português de Arqueologia. Participaram arqueólogos e estudantes de oito países.
+A coordenação foi do arqueólogo português Francisco Alves, um dos pioneiros na área em Portugal e responsável pelos trabalhos no galeão Nossa Senhora dos Mártires, cujos achados foram a atração central do pavilhão de Portugal na exposição internacional de Lisboa em 1998, a Expo-98.
+Rambelli, que coordenou a participação brasileira, está lançando nesta semana o livro &quot;Arqueologia Até Debaixo D&apos;Água&quot; (Editora Maranta, São Paulo, 2002). O livro é o primeiro no país a descrever esse aspecto da arqueologia, em geral associado negativamente com a &quot;caça a tesouros&quot;.
+Rambelli mostra como o principal objetivo da arqueologia, tanto em cima como embaixo d&apos;água, é a busca de conhecimento, não de suvenires. O livro também busca conscientizar os mergulhadores sobre o patrimônio subaquático.
+" ></Texto>
+
+<Tokens> 
+<word_0 token="Eles" lemma="ele" pos="pron-pers" features="M=3P=NOM" ></word_0>
+<word_1 token="não" lemma="não" pos="adv" features="-" ></word_1>
+<word_2 token="acharam" lemma="achar" pos="v-fin" features="MQP=3P=IND" ></word_2>
+<word_3 token="nenhum" lemma="nenhum" pos="pron-det" features="M=S" ></word_3>
+<word_4 token="tesouro" lemma="tesouro" pos="n" features="M=S" ></word_4>
+<word_5 token="de" lemma="de" pos="prp" features="-" ></word_5>
+<word_6 token="pirata" lemma="pirata" pos="n" features="M=S" ></word_6>
+<word_7 token="," lemma="" pos="," features="-" ></word_7>
+<word_8 token="nem" lemma="nem" pos="conj-c" features="-" ></word_8>
+<word_9 token="esmeraldas" lemma="esmeralda" pos="n" features="F=P" ></word_9>
+<word_10 token="," lemma="" pos="," features="-" ></word_10>
+<word_11 token="rubis" lemma="" pos="n" features="M=P" ></word_11>
+<word_12 token="ou" lemma="ou" pos="conj-c" features="-" ></word_12>
+<word_13 token="moedas" lemma="moeda" pos="n" features="F=P" ></word_13>
+<word_14 token="de" lemma="de" pos="prp" features="-" ></word_14>
+<word_15 token="ouro" lemma="ouro" pos="n" features="M=S" ></word_15>
+<word_16 token="e" lemma="e" pos="conj-c" features="-" ></word_16>
+<word_17 token="prata" lemma="prata" pos="n" features="F=S" ></word_17>
+<word_18 token="." lemma="." pos="." features="-" ></word_18>
+<word_19 token="Acharam" lemma="achar" pos="v-fin" features="MQP=3P=IND" ></word_19>
+<word_20 token="vários" lemma="" pos="pron-det" features="M=P" ></word_20>
+<word_21 token="pedaços" lemma="pedaço" pos="n" features="M=P" ></word_21>
+<word_22 token="de" lemma="de" pos="prp" features="-" ></word_22>
+<word_23 token="madeira" lemma="madeira" pos="n" features="F=S" ></word_23>
+<word_24 token="e" lemma="e" pos="conj-c" features="-" ></word_24>
+<word_25 token="cordas" lemma="corda" pos="n" features="F=P" ></word_25>
+<word_26 token="apodrecendo" lemma="apodrecer" pos="v-ger" features="-" ></word_26>
+<word_27 token="," lemma="" pos="," features="-" ></word_27>
+<word_28 token="alguns" lemma="algum" pos="pron-det" features="M=P" ></word_28>
+<word_29 token="em" lemma="em" pos="prp" features="-" ></word_29>
+<word_30 token="melhor" lemma="melhor" pos="adj" features="M=S" ></word_30>
+<word_31 token="estado" lemma="estado" pos="n" features="M=S" ></word_31>
+<word_32 token="." lemma="." pos="." features="-" ></word_32>
+<word_33 token="Mas" lemma="mas" pos="conj-c" features="-" ></word_33>
+<word_34 token="a" lemma="o" pos="art" features="F=S" ></word_34>
+<word_35 token="equipe" lemma="" pos="n" features="F=S" ></word_35>
+<word_36 token="internacional" lemma="internacional" pos="adj" features="F=S" ></word_36>
+<word_37 token="de" lemma="de" pos="prp" features="-" ></word_37>
+<word_38 token="arqueólogos" lemma="arqueologia" pos="n" features="M=P" ></word_38>
+<word_39 token="subaquáticos" lemma="subaquático, aquático" pos="adj" features="M=P" ></word_39>
+<word_40 token="," lemma="" pos="," features="-" ></word_40>
+<word_41 token="incluindo" lemma="incluir" pos="v-ger" features="-" ></word_41>
+<word_42 token="brasileiros" lemma="brasileiro" pos="n" features="M=P" ></word_42>
+<word_43 token="," lemma="" pos="," features="-" ></word_43>
+<word_44 token="que" lemma="que" pos="pron-indp" features="M=S" ></word_44>
+<word_45 token="trabalhou" lemma="trabalhar" pos="v-fin" features="PS=3S=IND" ></word_45>
+<word_46 token="em" lemma="em" pos="prp" features="-" ></word_46>
+<word_47 token="a" lemma="o" pos="art" features="F=S" ></word_47>
+<word_48 token="foz" lemma="foz" pos="n" features="F=S" ></word_48>
+<word_49 token="de" lemma="de" pos="prp" features="-" ></word_49>
+<word_50 token="o" lemma="o" pos="art" features="M=S" ></word_50>
+<word_51 token="rio" lemma="rio" pos="n" features="M=S" ></word_51>
+<word_52 token="Arade" lemma="" pos="prop" features="M=S" ></word_52>
+<word_53 token="," lemma="" pos="," features="-" ></word_53>
+<word_54 token="em" lemma="em" pos="prp" features="-" ></word_54>
+<word_55 token="o" lemma="o" pos="art" features="M=S" ></word_55>
+<word_56 token="sul" lemma="sul" pos="n" features="M=S" ></word_56>
+<word_57 token="de" lemma="de" pos="prp" features="-" ></word_57>
+<word_58 token="Portugal" lemma="Portugal" pos="prop" features="M=S" ></word_58>
+<word_59 token="," lemma="" pos="," features="-" ></word_59>
+<word_60 token="já" lemma="já" pos="adv" features="-" ></word_60>
+<word_61 token="pôde" lemma="poder" pos="v-fin" features="PS=3S=IND" ></word_61>
+<word_62 token="por" lemma="por" pos="prp" features="-" ></word_62>
+<word_63 token="o" lemma="o" pos="art" features="M=S" ></word_63>
+<word_64 token="menos" lemma="menos" pos="pron-det" features="M=S" ></word_64>
+<word_65 token="sepultar" lemma="sepultar" pos="v-inf" features="-" ></word_65>
+<word_66 token="um" lemma="um" pos="num" features="M=S" ></word_66>
+<word_67 token="mito" lemma="mito" pos="n" features="M=S" ></word_67>
+<word_68 token="o" lemma="o" pos="art" features="M=S" ></word_68>
+<word_69 token="de" lemma="de" pos="prp" features="-" ></word_69>
+<word_70 token="que" lemma="que" pos="pron-indp" features="M=S" ></word_70>
+<word_71 token="ali" lemma="ali" pos="adv" features="-" ></word_71>
+<word_72 token="haveria" lemma="haver" pos="v-fin" features="COND=3S" ></word_72>
+<word_73 token="um" lemma="um" pos="art" features="M=S" ></word_73>
+<word_74 token="navio" lemma="navio" pos="n" features="M=S" ></word_74>
+<word_75 token="viking" lemma="viking" pos="adj" features="M=S" ></word_75>
+<word_76 token="naufragado" lemma="naufragar" pos="v-pcp" features="M=S" ></word_76>
+<word_77 token="." lemma="." pos="." features="-" ></word_77>
+<word_78 token="Os" lemma="o" pos="art" features="M=P" ></word_78>
+<word_79 token="brasileiros" lemma="brasileiro" pos="n" features="M=P" ></word_79>
+<word_80 token="Gilson_Rambelli" lemma="" pos="prop" features="M=S" ></word_80>
+<word_81 token="," lemma="" pos="," features="-" ></word_81>
+<word_82 token="Paulo_Bava_de_Camargo" lemma="" pos="prop" features="M=S" ></word_82>
+<word_83 token="e" lemma="e" pos="conj-c" features="-" ></word_83>
+<word_84 token="Flávio_Rizzi" lemma="" pos="prop" features="M=S" ></word_84>
+<word_85 token="," lemma="" pos="," features="-" ></word_85>
+<word_86 token="pesquisadores" lemma="pesquisar" pos="n" features="M=P" ></word_86>
+<word_87 token="de" lemma="de" pos="prp" features="-" ></word_87>
+<word_88 token="o" lemma="o" pos="art" features="M=S" ></word_88>
+<word_89 token="Museu" lemma="museu" pos="n" features="M=S" ></word_89>
+<word_90 token="de" lemma="de" pos="prp" features="-" ></word_90>
+<word_91 token="Arqueologia" lemma="arqueologia" pos="n" features="F=S" ></word_91>
+<word_92 token="e" lemma="e" pos="conj-c" features="-" ></word_92>
+<word_93 token="Etnologia" lemma="etnologia" pos="n" features="F=S" ></word_93>
+<word_94 token="(" lemma="(" pos="(" features="-" ></word_94>
+<word_95 token="MAE)" lemma="" pos="prop" features="M=S" ></word_95>
+<word_96 token="de" lemma="de" pos="prp" features="-" ></word_96>
+<word_97 token="a" lemma="o" pos="art" features="F=S" ></word_97>
+<word_98 token="USP" lemma="" pos="prop" features="F=S" ></word_98>
+<word_99 token="acharam" lemma="achar" pos="v-fin" features="MQP=3P=IND" ></word_99>
+<word_100 token="mesmo" lemma="mesmo" pos="pron-det" features="M=S" ></word_100>
+<word_101 token="restos" lemma="resto" pos="n" features="M=P" ></word_101>
+<word_102 token="de" lemma="de" pos="prp" features="-" ></word_102>
+<word_103 token="um" lemma="um" pos="art" features="M=S" ></word_103>
+<word_104 token="ou" lemma="ou" pos="conj-c" features="-" ></word_104>
+<word_105 token="dois" lemma="dois" pos="num" features="M=P" ></word_105>
+<word_106 token="navios" lemma="navio" pos="n" features="M=P" ></word_106>
+<word_107 token="antigos" lemma="antigo" pos="adj" features="M=P" ></word_107>
+<word_108 token="," lemma="" pos="," features="-" ></word_108>
+<word_109 token="possivelmente" lemma="possível" pos="adv" features="-" ></word_109>
+<word_110 token="portugueses" lemma="português" pos="n-adj" features="M=P" ></word_110>
+<word_111 token="de" lemma="de" pos="prp" features="-" ></word_111>
+<word_112 token="os" lemma="o" pos="art" features="M=P" ></word_112>
+<word_113 token="século" lemma="século" pos="n" features="M=S" ></word_113>
+<word_114 token="15" lemma="" pos="num" features="M=P" ></word_114>
+<word_115 token="ou" lemma="ou" pos="conj-c" features="-" ></word_115>
+<word_116 token="16" lemma="" pos="num" features="M=P" ></word_116>
+<word_117 token="," lemma="" pos="," features="-" ></word_117>
+<word_118 token="de" lemma="de" pos="prp" features="-" ></word_118>
+<word_119 token="a" lemma="o" pos="art" features="F=S" ></word_119>
+<word_120 token="chamada" lemma="" pos="adj" features="F=S" ></word_120>
+<word_121 token="tradição" lemma="tradição" pos="n" features="F=S" ></word_121>
+<word_122 token="ibero-atlântica" lemma="" pos="n" features="F=S" ></word_122>
+<word_123 token="." lemma="." pos="." features="-" ></word_123>
+<word_124 token="Eles" lemma="ele" pos="pron-pers" features="M=3P=NOM" ></word_124>
+<word_125 token="encontraram" lemma="encontrar" pos="v-fin" features="PS=3P=IND" ></word_125>
+<word_126 token="uma" lemma="um" pos="art" features="F=S" ></word_126>
+<word_127 token="quilha" lemma="quilha" pos="n" features="F=S" ></word_127>
+<word_128 token="(" lemma="(" pos="(" features="-" ></word_128>
+<word_129 token="a" lemma="o" pos="art" features="F=S" ></word_129>
+<word_130 token="espinha" lemma="espinha" pos="n" features="F=S" ></word_130>
+<word_131 token="dorsal" lemma="dorsal" pos="adj" features="F=S" ></word_131>
+<word_132 token="de" lemma="de" pos="prp" features="-" ></word_132>
+<word_133 token="uma" lemma="um" pos="art" features="F=S" ></word_133>
+<word_134 token="embarcação" lemma="embarcação, embarcar" pos="n" features="F=S" ></word_134>
+<word_135 token=")" lemma=")" pos=")" features="-" ></word_135>
+<word_136 token="com" lemma="com" pos="prp" features="-" ></word_136>
+<word_137 token="quase" lemma="quase" pos="adv" features="-" ></word_137>
+<word_138 token="quatro" lemma="quatro" pos="num" features="M=P" ></word_138>
+<word_139 token="metros" lemma="metro" pos="n" features="M=P" ></word_139>
+<word_140 token="de" lemma="de" pos="prp" features="-" ></word_140>
+<word_141 token="comprimento" lemma="comprimento" pos="n" features="M=S" ></word_141>
+<word_142 token="," lemma="" pos="," features="-" ></word_142>
+<word_143 token="e" lemma="e" pos="conj-c" features="-" ></word_143>
+<word_144 token="a" lemma="o" pos="art" features="F=S" ></word_144>
+<word_145 token="ponta" lemma="ponta" pos="n" features="F=S" ></word_145>
+<word_146 token="de" lemma="de" pos="prp" features="-" ></word_146>
+<word_147 token="uma" lemma="um" pos="art" features="F=S" ></word_147>
+<word_148 token="caverna" lemma="caverna" pos="n" features="F=S" ></word_148>
+<word_149 token="," lemma="" pos="," features="-" ></word_149>
+<word_150 token="peça" lemma="peça" pos="n" features="F=S" ></word_150>
+<word_151 token="encaixada" lemma="encaixar" pos="v-pcp" features="F=S" ></word_151>
+<word_152 token="transversalmente" lemma="transversal" pos="adv" features="-" ></word_152>
+<word_153 token="a" lemma="a" pos="prp" features="-" ></word_153>
+<word_154 token="a" lemma="o" pos="art" features="F=S" ></word_154>
+<word_155 token="quilha" lemma="quilha" pos="n" features="F=S" ></word_155>
+<word_156 token="que" lemma="que" pos="pron-indp" features="F=S" ></word_156>
+<word_157 token="forma" lemma="formar" pos="v-fin" features="PR=3S=IND" ></word_157>
+<word_158 token="o" lemma="o" pos="art" features="M=S" ></word_158>
+<word_159 token="esqueleto" lemma="esqueleto" pos="n" features="M=S" ></word_159>
+<word_160 token="de" lemma="de" pos="prp" features="-" ></word_160>
+<word_161 token="o" lemma="o" pos="art" features="M=S" ></word_161>
+<word_162 token="navio" lemma="navio" pos="n" features="M=S" ></word_162>
+<word_163 token="." lemma="." pos="." features="-" ></word_163>
+<word_164 token="Mesmo" lemma="mesmo" pos="adv" features="-" ></word_164>
+<word_165 token="sem" lemma="sem" pos="prp" features="-" ></word_165>
+<word_166 token="confirmar" lemma="confirmar" pos="v-inf" features="-" ></word_166>
+<word_167 token="o" lemma="o" pos="art" features="M=S" ></word_167>
+<word_168 token="relato" lemma="relato" pos="n" features="M=S" ></word_168>
+<word_169 token="histórico" lemma="histórico" pos="adj" features="M=S" ></word_169>
+<word_170 token="feito" lemma="fazer" pos="v-pcp" features="M=S" ></word_170>
+<word_171 token="por" lemma="por" pos="prp" features="-" ></word_171>
+<word_172 token="um" lemma="um" pos="art" features="M=S" ></word_172>
+<word_173 token="cronista" lemma="cronista" pos="n" features="M=S" ></word_173>
+<word_174 token="árabe" lemma="árabe" pos="adj" features="M=S" ></word_174>
+<word_175 token="," lemma="" pos="," features="-" ></word_175>
+<word_176 token="em" lemma="em" pos="prp" features="-" ></word_176>
+<word_177 token="o" lemma="o" pos="art" features="M=S" ></word_177>
+<word_178 token="ano" lemma="ano" pos="n" features="M=S" ></word_178>
+<word_179 token="de" lemma="de" pos="prp" features="-" ></word_179>
+<word_180 token="996" lemma="" pos="num" features="M=P" ></word_180>
+<word_181 token="," lemma="" pos="," features="-" ></word_181>
+<word_182 token="de" lemma="de" pos="prp" features="-" ></word_182>
+<word_183 token="que" lemma="que" pos="conj-s" features="-" ></word_183>
+<word_184 token="navios" lemma="navio" pos="n" features="M=P" ></word_184>
+<word_185 token="vikings" lemma="viking" pos="adj" features="M=P" ></word_185>
+<word_186 token="teriam" lemma="ter" pos="v-fin" features="COND=3P" ></word_186>
+<word_187 token="afundado" lemma="afundar" pos="v-pcp" features="M=S" ></word_187>
+<word_188 token="a" lemma="a" pos="prp" features="-" ></word_188>
+<word_189 token="caminho" lemma="caminho" pos="n" features="M=S" ></word_189>
+<word_190 token="de" lemma="de" pos="prp" features="-" ></word_190>
+<word_191 token="atacar" lemma="atacar" pos="v-inf" features="-" ></word_191>
+<word_192 token="a" lemma="o" pos="art" features="F=S" ></word_192>
+<word_193 token="cidade" lemma="cidade" pos="n" features="F=S" ></word_193>
+<word_194 token="de" lemma="de" pos="prp" features="-" ></word_194>
+<word_195 token="Silves" lemma="Silves" pos="prop" features="M=S" ></word_195>
+<word_196 token="," lemma="" pos="," features="-" ></word_196>
+<word_197 token="os" lemma="o" pos="art" features="M=P" ></word_197>
+<word_198 token="arqueólogos" lemma="arqueologia" pos="n" features="M=P" ></word_198>
+<word_199 token="puderam" lemma="poder" pos="v-fin" features="MQP=3P=IND" ></word_199>
+<word_200 token="encontrar" lemma="encontrar" pos="v-inf" features="-" ></word_200>
+<word_201 token="um" lemma="um" pos="art" features="M=S" ></word_201>
+<word_202 token="tesouro" lemma="tesouro" pos="n" features="M=S" ></word_202>
+<word_203 token="de" lemma="de" pos="prp" features="-" ></word_203>
+<word_204 token="outro" lemma="outro" pos="pron-det" features="M=S" ></word_204>
+<word_205 token="tipo" lemma="tipo" pos="n" features="M=S" ></word_205>
+<word_206 token=":" lemma=":" pos=":" features="-" ></word_206>
+<word_207 token="a" lemma="o" pos="art" features="F=S" ></word_207>
+<word_208 token="riqueza" lemma="riqueza" pos="n" features="F=S" ></word_208>
+<word_209 token="de" lemma="de" pos="prp" features="-" ></word_209>
+<word_210 token="artefatos" lemma="artefato" pos="n" features="M=P" ></word_210>
+<word_211 token="de" lemma="de" pos="prp" features="-" ></word_211>
+<word_212 token="várias" lemma="" pos="pron-det" features="F=P" ></word_212>
+<word_213 token="origens" lemma="origem" pos="n" features="F=P" ></word_213>
+<word_214 token="ali" lemma="ali" pos="adv" features="-" ></word_214>
+<word_215 token="depositados" lemma="depositar" pos="v-pcp" features="M=P" ></word_215>
+<word_216 token="por" lemma="por" pos="prp" features="-" ></word_216>
+<word_217 token="as" lemma="o" pos="art" features="F=P" ></word_217>
+<word_218 token="sucessivas" lemma="sucessivo" pos="adj" features="F=P" ></word_218>
+<word_219 token="levas" lemma="leva" pos="n" features="F=P" ></word_219>
+<word_220 token="de" lemma="de" pos="prp" features="-" ></word_220>
+<word_221 token="ocupantes" lemma="ocupar" pos="adj" features="F=P" ></word_221>
+<word_222 token="de" lemma="de" pos="prp" features="-" ></word_222>
+<word_223 token="o" lemma="o" pos="art" features="M=S" ></word_223>
+<word_224 token="território" lemma="território" pos="n" features="M=S" ></word_224>
+<word_225 token="português" lemma="português" pos="adj" features="M=S" ></word_225>
+<word_226 token="." lemma="." pos="." features="-" ></word_226>
+<word_227 token="&quot;" lemma="&quot;" pos="&quot;" features="-" ></word_227>
+<word_228 token="O" lemma="o" pos="art" features="M=S" ></word_228>
+<word_229 token="rio" lemma="rio" pos="n" features="M=S" ></word_229>
+<word_230 token="Arade" lemma="" pos="prop" features="M=S" ></word_230>
+<word_231 token="foi" lemma="ir, ser" pos="v-fin" features="PS=3S=IND" ></word_231>
+<word_232 token="a" lemma="o" pos="art" features="F=S" ></word_232>
+<word_233 token="principal" lemma="principal" pos="adj" features="F=S" ></word_233>
+<word_234 token="rota" lemma="rota, roto" pos="n" features="F=S" ></word_234>
+<word_235 token="de" lemma="de" pos="prp" features="-" ></word_235>
+<word_236 token="acesso" lemma="acesso" pos="n" features="M=S" ></word_236>
+<word_237 token="a" lemma="a" pos="prp" features="-" ></word_237>
+<word_238 token="Silves" lemma="Silves" pos="prop" features="M=S" ></word_238>
+<word_239 token="desde" lemma="desde" pos="prp" features="-" ></word_239>
+<word_240 token="a" lemma="o" pos="art" features="F=S" ></word_240>
+<word_241 token="implantação" lemma="implantar" pos="n" features="F=S" ></word_241>
+<word_242 token="de" lemma="de" pos="prp" features="-" ></word_242>
+<word_243 token="os" lemma="o" pos="art" features="M=P" ></word_243>
+<word_244 token="estabelecimentos" lemma="estabelecer" pos="n" features="M=P" ></word_244>
+<word_245 token="fenícios" lemma="fenício" pos="adj" features="M=P" ></word_245>
+<word_246 token="em" lemma="em" pos="prp" features="-" ></word_246>
+<word_247 token="o" lemma="o" pos="art" features="M=S" ></word_247>
+<word_248 token="Algarve" lemma="Algarve" pos="prop" features="M=S" ></word_248>
+<word_249 token="&quot;" lemma="&quot;" pos="&quot;" features="-" ></word_249>
+<word_250 token="," lemma="" pos="," features="-" ></word_250>
+<word_251 token="escrevem" lemma="escrever" pos="v-fin" features="PR=3P=IND" ></word_251>
+<word_252 token="os" lemma="o" pos="art" features="M=P" ></word_252>
+<word_253 token="três" lemma="três" pos="num" features="M=P" ></word_253>
+<word_254 token="brasileiros" lemma="brasileiro" pos="n" features="M=P" ></word_254>
+<word_255 token="em" lemma="em" pos="prp" features="-" ></word_255>
+<word_256 token="artigo" lemma="artigo" pos="n" features="M=S" ></word_256>
+<word_257 token="a" lemma="a" pos="prp" features="-" ></word_257>
+<word_258 token="ser" lemma="ser" pos="v-inf" features="-" ></word_258>
+<word_259 token="publicado" lemma="publicar" pos="v-pcp" features="M=S" ></word_259>
+<word_260 token="em" lemma="em" pos="prp" features="-" ></word_260>
+<word_261 token="a" lemma="o" pos="art" features="F=S" ></word_261>
+<word_262 token="revista" lemma="revista" pos="n" features="F=S" ></word_262>
+<word_263 token="de" lemma="de" pos="prp" features="-" ></word_263>
+<word_264 token="o" lemma="o" pos="art" features="M=S" ></word_264>
+<word_265 token="MAE." lemma="" pos="prop" features="M=S" ></word_265>
+<word_266 token="Segundo" lemma="segundo" pos="prp" features="-" ></word_266>
+<word_267 token="os" lemma="o" pos="art" features="M=P" ></word_267>
+<word_268 token="arqueólogos" lemma="arqueologia" pos="n" features="M=P" ></word_268>
+<word_269 token="," lemma="" pos="," features="-" ></word_269>
+<word_270 token="&quot;" lemma="&quot;" pos="&quot;" features="-" ></word_270>
+<word_271 token="durante" lemma="durante" pos="prp" features="-" ></word_271>
+<word_272 token="a" lemma="o" pos="art" features="F=S" ></word_272>
+<word_273 token="escavação" lemma="escavação, escavar" pos="n" features="F=S" ></word_273>
+<word_274 token="foram" lemma="ir, ser" pos="v-fin" features="MQP=3P=IND" ></word_274>
+<word_275 token="encontrados" lemma="encontrar" pos="v-pcp" features="M=P" ></word_275>
+<word_276 token="inúmeros" lemma="inúmero" pos="adj" features="M=P" ></word_276>
+<word_277 token="fragmentos" lemma="fragmento" pos="n" features="M=P" ></word_277>
+<word_278 token="," lemma="" pos="," features="-" ></word_278>
+<word_279 token="principalmente" lemma="principal" pos="adv" features="-" ></word_279>
+<word_280 token="cerâmicos" lemma="cerâmico" pos="adj" features="M=P" ></word_280>
+<word_281 token="," lemma="" pos="," features="-" ></word_281>
+<word_282 token="que" lemma="que" pos="pron-indp" features="M=P" ></word_282>
+<word_283 token="vão" lemma="ir" pos="v-fin" features="PR=3P=IND" ></word_283>
+<word_284 token="desde" lemma="desde" pos="prp" features="-" ></word_284>
+<word_285 token="ânforas" lemma="ânfora" pos="n" features="F=P" ></word_285>
+<word_286 token="romanas" lemma="romano" pos="adj" features="F=P" ></word_286>
+<word_287 token="até" lemma="até" pos="prp" features="-" ></word_287>
+<word_288 token="utensílios" lemma="utensílio" pos="n" features="M=P" ></word_288>
+<word_289 token="inteiros" lemma="inteiro" pos="adj" features="M=P" ></word_289>
+<word_290 token="de" lemma="de" pos="prp" features="-" ></word_290>
+<word_291 token="o" lemma="o" pos="art" features="M=S" ></word_291>
+<word_292 token="século" lemma="século" pos="n" features="M=S" ></word_292>
+<word_293 token="16" lemma="" pos="num" features="M=P" ></word_293>
+<word_294 token="," lemma="" pos="," features="-" ></word_294>
+<word_295 token="passando" lemma="passar" pos="v-ger" features="-" ></word_295>
+<word_296 token="por" lemma="por" pos="prp" features="-" ></word_296>
+<word_297 token="a" lemma="o" pos="art" features="F=S" ></word_297>
+<word_298 token="cerâmica" lemma="cerâmica" pos="n" features="F=S" ></word_298>
+<word_299 token="árabe" lemma="árabe" pos="adj" features="F=S" ></word_299>
+<word_300 token="&quot;" lemma="&quot;" pos="&quot;" features="-" ></word_300>
+<word_301 token="." lemma="." pos="." features="-" ></word_301>
+<word_302 token="Entre" lemma="entre" pos="prp" features="-" ></word_302>
+<word_303 token="as" lemma="o" pos="art" features="F=P" ></word_303>
+<word_304 token="peças" lemma="peça" pos="n" features="F=P" ></word_304>
+<word_305 token="mais" lemma="mais" pos="adv" features="-" ></word_305>
+<word_306 token="bem" lemma="bem" pos="adv" features="-" ></word_306>
+<word_307 token="preservadas" lemma="preservar" pos="v-pcp" features="F=P" ></word_307>
+<word_308 token="está" lemma="estar" pos="v-fin" features="PR=3S=IND" ></word_308>
+<word_309 token="um" lemma="um" pos="art" features="M=S" ></word_309>
+<word_310 token="raro" lemma="raro" pos="adj" features="M=S" ></word_310>
+<word_311 token="cadernal" lemma="cadernal" pos="n" features="M=S" ></word_311>
+<word_312 token="," lemma="" pos="," features="-" ></word_312>
+<word_313 token="uma" lemma="um" pos="art" features="F=S" ></word_313>
+<word_314 token="caixa" lemma="caixa" pos="n" features="F=S" ></word_314>
+<word_315 token="achatada" lemma="achatar" pos="v-pcp" features="F=S" ></word_315>
+<word_316 token="de" lemma="de" pos="prp" features="-" ></word_316>
+<word_317 token="madeira" lemma="madeira" pos="n" features="F=S" ></word_317>
+<word_318 token="com" lemma="com" pos="prp" features="-" ></word_318>
+<word_319 token="duas" lemma="dois" pos="num" features="F=P" ></word_319>
+<word_320 token="fendas" lemma="fenda" pos="n" features="F=P" ></word_320>
+<word_321 token="," lemma="" pos="," features="-" ></word_321>
+<word_322 token="em" lemma="em" pos="prp" features="-" ></word_322>
+<word_323 token="cada" lemma="cada" pos="pron-det" features="F=S" ></word_323>
+<word_324 token="uma" lemma="um" pos="art" features="F=S" ></word_324>
+<word_325 token="de" lemma="de" pos="prp" features="-" ></word_325>
+<word_326 token="as" lemma="o" pos="art" features="F=P" ></word_326>
+<word_327 token="quais" lemma="qual" pos="pron-det" features="F=P" ></word_327>
+<word_328 token="há" lemma="haver" pos="v-fin" features="PR=3S=IND" ></word_328>
+<word_329 token="uma" lemma="um" pos="art" features="F=S" ></word_329>
+<word_330 token="roldana" lemma="roldana" pos="n" features="F=S" ></word_330>
+<word_331 token="móvel" lemma="móvel" pos="adj" features="F=S" ></word_331>
+<word_332 token="." lemma="." pos="." features="-" ></word_332>
+<word_333 token="O" lemma="o" pos="art" features="M=S" ></word_333>
+<word_334 token="cadernal" lemma="cadernal" pos="n" features="M=S" ></word_334>
+<word_335 token="poderia" lemma="poder" pos="v-fin" features="COND=3S" ></word_335>
+<word_336 token="fazer" lemma="fazer" pos="v-inf" features="-" ></word_336>
+<word_337 token="parte" lemma="parte" pos="n" features="F=S" ></word_337>
+<word_338 token="de" lemma="de" pos="prp" features="-" ></word_338>
+<word_339 token="o" lemma="o" pos="art" features="M=S" ></word_339>
+<word_340 token="sistema" lemma="sistema" pos="n" features="M=S" ></word_340>
+<word_341 token="de" lemma="de" pos="prp" features="-" ></word_341>
+<word_342 token="cabos" lemma="cabo" pos="n" features="M=P" ></word_342>
+<word_343 token="(" lemma="(" pos="(" features="-" ></word_343>
+<word_344 token="cordas" lemma="corda" pos="n" features="F=P" ></word_344>
+<word_345 token=")" lemma=")" pos=")" features="-" ></word_345>
+<word_346 token="que" lemma="que" pos="pron-indp" features="F=P" ></word_346>
+<word_347 token="sustentaria" lemma="sustentar" pos="v-fin" features="COND=3S" ></word_347>
+<word_348 token="um" lemma="um" pos="num" features="M=S" ></word_348>
+<word_349 token="de" lemma="de" pos="prp" features="-" ></word_349>
+<word_350 token="os" lemma="o" pos="art" features="M=P" ></word_350>
+<word_351 token="mastros" lemma="mastro" pos="n" features="M=P" ></word_351>
+<word_352 token="." lemma="." pos="." features="-" ></word_352>
+<word_353 token="A" lemma="o" pos="art" features="F=S" ></word_353>
+<word_354 token="escavação" lemma="escavação, escavar" pos="n" features="F=S" ></word_354>
+<word_355 token="de" lemma="de" pos="prp" features="-" ></word_355>
+<word_356 token="este" lemma="este" pos="pron-det" features="M=S" ></word_356>
+<word_357 token="ano" lemma="ano" pos="n" features="M=S" ></word_357>
+<word_358 token="," lemma="" pos="," features="-" ></word_358>
+<word_359 token="realizada" lemma="realizar" pos="v-pcp" features="F=S" ></word_359>
+<word_360 token="em" lemma="em" pos="prp" features="-" ></word_360>
+<word_361 token="julho" lemma="julho" pos="n" features="M=S" ></word_361>
+<word_362 token="e" lemma="e" pos="conj-c" features="-" ></word_362>
+<word_363 token="agosto" lemma="agosto" pos="n" features="M=S" ></word_363>
+<word_364 token="," lemma="" pos="," features="-" ></word_364>
+<word_365 token="foi" lemma="ir, ser" pos="v-fin" features="PS=3S=IND" ></word_365>
+<word_366 token="organizada" lemma="organizar" pos="v-pcp" features="F=S" ></word_366>
+<word_367 token="por" lemma="por" pos="prp" features="-" ></word_367>
+<word_368 token="o" lemma="o" pos="art" features="M=S" ></word_368>
+<word_369 token="Centro_Nacional_de_Arqueologia_Náutica_e_Subaquática" lemma="" pos="prop" features="M=S" ></word_369>
+<word_370 token="de" lemma="de" pos="prp" features="-" ></word_370>
+<word_371 token="o" lemma="o" pos="art" features="M=S" ></word_371>
+<word_372 token="Instituto_Português_de_Arqueologia" lemma="" pos="prop" features="M=S" ></word_372>
+<word_373 token="." lemma="." pos="." features="-" ></word_373>
+<word_374 token="Participaram" lemma="participar" pos="v-fin" features="MQP=3P=IND" ></word_374>
+<word_375 token="arqueólogos" lemma="arqueologia" pos="n" features="M=P" ></word_375>
+<word_376 token="e" lemma="e" pos="conj-c" features="-" ></word_376>
+<word_377 token="estudantes" lemma="estudante" pos="n" features="M=P" ></word_377>
+<word_378 token="de" lemma="de" pos="prp" features="-" ></word_378>
+<word_379 token="oito" lemma="oito" pos="num" features="M=P" ></word_379>
+<word_380 token="países" lemma="país" pos="n" features="M=P" ></word_380>
+<word_381 token="." lemma="." pos="." features="-" ></word_381>
+<word_382 token="A" lemma="o" pos="art" features="F=S" ></word_382>
+<word_383 token="coordenação" lemma="coordenação, coordenar" pos="n" features="F=S" ></word_383>
+<word_384 token="foi" lemma="ir, ser" pos="v-fin" features="PS=3S=IND" ></word_384>
+<word_385 token="de" lemma="de" pos="prp" features="-" ></word_385>
+<word_386 token="o" lemma="o" pos="art" features="M=S" ></word_386>
+<word_387 token="arqueólogo" lemma="arqueologia" pos="n" features="M=S" ></word_387>
+<word_388 token="português" lemma="português" pos="adj" features="M=S" ></word_388>
+<word_389 token="Francisco_Alves" lemma="" pos="prop" features="M=S" ></word_389>
+<word_390 token="," lemma="" pos="," features="-" ></word_390>
+<word_391 token="um" lemma="um" pos="num" features="M=S" ></word_391>
+<word_392 token="de" lemma="de" pos="prp" features="-" ></word_392>
+<word_393 token="os" lemma="o" pos="art" features="M=P" ></word_393>
+<word_394 token="pioneiros" lemma="pioneiro" pos="n" features="M=P" ></word_394>
+<word_395 token="em" lemma="em" pos="prp" features="-" ></word_395>
+<word_396 token="a" lemma="o" pos="art" features="F=S" ></word_396>
+<word_397 token="área" lemma="área" pos="n" features="F=S" ></word_397>
+<word_398 token="em" lemma="em" pos="prp" features="-" ></word_398>
+<word_399 token="Portugal" lemma="Portugal" pos="prop" features="M=S" ></word_399>
+<word_400 token="e" lemma="e" pos="conj-c" features="-" ></word_400>
+<word_401 token="responsável" lemma="responsável" pos="adj" features="M=S" ></word_401>
+<word_402 token="por" lemma="por" pos="prp" features="-" ></word_402>
+<word_403 token="os" lemma="o" pos="art" features="M=P" ></word_403>
+<word_404 token="trabalhos" lemma="trabalho" pos="n" features="M=P" ></word_404>
+<word_405 token="em" lemma="em" pos="prp" features="-" ></word_405>
+<word_406 token="o" lemma="o" pos="art" features="M=S" ></word_406>
+<word_407 token="galeão" lemma="galeão" pos="n" features="M=S" ></word_407>
+<word_408 token="Nossa_Senhora_dos_Mártires" lemma="" pos="prop" features="F=S" ></word_408>
+<word_409 token="," lemma="" pos="," features="-" ></word_409>
+<word_410 token="cujos" lemma="cujo" pos="pron-det" features="M=P" ></word_410>
+<word_411 token="achados" lemma="achado" pos="n" features="M=P" ></word_411>
+<word_412 token="foram" lemma="ir, ser" pos="v-fin" features="PS=3P=IND" ></word_412>
+<word_413 token="a" lemma="o" pos="art" features="F=S" ></word_413>
+<word_414 token="atração" lemma="atração" pos="n" features="F=S" ></word_414>
+<word_415 token="central" lemma="central" pos="adj" features="F=S" ></word_415>
+<word_416 token="de" lemma="de" pos="prp" features="-" ></word_416>
+<word_417 token="o" lemma="o" pos="art" features="M=S" ></word_417>
+<word_418 token="pavilhão" lemma="pavilhão" pos="n" features="M=S" ></word_418>
+<word_419 token="de" lemma="de" pos="prp" features="-" ></word_419>
+<word_420 token="Portugal" lemma="Portugal" pos="prop" features="M=S" ></word_420>
+<word_421 token="em" lemma="em" pos="prp" features="-" ></word_421>
+<word_422 token="a" lemma="o" pos="art" features="F=S" ></word_422>
+<word_423 token="exposição" lemma="exposição, expor" pos="n" features="F=S" ></word_423>
+<word_424 token="internacional" lemma="internacional" pos="adj" features="F=S" ></word_424>
+<word_425 token="de" lemma="de" pos="prp" features="-" ></word_425>
+<word_426 token="Lisboa" lemma="Lisboa" pos="prop" features="M=S" ></word_426>
+<word_427 token="em" lemma="em" pos="prp" features="-" ></word_427>
+<word_428 token="1998" lemma="" pos="num" features="M=P" ></word_428>
+<word_429 token="," lemma="" pos="," features="-" ></word_429>
+<word_430 token="a" lemma="o" pos="art" features="F=S" ></word_430>
+<word_431 token="Expo-98" lemma="" pos="prop" features="F=S" ></word_431>
+<word_432 token="." lemma="." pos="." features="-" ></word_432>
+<word_433 token="Rambelli" lemma="" pos="prop" features="M=S" ></word_433>
+<word_434 token="," lemma="" pos="," features="-" ></word_434>
+<word_435 token="que" lemma="que" pos="pron-indp" features="M=S" ></word_435>
+<word_436 token="coordenou" lemma="coordenar" pos="v-fin" features="PS=3S=IND" ></word_436>
+<word_437 token="a" lemma="o" pos="art" features="F=S" ></word_437>
+<word_438 token="participação" lemma="participação, participar" pos="n" features="F=S" ></word_438>
+<word_439 token="brasileira" lemma="brasileiro" pos="adj" features="F=S" ></word_439>
+<word_440 token="," lemma="" pos="," features="-" ></word_440>
+<word_441 token="está" lemma="estar" pos="v-fin" features="PR=3S=IND" ></word_441>
+<word_442 token="lançando" lemma="lançar" pos="v-ger" features="-" ></word_442>
+<word_443 token="em" lemma="em" pos="prp" features="-" ></word_443>
+<word_444 token="esta" lemma="este" pos="pron-det" features="F=S" ></word_444>
+<word_445 token="semana" lemma="semana" pos="n" features="F=S" ></word_445>
+<word_446 token="o" lemma="o" pos="art" features="M=S" ></word_446>
+<word_447 token="livro" lemma="livro" pos="n" features="M=S" ></word_447>
+<word_448 token="&quot;" lemma="&quot;" pos="&quot;" features="-" ></word_448>
+<word_449 token="Arqueologia_Até_Debaixo_D&apos;Água" lemma="" pos="prop" features="F=S" ></word_449>
+<word_450 token="&quot;" lemma="&quot;" pos="&quot;" features="-" ></word_450>
+<word_451 token="(" lemma="(" pos="(" features="-" ></word_451>
+<word_452 token="Editora_Maranta" lemma="" pos="prop" features="F=S" ></word_452>
+<word_453 token="," lemma="" pos="," features="-" ></word_453>
+<word_454 token="São_Paulo" lemma="" pos="prop" features="M=S" ></word_454>
+<word_455 token="," lemma="" pos="," features="-" ></word_455>
+<word_456 token="2002" lemma="" pos="num" features="M=P" ></word_456>
+<word_457 token=")" lemma=")" pos=")" features="-" ></word_457>
+<word_458 token="." lemma="." pos="." features="-" ></word_458>
+<word_459 token="O" lemma="o" pos="art" features="M=S" ></word_459>
+<word_460 token="livro" lemma="livro" pos="n" features="M=S" ></word_460>
+<word_461 token="é" lemma="ser" pos="v-fin" features="PR=3S=IND" ></word_461>
+<word_462 token="o" lemma="o" pos="art" features="M=S" ></word_462>
+<word_463 token="primeiro" lemma="primeiro" pos="adj" features="M=S" ></word_463>
+<word_464 token="em" lemma="em" pos="prp" features="-" ></word_464>
+<word_465 token="o" lemma="o" pos="art" features="M=S" ></word_465>
+<word_466 token="país" lemma="país" pos="n" features="M=S" ></word_466>
+<word_467 token="a" lemma="a" pos="prp" features="-" ></word_467>
+<word_468 token="descrever" lemma="descrever" pos="v-inf" features="-" ></word_468>
+<word_469 token="esse" lemma="esse" pos="pron-det" features="M=S" ></word_469>
+<word_470 token="aspecto" lemma="aspecto" pos="n" features="M=S" ></word_470>
+<word_471 token="de" lemma="de" pos="prp" features="-" ></word_471>
+<word_472 token="a" lemma="o" pos="art" features="F=S" ></word_472>
+<word_473 token="arqueologia" lemma="arqueologia" pos="n" features="F=S" ></word_473>
+<word_474 token="," lemma="" pos="," features="-" ></word_474>
+<word_475 token="em_geral" lemma="" pos="adv" features="-" ></word_475>
+<word_476 token="associado" lemma="associar" pos="v-pcp" features="M=S" ></word_476>
+<word_477 token="negativamente" lemma="negativo" pos="adv" features="-" ></word_477>
+<word_478 token="com" lemma="com" pos="prp" features="-" ></word_478>
+<word_479 token="a" lemma="o" pos="art" features="F=S" ></word_479>
+<word_480 token="&quot;" lemma="&quot;" pos="&quot;" features="-" ></word_480>
+<word_481 token="caça" lemma="caça" pos="n" features="F=S" ></word_481>
+<word_482 token="a" lemma="a" pos="prp" features="-" ></word_482>
+<word_483 token="tesouros" lemma="tesouro" pos="n" features="M=P" ></word_483>
+<word_484 token="&quot;" lemma="&quot;" pos="&quot;" features="-" ></word_484>
+<word_485 token="." lemma="." pos="." features="-" ></word_485>
+<word_486 token="Rambelli" lemma="" pos="prop" features="M=S" ></word_486>
+<word_487 token="mostra" lemma="mostrar" pos="v-fin" features="PR=3S=IND" ></word_487>
+<word_488 token="como" lemma="como" pos="adv" features="-" ></word_488>
+<word_489 token="o" lemma="o" pos="art" features="M=S" ></word_489>
+<word_490 token="principal" lemma="principal" pos="adj" features="M=S" ></word_490>
+<word_491 token="objetivo" lemma="objetivo" pos="n" features="M=S" ></word_491>
+<word_492 token="de" lemma="de" pos="prp" features="-" ></word_492>
+<word_493 token="a" lemma="o" pos="art" features="F=S" ></word_493>
+<word_494 token="arqueologia" lemma="arqueologia" pos="n" features="F=S" ></word_494>
+<word_495 token="," lemma="" pos="," features="-" ></word_495>
+<word_496 token="tanto" lemma="tanto" pos="adv" features="-" ></word_496>
+<word_497 token="em_cima" lemma="" pos="prp" features="-" ></word_497>
+<word_498 token="como" lemma="como" pos="adv" features="-" ></word_498>
+<word_499 token="embaixo" lemma="" pos="n" features="M=S" ></word_499>
+<word_500 token="d&apos;água" lemma="" pos="n" features="F=S" ></word_500>
+<word_501 token="," lemma="" pos="," features="-" ></word_501>
+<word_502 token="é" lemma="ser" pos="v-fin" features="PR=3S=IND" ></word_502>
+<word_503 token="a" lemma="o" pos="art" features="F=S" ></word_503>
+<word_504 token="busca" lemma="busca" pos="n" features="F=S" ></word_504>
+<word_505 token="de" lemma="de" pos="prp" features="-" ></word_505>
+<word_506 token="conhecimento" lemma="conhecer" pos="n" features="M=S" ></word_506>
+<word_507 token="," lemma="" pos="," features="-" ></word_507>
+<word_508 token="não" lemma="não" pos="adv" features="-" ></word_508>
+<word_509 token="de" lemma="de" pos="prp" features="-" ></word_509>
+<word_510 token="suvenires" lemma="" pos="n" features="M=P" ></word_510>
+<word_511 token="." lemma="." pos="." features="-" ></word_511>
+<word_512 token="O" lemma="o" pos="art" features="M=S" ></word_512>
+<word_513 token="livro" lemma="livro" pos="n" features="M=S" ></word_513>
+<word_514 token="também" lemma="também" pos="adv" features="-" ></word_514>
+<word_515 token="busca" lemma="buscar" pos="v-fin" features="PR=3S=IND" ></word_515>
+<word_516 token="conscientizar" lemma="" pos="v-inf" features="-" ></word_516>
+<word_517 token="os" lemma="o" pos="art" features="M=P" ></word_517>
+<word_518 token="mergulhadores" lemma="mergulhador, mergulhar" pos="n" features="M=P" ></word_518>
+<word_519 token="sobre" lemma="sobre" pos="prp" features="-" ></word_519>
+<word_520 token="o" lemma="o" pos="art" features="M=S" ></word_520>
+<word_521 token="patrimônio" lemma="patrimônio" pos="n" features="M=S" ></word_521>
+<word_522 token="subaquático" lemma="subaquático, aquático" pos="adj" features="M=S" ></word_522>
+<word_523 token="." lemma="." pos="." features="-" ></word_523>
+</Tokens> 
+
+<Cadeias> 
+
+<Cadeia_41> 
+<sn id="41" tokens="124...124" nucleo="Eles" sintagma="Eles" Categoria="EN_AMC/FILMVID" sentenca="5">
+<word_124 token="Eles" lemma="ele" pos="pron-pers" features="M=3P=NOM" ></word_124>
+</sn>
+<sn id="42" tokens="129...134" nucleo="espinha" sintagma="a espinha dorsal de uma embarcação" Categoria="EN_AMC/FILMVID" sentenca="5">
+<word_129 token="a" lemma="o" pos="art" features="F=S" ></word_129>
+<word_130 token="espinha" lemma="espinha" pos="n" features="F=S" ></word_130>
+<word_131 token="dorsal" lemma="dorsal" pos="adj" features="F=S" ></word_131>
+<word_132 token="de" lemma="de" pos="prp" features="-" ></word_132>
+<word_133 token="uma" lemma="um" pos="art" features="F=S" ></word_133>
+<word_134 token="embarcação" lemma="embarcação, embarcar" pos="n" features="F=S" ></word_134>
+</sn>
+</Cadeia_41>
+
+<Cadeia_52> 
+<sn id="25" tokens="73...76" nucleo="navio" sintagma="um navio viking naufragado" Categoria="EN_LOC/POV" sentenca="3">
+<word_73 token="um" lemma="um" pos="art" features="M=S" ></word_73>
+<word_74 token="navio" lemma="navio" pos="n" features="M=S" ></word_74>
+<word_75 token="viking" lemma="viking" pos="adj" features="M=S" ></word_75>
+<word_76 token="naufragado" lemma="naufragar" pos="v-pcp" features="M=S" ></word_76>
+</sn>
+<sn id="37" tokens="103...107" nucleo="navios" sintagma="um ou dois navios antigos" Categoria="EN_LOC/POV" sentenca="4">
+<word_103 token="um" lemma="um" pos="art" features="M=S" ></word_103>
+<word_104 token="ou" lemma="ou" pos="conj-c" features="-" ></word_104>
+<word_105 token="dois" lemma="dois" pos="num" features="M=P" ></word_105>
+<word_106 token="navios" lemma="navio" pos="n" features="M=P" ></word_106>
+<word_107 token="antigos" lemma="antigo" pos="adj" features="M=P" ></word_107>
+</sn>
+<sn id="49" tokens="126...135" nucleo="quilha" sintagma="uma quilha ( a espinha dorsal de uma embarcação )" Categoria="EN_LOC/POV" sentenca="5">
+<word_126 token="uma" lemma="um" pos="art" features="F=S" ></word_126>
+<word_127 token="quilha" lemma="quilha" pos="n" features="F=S" ></word_127>
+<word_128 token="(" lemma="(" pos="(" features="-" ></word_128>
+<word_129 token="a" lemma="o" pos="art" features="F=S" ></word_129>
+<word_130 token="espinha" lemma="espinha" pos="n" features="F=S" ></word_130>
+<word_131 token="dorsal" lemma="dorsal" pos="adj" features="F=S" ></word_131>
+<word_132 token="de" lemma="de" pos="prp" features="-" ></word_132>
+<word_133 token="uma" lemma="um" pos="art" features="F=S" ></word_133>
+<word_134 token="embarcação" lemma="embarcação, embarcar" pos="n" features="F=S" ></word_134>
+<word_135 token=")" lemma=")" pos=")" features="-" ></word_135>
+</sn>
+<sn id="52" tokens="161...162" nucleo="navio" sintagma="o navio" Categoria="EN_LOC/POV" sentenca="5">
+<word_161 token="o" lemma="o" pos="art" features="M=S" ></word_161>
+<word_162 token="navio" lemma="navio" pos="n" features="M=S" ></word_162>
+</sn>
+</Cadeia_52>
+
+<Cadeia_69> 
+<sn id="6" tokens="15...15" nucleo="ouro" sintagma="ouro" Categoria="EN_LOC" sentenca="1">
+<word_15 token="ouro" lemma="ouro" pos="n" features="M=S" ></word_15>
+</sn>
+<sn id="17" tokens="50...51" nucleo="rio" sintagma="o rio" Categoria="EN_LOC" sentenca="3">
+<word_50 token="o" lemma="o" pos="art" features="M=S" ></word_50>
+<word_51 token="rio" lemma="rio" pos="n" features="M=S" ></word_51>
+</sn>
+<sn id="18" tokens="52...52" nucleo="Arade" sintagma="Arade" Categoria="EN_LOC" sentenca="3">
+<word_52 token="Arade" lemma="" pos="prop" features="M=S" ></word_52>
+</sn>
+<sn id="69" tokens="230...230" nucleo="Arade" sintagma="Arade" Categoria="EN_LOC" sentenca="8">
+<word_230 token="Arade" lemma="" pos="prop" features="M=S" ></word_230>
+</sn>
+</Cadeia_69>
+
+<Cadeia_71> 
+<sn id="57" tokens="189...189" nucleo="caminho" sintagma="caminho" Categoria="EN_ORG/EMPR" sentenca="6">
+<word_189 token="caminho" lemma="caminho" pos="n" features="M=S" ></word_189>
+</sn>
+<sn id="71" tokens="236...236" nucleo="acesso" sintagma="acesso" Categoria="EN_ORG/EMPR" sentenca="8">
+<word_236 token="acesso" lemma="acesso" pos="n" features="M=S" ></word_236>
+</sn>
+</Cadeia_71>
+
+<Cadeia_72> 
+<sn id="59" tokens="195...195" nucleo="Silves" sintagma="Silves" Categoria="EN_LOC" sentenca="6">
+<word_195 token="Silves" lemma="Silves" pos="prop" features="M=S" ></word_195>
+</sn>
+<sn id="72" tokens="238...238" nucleo="Silves" sintagma="Silves" Categoria="EN_LOC" sentenca="8">
+<word_238 token="Silves" lemma="Silves" pos="prop" features="M=S" ></word_238>
+</sn>
+</Cadeia_72>
+
+<Cadeia_77> 
+<sn id="53" tokens="167...169" nucleo="relato" sintagma="o relato histórico" Categoria="--" sentenca="6">
+<word_167 token="o" lemma="o" pos="art" features="M=S" ></word_167>
+<word_168 token="relato" lemma="relato" pos="n" features="M=S" ></word_168>
+<word_169 token="histórico" lemma="histórico" pos="adj" features="M=S" ></word_169>
+</sn>
+<sn id="77" tokens="256...256" nucleo="artigo" sintagma="artigo" Categoria="--" sentenca="8">
+<word_256 token="artigo" lemma="artigo" pos="n" features="M=S" ></word_256>
+</sn>
+</Cadeia_77>
+
+<Cadeia_80> 
+<sn id="14" tokens="38...39" nucleo="arqueólogos" sintagma="arqueólogos subaquáticos" Categoria="EN_SER" sentenca="3">
+<word_38 token="arqueólogos" lemma="arqueologia" pos="n" features="M=P" ></word_38>
+<word_39 token="subaquáticos" lemma="subaquático, aquático" pos="adj" features="M=P" ></word_39>
+</sn>
+<sn id="32" tokens="91...91" nucleo="Arqueologia" sintagma="Arqueologia" Categoria="EN_SER" sentenca="4">
+<word_91 token="Arqueologia" lemma="arqueologia" pos="n" features="F=S" ></word_91>
+</sn>
+<sn id="60" tokens="197...198" nucleo="arqueólogos" sintagma="os arqueólogos" Categoria="EN_SER" sentenca="6">
+<word_197 token="os" lemma="o" pos="art" features="M=P" ></word_197>
+<word_198 token="arqueólogos" lemma="arqueologia" pos="n" features="M=P" ></word_198>
+</sn>
+<sn id="80" tokens="267...268" nucleo="arqueólogos" sintagma="os arqueólogos" Categoria="EN_SER" sentenca="9">
+<word_267 token="os" lemma="o" pos="art" features="M=P" ></word_267>
+<word_268 token="arqueólogos" lemma="arqueologia" pos="n" features="M=P" ></word_268>
+</sn>
+<sn id="109" tokens="375...380" nucleo="arqueólogos" sintagma="arqueólogos e estudantes de oito países" Categoria="EN_SER" sentenca="13">
+<word_375 token="arqueólogos" lemma="arqueologia" pos="n" features="M=P" ></word_375>
+<word_376 token="e" lemma="e" pos="conj-c" features="-" ></word_376>
+<word_377 token="estudantes" lemma="estudante" pos="n" features="M=P" ></word_377>
+<word_378 token="de" lemma="de" pos="prp" features="-" ></word_378>
+<word_379 token="oito" lemma="oito" pos="num" features="M=P" ></word_379>
+<word_380 token="países" lemma="país" pos="n" features="M=P" ></word_380>
+</sn>
+<sn id="113" tokens="385...401" nucleo="arqueólogo" sintagma="de o arqueólogo português Francisco Alves , um dos pioneiros na área em Portugal e responsável" Categoria="EN_SER" sentenca="14">
+<word_385 token="de" lemma="de" pos="prp" features="-" ></word_385>
+<word_386 token="o" lemma="o" pos="art" features="M=S" ></word_386>
+<word_387 token="arqueólogo" lemma="arqueologia" pos="n" features="M=S" ></word_387>
+<word_388 token="português" lemma="português" pos="adj" features="M=S" ></word_388>
+<word_389 token="Francisco_Alves" lemma="" pos="prop" features="M=S" ></word_389>
+<word_390 token="," lemma="" pos="," features="-" ></word_390>
+<word_391 token="um" lemma="um" pos="num" features="M=S" ></word_391>
+<word_392 token="de" lemma="de" pos="prp" features="-" ></word_392>
+<word_393 token="os" lemma="o" pos="art" features="M=P" ></word_393>
+<word_394 token="pioneiros" lemma="pioneiro" pos="n" features="M=P" ></word_394>
+<word_395 token="em" lemma="em" pos="prp" features="-" ></word_395>
+<word_396 token="a" lemma="o" pos="art" features="F=S" ></word_396>
+<word_397 token="área" lemma="área" pos="n" features="F=S" ></word_397>
+<word_398 token="em" lemma="em" pos="prp" features="-" ></word_398>
+<word_399 token="Portugal" lemma="Portugal" pos="prop" features="M=S" ></word_399>
+<word_400 token="e" lemma="e" pos="conj-c" features="-" ></word_400>
+<word_401 token="responsável" lemma="responsável" pos="adj" features="M=S" ></word_401>
+</sn>
+<sn id="133" tokens="449...450" nucleo="Arqueologia_Até_Debaixo_D'Água" sintagma="Arqueologia Até Debaixo D'Água " Categoria="EN_SER" sentenca="15">
+<word_449 token="Arqueologia_Até_Debaixo_D'Água" lemma="" pos="prop" features="F=S" ></word_449>
+</sn>
+<sn id="134" tokens="452...456" nucleo="Editora_Maranta" sintagma="Editora_Maranta , São_Paulo , 2002" Categoria="EN_SER" sentenca="15">
+<word_452 token="Editora_Maranta" lemma="" pos="prop" features="F=S" ></word_452>
+<word_453 token="," lemma="" pos="," features="-" ></word_453>
+<word_454 token="São_Paulo" lemma="" pos="prop" features="M=S" ></word_454>
+<word_455 token="," lemma="" pos="," features="-" ></word_455>
+<word_456 token="2002" lemma="" pos="num" features="M=P" ></word_456>
+</sn>
+<sn id="139" tokens="472...473" nucleo="arqueologia" sintagma="a arqueologia" Categoria="EN_SER" sentenca="16">
+<word_472 token="a" lemma="o" pos="art" features="F=S" ></word_472>
+<word_473 token="arqueologia" lemma="arqueologia" pos="n" features="F=S" ></word_473>
+</sn>
+<sn id="144" tokens="493...494" nucleo="arqueologia" sintagma="a arqueologia" Categoria="EN_SER" sentenca="17">
+<word_493 token="a" lemma="o" pos="art" features="F=S" ></word_493>
+<word_494 token="arqueologia" lemma="arqueologia" pos="n" features="F=S" ></word_494>
+</sn>
+<sn id="146" tokens="500...500" nucleo="d'água" sintagma="d'água" Categoria="EN_SER" sentenca="17">
+<word_500 token="d'água" lemma="" pos="n" features="F=S" ></word_500>
+</sn>
+</Cadeia_80>
+
+<Cadeia_86> 
+<sn id="38" tokens="112...113" nucleo="século" sintagma="os século" Categoria="--" sentenca="4">
+<word_112 token="os" lemma="o" pos="art" features="M=P" ></word_112>
+<word_113 token="século" lemma="século" pos="n" features="M=S" ></word_113>
+</sn>
+<sn id="86" tokens="291...293" nucleo="século" sintagma="o século 16" Categoria="--" sentenca="9">
+<word_291 token="o" lemma="o" pos="art" features="M=S" ></word_291>
+<word_292 token="século" lemma="século" pos="n" features="M=S" ></word_292>
+<word_293 token="16" lemma="" pos="num" features="M=P" ></word_293>
+</sn>
+</Cadeia_86>
+
+<Cadeia_88> 
+<sn id="2" tokens="6...6" nucleo="pirata" sintagma="pirata" Categoria="EN_LOC" sentenca="1">
+<word_6 token="pirata" lemma="pirata" pos="n" features="M=S" ></word_6>
+</sn>
+<sn id="5" tokens="13...13" nucleo="moedas" sintagma="moedas" Categoria="EN_LOC" sentenca="1">
+<word_13 token="moedas" lemma="moeda" pos="n" features="F=P" ></word_13>
+</sn>
+<sn id="48" tokens="150...151" nucleo="peça" sintagma="peça encaixada" Categoria="EN_LOC" sentenca="5">
+<word_150 token="peça" lemma="peça" pos="n" features="F=S" ></word_150>
+<word_151 token="encaixada" lemma="encaixar" pos="v-pcp" features="F=S" ></word_151>
+</sn>
+<sn id="64" tokens="210...210" nucleo="artefatos" sintagma="artefatos" Categoria="EN_LOC" sentenca="7">
+<word_210 token="artefatos" lemma="artefato" pos="n" features="M=P" ></word_210>
+</sn>
+<sn id="85" tokens="288...289" nucleo="utensílios" sintagma="utensílios inteiros" Categoria="EN_LOC" sentenca="9">
+<word_288 token="utensílios" lemma="utensílio" pos="n" features="M=P" ></word_288>
+<word_289 token="inteiros" lemma="inteiro" pos="adj" features="M=P" ></word_289>
+</sn>
+<sn id="88" tokens="303...304" nucleo="peças" sintagma="as peças" Categoria="EN_LOC" sentenca="10">
+<word_303 token="as" lemma="o" pos="art" features="F=P" ></word_303>
+<word_304 token="peças" lemma="peça" pos="n" features="F=P" ></word_304>
+</sn>
+</Cadeia_88>
+
+<Cadeia_91> 
+<sn id="9" tokens="23...23" nucleo="madeira" sintagma="madeira" Categoria="EN_LOC/POV" sentenca="2">
+<word_23 token="madeira" lemma="madeira" pos="n" features="F=S" ></word_23>
+</sn>
+<sn id="10" tokens="25...25" nucleo="cordas" sintagma="cordas" Categoria="EN_LOC/POV" sentenca="2">
+<word_25 token="cordas" lemma="corda" pos="n" features="F=P" ></word_25>
+</sn>
+<sn id="91" tokens="317...317" nucleo="madeira" sintagma="madeira" Categoria="EN_LOC/POV" sentenca="10">
+<word_317 token="madeira" lemma="madeira" pos="n" features="F=S" ></word_317>
+</sn>
+<sn id="99" tokens="342...342" nucleo="cabos" sintagma="cabos" Categoria="EN_LOC/POV" sentenca="11">
+<word_342 token="cabos" lemma="cabo" pos="n" features="M=P" ></word_342>
+</sn>
+<sn id="100" tokens="344...344" nucleo="cordas" sintagma="cordas" Categoria="EN_LOC/POV" sentenca="11">
+<word_344 token="cordas" lemma="corda" pos="n" features="F=P" ></word_344>
+</sn>
+</Cadeia_91>
+
+<Cadeia_96> 
+<sn id="89" tokens="309...311" nucleo="cadernal" sintagma="um raro cadernal" Categoria="--" sentenca="10">
+<word_309 token="um" lemma="um" pos="art" features="M=S" ></word_309>
+<word_310 token="raro" lemma="raro" pos="adj" features="M=S" ></word_310>
+<word_311 token="cadernal" lemma="cadernal" pos="n" features="M=S" ></word_311>
+</sn>
+<sn id="96" tokens="333...334" nucleo="cadernal" sintagma="O cadernal" Categoria="--" sentenca="11">
+<word_333 token="O" lemma="o" pos="art" features="M=S" ></word_333>
+<word_334 token="cadernal" lemma="cadernal" pos="n" features="M=S" ></word_334>
+</sn>
+</Cadeia_96>
+
+<Cadeia_98> 
+<sn id="92" tokens="319...320" nucleo="fendas" sintagma="duas fendas" Categoria="--" sentenca="10">
+<word_319 token="duas" lemma="dois" pos="num" features="F=P" ></word_319>
+<word_320 token="fendas" lemma="fenda" pos="n" features="F=P" ></word_320>
+</sn>
+<sn id="98" tokens="339...340" nucleo="sistema" sintagma="o sistema" Categoria="--" sentenca="11">
+<word_339 token="o" lemma="o" pos="art" features="M=S" ></word_339>
+<word_340 token="sistema" lemma="sistema" pos="n" features="M=S" ></word_340>
+</sn>
+</Cadeia_98>
+
+<Cadeia_102> 
+<sn id="97" tokens="337...345" nucleo="parte" sintagma="parte do sistema de cabos ( cordas )" Categoria="--" sentenca="11">
+<word_337 token="parte" lemma="parte" pos="n" features="F=S" ></word_337>
+<word_338 token="de" lemma="de" pos="prp" features="-" ></word_338>
+<word_339 token="o" lemma="o" pos="art" features="M=S" ></word_339>
+<word_340 token="sistema" lemma="sistema" pos="n" features="M=S" ></word_340>
+<word_341 token="de" lemma="de" pos="prp" features="-" ></word_341>
+<word_342 token="cabos" lemma="cabo" pos="n" features="M=P" ></word_342>
+<word_343 token="(" lemma="(" pos="(" features="-" ></word_343>
+<word_344 token="cordas" lemma="corda" pos="n" features="F=P" ></word_344>
+<word_345 token=")" lemma=")" pos=")" features="-" ></word_345>
+</sn>
+<sn id="102" tokens="348...351" nucleo="mastros" sintagma="um dos mastros" Categoria="--" sentenca="11">
+<word_348 token="um" lemma="um" pos="num" features="M=S" ></word_348>
+<word_349 token="de" lemma="de" pos="prp" features="-" ></word_349>
+<word_350 token="os" lemma="o" pos="art" features="M=P" ></word_350>
+<word_351 token="mastros" lemma="mastro" pos="n" features="M=P" ></word_351>
+</sn>
+</Cadeia_102>
+
+<Cadeia_103> 
+<sn id="81" tokens="272...273" nucleo="escavação" sintagma="a escavação" Categoria="EN_LOC/POV" sentenca="9">
+<word_272 token="a" lemma="o" pos="art" features="F=S" ></word_272>
+<word_273 token="escavação" lemma="escavação, escavar" pos="n" features="F=S" ></word_273>
+</sn>
+<sn id="103" tokens="353...358" nucleo="escavação" sintagma="A escavação de este ano" Categoria="EN_LOC/POV" sentenca="12">
+<word_353 token="A" lemma="o" pos="art" features="F=S" ></word_353>
+<word_354 token="escavação" lemma="escavação, escavar" pos="n" features="F=S" ></word_354>
+<word_355 token="de" lemma="de" pos="prp" features="-" ></word_355>
+<word_356 token="este" lemma="este" pos="pron-det" features="M=S" ></word_356>
+<word_357 token="ano" lemma="ano" pos="n" features="M=S" ></word_357>
+<word_358 token="," lemma="" pos="," features="-" ></word_358>
+</sn>
+</Cadeia_103>
+
+<Cadeia_121> 
+<sn id="120" tokens="408...408" nucleo="Nossa_Senhora_dos_Mártires" sintagma="Nossa Senhora dos Mártires" Categoria="EN_LOC/POV" sentenca="14">
+<word_408 token="Nossa_Senhora_dos_Mártires" lemma="" pos="prop" features="F=S" ></word_408>
+</sn>
+<sn id="121" tokens="410...410" nucleo="cujos" sintagma="cujos " Categoria="EN_LOC/POV" sentenca="14">
+<word_410 token="cujos" lemma="cujo" pos="pron-det" features="M=P" ></word_410>
+</sn>
+</Cadeia_121>
+
+<Cadeia_137> 
+<sn id="12" tokens="30...31" nucleo="estado" sintagma="melhor estado" Categoria="EN_LOC" sentenca="2">
+<word_30 token="melhor" lemma="melhor" pos="adj" features="M=S" ></word_30>
+<word_31 token="estado" lemma="estado" pos="n" features="M=S" ></word_31>
+</sn>
+<sn id="67" tokens="223...225" nucleo="território" sintagma="o território português" Categoria="EN_LOC" sentenca="7">
+<word_223 token="o" lemma="o" pos="art" features="M=S" ></word_223>
+<word_224 token="território" lemma="território" pos="n" features="M=S" ></word_224>
+<word_225 token="português" lemma="português" pos="adj" features="M=S" ></word_225>
+</sn>
+<sn id="111" tokens="379...380" nucleo="países" sintagma="oito países" Categoria="EN_LOC" sentenca="13">
+<word_379 token="oito" lemma="oito" pos="num" features="M=P" ></word_379>
+<word_380 token="países" lemma="país" pos="n" features="M=P" ></word_380>
+</sn>
+<sn id="116" tokens="396...397" nucleo="área" sintagma="a área" Categoria="EN_LOC" sentenca="14">
+<word_396 token="a" lemma="o" pos="art" features="F=S" ></word_396>
+<word_397 token="área" lemma="área" pos="n" features="F=S" ></word_397>
+</sn>
+<sn id="137" tokens="465...466" nucleo="país" sintagma="o país" Categoria="EN_LOC" sentenca="16">
+<word_465 token="o" lemma="o" pos="art" features="M=S" ></word_465>
+<word_466 token="país" lemma="país" pos="n" features="M=S" ></word_466>
+</sn>
+</Cadeia_137>
+
+<Cadeia_141> 
+<sn id="61" tokens="201...205" nucleo="tesouro" sintagma="um tesouro de outro tipo" Categoria="EN_LOC" sentenca="6">
+<word_201 token="um" lemma="um" pos="art" features="M=S" ></word_201>
+<word_202 token="tesouro" lemma="tesouro" pos="n" features="M=S" ></word_202>
+<word_203 token="de" lemma="de" pos="prp" features="-" ></word_203>
+<word_204 token="outro" lemma="outro" pos="pron-det" features="M=S" ></word_204>
+<word_205 token="tipo" lemma="tipo" pos="n" features="M=S" ></word_205>
+</sn>
+<sn id="63" tokens="207...213" nucleo="riqueza" sintagma="a riqueza de artefatos de várias origens" Categoria="EN_LOC" sentenca="7">
+<word_207 token="a" lemma="o" pos="art" features="F=S" ></word_207>
+<word_208 token="riqueza" lemma="riqueza" pos="n" features="F=S" ></word_208>
+<word_209 token="de" lemma="de" pos="prp" features="-" ></word_209>
+<word_210 token="artefatos" lemma="artefato" pos="n" features="M=P" ></word_210>
+<word_211 token="de" lemma="de" pos="prp" features="-" ></word_211>
+<word_212 token="várias" lemma="" pos="pron-det" features="F=P" ></word_212>
+<word_213 token="origens" lemma="origem" pos="n" features="F=P" ></word_213>
+</sn>
+<sn id="141" tokens="483...483" nucleo="tesouros" sintagma="tesouros" Categoria="EN_LOC" sentenca="16">
+<word_483 token="tesouros" lemma="tesouro" pos="n" features="M=P" ></word_483>
+</sn>
+</Cadeia_141>
+
+<Cadeia_142> 
+<sn id="15" tokens="42...43" nucleo="brasileiros" sintagma="brasileiros" Categoria="EN_SER" sentenca="3">
+<word_42 token="brasileiros" lemma="brasileiro" pos="n" features="M=P" ></word_42>
+<word_40 token="," lemma="" pos="," features="-" ></word_40>
+</sn>
+<sn id="26" tokens="78...98" nucleo="brasileiros" sintagma="Os brasileiros Gilson Rambelli , Paulo Bava de Camargo e Flávio Rizzi , pesquisadores do Museu de Arqueologia e Etnologia ( MAE) da USP" Categoria="EN_SER" sentenca="4">
+<word_78 token="Os" lemma="o" pos="art" features="M=P" ></word_78>
+<word_79 token="brasileiros" lemma="brasileiro" pos="n" features="M=P" ></word_79>
+<word_80 token="Gilson_Rambelli" lemma="" pos="prop" features="M=S" ></word_80>
+<word_81 token="," lemma="" pos="," features="-" ></word_81>
+<word_82 token="Paulo_Bava_de_Camargo" lemma="" pos="prop" features="M=S" ></word_82>
+<word_83 token="e" lemma="e" pos="conj-c" features="-" ></word_83>
+<word_84 token="Flávio_Rizzi" lemma="" pos="prop" features="M=S" ></word_84>
+<word_85 token="," lemma="" pos="," features="-" ></word_85>
+<word_86 token="pesquisadores" lemma="pesquisar" pos="n" features="M=P" ></word_86>
+<word_87 token="de" lemma="de" pos="prp" features="-" ></word_87>
+<word_88 token="o" lemma="o" pos="art" features="M=S" ></word_88>
+<word_89 token="Museu" lemma="museu" pos="n" features="M=S" ></word_89>
+<word_90 token="de" lemma="de" pos="prp" features="-" ></word_90>
+<word_91 token="Arqueologia" lemma="arqueologia" pos="n" features="F=S" ></word_91>
+<word_92 token="e" lemma="e" pos="conj-c" features="-" ></word_92>
+<word_93 token="Etnologia" lemma="etnologia" pos="n" features="F=S" ></word_93>
+<word_94 token="(" lemma="(" pos="(" features="-" ></word_94>
+<word_95 token="MAE)" lemma="" pos="prop" features="M=S" ></word_95>
+<word_96 token="de" lemma="de" pos="prp" features="-" ></word_96>
+<word_97 token="a" lemma="o" pos="art" features="F=S" ></word_97>
+<word_98 token="USP" lemma="" pos="prop" features="F=S" ></word_98>
+</sn>
+<sn id="76" tokens="252...254" nucleo="brasileiros" sintagma="os três brasileiros" Categoria="EN_SER" sentenca="8">
+<word_252 token="os" lemma="o" pos="art" features="M=P" ></word_252>
+<word_253 token="três" lemma="três" pos="num" features="M=P" ></word_253>
+<word_254 token="brasileiros" lemma="brasileiro" pos="n" features="M=P" ></word_254>
+</sn>
+<sn id="128" tokens="433...435" nucleo="Rambelli" sintagma="Rambelli , que" Categoria="EN_SER" sentenca="15">
+<word_433 token="Rambelli" lemma="" pos="prop" features="M=S" ></word_433>
+<word_434 token="," lemma="" pos="," features="-" ></word_434>
+<word_435 token="que" lemma="que" pos="pron-indp" features="M=S" ></word_435>
+</sn>
+<sn id="142" tokens="486...486" nucleo="Rambelli" sintagma="Rambelli" Categoria="EN_SER" sentenca="17">
+<word_486 token="Rambelli" lemma="" pos="prop" features="M=S" ></word_486>
+</sn>
+</Cadeia_142>
+
+<Cadeia_150> 
+<sn id="132" tokens="446...457" nucleo="livro" sintagma="o livro  Arqueologia Até Debaixo D'Água  ( Editora Maranta , São Paulo , 2002 )" Categoria="EN_SER" sentenca="15">
+<word_446 token="o" lemma="o" pos="art" features="M=S" ></word_446>
+<word_447 token="livro" lemma="livro" pos="n" features="M=S" ></word_447>
+<word_449 token="Arqueologia_Até_Debaixo_D'Água" lemma="" pos="prop" features="F=S" ></word_449>
+<word_451 token="(" lemma="(" pos="(" features="-" ></word_451>
+<word_452 token="Editora_Maranta" lemma="" pos="prop" features="F=S" ></word_452>
+<word_453 token="," lemma="" pos="," features="-" ></word_453>
+<word_454 token="São_Paulo" lemma="" pos="prop" features="M=S" ></word_454>
+<word_455 token="," lemma="" pos="," features="-" ></word_455>
+<word_456 token="2002" lemma="" pos="num" features="M=P" ></word_456>
+<word_457 token=")" lemma=")" pos=")" features="-" ></word_457>
+</sn>
+<sn id="136" tokens="459...460" nucleo="livro" sintagma="O livro" Categoria="EN_SER" sentenca="16">
+<word_459 token="O" lemma="o" pos="art" features="M=S" ></word_459>
+<word_460 token="livro" lemma="livro" pos="n" features="M=S" ></word_460>
+</sn>
+<sn id="150" tokens="512...513" nucleo="livro" sintagma="O livro" Categoria="EN_SER" sentenca="18">
+<word_512 token="O" lemma="o" pos="art" features="M=S" ></word_512>
+<word_513 token="livro" lemma="livro" pos="n" features="M=S" ></word_513>
+</sn>
+</Cadeia_150>
+
+</Cadeias><Mencoes_Unicas><sn id="0" tokens="0...0" nucleo="Eles" sintagma="Eles" sentenca="1">
+<word_0 token="Eles" lemma="ele" pos="pron-pers" features="M=3P=NOM" ></word_0>
+</sn>
+<sn id="3" tokens="9...9" nucleo="esmeraldas" sintagma="esmeraldas" sentenca="1">
+<word_9 token="esmeraldas" lemma="esmeralda" pos="n" features="F=P" ></word_9>
+</sn>
+<sn id="4" tokens="11...12" nucleo="rubis" sintagma="rubis ou" sentenca="1">
+<word_11 token="rubis" lemma="" pos="n" features="M=P" ></word_11>
+<word_12 token="ou" lemma="ou" pos="conj-c" features="-" ></word_12>
+</sn>
+<sn id="7" tokens="17...17" nucleo="prata" sintagma="prata" sentenca="1">
+<word_17 token="prata" lemma="prata" pos="n" features="F=S" ></word_17>
+</sn>
+<sn id="8" tokens="20...25" nucleo="vários" sintagma="vários pedaços de madeira e cordas" sentenca="2">
+<word_20 token="vários" lemma="" pos="pron-det" features="M=P" ></word_20>
+<word_21 token="pedaços" lemma="pedaço" pos="n" features="M=P" ></word_21>
+<word_22 token="de" lemma="de" pos="prp" features="-" ></word_22>
+<word_23 token="madeira" lemma="madeira" pos="n" features="F=S" ></word_23>
+<word_24 token="e" lemma="e" pos="conj-c" features="-" ></word_24>
+<word_25 token="cordas" lemma="corda" pos="n" features="F=P" ></word_25>
+</sn>
+<sn id="11" tokens="28...28" nucleo="alguns" sintagma="alguns" sentenca="2">
+<word_28 token="alguns" lemma="algum" pos="pron-det" features="M=P" ></word_28>
+</sn>
+<sn id="13" tokens="34...40" nucleo="equipe" sintagma="a equipe internacional de arqueólogos subaquáticos" sentenca="3">
+<word_34 token="a" lemma="o" pos="art" features="F=S" ></word_34>
+<word_35 token="equipe" lemma="" pos="n" features="F=S" ></word_35>
+<word_36 token="internacional" lemma="internacional" pos="adj" features="F=S" ></word_36>
+<word_37 token="de" lemma="de" pos="prp" features="-" ></word_37>
+<word_38 token="arqueólogos" lemma="arqueologia" pos="n" features="M=P" ></word_38>
+<word_39 token="subaquáticos" lemma="subaquático, aquático" pos="adj" features="M=P" ></word_39>
+<word_40 token="," lemma="" pos="," features="-" ></word_40>
+</sn>
+<sn id="16" tokens="47...48" nucleo="foz" sintagma="a foz" sentenca="3">
+<word_47 token="a" lemma="o" pos="art" features="F=S" ></word_47>
+<word_48 token="foz" lemma="foz" pos="n" features="F=S" ></word_48>
+</sn>
+<sn id="19" tokens="55...56" nucleo="sul" sintagma="o sul" sentenca="3">
+<word_55 token="o" lemma="o" pos="art" features="M=S" ></word_55>
+<word_56 token="sul" lemma="sul" pos="n" features="M=S" ></word_56>
+</sn>
+<sn id="20" tokens="58...58" nucleo="Portugal" sintagma="Portugal" sentenca="3">
+<word_58 token="Portugal" lemma="Portugal" pos="prop" features="M=S" ></word_58>
+</sn>
+<sn id="21" tokens="63...64" nucleo="menos" sintagma="o menos" sentenca="3">
+<word_63 token="o" lemma="o" pos="art" features="M=S" ></word_63>
+<word_64 token="menos" lemma="menos" pos="pron-det" features="M=S" ></word_64>
+</sn>
+<sn id="22" tokens="66...67" nucleo="mito" sintagma="um mito" sentenca="3">
+<word_66 token="um" lemma="um" pos="num" features="M=S" ></word_66>
+<word_67 token="mito" lemma="mito" pos="n" features="M=S" ></word_67>
+</sn>
+<sn id="23" tokens="44...44" nucleo="que" sintagma="que" sentenca="3">
+<word_44 token="que" lemma="que" pos="pron-indp" features="M=S" ></word_44>
+</sn>
+<sn id="24" tokens="70...70" nucleo="que" sintagma="que" sentenca="3">
+<word_44 token="que" lemma="que" pos="pron-indp" features="M=S" ></word_44>
+</sn>
+<sn id="28" tokens="82...83" nucleo="Paulo_Bava_de_Camargo" sintagma="Paulo Bava de Camargo e" sentenca="4">
+<word_82 token="Paulo_Bava_de_Camargo" lemma="" pos="prop" features="M=S" ></word_82>
+<word_83 token="e" lemma="e" pos="conj-c" features="-" ></word_83>
+</sn>
+<sn id="29" tokens="84...84" nucleo="Flávio_Rizzi" sintagma="Flávio Rizzi" sentenca="4">
+<word_84 token="Flávio_Rizzi" lemma="" pos="prop" features="M=S" ></word_84>
+</sn>
+<sn id="30" tokens="86...86" nucleo="pesquisadores" sintagma="pesquisadores" sentenca="4">
+<word_86 token="pesquisadores" lemma="pesquisar" pos="n" features="M=P" ></word_86>
+</sn>
+<sn id="31" tokens="88...89" nucleo="Museu" sintagma="o Museu" sentenca="4">
+<word_88 token="o" lemma="o" pos="art" features="M=S" ></word_88>
+<word_89 token="Museu" lemma="museu" pos="n" features="M=S" ></word_89>
+</sn>
+<sn id="33" tokens="93...93" nucleo="Etnologia" sintagma="Etnologia" sentenca="4">
+<word_93 token="Etnologia" lemma="etnologia" pos="n" features="F=S" ></word_93>
+</sn>
+<sn id="34" tokens="95...95" nucleo="MAE)" sintagma="MAE)" sentenca="4">
+<word_95 token="MAE)" lemma="" pos="prop" features="M=S" ></word_95>
+</sn>
+<sn id="35" tokens="97...98" nucleo="USP" sintagma="a USP" sentenca="4">
+<word_97 token="a" lemma="o" pos="art" features="F=S" ></word_97>
+<word_98 token="USP" lemma="" pos="prop" features="F=S" ></word_98>
+</sn>
+<sn id="36" tokens="100...122" nucleo="mesmo" sintagma="mesmo restos de um ou dois navios antigos , possivelmente portugueses dos século 15 ou 16 , da chamada tradição ibero-atlântica" sentenca="4">
+<word_100 token="mesmo" lemma="mesmo" pos="pron-det" features="M=S" ></word_100>
+<word_101 token="restos" lemma="resto" pos="n" features="M=P" ></word_101>
+<word_102 token="de" lemma="de" pos="prp" features="-" ></word_102>
+<word_103 token="um" lemma="um" pos="art" features="M=S" ></word_103>
+<word_104 token="ou" lemma="ou" pos="conj-c" features="-" ></word_104>
+<word_105 token="dois" lemma="dois" pos="num" features="M=P" ></word_105>
+<word_106 token="navios" lemma="navio" pos="n" features="M=P" ></word_106>
+<word_107 token="antigos" lemma="antigo" pos="adj" features="M=P" ></word_107>
+<word_108 token="," lemma="" pos="," features="-" ></word_108>
+<word_109 token="possivelmente" lemma="possível" pos="adv" features="-" ></word_109>
+<word_110 token="portugueses" lemma="português" pos="n-adj" features="M=P" ></word_110>
+<word_111 token="de" lemma="de" pos="prp" features="-" ></word_111>
+<word_112 token="os" lemma="o" pos="art" features="M=P" ></word_112>
+<word_113 token="século" lemma="século" pos="n" features="M=S" ></word_113>
+<word_114 token="15" lemma="" pos="num" features="M=P" ></word_114>
+<word_115 token="ou" lemma="ou" pos="conj-c" features="-" ></word_115>
+<word_116 token="16" lemma="" pos="num" features="M=P" ></word_116>
+<word_117 token="," lemma="" pos="," features="-" ></word_117>
+<word_118 token="de" lemma="de" pos="prp" features="-" ></word_118>
+<word_119 token="a" lemma="o" pos="art" features="F=S" ></word_119>
+<word_120 token="chamada" lemma="" pos="adj" features="F=S" ></word_120>
+<word_121 token="tradição" lemma="tradição" pos="n" features="F=S" ></word_121>
+<word_122 token="ibero-atlântica" lemma="" pos="n" features="F=S" ></word_122>
+</sn>
+<sn id="39" tokens="119...121" nucleo="tradição" sintagma="a chamada tradição" sentenca="4">
+<word_119 token="a" lemma="o" pos="art" features="F=S" ></word_119>
+<word_120 token="chamada" lemma="" pos="adj" features="F=S" ></word_120>
+<word_121 token="tradição" lemma="tradição" pos="n" features="F=S" ></word_121>
+</sn>
+<sn id="40" tokens="122...122" nucleo="ibero-atlântica" sintagma="ibero-atlântica" sentenca="4">
+<word_122 token="ibero-atlântica" lemma="" pos="n" features="F=S" ></word_122>
+</sn>
+<sn id="44" tokens="137...139" nucleo="metros" sintagma="quase quatro metros" sentenca="5">
+<word_137 token="quase" lemma="quase" pos="adv" features="-" ></word_137>
+<word_138 token="quatro" lemma="quatro" pos="num" features="M=P" ></word_138>
+<word_139 token="metros" lemma="metro" pos="n" features="M=P" ></word_139>
+</sn>
+<sn id="45" tokens="141...141" nucleo="comprimento" sintagma="comprimento" sentenca="5">
+<word_141 token="comprimento" lemma="comprimento" pos="n" features="M=S" ></word_141>
+</sn>
+<sn id="46" tokens="144...151" nucleo="ponta" sintagma="a ponta de uma caverna , peça encaixada" sentenca="5">
+<word_144 token="a" lemma="o" pos="art" features="F=S" ></word_144>
+<word_145 token="ponta" lemma="ponta" pos="n" features="F=S" ></word_145>
+<word_146 token="de" lemma="de" pos="prp" features="-" ></word_146>
+<word_147 token="uma" lemma="um" pos="art" features="F=S" ></word_147>
+<word_148 token="caverna" lemma="caverna" pos="n" features="F=S" ></word_148>
+<word_149 token="," lemma="" pos="," features="-" ></word_149>
+<word_150 token="peça" lemma="peça" pos="n" features="F=S" ></word_150>
+<word_151 token="encaixada" lemma="encaixar" pos="v-pcp" features="F=S" ></word_151>
+</sn>
+<sn id="47" tokens="147...148" nucleo="caverna" sintagma="uma caverna" sentenca="5">
+<word_147 token="uma" lemma="um" pos="art" features="F=S" ></word_147>
+<word_148 token="caverna" lemma="caverna" pos="n" features="F=S" ></word_148>
+</sn>
+<sn id="50" tokens="156...156" nucleo="que" sintagma="que" sentenca="5">
+<word_156 token="que" lemma="que" pos="pron-indp" features="F=S" ></word_156>
+</sn>
+<sn id="51" tokens="158...162" nucleo="esqueleto" sintagma="o esqueleto do navio" sentenca="5">
+<word_158 token="o" lemma="o" pos="art" features="M=S" ></word_158>
+<word_159 token="esqueleto" lemma="esqueleto" pos="n" features="M=S" ></word_159>
+<word_160 token="de" lemma="de" pos="prp" features="-" ></word_160>
+<word_161 token="o" lemma="o" pos="art" features="M=S" ></word_161>
+<word_162 token="navio" lemma="navio" pos="n" features="M=S" ></word_162>
+</sn>
+<sn id="54" tokens="172...174" nucleo="cronista" sintagma="um cronista árabe" sentenca="6">
+<word_172 token="um" lemma="um" pos="art" features="M=S" ></word_172>
+<word_173 token="cronista" lemma="cronista" pos="n" features="M=S" ></word_173>
+<word_174 token="árabe" lemma="árabe" pos="adj" features="M=S" ></word_174>
+</sn>
+<sn id="55" tokens="177...178" nucleo="ano" sintagma="o ano" sentenca="6">
+<word_177 token="o" lemma="o" pos="art" features="M=S" ></word_177>
+<word_178 token="ano" lemma="ano" pos="n" features="M=S" ></word_178>
+</sn>
+<sn id="56" tokens="184...185" nucleo="navios" sintagma="navios vikings" sentenca="6">
+<word_184 token="navios" lemma="navio" pos="n" features="M=P" ></word_184>
+<word_185 token="vikings" lemma="viking" pos="adj" features="M=P" ></word_185>
+</sn>
+<sn id="58" tokens="192...195" nucleo="cidade" sintagma="a cidade de Silves" sentenca="6">
+<word_192 token="a" lemma="o" pos="art" features="F=S" ></word_192>
+<word_193 token="cidade" lemma="cidade" pos="n" features="F=S" ></word_193>
+<word_194 token="de" lemma="de" pos="prp" features="-" ></word_194>
+<word_195 token="Silves" lemma="Silves" pos="prop" features="M=S" ></word_195>
+</sn>
+<sn id="62" tokens="204...205" nucleo="outro" sintagma="outro tipo" sentenca="6">
+<word_204 token="outro" lemma="outro" pos="pron-det" features="M=S" ></word_204>
+<word_205 token="tipo" lemma="tipo" pos="n" features="M=S" ></word_205>
+</sn>
+<sn id="65" tokens="212...213" nucleo="várias" sintagma="várias origens" sentenca="7">
+<word_212 token="várias" lemma="" pos="pron-det" features="F=P" ></word_212>
+<word_213 token="origens" lemma="origem" pos="n" features="F=P" ></word_213>
+</sn>
+<sn id="66" tokens="217...219" nucleo="levas" sintagma="as sucessivas levas" sentenca="7">
+<word_217 token="as" lemma="o" pos="art" features="F=P" ></word_217>
+<word_218 token="sucessivas" lemma="sucessivo" pos="adj" features="F=P" ></word_218>
+<word_219 token="levas" lemma="leva" pos="n" features="F=P" ></word_219>
+</sn>
+<sn id="68" tokens="228...230" nucleo="rio" sintagma="O rio Arade" sentenca="8">
+<word_228 token="O" lemma="o" pos="art" features="M=S" ></word_228>
+<word_229 token="rio" lemma="rio" pos="n" features="M=S" ></word_229>
+<word_230 token="Arade" lemma="" pos="prop" features="M=S" ></word_230>
+</sn>
+<sn id="70" tokens="232...248" nucleo="rota" sintagma="a principal rota de acesso a Silves desde a implantação dos estabelecimentos fenícios no Algarve" sentenca="8">
+<word_232 token="a" lemma="o" pos="art" features="F=S" ></word_232>
+<word_233 token="principal" lemma="principal" pos="adj" features="F=S" ></word_233>
+<word_234 token="rota" lemma="rota, roto" pos="n" features="F=S" ></word_234>
+<word_235 token="de" lemma="de" pos="prp" features="-" ></word_235>
+<word_236 token="acesso" lemma="acesso" pos="n" features="M=S" ></word_236>
+<word_237 token="a" lemma="a" pos="prp" features="-" ></word_237>
+<word_238 token="Silves" lemma="Silves" pos="prop" features="M=S" ></word_238>
+<word_239 token="desde" lemma="desde" pos="prp" features="-" ></word_239>
+<word_240 token="a" lemma="o" pos="art" features="F=S" ></word_240>
+<word_241 token="implantação" lemma="implantar" pos="n" features="F=S" ></word_241>
+<word_242 token="de" lemma="de" pos="prp" features="-" ></word_242>
+<word_243 token="os" lemma="o" pos="art" features="M=P" ></word_243>
+<word_244 token="estabelecimentos" lemma="estabelecer" pos="n" features="M=P" ></word_244>
+<word_245 token="fenícios" lemma="fenício" pos="adj" features="M=P" ></word_245>
+<word_246 token="em" lemma="em" pos="prp" features="-" ></word_246>
+<word_247 token="o" lemma="o" pos="art" features="M=S" ></word_247>
+<word_248 token="Algarve" lemma="Algarve" pos="prop" features="M=S" ></word_248>
+</sn>
+<sn id="73" tokens="240...241" nucleo="implantação" sintagma="a implantação" sentenca="8">
+<word_240 token="a" lemma="o" pos="art" features="F=S" ></word_240>
+<word_241 token="implantação" lemma="implantar" pos="n" features="F=S" ></word_241>
+</sn>
+<sn id="74" tokens="243...245" nucleo="estabelecimentos" sintagma="os estabelecimentos fenícios" sentenca="8">
+<word_243 token="os" lemma="o" pos="art" features="M=P" ></word_243>
+<word_244 token="estabelecimentos" lemma="estabelecer" pos="n" features="M=P" ></word_244>
+<word_245 token="fenícios" lemma="fenício" pos="adj" features="M=P" ></word_245>
+</sn>
+<sn id="75" tokens="247...248" nucleo="Algarve" sintagma="o Algarve" sentenca="8">
+<word_247 token="o" lemma="o" pos="art" features="M=S" ></word_247>
+<word_248 token="Algarve" lemma="Algarve" pos="prop" features="M=S" ></word_248>
+</sn>
+<sn id="78" tokens="261...262" nucleo="revista" sintagma="a revista" sentenca="8">
+<word_261 token="a" lemma="o" pos="art" features="F=S" ></word_261>
+<word_262 token="revista" lemma="revista" pos="n" features="F=S" ></word_262>
+</sn>
+<sn id="79" tokens="264...265" nucleo="MAE." sintagma="o MAE." sentenca="8">
+<word_264 token="o" lemma="o" pos="art" features="M=S" ></word_264>
+<word_265 token="MAE." lemma="" pos="prop" features="M=S" ></word_265>
+</sn>
+<sn id="82" tokens="276...282" nucleo="fragmentos" sintagma="inúmeros fragmentos , principalmente cerâmicos , que" sentenca="9">
+<word_276 token="inúmeros" lemma="inúmero" pos="adj" features="M=P" ></word_276>
+<word_277 token="fragmentos" lemma="fragmento" pos="n" features="M=P" ></word_277>
+<word_278 token="," lemma="" pos="," features="-" ></word_278>
+<word_279 token="principalmente" lemma="principal" pos="adv" features="-" ></word_279>
+<word_280 token="cerâmicos" lemma="cerâmico" pos="adj" features="M=P" ></word_280>
+<word_281 token="," lemma="" pos="," features="-" ></word_281>
+<word_282 token="que" lemma="que" pos="pron-indp" features="M=P" ></word_282>
+</sn>
+<sn id="83" tokens="282...282" nucleo="que" sintagma="que" sentenca="9">
+<word_282 token="que" lemma="que" pos="pron-indp" features="M=P" ></word_282>
+</sn>
+<sn id="84" tokens="285...286" nucleo="ânforas" sintagma="ânforas romanas" sentenca="9">
+<word_285 token="ânforas" lemma="ânfora" pos="n" features="F=P" ></word_285>
+<word_286 token="romanas" lemma="romano" pos="adj" features="F=P" ></word_286>
+</sn>
+<sn id="87" tokens="297...299" nucleo="cerâmica" sintagma="a cerâmica árabe" sentenca="9">
+<word_297 token="a" lemma="o" pos="art" features="F=S" ></word_297>
+<word_298 token="cerâmica" lemma="cerâmica" pos="n" features="F=S" ></word_298>
+<word_299 token="árabe" lemma="árabe" pos="adj" features="F=S" ></word_299>
+</sn>
+<sn id="90" tokens="313...320" nucleo="caixa" sintagma="uma caixa achatada de madeira com duas fendas" sentenca="10">
+<word_313 token="uma" lemma="um" pos="art" features="F=S" ></word_313>
+<word_314 token="caixa" lemma="caixa" pos="n" features="F=S" ></word_314>
+<word_315 token="achatada" lemma="achatar" pos="v-pcp" features="F=S" ></word_315>
+<word_316 token="de" lemma="de" pos="prp" features="-" ></word_316>
+<word_317 token="madeira" lemma="madeira" pos="n" features="F=S" ></word_317>
+<word_318 token="com" lemma="com" pos="prp" features="-" ></word_318>
+<word_319 token="duas" lemma="dois" pos="num" features="F=P" ></word_319>
+<word_320 token="fendas" lemma="fenda" pos="n" features="F=P" ></word_320>
+</sn>
+<sn id="93" tokens="323...324" nucleo="cada" sintagma="cada uma" sentenca="10">
+<word_323 token="cada" lemma="cada" pos="pron-det" features="F=S" ></word_323>
+<word_313 token="uma" lemma="um" pos="art" features="F=S" ></word_313>
+</sn>
+<sn id="94" tokens="326...327" nucleo="quais" sintagma="as quais" sentenca="10">
+<word_326 token="as" lemma="o" pos="art" features="F=P" ></word_326>
+<word_327 token="quais" lemma="qual" pos="pron-det" features="F=P" ></word_327>
+</sn>
+<sn id="95" tokens="329...331" nucleo="roldana" sintagma="uma roldana móvel" sentenca="10">
+<word_329 token="uma" lemma="um" pos="art" features="F=S" ></word_329>
+<word_330 token="roldana" lemma="roldana" pos="n" features="F=S" ></word_330>
+<word_331 token="móvel" lemma="móvel" pos="adj" features="F=S" ></word_331>
+</sn>
+<sn id="101" tokens="346...346" nucleo="que" sintagma="que" sentenca="11">
+<word_346 token="que" lemma="que" pos="pron-indp" features="F=P" ></word_346>
+</sn>
+<sn id="104" tokens="356...357" nucleo="este" sintagma="este ano" sentenca="12">
+<word_356 token="este" lemma="este" pos="pron-det" features="M=S" ></word_356>
+<word_357 token="ano" lemma="ano" pos="n" features="M=S" ></word_357>
+</sn>
+<sn id="105" tokens="361...361" nucleo="julho" sintagma="julho" sentenca="12">
+<word_361 token="julho" lemma="julho" pos="n" features="M=S" ></word_361>
+</sn>
+<sn id="106" tokens="363...363" nucleo="agosto" sintagma="agosto" sentenca="12">
+<word_363 token="agosto" lemma="agosto" pos="n" features="M=S" ></word_363>
+</sn>
+<sn id="107" tokens="368...369" nucleo="Centro_Nacional_de_Arqueologia_Náutica_e_Subaquática" sintagma="o Centro Nacional de Arqueologia Náutica e Subaquática" sentenca="12">
+<word_368 token="o" lemma="o" pos="art" features="M=S" ></word_368>
+<word_369 token="Centro_Nacional_de_Arqueologia_Náutica_e_Subaquática" lemma="" pos="prop" features="M=S" ></word_369>
+</sn>
+<sn id="108" tokens="371...372" nucleo="Instituto_Português_de_Arqueologia" sintagma="o Instituto Português de Arqueologia" sentenca="12">
+<word_371 token="o" lemma="o" pos="art" features="M=S" ></word_371>
+<word_372 token="Instituto_Português_de_Arqueologia" lemma="" pos="prop" features="M=S" ></word_372>
+</sn>
+<sn id="110" tokens="377...377" nucleo="estudantes" sintagma="estudantes" sentenca="13">
+<word_377 token="estudantes" lemma="estudante" pos="n" features="M=P" ></word_377>
+</sn>
+<sn id="112" tokens="382...383" nucleo="coordenação" sintagma="A coordenação" sentenca="14">
+<word_382 token="A" lemma="o" pos="art" features="F=S" ></word_382>
+<word_383 token="coordenação" lemma="coordenação, coordenar" pos="n" features="F=S" ></word_383>
+</sn>
+<sn id="114" tokens="389...389" nucleo="Francisco_Alves" sintagma="Francisco Alves" sentenca="14">
+<word_389 token="Francisco_Alves" lemma="" pos="prop" features="M=S" ></word_389>
+</sn>
+<sn id="115" tokens="393...394" nucleo="pioneiros" sintagma="os pioneiros" sentenca="14">
+<word_393 token="os" lemma="o" pos="art" features="M=P" ></word_393>
+<word_394 token="pioneiros" lemma="pioneiro" pos="n" features="M=P" ></word_394>
+</sn>
+<sn id="117" tokens="399...399" nucleo="Portugal" sintagma="Portugal" sentenca="14">
+<word_399 token="Portugal" lemma="Portugal" pos="prop" features="M=S" ></word_399>
+</sn>
+<sn id="118" tokens="403...404" nucleo="trabalhos" sintagma="os trabalhos" sentenca="14">
+<word_403 token="os" lemma="o" pos="art" features="M=P" ></word_403>
+<word_404 token="trabalhos" lemma="trabalho" pos="n" features="M=P" ></word_404>
+</sn>
+<sn id="119" tokens="406...407" nucleo="galeão" sintagma="o galeão" sentenca="14">
+<word_406 token="o" lemma="o" pos="art" features="M=S" ></word_406>
+<word_407 token="galeão" lemma="galeão" pos="n" features="M=S" ></word_407>
+</sn>
+<sn id="122" tokens="413...426" nucleo="atração" sintagma="a atração central do pavilhão de Portugal na exposição internacional de Lisboa" sentenca="14">
+<word_413 token="a" lemma="o" pos="art" features="F=S" ></word_413>
+<word_414 token="atração" lemma="atração" pos="n" features="F=S" ></word_414>
+<word_415 token="central" lemma="central" pos="adj" features="F=S" ></word_415>
+<word_416 token="de" lemma="de" pos="prp" features="-" ></word_416>
+<word_417 token="o" lemma="o" pos="art" features="M=S" ></word_417>
+<word_418 token="pavilhão" lemma="pavilhão" pos="n" features="M=S" ></word_418>
+<word_419 token="de" lemma="de" pos="prp" features="-" ></word_419>
+<word_420 token="Portugal" lemma="Portugal" pos="prop" features="M=S" ></word_420>
+<word_421 token="em" lemma="em" pos="prp" features="-" ></word_421>
+<word_422 token="a" lemma="o" pos="art" features="F=S" ></word_422>
+<word_423 token="exposição" lemma="exposição, expor" pos="n" features="F=S" ></word_423>
+<word_424 token="internacional" lemma="internacional" pos="adj" features="F=S" ></word_424>
+<word_425 token="de" lemma="de" pos="prp" features="-" ></word_425>
+<word_426 token="Lisboa" lemma="Lisboa" pos="prop" features="M=S" ></word_426>
+</sn>
+<sn id="123" tokens="417...418" nucleo="pavilhão" sintagma="o pavilhão" sentenca="14">
+<word_417 token="o" lemma="o" pos="art" features="M=S" ></word_417>
+<word_418 token="pavilhão" lemma="pavilhão" pos="n" features="M=S" ></word_418>
+</sn>
+<sn id="124" tokens="420...420" nucleo="Portugal" sintagma="Portugal" sentenca="14">
+<word_399 token="Portugal" lemma="Portugal" pos="prop" features="M=S" ></word_399>
+</sn>
+<sn id="125" tokens="422...424" nucleo="exposição" sintagma="a exposição internacional" sentenca="14">
+<word_422 token="a" lemma="o" pos="art" features="F=S" ></word_422>
+<word_423 token="exposição" lemma="exposição, expor" pos="n" features="F=S" ></word_423>
+<word_424 token="internacional" lemma="internacional" pos="adj" features="F=S" ></word_424>
+</sn>
+<sn id="126" tokens="426...426" nucleo="Lisboa" sintagma="Lisboa" sentenca="14">
+<word_426 token="Lisboa" lemma="Lisboa" pos="prop" features="M=S" ></word_426>
+</sn>
+<sn id="127" tokens="430...431" nucleo="Expo-98" sintagma="a Expo-98" sentenca="14">
+<word_430 token="a" lemma="o" pos="art" features="F=S" ></word_430>
+<word_431 token="Expo-98" lemma="" pos="prop" features="F=S" ></word_431>
+</sn>
+<sn id="129" tokens="435...435" nucleo="que" sintagma="que" sentenca="15">
+<word_435 token="que" lemma="que" pos="pron-indp" features="M=S" ></word_435>
+</sn>
+<sn id="130" tokens="437...439" nucleo="participação" sintagma="a participação brasileira" sentenca="15">
+<word_437 token="a" lemma="o" pos="art" features="F=S" ></word_437>
+<word_438 token="participação" lemma="participação, participar" pos="n" features="F=S" ></word_438>
+<word_439 token="brasileira" lemma="brasileiro" pos="adj" features="F=S" ></word_439>
+</sn>
+<sn id="131" tokens="444...445" nucleo="esta" sintagma="esta semana" sentenca="15">
+<word_444 token="esta" lemma="este" pos="pron-det" features="F=S" ></word_444>
+<word_445 token="semana" lemma="semana" pos="n" features="F=S" ></word_445>
+</sn>
+<sn id="135" tokens="454...454" nucleo="São_Paulo" sintagma="São Paulo" sentenca="15">
+<word_454 token="São_Paulo" lemma="" pos="prop" features="M=S" ></word_454>
+</sn>
+<sn id="138" tokens="469...474" nucleo="esse" sintagma="esse aspecto da arqueologia" sentenca="16">
+<word_469 token="esse" lemma="esse" pos="pron-det" features="M=S" ></word_469>
+<word_470 token="aspecto" lemma="aspecto" pos="n" features="M=S" ></word_470>
+<word_471 token="de" lemma="de" pos="prp" features="-" ></word_471>
+<word_472 token="a" lemma="o" pos="art" features="F=S" ></word_472>
+<word_473 token="arqueologia" lemma="arqueologia" pos="n" features="F=S" ></word_473>
+<word_474 token="," lemma="" pos="," features="-" ></word_474>
+</sn>
+<sn id="140" tokens="479...481" nucleo="caça" sintagma="a  caça" sentenca="16">
+<word_479 token="a" lemma="o" pos="art" features="F=S" ></word_479>
+<word_481 token="caça" lemma="caça" pos="n" features="F=S" ></word_481>
+</sn>
+<sn id="143" tokens="489...494" nucleo="objetivo" sintagma="o principal objetivo da arqueologia" sentenca="17">
+<word_489 token="o" lemma="o" pos="art" features="M=S" ></word_489>
+<word_490 token="principal" lemma="principal" pos="adj" features="M=S" ></word_490>
+<word_491 token="objetivo" lemma="objetivo" pos="n" features="M=S" ></word_491>
+<word_492 token="de" lemma="de" pos="prp" features="-" ></word_492>
+<word_493 token="a" lemma="o" pos="art" features="F=S" ></word_493>
+<word_494 token="arqueologia" lemma="arqueologia" pos="n" features="F=S" ></word_494>
+</sn>
+<sn id="145" tokens="498...499" nucleo="embaixo" sintagma="como embaixo" sentenca="17">
+<word_498 token="como" lemma="como" pos="adv" features="-" ></word_498>
+<word_499 token="embaixo" lemma="" pos="n" features="M=S" ></word_499>
+</sn>
+<sn id="147" tokens="503...506" nucleo="busca" sintagma="a busca de conhecimento" sentenca="17">
+<word_503 token="a" lemma="o" pos="art" features="F=S" ></word_503>
+<word_504 token="busca" lemma="busca" pos="n" features="F=S" ></word_504>
+<word_505 token="de" lemma="de" pos="prp" features="-" ></word_505>
+<word_506 token="conhecimento" lemma="conhecer" pos="n" features="M=S" ></word_506>
+</sn>
+<sn id="148" tokens="506...506" nucleo="conhecimento" sintagma="conhecimento" sentenca="17">
+<word_506 token="conhecimento" lemma="conhecer" pos="n" features="M=S" ></word_506>
+</sn>
+<sn id="149" tokens="510...510" nucleo="suvenires" sintagma="suvenires" sentenca="17">
+<word_510 token="suvenires" lemma="" pos="n" features="M=P" ></word_510>
+</sn>
+<sn id="151" tokens="517...522" nucleo="mergulhadores" sintagma="os mergulhadores sobre o patrimônio subaquático" sentenca="18">
+<word_517 token="os" lemma="o" pos="art" features="M=P" ></word_517>
+<word_518 token="mergulhadores" lemma="mergulhador, mergulhar" pos="n" features="M=P" ></word_518>
+<word_519 token="sobre" lemma="sobre" pos="prp" features="-" ></word_519>
+<word_520 token="o" lemma="o" pos="art" features="M=S" ></word_520>
+<word_521 token="patrimônio" lemma="patrimônio" pos="n" features="M=S" ></word_521>
+<word_522 token="subaquático" lemma="subaquático, aquático" pos="adj" features="M=S" ></word_522>
+</sn>
+<sn id="152" tokens="520...522" nucleo="patrimônio" sintagma="o patrimônio subaquático" sentenca="18">
+<word_520 token="o" lemma="o" pos="art" features="M=S" ></word_520>
+<word_521 token="patrimônio" lemma="patrimônio" pos="n" features="M=S" ></word_521>
+<word_522 token="subaquático" lemma="subaquático, aquático" pos="adj" features="M=S" ></word_522>
+</sn>
+</Mencoes_Unicas>
+</CIENCIA_2002_22005.txt>

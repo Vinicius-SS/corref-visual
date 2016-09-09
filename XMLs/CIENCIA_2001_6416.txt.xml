@@ -1,0 +1,672 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<CIENCIA_2001_6416.txt>
+
+<Texto conteudo="Uma alteração num único gene é capaz de transformar um vírus inofensivo no agente causador de uma gripe mortal. A descoberta, segundo pesquisadores da Universidade de Wisconsin-Madison (EUA), poderá levar à compreensão de como as epidemias da doença surgem e qual a melhor forma de combatê-las.
+A equipe liderada por Yoshihiro Kawaoka analisou amostras do H5N1, o vírus influenza que, em 1997, matou 6 das 18 pessoas infectadas, em Hong Kong.
+Essas amostras foram inoculadas em camundongos e, de acordo com os sintomas apresentados pelos animais, foram divididas em dois grupos.
+O primeiro grupo causava uma forma de infecção letal, matando os camundongos, e o segundo provocava apenas problemas respiratórios como sintomas.
+Para descobrir a razão dessa diferença, Kawaoka usou uma estratégia de &quot;engenheirar&quot; os vírus, trocando genes entre as linhagens virais. Desse modo, conseguiu identificar qual deles era o responsável pela maior capacidade de infecção do influenza.
+&quot;Uma mudança de apenas uma base [letra] no gene PB2 [que resultou na modificação de um aminoácido na proteína por ele codificada] parece ser a causa da virulência do influenza&quot;, explica.
+Os cientistas ainda não sabem exatamente qual o papel do PB2, mas ele parece codificar uma enzima responsável pela indução de um número maior de partículas virais nas células infectadas.
+O estudo do grupo de Kawaoka está na edição de hoje da revista científica &quot;Science&quot;.
+" ></Texto>
+
+<Tokens> 
+<word_0 token="Uma" lemma="um" pos="art" features="F=S" ></word_0>
+<word_1 token="alteração" lemma="alteração, alterar" pos="n" features="F=S" ></word_1>
+<word_2 token="em" lemma="em" pos="prp" features="-" ></word_2>
+<word_3 token="um" lemma="um" pos="art" features="M=S" ></word_3>
+<word_4 token="único" lemma="único" pos="adj" features="M=S" ></word_4>
+<word_5 token="gene" lemma="gene" pos="n" features="M=S" ></word_5>
+<word_6 token="é" lemma="ser" pos="v-fin" features="PR=3S=IND" ></word_6>
+<word_7 token="capaz" lemma="capaz" pos="adj" features="M=S" ></word_7>
+<word_8 token="de" lemma="de" pos="prp" features="-" ></word_8>
+<word_9 token="transformar" lemma="transformar" pos="v-inf" features="-" ></word_9>
+<word_10 token="um" lemma="um" pos="art" features="M=S" ></word_10>
+<word_11 token="vírus" lemma="vírus" pos="n" features="M=S" ></word_11>
+<word_12 token="inofensivo" lemma="inofensivo" pos="adj" features="M=S" ></word_12>
+<word_13 token="em" lemma="em" pos="prp" features="-" ></word_13>
+<word_14 token="o" lemma="o" pos="art" features="M=S" ></word_14>
+<word_15 token="agente" lemma="agente" pos="n" features="M=S" ></word_15>
+<word_16 token="causador" lemma="causador, causar" pos="adj" features="M=S" ></word_16>
+<word_17 token="de" lemma="de" pos="prp" features="-" ></word_17>
+<word_18 token="uma" lemma="um" pos="art" features="F=S" ></word_18>
+<word_19 token="gripe" lemma="gripe" pos="n" features="F=S" ></word_19>
+<word_20 token="mortal" lemma="mortal" pos="adj" features="F=S" ></word_20>
+<word_21 token="." lemma="." pos="." features="-" ></word_21>
+<word_22 token="A" lemma="o" pos="art" features="F=S" ></word_22>
+<word_23 token="descoberta" lemma="descoberta" pos="n" features="F=S" ></word_23>
+<word_24 token="," lemma="" pos="," features="-" ></word_24>
+<word_25 token="segundo" lemma="segundo" pos="prp" features="-" ></word_25>
+<word_26 token="pesquisadores" lemma="pesquisar" pos="n" features="M=P" ></word_26>
+<word_27 token="de" lemma="de" pos="prp" features="-" ></word_27>
+<word_28 token="a" lemma="o" pos="art" features="F=S" ></word_28>
+<word_29 token="Universidade_de_Wisconsin-Madison" lemma="" pos="prop" features="F=S" ></word_29>
+<word_30 token="(" lemma="(" pos="(" features="-" ></word_30>
+<word_31 token="EUA" lemma="EUA" pos="prop" features="M=P" ></word_31>
+<word_32 token=")" lemma=")" pos=")" features="-" ></word_32>
+<word_33 token="," lemma="" pos="," features="-" ></word_33>
+<word_34 token="poderá" lemma="poder" pos="v-fin" features="FUT=3S=IND" ></word_34>
+<word_35 token="levar" lemma="levar" pos="v-inf" features="-" ></word_35>
+<word_36 token="a" lemma="a" pos="prp" features="-" ></word_36>
+<word_37 token="a" lemma="o" pos="art" features="F=S" ></word_37>
+<word_38 token="compreensão" lemma="compreensão" pos="n" features="F=S" ></word_38>
+<word_39 token="de" lemma="de" pos="prp" features="-" ></word_39>
+<word_40 token="como" lemma="como" pos="adv" features="-" ></word_40>
+<word_41 token="as" lemma="o" pos="art" features="F=P" ></word_41>
+<word_42 token="epidemias" lemma="epidemia" pos="n" features="F=P" ></word_42>
+<word_43 token="de" lemma="de" pos="prp" features="-" ></word_43>
+<word_44 token="a" lemma="o" pos="art" features="F=S" ></word_44>
+<word_45 token="doença" lemma="doença" pos="n" features="F=S" ></word_45>
+<word_46 token="surgem" lemma="surgir" pos="v-fin" features="PR=3P=IND" ></word_46>
+<word_47 token="e" lemma="e" pos="conj-c" features="-" ></word_47>
+<word_48 token="qual" lemma="qual" pos="pron-det" features="F=S" ></word_48>
+<word_49 token="a" lemma="o" pos="art" features="F=S" ></word_49>
+<word_50 token="melhor" lemma="melhor" pos="adj" features="F=S" ></word_50>
+<word_51 token="forma" lemma="forma" pos="n" features="F=S" ></word_51>
+<word_52 token="de" lemma="de" pos="prp" features="-" ></word_52>
+<word_53 token="combatê" lemma="" pos="v-inf" features="-" ></word_53>
+<word_54 token="-las" lemma="" pos="pron-pers" features="F=P" ></word_54>
+<word_55 token="." lemma="." pos="." features="-" ></word_55>
+<word_56 token="A" lemma="o" pos="art" features="F=S" ></word_56>
+<word_57 token="equipe" lemma="" pos="n" features="F=S" ></word_57>
+<word_58 token="liderada" lemma="liderar" pos="v-pcp" features="F=S" ></word_58>
+<word_59 token="por" lemma="por" pos="prp" features="-" ></word_59>
+<word_60 token="Yoshihiro_Kawaoka" lemma="" pos="prop" features="M=S" ></word_60>
+<word_61 token="analisou" lemma="analisar" pos="v-fin" features="PS=3S=IND" ></word_61>
+<word_62 token="amostras" lemma="amostra" pos="n" features="F=P" ></word_62>
+<word_63 token="de" lemma="de" pos="prp" features="-" ></word_63>
+<word_64 token="o" lemma="o" pos="art" features="M=S" ></word_64>
+<word_65 token="H5N1" lemma="" pos="prop" features="M=S" ></word_65>
+<word_66 token="," lemma="" pos="," features="-" ></word_66>
+<word_67 token="o" lemma="o" pos="art" features="M=S" ></word_67>
+<word_68 token="vírus" lemma="vírus" pos="n" features="M=S" ></word_68>
+<word_69 token="influenza" lemma="" pos="adj" features="M=S" ></word_69>
+<word_70 token="que" lemma="que" pos="pron-indp" features="M=S" ></word_70>
+<word_71 token="," lemma="" pos="," features="-" ></word_71>
+<word_72 token="em" lemma="em" pos="prp" features="-" ></word_72>
+<word_73 token="1997" lemma="" pos="num" features="M=P" ></word_73>
+<word_74 token="," lemma="" pos="," features="-" ></word_74>
+<word_75 token="matou" lemma="matar" pos="v-fin" features="PS=3S=IND" ></word_75>
+<word_76 token="6" lemma="" pos="num" features="M=P" ></word_76>
+<word_77 token="de" lemma="de" pos="prp" features="-" ></word_77>
+<word_78 token="as" lemma="o" pos="art" features="F=P" ></word_78>
+<word_79 token="18" lemma="" pos="num" features="F=P" ></word_79>
+<word_80 token="pessoas" lemma="pessoa" pos="n" features="F=P" ></word_80>
+<word_81 token="infectadas" lemma="" pos="v-pcp" features="F=P" ></word_81>
+<word_82 token="," lemma="" pos="," features="-" ></word_82>
+<word_83 token="em" lemma="em" pos="prp" features="-" ></word_83>
+<word_84 token="Hong_Kong" lemma="" pos="prop" features="M=S" ></word_84>
+<word_85 token="." lemma="." pos="." features="-" ></word_85>
+<word_86 token="Essas" lemma="esse" pos="pron-det" features="F=P" ></word_86>
+<word_87 token="amostras" lemma="amostra" pos="n" features="F=P" ></word_87>
+<word_88 token="foram" lemma="ir, ser" pos="v-fin" features="MQP=3P=IND" ></word_88>
+<word_89 token="inoculadas" lemma="inocular" pos="v-pcp" features="F=P" ></word_89>
+<word_90 token="em" lemma="em" pos="prp" features="-" ></word_90>
+<word_91 token="camundongos" lemma="" pos="n" features="M=P" ></word_91>
+<word_92 token="e" lemma="e" pos="conj-c" features="-" ></word_92>
+<word_93 token="," lemma="" pos="," features="-" ></word_93>
+<word_94 token="de_acordo" lemma="" pos="adv" features="-" ></word_94>
+<word_95 token="com" lemma="com" pos="prp" features="-" ></word_95>
+<word_96 token="os" lemma="o" pos="art" features="M=P" ></word_96>
+<word_97 token="sintomas" lemma="sintoma" pos="n" features="M=P" ></word_97>
+<word_98 token="apresentados" lemma="apresentar" pos="v-pcp" features="M=P" ></word_98>
+<word_99 token="por" lemma="por" pos="prp" features="-" ></word_99>
+<word_100 token="os" lemma="o" pos="art" features="M=P" ></word_100>
+<word_101 token="animais" lemma="animal" pos="n" features="M=P" ></word_101>
+<word_102 token="," lemma="" pos="," features="-" ></word_102>
+<word_103 token="foram" lemma="ir, ser" pos="v-fin" features="MQP=3P=IND" ></word_103>
+<word_104 token="divididas" lemma="dividir" pos="v-pcp" features="F=P" ></word_104>
+<word_105 token="em" lemma="em" pos="prp" features="-" ></word_105>
+<word_106 token="dois" lemma="dois" pos="num" features="M=P" ></word_106>
+<word_107 token="grupos" lemma="grupo" pos="n" features="M=P" ></word_107>
+<word_108 token="." lemma="." pos="." features="-" ></word_108>
+<word_109 token="O" lemma="o" pos="art" features="M=S" ></word_109>
+<word_110 token="primeiro" lemma="primeiro" pos="adj" features="M=S" ></word_110>
+<word_111 token="grupo" lemma="grupo" pos="n" features="M=S" ></word_111>
+<word_112 token="causava" lemma="causar" pos="v-fin" features="IMPF=3S=IND" ></word_112>
+<word_113 token="uma" lemma="um" pos="art" features="F=S" ></word_113>
+<word_114 token="forma" lemma="forma" pos="n" features="F=S" ></word_114>
+<word_115 token="de" lemma="de" pos="prp" features="-" ></word_115>
+<word_116 token="infecção" lemma="" pos="n" features="F=S" ></word_116>
+<word_117 token="letal" lemma="letal" pos="adj" features="F=S" ></word_117>
+<word_118 token="," lemma="" pos="," features="-" ></word_118>
+<word_119 token="matando" lemma="matar" pos="v-ger" features="-" ></word_119>
+<word_120 token="os" lemma="o" pos="art" features="M=P" ></word_120>
+<word_121 token="camundongos" lemma="" pos="n" features="M=P" ></word_121>
+<word_122 token="," lemma="" pos="," features="-" ></word_122>
+<word_123 token="e" lemma="e" pos="conj-c" features="-" ></word_123>
+<word_124 token="o" lemma="o" pos="art" features="M=S" ></word_124>
+<word_125 token="segundo" lemma="" pos="adj" features="M=S" ></word_125>
+<word_126 token="provocava" lemma="provocar" pos="v-fin" features="IMPF=3S=IND" ></word_126>
+<word_127 token="apenas" lemma="apenas" pos="adv" features="-" ></word_127>
+<word_128 token="problemas" lemma="problema" pos="n" features="M=P" ></word_128>
+<word_129 token="respiratórios" lemma="respiratório" pos="adj" features="M=P" ></word_129>
+<word_130 token="como" lemma="como" pos="adv" features="-" ></word_130>
+<word_131 token="sintomas" lemma="sintoma" pos="n" features="M=P" ></word_131>
+<word_132 token="." lemma="." pos="." features="-" ></word_132>
+<word_133 token="Para" lemma="para" pos="prp" features="-" ></word_133>
+<word_134 token="descobrir" lemma="descobrir" pos="v-inf" features="-" ></word_134>
+<word_135 token="a" lemma="o" pos="art" features="F=S" ></word_135>
+<word_136 token="razão" lemma="razão" pos="n" features="F=S" ></word_136>
+<word_137 token="de" lemma="de" pos="prp" features="-" ></word_137>
+<word_138 token="essa" lemma="esse" pos="pron-det" features="F=S" ></word_138>
+<word_139 token="diferença" lemma="diferença" pos="n" features="F=S" ></word_139>
+<word_140 token="," lemma="" pos="," features="-" ></word_140>
+<word_141 token="Kawaoka" lemma="" pos="prop" features="F=S" ></word_141>
+<word_142 token="usou" lemma="usar" pos="v-fin" features="PS=3S=IND" ></word_142>
+<word_143 token="uma" lemma="um" pos="art" features="F=S" ></word_143>
+<word_144 token="estratégia" lemma="estratégia" pos="n" features="F=S" ></word_144>
+<word_145 token="de" lemma="de" pos="prp" features="-" ></word_145>
+<word_146 token="&quot;" lemma="&quot;" pos="&quot;" features="-" ></word_146>
+<word_147 token="engenheirar" lemma="" pos="v-inf" features="-" ></word_147>
+<word_148 token="&quot;" lemma="&quot;" pos="&quot;" features="-" ></word_148>
+<word_149 token="os" lemma="o" pos="art" features="M=P" ></word_149>
+<word_150 token="vírus" lemma="vírus" pos="n" features="M=P" ></word_150>
+<word_151 token="," lemma="" pos="," features="-" ></word_151>
+<word_152 token="trocando" lemma="trocar" pos="v-ger" features="-" ></word_152>
+<word_153 token="genes" lemma="gene" pos="n" features="M=P" ></word_153>
+<word_154 token="entre" lemma="entre" pos="prp" features="-" ></word_154>
+<word_155 token="as" lemma="o" pos="art" features="F=P" ></word_155>
+<word_156 token="linhagens" lemma="linhagem" pos="n" features="F=P" ></word_156>
+<word_157 token="virais" lemma="virar" pos="v-fin" features="PR=2P=IND" ></word_157>
+<word_158 token="." lemma="." pos="." features="-" ></word_158>
+<word_159 token="de" lemma="de" pos="prp" features="-" ></word_159>
+<word_160 token="esse" lemma="esse" pos="pron-det" features="M=S" ></word_160>
+<word_161 token="modo" lemma="modo" pos="n" features="M=S" ></word_161>
+<word_162 token="," lemma="" pos="," features="-" ></word_162>
+<word_163 token="conseguiu" lemma="conseguir" pos="v-fin" features="PS=3S=IND" ></word_163>
+<word_164 token="identificar" lemma="identificar" pos="v-inf" features="-" ></word_164>
+<word_165 token="qual" lemma="qual" pos="pron-det" features="F=S" ></word_165>
+<word_166 token="de" lemma="de" pos="prp" features="-" ></word_166>
+<word_167 token="eles" lemma="ele" pos="pron-pers" features="M=3P=NOM" ></word_167>
+<word_168 token="era" lemma="ser" pos="v-fin" features="IMPF=3S=IND" ></word_168>
+<word_169 token="o" lemma="o" pos="art" features="M=S" ></word_169>
+<word_170 token="responsável" lemma="responsável" pos="n-adj" features="M=S" ></word_170>
+<word_171 token="por" lemma="por" pos="prp" features="-" ></word_171>
+<word_172 token="a" lemma="o" pos="art" features="F=S" ></word_172>
+<word_173 token="maior" lemma="maior" pos="adj" features="F=S" ></word_173>
+<word_174 token="capacidade" lemma="capacidade, capaz" pos="n" features="F=S" ></word_174>
+<word_175 token="de" lemma="de" pos="prp" features="-" ></word_175>
+<word_176 token="infecção" lemma="" pos="n" features="F=S" ></word_176>
+<word_177 token="de" lemma="de" pos="prp" features="-" ></word_177>
+<word_178 token="o" lemma="o" pos="art" features="M=S" ></word_178>
+<word_179 token="influenza" lemma="" pos="prop" features="M=S" ></word_179>
+<word_180 token="." lemma="." pos="." features="-" ></word_180>
+<word_181 token="&quot;" lemma="&quot;" pos="&quot;" features="-" ></word_181>
+<word_182 token="Uma" lemma="um" pos="art" features="F=S" ></word_182>
+<word_183 token="mudança" lemma="mudança" pos="n" features="F=S" ></word_183>
+<word_184 token="de" lemma="de" pos="prp" features="-" ></word_184>
+<word_185 token="apenas" lemma="apenas" pos="adv" features="-" ></word_185>
+<word_186 token="uma" lemma="um" pos="num" features="F=S" ></word_186>
+<word_187 token="base" lemma="base" pos="n" features="F=S" ></word_187>
+<word_188 token="(" lemma="(" pos="(" features="-" ></word_188>
+<word_189 token="letra" lemma="letra" pos="n" features="F=S" ></word_189>
+<word_190 token=")" lemma=")" pos=")" features="-" ></word_190>
+<word_191 token="em" lemma="em" pos="prp" features="-" ></word_191>
+<word_192 token="o" lemma="o" pos="art" features="M=S" ></word_192>
+<word_193 token="gene" lemma="gene" pos="n" features="M=S" ></word_193>
+<word_194 token="PB2" lemma="" pos="prop" features="M=S" ></word_194>
+<word_195 token="(" lemma="(" pos="(" features="-" ></word_195>
+<word_196 token="que" lemma="que" pos="pron-indp" features="M=S" ></word_196>
+<word_197 token="resultou" lemma="resultar" pos="v-fin" features="PS=3S=IND" ></word_197>
+<word_198 token="em" lemma="em" pos="prp" features="-" ></word_198>
+<word_199 token="a" lemma="o" pos="art" features="F=S" ></word_199>
+<word_200 token="modificação" lemma="modificação, modificar" pos="n" features="F=S" ></word_200>
+<word_201 token="de" lemma="de" pos="prp" features="-" ></word_201>
+<word_202 token="um" lemma="um" pos="art" features="M=S" ></word_202>
+<word_203 token="aminoácido" lemma="aminoácido" pos="n" features="M=S" ></word_203>
+<word_204 token="em" lemma="em" pos="prp" features="-" ></word_204>
+<word_205 token="a" lemma="o" pos="art" features="F=S" ></word_205>
+<word_206 token="proteína" lemma="proteína" pos="n" features="F=S" ></word_206>
+<word_207 token="por" lemma="por" pos="prp" features="-" ></word_207>
+<word_208 token="ele" lemma="ele" pos="pron-pers" features="M=3S=NOM" ></word_208>
+<word_209 token="codificada" lemma="codificar" pos="v-pcp" features="F=S" ></word_209>
+<word_210 token=")" lemma=")" pos=")" features="-" ></word_210>
+<word_211 token="parece" lemma="parecer" pos="v-fin" features="PR=3S=IND" ></word_211>
+<word_212 token="ser" lemma="ser" pos="v-inf" features="-" ></word_212>
+<word_213 token="a" lemma="o" pos="art" features="F=S" ></word_213>
+<word_214 token="causa" lemma="causa" pos="n" features="F=S" ></word_214>
+<word_215 token="de" lemma="de" pos="prp" features="-" ></word_215>
+<word_216 token="a" lemma="o" pos="art" features="F=S" ></word_216>
+<word_217 token="virulência" lemma="virulência" pos="n" features="F=S" ></word_217>
+<word_218 token="de" lemma="de" pos="prp" features="-" ></word_218>
+<word_219 token="o" lemma="o" pos="art" features="M=S" ></word_219>
+<word_220 token="influenza" lemma="" pos="prop" features="M=S" ></word_220>
+<word_221 token="&quot;" lemma="&quot;" pos="&quot;" features="-" ></word_221>
+<word_222 token="," lemma="" pos="," features="-" ></word_222>
+<word_223 token="explica" lemma="explicar" pos="v-fin" features="PR=3S=IND" ></word_223>
+<word_224 token="." lemma="." pos="." features="-" ></word_224>
+<word_225 token="Os" lemma="o" pos="art" features="M=P" ></word_225>
+<word_226 token="cientistas" lemma="cientista, ciente" pos="n" features="M=P" ></word_226>
+<word_227 token="ainda" lemma="ainda" pos="adv" features="-" ></word_227>
+<word_228 token="não" lemma="não" pos="adv" features="-" ></word_228>
+<word_229 token="sabem" lemma="saber" pos="v-fin" features="PR=3P=IND" ></word_229>
+<word_230 token="exatamente" lemma="exato" pos="adv" features="-" ></word_230>
+<word_231 token="qual" lemma="qual" pos="pron-det" features="F=S" ></word_231>
+<word_232 token="o" lemma="o" pos="art" features="M=S" ></word_232>
+<word_233 token="papel" lemma="papel" pos="n" features="M=S" ></word_233>
+<word_234 token="de" lemma="de" pos="prp" features="-" ></word_234>
+<word_235 token="o" lemma="o" pos="art" features="M=S" ></word_235>
+<word_236 token="PB2" lemma="" pos="prop" features="M=S" ></word_236>
+<word_237 token="," lemma="" pos="," features="-" ></word_237>
+<word_238 token="mas" lemma="mas" pos="conj-c" features="-" ></word_238>
+<word_239 token="ele" lemma="ele" pos="pron-pers" features="M=3S=NOM" ></word_239>
+<word_240 token="parece" lemma="parecer" pos="v-fin" features="PR=3S=IND" ></word_240>
+<word_241 token="codificar" lemma="codificar" pos="v-inf" features="-" ></word_241>
+<word_242 token="uma" lemma="um" pos="art" features="F=S" ></word_242>
+<word_243 token="enzima" lemma="enzima" pos="n" features="F=S" ></word_243>
+<word_244 token="responsável" lemma="responsável" pos="adj" features="F=S" ></word_244>
+<word_245 token="por" lemma="por" pos="prp" features="-" ></word_245>
+<word_246 token="a" lemma="o" pos="art" features="F=S" ></word_246>
+<word_247 token="indução" lemma="indução" pos="n" features="F=S" ></word_247>
+<word_248 token="de" lemma="de" pos="prp" features="-" ></word_248>
+<word_249 token="um" lemma="um" pos="art" features="M=S" ></word_249>
+<word_250 token="número" lemma="número" pos="n" features="M=S" ></word_250>
+<word_251 token="maior" lemma="maior" pos="adj" features="M=S" ></word_251>
+<word_252 token="de" lemma="de" pos="prp" features="-" ></word_252>
+<word_253 token="partículas" lemma="partícula" pos="n" features="F=P" ></word_253>
+<word_254 token="virais" lemma="virar" pos="v-fin" features="PR=2P=IND" ></word_254>
+<word_255 token="em" lemma="em" pos="prp" features="-" ></word_255>
+<word_256 token="as" lemma="o" pos="art" features="F=P" ></word_256>
+<word_257 token="células" lemma="célula" pos="n" features="F=P" ></word_257>
+<word_258 token="infectadas" lemma="" pos="v-pcp" features="F=P" ></word_258>
+<word_259 token="." lemma="." pos="." features="-" ></word_259>
+<word_260 token="O" lemma="o" pos="art" features="M=S" ></word_260>
+<word_261 token="estudo" lemma="estudo" pos="n" features="M=S" ></word_261>
+<word_262 token="de" lemma="de" pos="prp" features="-" ></word_262>
+<word_263 token="o" lemma="o" pos="art" features="M=S" ></word_263>
+<word_264 token="grupo" lemma="grupo" pos="n" features="M=S" ></word_264>
+<word_265 token="de" lemma="de" pos="prp" features="-" ></word_265>
+<word_266 token="Kawaoka" lemma="" pos="prop" features="M=S" ></word_266>
+<word_267 token="está" lemma="estar" pos="v-fin" features="PR=3S=IND" ></word_267>
+<word_268 token="em" lemma="em" pos="prp" features="-" ></word_268>
+<word_269 token="a" lemma="o" pos="art" features="F=S" ></word_269>
+<word_270 token="edição" lemma="edição" pos="n" features="F=S" ></word_270>
+<word_271 token="de" lemma="de" pos="prp" features="-" ></word_271>
+<word_272 token="hoje" lemma="hoje" pos="adv" features="-" ></word_272>
+<word_273 token="de" lemma="de" pos="prp" features="-" ></word_273>
+<word_274 token="a" lemma="o" pos="art" features="F=S" ></word_274>
+<word_275 token="revista" lemma="revista" pos="n" features="F=S" ></word_275>
+<word_276 token="científica" lemma="científico" pos="adj" features="F=S" ></word_276>
+<word_277 token="&quot;" lemma="&quot;" pos="&quot;" features="-" ></word_277>
+<word_278 token="Science" lemma="" pos="prop" features="F=S" ></word_278>
+<word_279 token="&quot;" lemma="&quot;" pos="&quot;" features="-" ></word_279>
+<word_280 token="." lemma="." pos="." features="-" ></word_280>
+</Tokens> 
+
+<Cadeias> 
+
+<Cadeia_7> 
+<sn id="7" tokens="28...29" nucleo="Universidade_de_Wisconsin-Madison" sintagma="a Universidade de Wisconsin-Madison" Categoria="EN_ORG" sentenca="2">
+<word_28 token="a" lemma="o" pos="art" features="F=S" ></word_28>
+<word_29 token="Universidade_de_Wisconsin-Madison" lemma="" pos="prop" features="F=S" ></word_29>
+</sn>
+<sn id="8" tokens="31...31" nucleo="EUA" sintagma="EUA" Categoria="EN_ORG" sentenca="2">
+<word_31 token="EUA" lemma="EUA" pos="prop" features="M=P" ></word_31>
+</sn>
+</Cadeia_7>
+
+<Cadeia_31> 
+<sn id="24" tokens="91...91" nucleo="camundongos" sintagma="camundongos" Categoria="--" sentenca="4">
+<word_91 token="camundongos" lemma="" pos="n" features="M=P" ></word_91>
+</sn>
+<sn id="31" tokens="120...121" nucleo="camundongos" sintagma="os camundongos" Categoria="--" sentenca="5">
+<word_120 token="os" lemma="o" pos="art" features="M=P" ></word_120>
+<word_121 token="camundongos" lemma="" pos="n" features="M=P" ></word_121>
+</sn>
+</Cadeia_31>
+
+<Cadeia_33> 
+<sn id="25" tokens="96...97" nucleo="sintomas" sintagma="os sintomas" Categoria="--" sentenca="4">
+<word_96 token="os" lemma="o" pos="art" features="M=P" ></word_96>
+<word_97 token="sintomas" lemma="sintoma" pos="n" features="M=P" ></word_97>
+</sn>
+<sn id="33" tokens="131...131" nucleo="sintomas" sintagma="sintomas" Categoria="--" sentenca="5">
+<word_131 token="sintomas" lemma="sintoma" pos="n" features="M=P" ></word_131>
+</sn>
+</Cadeia_33>
+
+<Cadeia_38> 
+<sn id="2" tokens="10...12" nucleo="vírus" sintagma="um vírus inofensivo" Categoria="EN_AMC/FILMVID" sentenca="1">
+<word_10 token="um" lemma="um" pos="art" features="M=S" ></word_10>
+<word_11 token="vírus" lemma="vírus" pos="n" features="M=S" ></word_11>
+<word_12 token="inofensivo" lemma="inofensivo" pos="adj" features="M=S" ></word_12>
+</sn>
+<sn id="19" tokens="67...69" nucleo="vírus" sintagma="o vírus influenza" Categoria="EN_AMC/FILMVID" sentenca="3">
+<word_67 token="o" lemma="o" pos="art" features="M=S" ></word_67>
+<word_68 token="vírus" lemma="vírus" pos="n" features="M=S" ></word_68>
+<word_69 token="influenza" lemma="" pos="adj" features="M=S" ></word_69>
+</sn>
+<sn id="38" tokens="149...150" nucleo="vírus" sintagma="os vírus" Categoria="EN_AMC/FILMVID" sentenca="6">
+<word_149 token="os" lemma="o" pos="art" features="M=P" ></word_149>
+<word_150 token="vírus" lemma="vírus" pos="n" features="M=P" ></word_150>
+</sn>
+</Cadeia_38>
+
+<Cadeia_45> 
+<sn id="30" tokens="116...117" nucleo="infecção" sintagma="infecção letal" Categoria="EN_ABS/ESTCOND" sentenca="5">
+<word_116 token="infecção" lemma="" pos="n" features="F=S" ></word_116>
+<word_117 token="letal" lemma="letal" pos="adj" features="F=S" ></word_117>
+</sn>
+<sn id="45" tokens="176...176" nucleo="infecção" sintagma="infecção" Categoria="EN_ABS/ESTCOND" sentenca="7">
+<word_176 token="infecção" lemma="" pos="n" features="F=S" ></word_176>
+</sn>
+</Cadeia_45>
+
+<Cadeia_48> 
+<sn id="48" tokens="185...187" nucleo="base" sintagma="apenas uma base" Categoria="--" sentenca="8">
+<word_185 token="apenas" lemma="apenas" pos="adv" features="-" ></word_185>
+<word_186 token="uma" lemma="um" pos="num" features="F=S" ></word_186>
+<word_187 token="base" lemma="base" pos="n" features="F=S" ></word_187>
+</sn>
+<sn id="49" tokens="189...189" nucleo="letra" sintagma="letra" Categoria="--" sentenca="8">
+<word_189 token="letra" lemma="letra" pos="n" features="F=S" ></word_189>
+</sn>
+</Cadeia_48>
+
+<Cadeia_53> 
+<sn id="0" tokens="0...5" nucleo="alteração" sintagma="Uma alteração em um único gene" Categoria="EN_ABS/ESTCOND" sentenca="1">
+<word_0 token="Uma" lemma="um" pos="art" features="F=S" ></word_0>
+<word_1 token="alteração" lemma="alteração, alterar" pos="n" features="F=S" ></word_1>
+<word_2 token="em" lemma="em" pos="prp" features="-" ></word_2>
+<word_3 token="um" lemma="um" pos="art" features="M=S" ></word_3>
+<word_4 token="único" lemma="único" pos="adj" features="M=S" ></word_4>
+<word_5 token="gene" lemma="gene" pos="n" features="M=S" ></word_5>
+</sn>
+<sn id="4" tokens="18...20" nucleo="gripe" sintagma="uma gripe mortal" Categoria="EN_ABS/ESTCOND" sentenca="1">
+<word_18 token="uma" lemma="um" pos="art" features="F=S" ></word_18>
+<word_19 token="gripe" lemma="gripe" pos="n" features="F=S" ></word_19>
+<word_20 token="mortal" lemma="mortal" pos="adj" features="F=S" ></word_20>
+</sn>
+<sn id="11" tokens="44...45" nucleo="doença" sintagma="a doença" Categoria="EN_ABS/ESTCOND" sentenca="2">
+<word_44 token="a" lemma="o" pos="art" features="F=S" ></word_44>
+<word_45 token="doença" lemma="doença" pos="n" features="F=S" ></word_45>
+</sn>
+<sn id="47" tokens="182...190" nucleo="mudança" sintagma="Uma mudança de apenas uma base ( letra )" Categoria="EN_ABS/ESTCOND" sentenca="8">
+<word_182 token="Uma" lemma="um" pos="art" features="F=S" ></word_182>
+<word_183 token="mudança" lemma="mudança" pos="n" features="F=S" ></word_183>
+<word_184 token="de" lemma="de" pos="prp" features="-" ></word_184>
+<word_185 token="apenas" lemma="apenas" pos="adv" features="-" ></word_185>
+<word_186 token="uma" lemma="um" pos="num" features="F=S" ></word_186>
+<word_187 token="base" lemma="base" pos="n" features="F=S" ></word_187>
+<word_188 token="(" lemma="(" pos="(" features="-" ></word_188>
+<word_189 token="letra" lemma="letra" pos="n" features="F=S" ></word_189>
+<word_190 token=")" lemma=")" pos=")" features="-" ></word_190>
+</sn>
+<sn id="53" tokens="199...200" nucleo="modificação" sintagma="a modificação" Categoria="EN_ABS/ESTCOND" sentenca="8">
+<word_199 token="a" lemma="o" pos="art" features="F=S" ></word_199>
+<word_200 token="modificação" lemma="modificação, modificar" pos="n" features="F=S" ></word_200>
+</sn>
+</Cadeia_53>
+
+<Cadeia_59> 
+<sn id="46" tokens="178...179" nucleo="influenza" sintagma="o influenza" Categoria="--" sentenca="7">
+<word_178 token="o" lemma="o" pos="art" features="M=S" ></word_178>
+<word_179 token="influenza" lemma="" pos="prop" features="M=S" ></word_179>
+</sn>
+<sn id="59" tokens="219...220" nucleo="influenza" sintagma="o influenza" Categoria="--" sentenca="8">
+<word_219 token="o" lemma="o" pos="art" features="M=S" ></word_219>
+<word_220 token="influenza" lemma="" pos="prop" features="M=S" ></word_220>
+</sn>
+</Cadeia_59>
+
+<Cadeia_62> 
+<sn id="1" tokens="3...5" nucleo="gene" sintagma="um único gene" Categoria="EN_NAT/FENAT" sentenca="1">
+<word_3 token="um" lemma="um" pos="art" features="M=S" ></word_3>
+<word_4 token="único" lemma="único" pos="adj" features="M=S" ></word_4>
+<word_5 token="gene" lemma="gene" pos="n" features="M=S" ></word_5>
+</sn>
+<sn id="39" tokens="153...156" nucleo="genes" sintagma="genes entre as linhagens" Categoria="EN_NAT/FENAT" sentenca="6">
+<word_153 token="genes" lemma="gene" pos="n" features="M=P" ></word_153>
+<word_154 token="entre" lemma="entre" pos="prp" features="-" ></word_154>
+<word_155 token="as" lemma="o" pos="art" features="F=P" ></word_155>
+<word_156 token="linhagens" lemma="linhagem" pos="n" features="F=P" ></word_156>
+</sn>
+<sn id="50" tokens="192...193" nucleo="gene" sintagma="o gene" Categoria="EN_NAT/FENAT" sentenca="8">
+<word_192 token="o" lemma="o" pos="art" features="M=S" ></word_192>
+<word_193 token="gene" lemma="gene" pos="n" features="M=S" ></word_193>
+</sn>
+<sn id="51" tokens="194...194" nucleo="PB2" sintagma="PB2" Categoria="EN_NAT/FENAT" sentenca="8">
+<word_194 token="PB2" lemma="" pos="prop" features="M=S" ></word_194>
+</sn>
+<sn id="52" tokens="196...196" nucleo="que" sintagma="que " Categoria="EN_NAT/FENAT" sentenca="8">
+<word_196 token="que" lemma="que" pos="pron-indp" features="M=S" ></word_196>
+<word_198 token="em" lemma="em" pos="prp" features="-" ></word_198>
+<word_200 token="modificação" lemma="modificação, modificar" pos="n" features="F=S" ></word_200>
+<word_202 token="um" lemma="um" pos="art" features="M=S" ></word_202>
+<word_198 token="em" lemma="em" pos="prp" features="-" ></word_198>
+<word_206 token="proteína" lemma="proteína" pos="n" features="F=S" ></word_206>
+<word_208 token="ele" lemma="ele" pos="pron-pers" features="M=3S=NOM" ></word_208>
+</sn>
+<sn id="62" tokens="235...236" nucleo="PB2" sintagma="o PB2" Categoria="EN_NAT/FENAT" sentenca="9">
+<word_235 token="o" lemma="o" pos="art" features="M=S" ></word_235>
+<word_236 token="PB2" lemma="" pos="prop" features="M=S" ></word_236>
+</sn>
+</Cadeia_62>
+
+<Cadeia_70> 
+<sn id="27" tokens="106...107" nucleo="grupos" sintagma="dois grupos" Categoria="EN_AMC/PRDIC" sentenca="4">
+<word_106 token="dois" lemma="dois" pos="num" features="M=P" ></word_106>
+<word_107 token="grupos" lemma="grupo" pos="n" features="M=P" ></word_107>
+</sn>
+<sn id="28" tokens="109...111" nucleo="grupo" sintagma="O primeiro grupo" Categoria="EN_AMC/PRDIC" sentenca="5">
+<word_109 token="O" lemma="o" pos="art" features="M=S" ></word_109>
+<word_110 token="primeiro" lemma="primeiro" pos="adj" features="M=S" ></word_110>
+<word_111 token="grupo" lemma="grupo" pos="n" features="M=S" ></word_111>
+</sn>
+<sn id="66" tokens="249...251" nucleo="número" sintagma="um número maior" Categoria="EN_AMC/PRDIC" sentenca="9">
+<word_249 token="um" lemma="um" pos="art" features="M=S" ></word_249>
+<word_250 token="número" lemma="número" pos="n" features="M=S" ></word_250>
+<word_251 token="maior" lemma="maior" pos="adj" features="M=S" ></word_251>
+</sn>
+<sn id="70" tokens="263...264" nucleo="grupo" sintagma="o grupo" Categoria="EN_AMC/PRDIC" sentenca="10">
+<word_263 token="o" lemma="o" pos="art" features="M=S" ></word_263>
+<word_264 token="grupo" lemma="grupo" pos="n" features="M=S" ></word_264>
+</sn>
+</Cadeia_70>
+
+<Cadeia_74> 
+<sn id="73" tokens="274...276" nucleo="revista" sintagma="a revista científica" Categoria="EN_AMC/PRDIC" sentenca="10">
+<word_274 token="a" lemma="o" pos="art" features="F=S" ></word_274>
+<word_275 token="revista" lemma="revista" pos="n" features="F=S" ></word_275>
+<word_276 token="científica" lemma="científico" pos="adj" features="F=S" ></word_276>
+</sn>
+<sn id="74" tokens="278...278" nucleo="Science" sintagma="Science" Categoria="EN_AMC/PRDIC" sentenca="10">
+<word_278 token="Science" lemma="" pos="prop" features="F=S" ></word_278>
+</sn>
+</Cadeia_74>
+
+</Cadeias><Mencoes_Unicas><sn id="3" tokens="14...16" nucleo="agente" sintagma="o agente causador" sentenca="1">
+<word_14 token="o" lemma="o" pos="art" features="M=S" ></word_14>
+<word_15 token="agente" lemma="agente" pos="n" features="M=S" ></word_15>
+<word_16 token="causador" lemma="causador, causar" pos="adj" features="M=S" ></word_16>
+</sn>
+<sn id="6" tokens="26...26" nucleo="pesquisadores" sintagma="pesquisadores" sentenca="2">
+<word_26 token="pesquisadores" lemma="pesquisar" pos="n" features="M=P" ></word_26>
+</sn>
+<sn id="9" tokens="37...38" nucleo="compreensão" sintagma="a compreensão" sentenca="2">
+<word_37 token="a" lemma="o" pos="art" features="F=S" ></word_37>
+<word_38 token="compreensão" lemma="compreensão" pos="n" features="F=S" ></word_38>
+</sn>
+<sn id="10" tokens="41...45" nucleo="epidemias" sintagma="as epidemias da doença" sentenca="2">
+<word_41 token="as" lemma="o" pos="art" features="F=P" ></word_41>
+<word_42 token="epidemias" lemma="epidemia" pos="n" features="F=P" ></word_42>
+<word_43 token="de" lemma="de" pos="prp" features="-" ></word_43>
+<word_44 token="a" lemma="o" pos="art" features="F=S" ></word_44>
+<word_45 token="doença" lemma="doença" pos="n" features="F=S" ></word_45>
+</sn>
+<sn id="12" tokens="48...48" nucleo="qual" sintagma="qual" sentenca="2">
+<word_48 token="qual" lemma="qual" pos="pron-det" features="F=S" ></word_48>
+</sn>
+<sn id="13" tokens="49...52" nucleo="forma" sintagma="a melhor forma de" sentenca="2">
+<word_49 token="a" lemma="o" pos="art" features="F=S" ></word_49>
+<word_50 token="melhor" lemma="melhor" pos="adj" features="F=S" ></word_50>
+<word_51 token="forma" lemma="forma" pos="n" features="F=S" ></word_51>
+<word_27 token="de" lemma="de" pos="prp" features="-" ></word_27>
+</sn>
+<sn id="14" tokens="54...54" nucleo="-las" sintagma="-las" sentenca="2">
+<word_54 token="-las" lemma="" pos="pron-pers" features="F=P" ></word_54>
+</sn>
+<sn id="15" tokens="56...57" nucleo="equipe" sintagma="A equipe" sentenca="3">
+<word_56 token="A" lemma="o" pos="art" features="F=S" ></word_56>
+<word_57 token="equipe" lemma="" pos="n" features="F=S" ></word_57>
+</sn>
+<sn id="16" tokens="60...60" nucleo="Yoshihiro_Kawaoka" sintagma="Yoshihiro Kawaoka" sentenca="3">
+<word_60 token="Yoshihiro_Kawaoka" lemma="" pos="prop" features="M=S" ></word_60>
+</sn>
+<sn id="17" tokens="62...69" nucleo="amostras" sintagma="amostras do H5N1 , o vírus influenza" sentenca="3">
+<word_62 token="amostras" lemma="amostra" pos="n" features="F=P" ></word_62>
+<word_63 token="de" lemma="de" pos="prp" features="-" ></word_63>
+<word_64 token="o" lemma="o" pos="art" features="M=S" ></word_64>
+<word_65 token="H5N1" lemma="" pos="prop" features="M=S" ></word_65>
+<word_66 token="," lemma="" pos="," features="-" ></word_66>
+<word_67 token="o" lemma="o" pos="art" features="M=S" ></word_67>
+<word_68 token="vírus" lemma="vírus" pos="n" features="M=S" ></word_68>
+<word_69 token="influenza" lemma="" pos="adj" features="M=S" ></word_69>
+</sn>
+<sn id="18" tokens="64...65" nucleo="H5N1" sintagma="o H5N1" sentenca="3">
+<word_64 token="o" lemma="o" pos="art" features="M=S" ></word_64>
+<word_65 token="H5N1" lemma="" pos="prop" features="M=S" ></word_65>
+</sn>
+<sn id="20" tokens="70...70" nucleo="que" sintagma="que" sentenca="3">
+<word_70 token="que" lemma="que" pos="pron-indp" features="M=S" ></word_70>
+</sn>
+<sn id="22" tokens="84...84" nucleo="Hong_Kong" sintagma="Hong Kong" sentenca="3">
+<word_84 token="Hong_Kong" lemma="" pos="prop" features="M=S" ></word_84>
+</sn>
+<sn id="23" tokens="86...87" nucleo="Essas" sintagma="Essas amostras" sentenca="4">
+<word_86 token="Essas" lemma="esse" pos="pron-det" features="F=P" ></word_86>
+<word_87 token="amostras" lemma="amostra" pos="n" features="F=P" ></word_87>
+</sn>
+<sn id="26" tokens="100...101" nucleo="animais" sintagma="os animais" sentenca="4">
+<word_100 token="os" lemma="o" pos="art" features="M=P" ></word_100>
+<word_101 token="animais" lemma="animal" pos="n" features="M=P" ></word_101>
+</sn>
+<sn id="29" tokens="113...117" nucleo="forma" sintagma="uma forma de infecção letal" sentenca="5">
+<word_113 token="uma" lemma="um" pos="art" features="F=S" ></word_113>
+<word_114 token="forma" lemma="forma" pos="n" features="F=S" ></word_114>
+<word_115 token="de" lemma="de" pos="prp" features="-" ></word_115>
+<word_116 token="infecção" lemma="" pos="n" features="F=S" ></word_116>
+<word_117 token="letal" lemma="letal" pos="adj" features="F=S" ></word_117>
+</sn>
+<sn id="32" tokens="127...129" nucleo="problemas" sintagma="apenas problemas respiratórios" sentenca="5">
+<word_127 token="apenas" lemma="apenas" pos="adv" features="-" ></word_127>
+<word_128 token="problemas" lemma="problema" pos="n" features="M=P" ></word_128>
+<word_129 token="respiratórios" lemma="respiratório" pos="adj" features="M=P" ></word_129>
+</sn>
+<sn id="34" tokens="135...139" nucleo="razão" sintagma="a razão de essa diferença" sentenca="6">
+<word_135 token="a" lemma="o" pos="art" features="F=S" ></word_135>
+<word_136 token="razão" lemma="razão" pos="n" features="F=S" ></word_136>
+<word_137 token="de" lemma="de" pos="prp" features="-" ></word_137>
+<word_138 token="essa" lemma="esse" pos="pron-det" features="F=S" ></word_138>
+<word_139 token="diferença" lemma="diferença" pos="n" features="F=S" ></word_139>
+</sn>
+<sn id="35" tokens="138...139" nucleo="essa" sintagma="essa diferença" sentenca="6">
+<word_138 token="essa" lemma="esse" pos="pron-det" features="F=S" ></word_138>
+<word_139 token="diferença" lemma="diferença" pos="n" features="F=S" ></word_139>
+</sn>
+<sn id="36" tokens="141...141" nucleo="Kawaoka" sintagma="Kawaoka" sentenca="6">
+<word_141 token="Kawaoka" lemma="" pos="prop" features="F=S" ></word_141>
+</sn>
+<sn id="37" tokens="143...146" nucleo="estratégia" sintagma="uma estratégia de " sentenca="6">
+<word_143 token="uma" lemma="um" pos="art" features="F=S" ></word_143>
+<word_144 token="estratégia" lemma="estratégia" pos="n" features="F=S" ></word_144>
+<word_145 token="de" lemma="de" pos="prp" features="-" ></word_145>
+</sn>
+<sn id="40" tokens="155...156" nucleo="linhagens" sintagma="as linhagens" sentenca="6">
+<word_155 token="as" lemma="o" pos="art" features="F=P" ></word_155>
+<word_156 token="linhagens" lemma="linhagem" pos="n" features="F=P" ></word_156>
+</sn>
+<sn id="41" tokens="160...161" nucleo="esse" sintagma="esse modo" sentenca="7">
+<word_160 token="esse" lemma="esse" pos="pron-det" features="M=S" ></word_160>
+<word_161 token="modo" lemma="modo" pos="n" features="M=S" ></word_161>
+</sn>
+<sn id="42" tokens="165...167" nucleo="qual" sintagma="qual de eles" sentenca="7">
+<word_165 token="qual" lemma="qual" pos="pron-det" features="F=S" ></word_165>
+<word_166 token="de" lemma="de" pos="prp" features="-" ></word_166>
+<word_167 token="eles" lemma="ele" pos="pron-pers" features="M=3P=NOM" ></word_167>
+</sn>
+<sn id="43" tokens="167...167" nucleo="eles" sintagma="eles" sentenca="7">
+<word_167 token="eles" lemma="ele" pos="pron-pers" features="M=3P=NOM" ></word_167>
+</sn>
+<sn id="44" tokens="172...174" nucleo="capacidade" sintagma="a maior capacidade" sentenca="7">
+<word_172 token="a" lemma="o" pos="art" features="F=S" ></word_172>
+<word_173 token="maior" lemma="maior" pos="adj" features="F=S" ></word_173>
+<word_174 token="capacidade" lemma="capacidade, capaz" pos="n" features="F=S" ></word_174>
+</sn>
+<sn id="54" tokens="202...203" nucleo="aminoácido" sintagma="um aminoácido" sentenca="8">
+<word_202 token="um" lemma="um" pos="art" features="M=S" ></word_202>
+<word_203 token="aminoácido" lemma="aminoácido" pos="n" features="M=S" ></word_203>
+</sn>
+<sn id="55" tokens="205...206" nucleo="proteína" sintagma="a proteína" sentenca="8">
+<word_205 token="a" lemma="o" pos="art" features="F=S" ></word_205>
+<word_206 token="proteína" lemma="proteína" pos="n" features="F=S" ></word_206>
+</sn>
+<sn id="56" tokens="208...208" nucleo="ele" sintagma="ele" sentenca="8">
+<word_208 token="ele" lemma="ele" pos="pron-pers" features="M=3S=NOM" ></word_208>
+</sn>
+<sn id="57" tokens="213...220" nucleo="causa" sintagma="a causa da virulência do influenza" sentenca="8">
+<word_213 token="a" lemma="o" pos="art" features="F=S" ></word_213>
+<word_214 token="causa" lemma="causa" pos="n" features="F=S" ></word_214>
+<word_215 token="de" lemma="de" pos="prp" features="-" ></word_215>
+<word_216 token="a" lemma="o" pos="art" features="F=S" ></word_216>
+<word_217 token="virulência" lemma="virulência" pos="n" features="F=S" ></word_217>
+<word_218 token="de" lemma="de" pos="prp" features="-" ></word_218>
+<word_219 token="o" lemma="o" pos="art" features="M=S" ></word_219>
+<word_220 token="influenza" lemma="" pos="prop" features="M=S" ></word_220>
+</sn>
+<sn id="58" tokens="216...217" nucleo="virulência" sintagma="a virulência" sentenca="8">
+<word_216 token="a" lemma="o" pos="art" features="F=S" ></word_216>
+<word_217 token="virulência" lemma="virulência" pos="n" features="F=S" ></word_217>
+</sn>
+<sn id="60" tokens="225...226" nucleo="cientistas" sintagma="Os cientistas" sentenca="9">
+<word_225 token="Os" lemma="o" pos="art" features="M=P" ></word_225>
+<word_226 token="cientistas" lemma="cientista, ciente" pos="n" features="M=P" ></word_226>
+</sn>
+<sn id="61" tokens="231...236" nucleo="qual" sintagma="qual o papel do PB2" sentenca="9">
+<word_231 token="qual" lemma="qual" pos="pron-det" features="F=S" ></word_231>
+<word_232 token="o" lemma="o" pos="art" features="M=S" ></word_232>
+<word_233 token="papel" lemma="papel" pos="n" features="M=S" ></word_233>
+<word_234 token="de" lemma="de" pos="prp" features="-" ></word_234>
+<word_235 token="o" lemma="o" pos="art" features="M=S" ></word_235>
+<word_236 token="PB2" lemma="" pos="prop" features="M=S" ></word_236>
+</sn>
+<sn id="63" tokens="239...239" nucleo="ele" sintagma="ele" sentenca="9">
+<word_239 token="ele" lemma="ele" pos="pron-pers" features="M=3S=NOM" ></word_239>
+</sn>
+<sn id="64" tokens="242...244" nucleo="enzima" sintagma="uma enzima responsável" sentenca="9">
+<word_242 token="uma" lemma="um" pos="art" features="F=S" ></word_242>
+<word_243 token="enzima" lemma="enzima" pos="n" features="F=S" ></word_243>
+<word_244 token="responsável" lemma="responsável" pos="adj" features="F=S" ></word_244>
+</sn>
+<sn id="65" tokens="246...247" nucleo="indução" sintagma="a indução" sentenca="9">
+<word_246 token="a" lemma="o" pos="art" features="F=S" ></word_246>
+<word_247 token="indução" lemma="indução" pos="n" features="F=S" ></word_247>
+</sn>
+<sn id="67" tokens="253...253" nucleo="partículas" sintagma="partículas" sentenca="9">
+<word_253 token="partículas" lemma="partícula" pos="n" features="F=P" ></word_253>
+</sn>
+<sn id="68" tokens="256...258" nucleo="células" sintagma="as células infectadas" sentenca="9">
+<word_256 token="as" lemma="o" pos="art" features="F=P" ></word_256>
+<word_257 token="células" lemma="célula" pos="n" features="F=P" ></word_257>
+<word_258 token="infectadas" lemma="" pos="v-pcp" features="F=P" ></word_258>
+</sn>
+<sn id="69" tokens="260...266" nucleo="estudo" sintagma="O estudo do grupo de Kawaoka" sentenca="10">
+<word_260 token="O" lemma="o" pos="art" features="M=S" ></word_260>
+<word_261 token="estudo" lemma="estudo" pos="n" features="M=S" ></word_261>
+<word_262 token="de" lemma="de" pos="prp" features="-" ></word_262>
+<word_263 token="o" lemma="o" pos="art" features="M=S" ></word_263>
+<word_264 token="grupo" lemma="grupo" pos="n" features="M=S" ></word_264>
+<word_265 token="de" lemma="de" pos="prp" features="-" ></word_265>
+<word_266 token="Kawaoka" lemma="" pos="prop" features="M=S" ></word_266>
+</sn>
+<sn id="71" tokens="266...266" nucleo="Kawaoka" sintagma="Kawaoka" sentenca="10">
+<word_266 token="Kawaoka" lemma="" pos="prop" features="M=S" ></word_266>
+</sn>
+<sn id="72" tokens="269...270" nucleo="edição" sintagma="a edição" sentenca="10">
+<word_269 token="a" lemma="o" pos="art" features="F=S" ></word_269>
+<word_270 token="edição" lemma="edição" pos="n" features="F=S" ></word_270>
+</sn>
+</Mencoes_Unicas>
+</CIENCIA_2001_6416.txt>

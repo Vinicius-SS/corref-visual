@@ -1,0 +1,1432 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<CIENCIA_2002_22010.txt>
+
+<Texto conteudo="Seja um poodle ou um pitbull, um cocker spaniel ou um dinamarquês, o seu cachorro e os dos seus amigos têm uma origem comum: todos eles descendem de lobos domesticados pela primeira vez no leste da Ásia, há possivelmente meros 15 mil anos.
+&quot;Meros&quot; porque esse período é muito curto em termos de evolução. Os primeiros animais aparentados com os cachorros modernos _os primeiros canídeos_, foram identificados em fósseis de 37 milhões de anos achados na América do Norte e aparecem na forma de fósseis na Europa há 7 milhões de anos.
+Apesar de os lobos já estarem no continente americano há dezenas de milhares de anos, os cachorros modernos só fizeram a viagem de volta da Eurásia às Américas entre 12 mil e 14 mil anos atrás, acompanhando levas migratórias humanas.
+Dois estudos sobre o material genético dos cães publicados hoje na revista &quot;Science&quot; (www.sciencemag.org) revelaram que, diferentemente do que indicavam os achados arqueológicos, os primeiros cães domésticos surgiram no Extremo Oriente, e não no Oriente Médio. E que, apesar da sua longa permanência nas Américas, a grande maioria dos cães do continente veio mesmo da Europa depois da &quot;descoberta&quot; de Cristóvão Colombo, em 1492.
+Um dos estudos, feito por cientistas suecos e chineses, envolveu a análise do DNA de cachorros de várias partes do planeta. A equipe de Peter Savolainen, do Instituto Real de Tecnologia, de Estocolmo, Suécia, constatou que a diversidade genética era maior entre os cães do leste asiático. Isso indicaria que a domesticação ali seria mais antiga, apesar de mais fósseis de cães domésticos terem sido achados no Oriente Médio.
+Como também havia lobos selvagens nas Américas antes da chegada dos humanos, outros cientistas quiseram testar as hipóteses de como e quando teria ocorrido a domesticação no novo continente. Teria havido uma domesticação independente, ou os cães vieram junto com as migrações humanas via estreito de Bering, entre Rússia e Alasca?
+Cães indígenas 
+Jennifer Leonard, da Universidade da Califórnia em Los Angeles, e colegas de instituições do Peru e do México procuraram verificar o material genético de raças de cachorro sabidamente anteriores à chegada dos europeus.
+A análise levou a duas conclusões: primeiro, as raças indígenas são tão parecidas com as asiáticas que permitem supor que os cães tenham chegado já domesticados ao continente. Depois, havia diferenças que indicavam que as raças hoje comuns na América têm mais em comum com cães trazidos pelos colonos europeus.
+As diferenças entre as raças caninas atuais _do lulu-da-Pomerânia ao pastor alemão_ são todas resultados de cruzamentos seletivos nos últimos 500 anos. E todos esses bichos com o nome científico Canis familiaris descendem do lobo _o Canis lupus.
+A rapidez da disseminação dos cachorros com seus donos humanos indica que eles deviam ser particularmente úteis aos primitivos caçadores-coletores.
+Os estudos envolveram análise do DNA de uma estrutura das células, as mitocôndrias, que é transmitido apenas pelas mães. Computando semelhanças e diferenças, os cientistas estimaram que a domesticação deve ter ocorrido 15 mil anos atrás, embora também possa ter acontecido antes (há 40 mil anos).
+" ></Texto>
+
+<Tokens> 
+<word_0 token="Seja" lemma="ser" pos="v-fin" features="PR=3S=SUBJ" ></word_0>
+<word_1 token="um" lemma="um" pos="art" features="M=S" ></word_1>
+<word_2 token="poodle" lemma="" pos="n" features="M=S" ></word_2>
+<word_3 token="ou" lemma="ou" pos="conj-c" features="-" ></word_3>
+<word_4 token="um" lemma="um" pos="art" features="M=S" ></word_4>
+<word_5 token="pitbull" lemma="" pos="n" features="M=S" ></word_5>
+<word_6 token="," lemma="" pos="," features="-" ></word_6>
+<word_7 token="um" lemma="um" pos="art" features="M=S" ></word_7>
+<word_8 token="cocker" lemma="" pos="n" features="M=S" ></word_8>
+<word_9 token="spaniel" lemma="" pos="adj" features="M=S" ></word_9>
+<word_10 token="ou" lemma="ou" pos="conj-c" features="-" ></word_10>
+<word_11 token="um" lemma="um" pos="art" features="M=S" ></word_11>
+<word_12 token="dinamarquês" lemma="dinamarquês" pos="n" features="M=S" ></word_12>
+<word_13 token="," lemma="" pos="," features="-" ></word_13>
+<word_14 token="o" lemma="o" pos="art" features="M=S" ></word_14>
+<word_15 token="seu" lemma="seu" pos="pron-det" features="M=S" ></word_15>
+<word_16 token="cachorro" lemma="cachorro" pos="n" features="M=S" ></word_16>
+<word_17 token="e" lemma="e" pos="conj-c" features="-" ></word_17>
+<word_18 token="os" lemma="o" pos="pron-det" features="M=P" ></word_18>
+<word_19 token="de" lemma="de" pos="prp" features="-" ></word_19>
+<word_20 token="os" lemma="o" pos="art" features="M=P" ></word_20>
+<word_21 token="seus" lemma="seu" pos="pron-det" features="M=P" ></word_21>
+<word_22 token="amigos" lemma="amigo" pos="n" features="M=P" ></word_22>
+<word_23 token="têm" lemma="ter" pos="v-fin" features="PR=3P=IND" ></word_23>
+<word_24 token="uma" lemma="um" pos="art" features="F=S" ></word_24>
+<word_25 token="origem" lemma="origem" pos="n" features="F=S" ></word_25>
+<word_26 token="comum" lemma="comum" pos="adj" features="F=S" ></word_26>
+<word_27 token=":" lemma=":" pos=":" features="-" ></word_27>
+<word_28 token="todos" lemma="todo" pos="pron-det" features="M=P" ></word_28>
+<word_29 token="eles" lemma="ele" pos="pron-pers" features="M=3P=NOM" ></word_29>
+<word_30 token="descendem" lemma="descender" pos="v-fin" features="PR=3P=IND" ></word_30>
+<word_31 token="de" lemma="de" pos="prp" features="-" ></word_31>
+<word_32 token="lobos" lemma="lobo" pos="n" features="M=P" ></word_32>
+<word_33 token="domesticados" lemma="domesticar" pos="v-pcp" features="M=P" ></word_33>
+<word_34 token="por" lemma="por" pos="prp" features="-" ></word_34>
+<word_35 token="a" lemma="o" pos="art" features="F=S" ></word_35>
+<word_36 token="primeira" lemma="" pos="adj" features="F=S" ></word_36>
+<word_37 token="vez" lemma="vez" pos="n" features="F=S" ></word_37>
+<word_38 token="em" lemma="em" pos="prp" features="-" ></word_38>
+<word_39 token="o" lemma="o" pos="art" features="M=S" ></word_39>
+<word_40 token="leste" lemma="leste" pos="n" features="M=S" ></word_40>
+<word_41 token="de" lemma="de" pos="prp" features="-" ></word_41>
+<word_42 token="a" lemma="o" pos="art" features="F=S" ></word_42>
+<word_43 token="Ásia" lemma="Ásia" pos="prop" features="F=S" ></word_43>
+<word_44 token="," lemma="" pos="," features="-" ></word_44>
+<word_45 token="há" lemma="haver" pos="v-fin" features="PR=3S=IND" ></word_45>
+<word_46 token="possivelmente" lemma="possível" pos="adv" features="-" ></word_46>
+<word_47 token="meros" lemma="mero" pos="n" features="M=P" ></word_47>
+<word_48 token="15" lemma="" pos="num" features="M=P" ></word_48>
+<word_49 token="mil" lemma="" pos="n" features="M=P" ></word_49>
+<word_50 token="anos" lemma="ano" pos="n" features="M=P" ></word_50>
+<word_51 token="." lemma="." pos="." features="-" ></word_51>
+<word_52 token="&quot;" lemma="&quot;" pos="&quot;" features="-" ></word_52>
+<word_53 token="Meros" lemma="" pos="prop" features="M=S" ></word_53>
+<word_54 token="&quot;" lemma="&quot;" pos="&quot;" features="-" ></word_54>
+<word_55 token="porque" lemma="porque" pos="conj-s" features="-" ></word_55>
+<word_56 token="esse" lemma="esse" pos="pron-det" features="M=S" ></word_56>
+<word_57 token="período" lemma="período" pos="n" features="M=S" ></word_57>
+<word_58 token="é" lemma="ser" pos="v-fin" features="PR=3S=IND" ></word_58>
+<word_59 token="muito" lemma="muito" pos="adv" features="-" ></word_59>
+<word_60 token="curto" lemma="curto" pos="adj" features="M=S" ></word_60>
+<word_61 token="em" lemma="em" pos="prp" features="-" ></word_61>
+<word_62 token="termos" lemma="termo" pos="n" features="M=P" ></word_62>
+<word_63 token="de" lemma="de" pos="prp" features="-" ></word_63>
+<word_64 token="evolução" lemma="evolução" pos="n" features="F=S" ></word_64>
+<word_65 token="." lemma="." pos="." features="-" ></word_65>
+<word_66 token="Os" lemma="o" pos="art" features="M=P" ></word_66>
+<word_67 token="primeiros" lemma="" pos="adj" features="M=P" ></word_67>
+<word_68 token="animais" lemma="animal" pos="n" features="M=P" ></word_68>
+<word_69 token="aparentados" lemma="aparentar" pos="v-pcp" features="M=P" ></word_69>
+<word_70 token="com" lemma="com" pos="prp" features="-" ></word_70>
+<word_71 token="os" lemma="o" pos="art" features="M=P" ></word_71>
+<word_72 token="cachorros" lemma="cachorro" pos="n" features="M=P" ></word_72>
+<word_73 token="modernos" lemma="moderno" pos="adj" features="M=P" ></word_73>
+<word_74 token="os" lemma="o" pos="art" features="M=P" ></word_74>
+<word_75 token="primeiros" lemma="" pos="adj" features="M=P" ></word_75>
+<word_76 token="canídeos" lemma="" pos="n" features="M=P" ></word_76>
+<word_77 token="," lemma="" pos="," features="-" ></word_77>
+<word_78 token="foram" lemma="ir, ser" pos="v-fin" features="MQP=3P=IND" ></word_78>
+<word_79 token="identificados" lemma="identificar" pos="v-pcp" features="M=P" ></word_79>
+<word_80 token="em" lemma="em" pos="prp" features="-" ></word_80>
+<word_81 token="fósseis" lemma="fóssil" pos="n" features="M=P" ></word_81>
+<word_82 token="de" lemma="de" pos="prp" features="-" ></word_82>
+<word_83 token="37" lemma="" pos="num" features="M=P" ></word_83>
+<word_84 token="milhões" lemma="" pos="n" features="M=P" ></word_84>
+<word_85 token="de" lemma="de" pos="prp" features="-" ></word_85>
+<word_86 token="anos" lemma="ano" pos="n" features="M=P" ></word_86>
+<word_87 token="achados" lemma="achar" pos="v-pcp" features="M=P" ></word_87>
+<word_88 token="em" lemma="em" pos="prp" features="-" ></word_88>
+<word_89 token="a" lemma="o" pos="art" features="F=S" ></word_89>
+<word_90 token="América_do_Norte" lemma="" pos="prop" features="F=S" ></word_90>
+<word_91 token="e" lemma="e" pos="conj-c" features="-" ></word_91>
+<word_92 token="aparecem" lemma="aparecer" pos="v-fin" features="PR=3P=IND" ></word_92>
+<word_93 token="em" lemma="em" pos="prp" features="-" ></word_93>
+<word_94 token="a" lemma="o" pos="art" features="F=S" ></word_94>
+<word_95 token="forma" lemma="forma" pos="n" features="F=S" ></word_95>
+<word_96 token="de" lemma="de" pos="prp" features="-" ></word_96>
+<word_97 token="fósseis" lemma="fóssil" pos="n" features="M=P" ></word_97>
+<word_98 token="em" lemma="em" pos="prp" features="-" ></word_98>
+<word_99 token="a" lemma="o" pos="art" features="F=S" ></word_99>
+<word_100 token="Europa" lemma="Europa" pos="prop" features="-" ></word_100>
+<word_101 token="há" lemma="haver" pos="v-fin" features="PR=3S=IND" ></word_101>
+<word_102 token="7" lemma="" pos="num" features="M=P" ></word_102>
+<word_103 token="milhões" lemma="" pos="n" features="M=P" ></word_103>
+<word_104 token="de" lemma="de" pos="prp" features="-" ></word_104>
+<word_105 token="anos" lemma="ano" pos="n" features="M=P" ></word_105>
+<word_106 token="." lemma="." pos="." features="-" ></word_106>
+<word_107 token="Apesar_de" lemma="" pos="prp" features="-" ></word_107>
+<word_108 token="os" lemma="o" pos="art" features="M=P" ></word_108>
+<word_109 token="lobos" lemma="lobo" pos="n" features="M=P" ></word_109>
+<word_110 token="já" lemma="já" pos="adv" features="-" ></word_110>
+<word_111 token="estarem" lemma="estar" pos="v-inf" features="3P" ></word_111>
+<word_112 token="em" lemma="em" pos="prp" features="-" ></word_112>
+<word_113 token="o" lemma="o" pos="art" features="M=S" ></word_113>
+<word_114 token="continente" lemma="continente" pos="n" features="M=S" ></word_114>
+<word_115 token="americano" lemma="americano" pos="adj" features="M=S" ></word_115>
+<word_116 token="há" lemma="haver" pos="v-fin" features="PR=3S=IND" ></word_116>
+<word_117 token="dezenas" lemma="" pos="pron-det" features="M=S" ></word_117>
+<word_118 token="de" lemma="de" pos="prp" features="-" ></word_118>
+<word_119 token="milhares" lemma="" pos="n" features="M=P" ></word_119>
+<word_120 token="de" lemma="de" pos="prp" features="-" ></word_120>
+<word_121 token="anos" lemma="ano" pos="n" features="M=P" ></word_121>
+<word_122 token="," lemma="" pos="," features="-" ></word_122>
+<word_123 token="os" lemma="o" pos="art" features="M=P" ></word_123>
+<word_124 token="cachorros" lemma="cachorro" pos="n" features="M=P" ></word_124>
+<word_125 token="modernos" lemma="moderno" pos="adj" features="M=P" ></word_125>
+<word_126 token="só" lemma="só" pos="adv" features="-" ></word_126>
+<word_127 token="fizeram" lemma="fazer" pos="v-fin" features="PS=3P=IND" ></word_127>
+<word_128 token="a" lemma="o" pos="art" features="F=S" ></word_128>
+<word_129 token="viagem" lemma="viagem" pos="n" features="F=S" ></word_129>
+<word_130 token="de" lemma="de" pos="prp" features="-" ></word_130>
+<word_131 token="volta" lemma="volta" pos="n" features="F=S" ></word_131>
+<word_132 token="de" lemma="de" pos="prp" features="-" ></word_132>
+<word_133 token="a" lemma="o" pos="art" features="F=S" ></word_133>
+<word_134 token="Eurásia" lemma="" pos="prop" features="F=S" ></word_134>
+<word_135 token="a" lemma="a" pos="prp" features="-" ></word_135>
+<word_136 token="as" lemma="o" pos="art" features="F=P" ></word_136>
+<word_137 token="Américas" lemma="Américas" pos="prop" features="M=S" ></word_137>
+<word_138 token="entre" lemma="entre" pos="prp" features="-" ></word_138>
+<word_139 token="12" lemma="" pos="num" features="M=P" ></word_139>
+<word_140 token="mil" lemma="" pos="n" features="M=P" ></word_140>
+<word_141 token="e" lemma="e" pos="conj-c" features="-" ></word_141>
+<word_142 token="14" lemma="" pos="num" features="M=P" ></word_142>
+<word_143 token="mil" lemma="" pos="n" features="M=P" ></word_143>
+<word_144 token="anos" lemma="ano" pos="n" features="M=P" ></word_144>
+<word_145 token="atrás" lemma="atrás" pos="adv" features="-" ></word_145>
+<word_146 token="," lemma="" pos="," features="-" ></word_146>
+<word_147 token="acompanhando" lemma="acompanhar" pos="v-ger" features="-" ></word_147>
+<word_148 token="levas" lemma="leva" pos="n" features="F=P" ></word_148>
+<word_149 token="migratórias" lemma="migratório" pos="adj" features="F=P" ></word_149>
+<word_150 token="humanas" lemma="humano" pos="adj" features="F=P" ></word_150>
+<word_151 token="." lemma="." pos="." features="-" ></word_151>
+<word_152 token="Dois" lemma="dois" pos="num" features="M=P" ></word_152>
+<word_153 token="estudos" lemma="estudo" pos="n" features="M=P" ></word_153>
+<word_154 token="sobre" lemma="sobre" pos="prp" features="-" ></word_154>
+<word_155 token="o" lemma="o" pos="art" features="M=S" ></word_155>
+<word_156 token="material" lemma="material" pos="n" features="M=S" ></word_156>
+<word_157 token="genético" lemma="genético" pos="adj" features="M=S" ></word_157>
+<word_158 token="de" lemma="de" pos="prp" features="-" ></word_158>
+<word_159 token="os" lemma="o" pos="art" features="M=P" ></word_159>
+<word_160 token="cães" lemma="cão" pos="n" features="M=P" ></word_160>
+<word_161 token="publicados" lemma="publicar" pos="v-pcp" features="M=P" ></word_161>
+<word_162 token="hoje" lemma="hoje" pos="adv" features="-" ></word_162>
+<word_163 token="em" lemma="em" pos="prp" features="-" ></word_163>
+<word_164 token="a" lemma="o" pos="art" features="F=S" ></word_164>
+<word_165 token="revista" lemma="revista" pos="n" features="F=S" ></word_165>
+<word_166 token="&quot;" lemma="&quot;" pos="&quot;" features="-" ></word_166>
+<word_167 token="Science" lemma="" pos="prop" features="F=S" ></word_167>
+<word_168 token="&quot;" lemma="&quot;" pos="&quot;" features="-" ></word_168>
+<word_169 token="(" lemma="(" pos="(" features="-" ></word_169>
+<word_170 token="www.sciencemag.org" lemma="" pos="prop" features="M=S" ></word_170>
+<word_171 token=")" lemma=")" pos=")" features="-" ></word_171>
+<word_172 token="revelaram" lemma="revelar" pos="v-fin" features="MQP=3P=IND" ></word_172>
+<word_173 token="que" lemma="que" pos="conj-s" features="-" ></word_173>
+<word_174 token="," lemma="" pos="," features="-" ></word_174>
+<word_175 token="diferentemente" lemma="diferente" pos="adv" features="-" ></word_175>
+<word_176 token="de" lemma="de" pos="prp" features="-" ></word_176>
+<word_177 token="o" lemma="" pos="pron-det" features="M=S" ></word_177>
+<word_178 token="que" lemma="que" pos="pron-indp" features="M=S" ></word_178>
+<word_179 token="indicavam" lemma="indicar" pos="v-fin" features="IMPF=3P=IND" ></word_179>
+<word_180 token="os" lemma="o" pos="art" features="M=P" ></word_180>
+<word_181 token="achados" lemma="achado" pos="n" features="M=P" ></word_181>
+<word_182 token="arqueológicos" lemma="arqueologia" pos="adj" features="M=P" ></word_182>
+<word_183 token="," lemma="" pos="," features="-" ></word_183>
+<word_184 token="os" lemma="o" pos="art" features="M=P" ></word_184>
+<word_185 token="primeiros" lemma="" pos="adj" features="M=P" ></word_185>
+<word_186 token="cães" lemma="cão" pos="n" features="M=P" ></word_186>
+<word_187 token="domésticos" lemma="doméstico" pos="adj" features="M=P" ></word_187>
+<word_188 token="surgiram" lemma="surgir" pos="v-fin" features="MQP=3P=IND" ></word_188>
+<word_189 token="em" lemma="em" pos="prp" features="-" ></word_189>
+<word_190 token="o" lemma="o" pos="art" features="M=S" ></word_190>
+<word_191 token="Extremo_Oriente" lemma="" pos="prop" features="M=S" ></word_191>
+<word_192 token="," lemma="" pos="," features="-" ></word_192>
+<word_193 token="e" lemma="e" pos="conj-c" features="-" ></word_193>
+<word_194 token="não" lemma="não" pos="adv" features="-" ></word_194>
+<word_195 token="em" lemma="em" pos="prp" features="-" ></word_195>
+<word_196 token="o" lemma="o" pos="art" features="M=S" ></word_196>
+<word_197 token="Oriente_Médio" lemma="" pos="prop" features="M=S" ></word_197>
+<word_198 token="." lemma="." pos="." features="-" ></word_198>
+<word_199 token="E" lemma="e" pos="conj-c" features="-" ></word_199>
+<word_200 token="que" lemma="que" pos="conj-s" features="-" ></word_200>
+<word_201 token="," lemma="" pos="," features="-" ></word_201>
+<word_202 token="apesar_da" lemma="" pos="prp" features="-" ></word_202>
+<word_203 token="a" lemma="o" pos="art" features="F=S" ></word_203>
+<word_204 token="sua" lemma="sua" pos="pron-det" features="F=S" ></word_204>
+<word_205 token="longa" lemma="longa, longo" pos="adj" features="F=S" ></word_205>
+<word_206 token="permanência" lemma="permanência" pos="n" features="F=S" ></word_206>
+<word_207 token="em" lemma="em" pos="prp" features="-" ></word_207>
+<word_208 token="as" lemma="o" pos="art" features="F=P" ></word_208>
+<word_209 token="Américas" lemma="Américas" pos="prop" features="M=S" ></word_209>
+<word_210 token="," lemma="" pos="," features="-" ></word_210>
+<word_211 token="a" lemma="o" pos="art" features="F=S" ></word_211>
+<word_212 token="grande" lemma="grande" pos="adj" features="F=S" ></word_212>
+<word_213 token="maioria" lemma="maioria" pos="n" features="F=S" ></word_213>
+<word_214 token="de" lemma="de" pos="prp" features="-" ></word_214>
+<word_215 token="os" lemma="o" pos="art" features="M=P" ></word_215>
+<word_216 token="cães" lemma="cão" pos="n" features="M=P" ></word_216>
+<word_217 token="de" lemma="de" pos="prp" features="-" ></word_217>
+<word_218 token="o" lemma="o" pos="art" features="M=S" ></word_218>
+<word_219 token="continente" lemma="continente" pos="n" features="M=S" ></word_219>
+<word_220 token="veio" lemma="vir" pos="v-fin" features="PS=3S=IND" ></word_220>
+<word_221 token="mesmo" lemma="mesmo" pos="pron-det" features="M=S" ></word_221>
+<word_222 token="de" lemma="de" pos="prp" features="-" ></word_222>
+<word_223 token="a" lemma="o" pos="art" features="F=S" ></word_223>
+<word_224 token="Europa" lemma="Europa" pos="prop" features="-" ></word_224>
+<word_225 token="depois" lemma="depois" pos="adv" features="-" ></word_225>
+<word_226 token="de" lemma="de" pos="prp" features="-" ></word_226>
+<word_227 token="a" lemma="o" pos="art" features="F=S" ></word_227>
+<word_228 token="&quot;" lemma="&quot;" pos="&quot;" features="-" ></word_228>
+<word_229 token="descoberta" lemma="descoberta" pos="n" features="F=S" ></word_229>
+<word_230 token="&quot;" lemma="&quot;" pos="&quot;" features="-" ></word_230>
+<word_231 token="de" lemma="de" pos="prp" features="-" ></word_231>
+<word_232 token="Cristóvão_Colombo" lemma="" pos="prop" features="M=S" ></word_232>
+<word_233 token="," lemma="" pos="," features="-" ></word_233>
+<word_234 token="em" lemma="em" pos="prp" features="-" ></word_234>
+<word_235 token="1492" lemma="" pos="num" features="M=S" ></word_235>
+<word_236 token="." lemma="." pos="." features="-" ></word_236>
+<word_237 token="Um" lemma="um" pos="num" features="M=S" ></word_237>
+<word_238 token="de" lemma="de" pos="prp" features="-" ></word_238>
+<word_239 token="os" lemma="o" pos="art" features="M=P" ></word_239>
+<word_240 token="estudos" lemma="estudo" pos="n" features="M=P" ></word_240>
+<word_241 token="," lemma="" pos="," features="-" ></word_241>
+<word_242 token="feito" lemma="fazer" pos="v-pcp" features="M=S" ></word_242>
+<word_243 token="por" lemma="por" pos="prp" features="-" ></word_243>
+<word_244 token="cientistas" lemma="cientista, ciente" pos="n" features="M=P" ></word_244>
+<word_245 token="suecos" lemma="sueco" pos="adj" features="M=P" ></word_245>
+<word_246 token="e" lemma="e" pos="conj-c" features="-" ></word_246>
+<word_247 token="chineses" lemma="chinês" pos="n-adj" features="M=P" ></word_247>
+<word_248 token="," lemma="" pos="," features="-" ></word_248>
+<word_249 token="envolveu" lemma="envolver" pos="v-fin" features="PS=3S=IND" ></word_249>
+<word_250 token="a" lemma="o" pos="art" features="F=S" ></word_250>
+<word_251 token="análise" lemma="análise" pos="n" features="F=S" ></word_251>
+<word_252 token="de" lemma="de" pos="prp" features="-" ></word_252>
+<word_253 token="o" lemma="o" pos="art" features="M=S" ></word_253>
+<word_254 token="DNA" lemma="" pos="prop" features="M=S" ></word_254>
+<word_255 token="de" lemma="de" pos="prp" features="-" ></word_255>
+<word_256 token="cachorros" lemma="cachorro" pos="n" features="M=P" ></word_256>
+<word_257 token="de" lemma="de" pos="prp" features="-" ></word_257>
+<word_258 token="várias" lemma="" pos="pron-det" features="F=P" ></word_258>
+<word_259 token="partes" lemma="parte" pos="n" features="F=P" ></word_259>
+<word_260 token="de" lemma="de" pos="prp" features="-" ></word_260>
+<word_261 token="o" lemma="o" pos="art" features="M=S" ></word_261>
+<word_262 token="planeta" lemma="planeta" pos="n" features="M=S" ></word_262>
+<word_263 token="." lemma="." pos="." features="-" ></word_263>
+<word_264 token="A" lemma="o" pos="art" features="F=S" ></word_264>
+<word_265 token="equipe" lemma="" pos="n" features="F=S" ></word_265>
+<word_266 token="de" lemma="de" pos="prp" features="-" ></word_266>
+<word_267 token="Peter_Savolainen" lemma="" pos="prop" features="M=S" ></word_267>
+<word_268 token="," lemma="" pos="," features="-" ></word_268>
+<word_269 token="de" lemma="de" pos="prp" features="-" ></word_269>
+<word_270 token="o" lemma="o" pos="art" features="M=S" ></word_270>
+<word_271 token="Instituto_Real_de_Tecnologia" lemma="" pos="prop" features="M=S" ></word_271>
+<word_272 token="," lemma="" pos="," features="-" ></word_272>
+<word_273 token="de" lemma="de" pos="prp" features="-" ></word_273>
+<word_274 token="Estocolmo" lemma="Estocolmo" pos="prop" features="M=S" ></word_274>
+<word_275 token="," lemma="" pos="," features="-" ></word_275>
+<word_276 token="Suécia" lemma="Suécia" pos="prop" features="F=S" ></word_276>
+<word_277 token="," lemma="" pos="," features="-" ></word_277>
+<word_278 token="constatou" lemma="constatar" pos="v-fin" features="PS=3S=IND" ></word_278>
+<word_279 token="que" lemma="que" pos="conj-s" features="-" ></word_279>
+<word_280 token="a" lemma="o" pos="art" features="F=S" ></word_280>
+<word_281 token="diversidade" lemma="diversidade, diverso" pos="n" features="F=S" ></word_281>
+<word_282 token="genética" lemma="genético" pos="adj" features="F=S" ></word_282>
+<word_283 token="era" lemma="ser" pos="v-fin" features="IMPF=3S=IND" ></word_283>
+<word_284 token="maior" lemma="maior" pos="adj" features="F=S" ></word_284>
+<word_285 token="entre" lemma="entre" pos="prp" features="-" ></word_285>
+<word_286 token="os" lemma="o" pos="art" features="M=P" ></word_286>
+<word_287 token="cães" lemma="cão" pos="n" features="M=P" ></word_287>
+<word_288 token="de" lemma="de" pos="prp" features="-" ></word_288>
+<word_289 token="o" lemma="o" pos="art" features="M=S" ></word_289>
+<word_290 token="leste" lemma="leste" pos="n" features="M=S" ></word_290>
+<word_291 token="asiático" lemma="asiático" pos="adj" features="M=S" ></word_291>
+<word_292 token="." lemma="." pos="." features="-" ></word_292>
+<word_293 token="Isso" lemma="isso" pos="pron-indp" features="M=S" ></word_293>
+<word_294 token="indicaria" lemma="indicar" pos="v-fin" features="COND=3S" ></word_294>
+<word_295 token="que" lemma="que" pos="conj-s" features="-" ></word_295>
+<word_296 token="a" lemma="o" pos="art" features="F=S" ></word_296>
+<word_297 token="domesticação" lemma="domesticar" pos="n" features="F=S" ></word_297>
+<word_298 token="ali" lemma="ali" pos="adv" features="-" ></word_298>
+<word_299 token="seria" lemma="seriar, ser" pos="v-fin" features="COND=3S" ></word_299>
+<word_300 token="mais" lemma="mais" pos="adv" features="-" ></word_300>
+<word_301 token="antiga" lemma="antigo" pos="adj" features="F=S" ></word_301>
+<word_302 token="," lemma="" pos="," features="-" ></word_302>
+<word_303 token="apesar_de" lemma="" pos="prp" features="-" ></word_303>
+<word_304 token="mais" lemma="mais" pos="adv" features="-" ></word_304>
+<word_305 token="fósseis" lemma="fóssil" pos="adj" features="M=P" ></word_305>
+<word_306 token="de" lemma="de" pos="prp" features="-" ></word_306>
+<word_307 token="cães" lemma="cão" pos="n" features="M=P" ></word_307>
+<word_308 token="domésticos" lemma="doméstico" pos="adj" features="M=P" ></word_308>
+<word_309 token="terem" lemma="ter" pos="v-inf" features="3P" ></word_309>
+<word_310 token="sido" lemma="ser" pos="v-pcp" features="M=S" ></word_310>
+<word_311 token="achados" lemma="achar" pos="v-pcp" features="M=P" ></word_311>
+<word_312 token="em" lemma="em" pos="prp" features="-" ></word_312>
+<word_313 token="o" lemma="o" pos="art" features="M=S" ></word_313>
+<word_314 token="Oriente_Médio" lemma="" pos="prop" features="M=S" ></word_314>
+<word_315 token="." lemma="." pos="." features="-" ></word_315>
+<word_316 token="Como" lemma="como" pos="adv" features="-" ></word_316>
+<word_317 token="também" lemma="também" pos="adv" features="-" ></word_317>
+<word_318 token="havia" lemma="haver" pos="v-fin" features="IMPF=3S=IND" ></word_318>
+<word_319 token="lobos" lemma="lobo" pos="n" features="M=P" ></word_319>
+<word_320 token="selvagens" lemma="selvagem" pos="n" features="M=P" ></word_320>
+<word_321 token="em" lemma="em" pos="prp" features="-" ></word_321>
+<word_322 token="as" lemma="o" pos="art" features="F=P" ></word_322>
+<word_323 token="Américas" lemma="Américas" pos="prop" features="M=S" ></word_323>
+<word_324 token="antes" lemma="antes" pos="adv" features="-" ></word_324>
+<word_325 token="de" lemma="de" pos="prp" features="-" ></word_325>
+<word_326 token="a" lemma="o" pos="art" features="F=S" ></word_326>
+<word_327 token="chegada" lemma="chegada" pos="n" features="F=S" ></word_327>
+<word_328 token="de" lemma="de" pos="prp" features="-" ></word_328>
+<word_329 token="os" lemma="o" pos="art" features="M=P" ></word_329>
+<word_330 token="humanos" lemma="humanos" pos="n" features="M=P" ></word_330>
+<word_331 token="," lemma="" pos="," features="-" ></word_331>
+<word_332 token="outros" lemma="outro" pos="pron-det" features="M=P" ></word_332>
+<word_333 token="cientistas" lemma="cientista, ciente" pos="n" features="M=P" ></word_333>
+<word_334 token="quiseram" lemma="querer" pos="v-fin" features="MQP=3P=IND" ></word_334>
+<word_335 token="testar" lemma="testar" pos="v-inf" features="-" ></word_335>
+<word_336 token="as" lemma="o" pos="art" features="F=P" ></word_336>
+<word_337 token="hipóteses" lemma="hipótese" pos="n" features="F=P" ></word_337>
+<word_338 token="de" lemma="de" pos="prp" features="-" ></word_338>
+<word_339 token="como" lemma="como" pos="adv" features="-" ></word_339>
+<word_340 token="e" lemma="e" pos="conj-c" features="-" ></word_340>
+<word_341 token="quando" lemma="quando" pos="adv" features="-" ></word_341>
+<word_342 token="teria" lemma="ter" pos="v-fin" features="COND=3S" ></word_342>
+<word_343 token="ocorrido" lemma="ocorrer" pos="v-pcp" features="M=S" ></word_343>
+<word_344 token="a" lemma="a" pos="prp" features="-" ></word_344>
+<word_345 token="domesticação" lemma="domesticar" pos="n" features="F=S" ></word_345>
+<word_346 token="em" lemma="em" pos="prp" features="-" ></word_346>
+<word_347 token="o" lemma="o" pos="art" features="M=S" ></word_347>
+<word_348 token="novo" lemma="novo" pos="adj" features="M=S" ></word_348>
+<word_349 token="continente" lemma="continente" pos="n" features="M=S" ></word_349>
+<word_350 token="." lemma="." pos="." features="-" ></word_350>
+<word_351 token="Teria" lemma="ter" pos="v-fin" features="COND=3S" ></word_351>
+<word_352 token="havido" lemma="haver" pos="v-pcp" features="M=S" ></word_352>
+<word_353 token="uma" lemma="um" pos="art" features="F=S" ></word_353>
+<word_354 token="domesticação" lemma="domesticar" pos="n" features="F=S" ></word_354>
+<word_355 token="independente" lemma="independente" pos="adj" features="F=S" ></word_355>
+<word_356 token="," lemma="" pos="," features="-" ></word_356>
+<word_357 token="ou" lemma="ou" pos="conj-c" features="-" ></word_357>
+<word_358 token="os" lemma="o" pos="art" features="M=P" ></word_358>
+<word_359 token="cães" lemma="cão" pos="n" features="M=P" ></word_359>
+<word_360 token="vieram" lemma="vir" pos="v-fin" features="MQP=3P=IND" ></word_360>
+<word_361 token="junto" lemma="junto" pos="adv" features="-" ></word_361>
+<word_362 token="com" lemma="com" pos="prp" features="-" ></word_362>
+<word_363 token="as" lemma="o" pos="art" features="F=P" ></word_363>
+<word_364 token="migrações" lemma="migrar" pos="n" features="F=P" ></word_364>
+<word_365 token="humanas" lemma="humano" pos="adj" features="F=P" ></word_365>
+<word_366 token="via" lemma="ver" pos="v-fin" features="IMPF=3S=IND" ></word_366>
+<word_367 token="estreito" lemma="estreito" pos="n" features="M=S" ></word_367>
+<word_368 token="de" lemma="de" pos="prp" features="-" ></word_368>
+<word_369 token="Bering" lemma="" pos="prop" features="M=S" ></word_369>
+<word_370 token="," lemma="" pos="," features="-" ></word_370>
+<word_371 token="entre" lemma="entre" pos="prp" features="-" ></word_371>
+<word_372 token="Rússia" lemma="Rússia" pos="prop" features="F=S" ></word_372>
+<word_373 token="e" lemma="e" pos="conj-c" features="-" ></word_373>
+<word_374 token="Alasca?" lemma="" pos="prop" features="M=S" ></word_374>
+<word_375 token="." lemma="." pos="." features="-" ></word_375>
+<word_376 token="Cães" lemma="cão" pos="n" features="M=P" ></word_376>
+<word_377 token="indígenas" lemma="" pos="adj" features="M=P" ></word_377>
+<word_378 token="." lemma="." pos="." features="-" ></word_378>
+<word_379 token="Jennifer_Leonard" lemma="" pos="prop" features="M=S" ></word_379>
+<word_380 token="," lemma="" pos="," features="-" ></word_380>
+<word_381 token="de" lemma="de" pos="prp" features="-" ></word_381>
+<word_382 token="a" lemma="o" pos="art" features="F=S" ></word_382>
+<word_383 token="Universidade_da_Califórnia" lemma="" pos="prop" features="F=S" ></word_383>
+<word_384 token="em" lemma="em" pos="prp" features="-" ></word_384>
+<word_385 token="Los_Angeles" lemma="" pos="prop" features="M=S" ></word_385>
+<word_386 token="," lemma="" pos="," features="-" ></word_386>
+<word_387 token="e" lemma="e" pos="conj-c" features="-" ></word_387>
+<word_388 token="colegas" lemma="colega" pos="n" features="F=P" ></word_388>
+<word_389 token="de" lemma="de" pos="prp" features="-" ></word_389>
+<word_390 token="instituições" lemma="instituição, instituir" pos="n" features="F=P" ></word_390>
+<word_391 token="de" lemma="de" pos="prp" features="-" ></word_391>
+<word_392 token="o" lemma="o" pos="art" features="M=S" ></word_392>
+<word_393 token="Peru" lemma="" pos="prop" features="M=S" ></word_393>
+<word_394 token="e" lemma="e" pos="conj-c" features="-" ></word_394>
+<word_395 token="de" lemma="de" pos="prp" features="-" ></word_395>
+<word_396 token="o" lemma="o" pos="art" features="M=S" ></word_396>
+<word_397 token="México" lemma="México" pos="prop" features="M=S" ></word_397>
+<word_398 token="procuraram" lemma="procurar" pos="v-fin" features="MQP=3P=IND" ></word_398>
+<word_399 token="verificar" lemma="verificar" pos="v-inf" features="-" ></word_399>
+<word_400 token="o" lemma="o" pos="art" features="M=S" ></word_400>
+<word_401 token="material" lemma="material" pos="n" features="M=S" ></word_401>
+<word_402 token="genético" lemma="genético" pos="adj" features="M=S" ></word_402>
+<word_403 token="de" lemma="de" pos="prp" features="-" ></word_403>
+<word_404 token="raças" lemma="raça" pos="n" features="F=P" ></word_404>
+<word_405 token="de" lemma="de" pos="prp" features="-" ></word_405>
+<word_406 token="cachorro" lemma="cachorro" pos="n" features="M=S" ></word_406>
+<word_407 token="sabidamente" lemma="" pos="adj" features="M=S" ></word_407>
+<word_408 token="anteriores" lemma="anterior" pos="adj" features="M=P" ></word_408>
+<word_409 token="a" lemma="a" pos="prp" features="-" ></word_409>
+<word_410 token="a" lemma="o" pos="art" features="F=S" ></word_410>
+<word_411 token="chegada" lemma="chegada" pos="n" features="F=S" ></word_411>
+<word_412 token="de" lemma="de" pos="prp" features="-" ></word_412>
+<word_413 token="os" lemma="o" pos="art" features="M=P" ></word_413>
+<word_414 token="europeus" lemma="europeu" pos="n" features="M=P" ></word_414>
+<word_415 token="." lemma="." pos="." features="-" ></word_415>
+<word_416 token="A" lemma="o" pos="art" features="F=S" ></word_416>
+<word_417 token="análise" lemma="análise" pos="n" features="F=S" ></word_417>
+<word_418 token="levou" lemma="levar" pos="v-fin" features="PS=3S=IND" ></word_418>
+<word_419 token="a" lemma="o" pos="art" features="F=S" ></word_419>
+<word_420 token="duas" lemma="dois" pos="num" features="F=P" ></word_420>
+<word_421 token="conclusões" lemma="conclusão" pos="n" features="F=P" ></word_421>
+<word_422 token=":" lemma=":" pos=":" features="-" ></word_422>
+<word_423 token="primeiro" lemma="primeiro" pos="adj" features="M=S" ></word_423>
+<word_424 token="," lemma="" pos="," features="-" ></word_424>
+<word_425 token="as" lemma="o" pos="art" features="F=P" ></word_425>
+<word_426 token="raças" lemma="raça" pos="n" features="F=P" ></word_426>
+<word_427 token="indígenas" lemma="" pos="adj" features="F=P" ></word_427>
+<word_428 token="são" lemma="ser" pos="v-fin" features="PR=3P=IND" ></word_428>
+<word_429 token="tão" lemma="tão" pos="adv" features="-" ></word_429>
+<word_430 token="parecidas" lemma="parecer" pos="v-pcp" features="F=S" ></word_430>
+<word_431 token="com" lemma="com" pos="prp" features="-" ></word_431>
+<word_432 token="as" lemma="o" pos="art" features="F=P" ></word_432>
+<word_433 token="asiáticas" lemma="asiático" pos="adj" features="F=P" ></word_433>
+<word_434 token="que" lemma="que" pos="pron-indp" features="F=P" ></word_434>
+<word_435 token="permitem" lemma="permitir" pos="v-fin" features="PR=3P=IND" ></word_435>
+<word_436 token="supor" lemma="supor" pos="v-inf" features="-" ></word_436>
+<word_437 token="que" lemma="que" pos="conj-s" features="-" ></word_437>
+<word_438 token="os" lemma="o" pos="art" features="M=P" ></word_438>
+<word_439 token="cães" lemma="cão" pos="n" features="M=P" ></word_439>
+<word_440 token="tenham" lemma="ter" pos="v-fin" features="PR=3P=SUBJ" ></word_440>
+<word_441 token="chegado" lemma="chegar" pos="v-pcp" features="M=S" ></word_441>
+<word_442 token="já" lemma="já" pos="adv" features="-" ></word_442>
+<word_443 token="domesticados" lemma="domesticar" pos="v-pcp" features="M=P" ></word_443>
+<word_444 token="a" lemma="a" pos="prp" features="-" ></word_444>
+<word_445 token="o" lemma="o" pos="art" features="M=S" ></word_445>
+<word_446 token="continente" lemma="continente" pos="n" features="M=S" ></word_446>
+<word_447 token="." lemma="." pos="." features="-" ></word_447>
+<word_448 token="Depois" lemma="depois" pos="adv" features="-" ></word_448>
+<word_449 token="," lemma="" pos="," features="-" ></word_449>
+<word_450 token="havia" lemma="haver" pos="v-fin" features="IMPF=3S=IND" ></word_450>
+<word_451 token="diferenças" lemma="diferença" pos="n" features="F=P" ></word_451>
+<word_452 token="que" lemma="que" pos="pron-indp" features="F=P" ></word_452>
+<word_453 token="indicavam" lemma="indicar" pos="v-fin" features="IMPF=3P=IND" ></word_453>
+<word_454 token="que" lemma="que" pos="conj-s" features="-" ></word_454>
+<word_455 token="as" lemma="o" pos="art" features="F=P" ></word_455>
+<word_456 token="raças" lemma="raça" pos="n" features="F=P" ></word_456>
+<word_457 token="hoje" lemma="hoje" pos="adv" features="-" ></word_457>
+<word_458 token="comuns" lemma="comum" pos="adj" features="F=P" ></word_458>
+<word_459 token="em" lemma="em" pos="prp" features="-" ></word_459>
+<word_460 token="a" lemma="o" pos="art" features="F=S" ></word_460>
+<word_461 token="América" lemma="América" pos="prop" features="M=S" ></word_461>
+<word_462 token="têm" lemma="ter" pos="v-fin" features="PR=3P=IND" ></word_462>
+<word_463 token="mais" lemma="mais" pos="adv" features="-" ></word_463>
+<word_464 token="em" lemma="em" pos="prp" features="-" ></word_464>
+<word_465 token="comum" lemma="comum" pos="adj" features="M=S" ></word_465>
+<word_466 token="com" lemma="com" pos="prp" features="-" ></word_466>
+<word_467 token="cães" lemma="cão" pos="n" features="M=P" ></word_467>
+<word_468 token="trazidos" lemma="trazer" pos="v-pcp" features="M=P" ></word_468>
+<word_469 token="por" lemma="por" pos="prp" features="-" ></word_469>
+<word_470 token="os" lemma="o" pos="art" features="M=P" ></word_470>
+<word_471 token="colonos" lemma="colono" pos="n" features="M=P" ></word_471>
+<word_472 token="europeus" lemma="europeu" pos="adj" features="M=P" ></word_472>
+<word_473 token="." lemma="." pos="." features="-" ></word_473>
+<word_474 token="As" lemma="o" pos="art" features="F=P" ></word_474>
+<word_475 token="diferenças" lemma="diferença" pos="n" features="F=P" ></word_475>
+<word_476 token="entre" lemma="entre" pos="prp" features="-" ></word_476>
+<word_477 token="as" lemma="o" pos="art" features="F=P" ></word_477>
+<word_478 token="raças" lemma="raça" pos="n" features="F=P" ></word_478>
+<word_479 token="caninas" lemma="canino" pos="adj" features="F=P" ></word_479>
+<word_480 token="atuais" lemma="atual" pos="adj" features="F=P" ></word_480>
+<word_481 token="de" lemma="de" pos="prp" features="-" ></word_481>
+<word_482 token="o" lemma="o" pos="art" features="M=S" ></word_482>
+<word_483 token="lulu-da-Pomerânia" lemma="" pos="n" features="M=S" ></word_483>
+<word_484 token="a" lemma="a" pos="prp" features="-" ></word_484>
+<word_485 token="o" lemma="o" pos="art" features="M=S" ></word_485>
+<word_486 token="pastor" lemma="pastor" pos="n" features="M=S" ></word_486>
+<word_487 token="alemão" lemma="alemão" pos="adj" features="M=S" ></word_487>
+<word_488 token="são" lemma="ser" pos="v-fin" features="PR=3P=IND" ></word_488>
+<word_489 token="todas" lemma="todo" pos="pron-det" features="F=P" ></word_489>
+<word_490 token="resultados" lemma="" pos="n" features="M=P" ></word_490>
+<word_491 token="de" lemma="de" pos="prp" features="-" ></word_491>
+<word_492 token="cruzamentos" lemma="cruzar" pos="n" features="M=P" ></word_492>
+<word_493 token="seletivos" lemma="seletivo" pos="adj" features="M=P" ></word_493>
+<word_494 token="em" lemma="em" pos="prp" features="-" ></word_494>
+<word_495 token="os" lemma="o" pos="art" features="M=P" ></word_495>
+<word_496 token="últimos" lemma="último" pos="adj" features="M=P" ></word_496>
+<word_497 token="500" lemma="" pos="num" features="M=P" ></word_497>
+<word_498 token="anos" lemma="ano" pos="n" features="M=P" ></word_498>
+<word_499 token="." lemma="." pos="." features="-" ></word_499>
+<word_500 token="E" lemma="e" pos="conj-c" features="-" ></word_500>
+<word_501 token="todos" lemma="todo" pos="pron-det" features="M=P" ></word_501>
+<word_502 token="esses" lemma="esse" pos="pron-det" features="M=P" ></word_502>
+<word_503 token="bichos" lemma="bicho" pos="n" features="M=P" ></word_503>
+<word_504 token="com" lemma="com" pos="prp" features="-" ></word_504>
+<word_505 token="o" lemma="o" pos="art" features="M=S" ></word_505>
+<word_506 token="nome" lemma="nome" pos="n" features="M=S" ></word_506>
+<word_507 token="científico" lemma="científico" pos="adj" features="M=S" ></word_507>
+<word_508 token="Canis" lemma="" pos="prop" features="M=S" ></word_508>
+<word_509 token="familiaris" lemma="" pos="adj" features="M=P" ></word_509>
+<word_510 token="descendem" lemma="descender" pos="v-fin" features="PR=3P=IND" ></word_510>
+<word_511 token="de" lemma="de" pos="prp" features="-" ></word_511>
+<word_512 token="o" lemma="o" pos="art" features="M=S" ></word_512>
+<word_513 token="lobo" lemma="lobo" pos="n" features="M=S" ></word_513>
+<word_514 token="o" lemma="o" pos="art" features="M=S" ></word_514>
+<word_515 token="Canis" lemma="" pos="prop" features="M=S" ></word_515>
+<word_516 token="lupus" lemma="" pos="adj" features="M=P" ></word_516>
+<word_517 token="." lemma="." pos="." features="-" ></word_517>
+<word_518 token="A" lemma="o" pos="art" features="F=S" ></word_518>
+<word_519 token="rapidez" lemma="rapidez" pos="n" features="F=S" ></word_519>
+<word_520 token="de" lemma="de" pos="prp" features="-" ></word_520>
+<word_521 token="a" lemma="o" pos="art" features="F=S" ></word_521>
+<word_522 token="disseminação" lemma="disseminar" pos="n" features="F=S" ></word_522>
+<word_523 token="de" lemma="de" pos="prp" features="-" ></word_523>
+<word_524 token="os" lemma="o" pos="art" features="M=P" ></word_524>
+<word_525 token="cachorros" lemma="cachorro" pos="n" features="M=P" ></word_525>
+<word_526 token="com" lemma="com" pos="prp" features="-" ></word_526>
+<word_527 token="seus" lemma="seu" pos="pron-det" features="M=P" ></word_527>
+<word_528 token="donos" lemma="dono" pos="n" features="M=P" ></word_528>
+<word_529 token="humanos" lemma="humano" pos="adj" features="M=P" ></word_529>
+<word_530 token="indica" lemma="indicar" pos="v-fin" features="PR=3S=IND" ></word_530>
+<word_531 token="que" lemma="que" pos="conj-s" features="-" ></word_531>
+<word_532 token="eles" lemma="ele" pos="pron-pers" features="M=3P=NOM" ></word_532>
+<word_533 token="deviam" lemma="dever" pos="v-fin" features="IMPF=3P=IND" ></word_533>
+<word_534 token="ser" lemma="ser" pos="v-inf" features="-" ></word_534>
+<word_535 token="particularmente" lemma="particular" pos="adv" features="-" ></word_535>
+<word_536 token="úteis" lemma="útil" pos="adj" features="M=P" ></word_536>
+<word_537 token="a" lemma="a" pos="prp" features="-" ></word_537>
+<word_538 token="os" lemma="o" pos="art" features="M=P" ></word_538>
+<word_539 token="primitivos" lemma="primitivo" pos="adj" features="M=P" ></word_539>
+<word_540 token="caçadores-coletores" lemma="" pos="n" features="M=P" ></word_540>
+<word_541 token="." lemma="." pos="." features="-" ></word_541>
+<word_542 token="Os" lemma="o" pos="art" features="M=P" ></word_542>
+<word_543 token="estudos" lemma="estudo" pos="n" features="M=P" ></word_543>
+<word_544 token="envolveram" lemma="envolver" pos="v-fin" features="MQP=3P=IND" ></word_544>
+<word_545 token="análise" lemma="análise" pos="n" features="F=S" ></word_545>
+<word_546 token="de" lemma="de" pos="prp" features="-" ></word_546>
+<word_547 token="o" lemma="o" pos="art" features="M=S" ></word_547>
+<word_548 token="DNA" lemma="" pos="prop" features="M=S" ></word_548>
+<word_549 token="de" lemma="de" pos="prp" features="-" ></word_549>
+<word_550 token="uma" lemma="um" pos="art" features="F=S" ></word_550>
+<word_551 token="estrutura" lemma="estrutura" pos="n" features="F=S" ></word_551>
+<word_552 token="de" lemma="de" pos="prp" features="-" ></word_552>
+<word_553 token="as" lemma="o" pos="art" features="F=P" ></word_553>
+<word_554 token="células" lemma="célula" pos="n" features="F=P" ></word_554>
+<word_555 token="," lemma="" pos="," features="-" ></word_555>
+<word_556 token="as" lemma="o" pos="art" features="F=P" ></word_556>
+<word_557 token="mitocôndrias" lemma="" pos="n" features="F=P" ></word_557>
+<word_558 token="," lemma="" pos="," features="-" ></word_558>
+<word_559 token="que" lemma="que" pos="pron-indp" features="F=S" ></word_559>
+<word_560 token="é" lemma="ser" pos="v-fin" features="PR=3S=IND" ></word_560>
+<word_561 token="transmitido" lemma="transmitir" pos="v-pcp" features="M=S" ></word_561>
+<word_562 token="apenas" lemma="apenas" pos="adv" features="-" ></word_562>
+<word_563 token="por" lemma="por" pos="prp" features="-" ></word_563>
+<word_564 token="as" lemma="o" pos="art" features="F=P" ></word_564>
+<word_565 token="mães" lemma="mãe" pos="n" features="F=P" ></word_565>
+<word_566 token="." lemma="." pos="." features="-" ></word_566>
+<word_567 token="Computando" lemma="computar" pos="v-ger" features="-" ></word_567>
+<word_568 token="semelhanças" lemma="semelhança" pos="n" features="F=P" ></word_568>
+<word_569 token="e" lemma="e" pos="conj-c" features="-" ></word_569>
+<word_570 token="diferenças" lemma="diferença" pos="n" features="F=P" ></word_570>
+<word_571 token="," lemma="" pos="," features="-" ></word_571>
+<word_572 token="os" lemma="o" pos="art" features="M=P" ></word_572>
+<word_573 token="cientistas" lemma="cientista, ciente" pos="n" features="M=P" ></word_573>
+<word_574 token="estimaram" lemma="estimar" pos="v-fin" features="MQP=3P=IND" ></word_574>
+<word_575 token="que" lemma="que" pos="conj-s" features="-" ></word_575>
+<word_576 token="a" lemma="o" pos="art" features="F=S" ></word_576>
+<word_577 token="domesticação" lemma="domesticar" pos="n" features="F=S" ></word_577>
+<word_578 token="deve" lemma="dever" pos="v-fin" features="PR=3S=IND" ></word_578>
+<word_579 token="ter" lemma="ter" pos="v-inf" features="-" ></word_579>
+<word_580 token="ocorrido" lemma="ocorrer" pos="v-pcp" features="M=S" ></word_580>
+<word_581 token="15" lemma="" pos="num" features="M=P" ></word_581>
+<word_582 token="mil" lemma="" pos="n" features="M=P" ></word_582>
+<word_583 token="anos" lemma="ano" pos="n" features="M=P" ></word_583>
+<word_584 token="atrás" lemma="atrás" pos="adv" features="-" ></word_584>
+<word_585 token="," lemma="" pos="," features="-" ></word_585>
+<word_586 token="embora" lemma="embora" pos="conj-s" features="-" ></word_586>
+<word_587 token="também" lemma="também" pos="adv" features="-" ></word_587>
+<word_588 token="possa" lemma="poder" pos="v-fin" features="PR=3S=SUBJ" ></word_588>
+<word_589 token="ter" lemma="ter" pos="v-inf" features="-" ></word_589>
+<word_590 token="acontecido" lemma="acontecer" pos="v-pcp" features="M=S" ></word_590>
+<word_591 token="antes" lemma="antes" pos="adv" features="-" ></word_591>
+<word_592 token="(" lemma="(" pos="(" features="-" ></word_592>
+<word_593 token="há" lemma="" pos="prp" features="-" ></word_593>
+<word_594 token="40" lemma="" pos="num" features="F=S" ></word_594>
+<word_595 token="mil" lemma="" pos="n" features="M=P" ></word_595>
+<word_596 token="anos" lemma="ano" pos="n" features="M=P" ></word_596>
+<word_597 token=")" lemma=")" pos=")" features="-" ></word_597>
+<word_598 token="." lemma="." pos="." features="-" ></word_598>
+</Tokens> 
+
+<Cadeias> 
+
+<Cadeia_14> 
+<sn id="12" tokens="47...50" nucleo="meros" sintagma="meros 15 mil anos" Categoria="--" sentenca="2">
+<word_47 token="meros" lemma="mero" pos="n" features="M=P" ></word_47>
+<word_48 token="15" lemma="" pos="num" features="M=P" ></word_48>
+<word_49 token="mil" lemma="" pos="n" features="M=P" ></word_49>
+<word_50 token="anos" lemma="ano" pos="n" features="M=P" ></word_50>
+</sn>
+<sn id="14" tokens="53...53" nucleo="Meros" sintagma="Meros" Categoria="--" sentenca="3">
+<word_53 token="Meros" lemma="" pos="prop" features="M=S" ></word_53>
+</sn>
+</Cadeia_14>
+
+<Cadeia_24> 
+<sn id="9" tokens="35...37" nucleo="vez" sintagma="a primeira vez" Categoria="EN_LOC/HIDRO" sentenca="2">
+<word_35 token="a" lemma="o" pos="art" features="F=S" ></word_35>
+<word_36 token="primeira" lemma="" pos="adj" features="F=S" ></word_36>
+<word_37 token="vez" lemma="vez" pos="n" features="F=S" ></word_37>
+</sn>
+<sn id="16" tokens="62...62" nucleo="termos" sintagma="termos" Categoria="EN_LOC/HIDRO" sentenca="3">
+<word_62 token="termos" lemma="termo" pos="n" features="M=P" ></word_62>
+</sn>
+<sn id="24" tokens="94...95" nucleo="forma" sintagma="a forma" Categoria="EN_LOC/HIDRO" sentenca="4">
+<word_94 token="a" lemma="o" pos="art" features="F=S" ></word_94>
+<word_95 token="forma" lemma="forma" pos="n" features="F=S" ></word_95>
+</sn>
+</Cadeia_24>
+
+<Cadeia_25> 
+<sn id="21" tokens="81...81" nucleo="fósseis" sintagma="fósseis" Categoria="--" sentenca="4">
+<word_81 token="fósseis" lemma="fóssil" pos="n" features="M=P" ></word_81>
+</sn>
+<sn id="25" tokens="97...97" nucleo="fósseis" sintagma="fósseis" Categoria="--" sentenca="4">
+<word_81 token="fósseis" lemma="fóssil" pos="n" features="M=P" ></word_81>
+</sn>
+</Cadeia_25>
+
+<Cadeia_33> 
+<sn id="22" tokens="105...105" nucleo="anos" sintagma="anos" Categoria="EN_MISC/UNID" sentenca="4">
+<word_86 token="anos" lemma="ano" pos="n" features="M=P" ></word_86>
+</sn>
+<sn id="28" tokens="86...86" nucleo="anos" sintagma="anos" Categoria="EN_MISC/UNID" sentenca="4">
+<word_86 token="anos" lemma="ano" pos="n" features="M=P" ></word_86>
+</sn>
+<sn id="33" tokens="121...121" nucleo="anos" sintagma="anos" Categoria="EN_MISC/UNID" sentenca="5">
+<word_121 token="anos" lemma="ano" pos="n" features="M=P" ></word_121>
+</sn>
+</Cadeia_33>
+
+<Cadeia_45> 
+<sn id="44" tokens="164...165" nucleo="revista" sintagma="a revista" Categoria="EN_AMC/PRDIC" sentenca="6">
+<word_164 token="a" lemma="o" pos="art" features="F=S" ></word_164>
+<word_165 token="revista" lemma="revista" pos="n" features="F=S" ></word_165>
+</sn>
+<sn id="45" tokens="167...168" nucleo="Science" sintagma="Science " Categoria="EN_AMC/PRDIC" sentenca="6">
+<word_167 token="Science" lemma="" pos="prop" features="F=S" ></word_167>
+</sn>
+<sn id="46" tokens="170...170" nucleo="www.sciencemag.org" sintagma="www.sciencemag.org" Categoria="EN_AMC/PRDIC" sentenca="6">
+<word_170 token="www.sciencemag.org" lemma="" pos="prop" features="M=S" ></word_170>
+</sn>
+</Cadeia_45>
+
+<Cadeia_57> 
+<sn id="26" tokens="99...100" nucleo="Europa" sintagma="a Europa" Categoria="EN_SER/MITLG" sentenca="4">
+<word_99 token="a" lemma="o" pos="art" features="F=S" ></word_99>
+<word_100 token="Europa" lemma="Europa" pos="prop" features="-" ></word_100>
+</sn>
+<sn id="57" tokens="223...224" nucleo="Europa" sintagma="a Europa" Categoria="EN_SER/MITLG" sentenca="7">
+<word_223 token="a" lemma="o" pos="art" features="F=S" ></word_223>
+<word_224 token="Europa" lemma="Europa" pos="prop" features="-" ></word_224>
+</sn>
+</Cadeia_57>
+
+<Cadeia_58> 
+<sn id="47" tokens="180...182" nucleo="achados" sintagma="os achados arqueológicos" Categoria="--" sentenca="6">
+<word_180 token="os" lemma="o" pos="art" features="M=P" ></word_180>
+<word_181 token="achados" lemma="achado" pos="n" features="M=P" ></word_181>
+<word_182 token="arqueológicos" lemma="arqueologia" pos="adj" features="M=P" ></word_182>
+</sn>
+<sn id="58" tokens="227...230" nucleo="descoberta" sintagma="a  descoberta " Categoria="--" sentenca="7">
+<word_227 token="a" lemma="o" pos="art" features="F=S" ></word_227>
+<word_229 token="descoberta" lemma="descoberta" pos="n" features="F=S" ></word_229>
+</sn>
+</Cadeia_58>
+
+<Cadeia_64> 
+<sn id="19" tokens="71...73" nucleo="cachorros" sintagma="os cachorros modernos" Categoria="--" sentenca="4">
+<word_71 token="os" lemma="o" pos="art" features="M=P" ></word_71>
+<word_72 token="cachorros" lemma="cachorro" pos="n" features="M=P" ></word_72>
+<word_73 token="modernos" lemma="moderno" pos="adj" features="M=P" ></word_73>
+</sn>
+<sn id="34" tokens="123...125" nucleo="cachorros" sintagma="os cachorros modernos" Categoria="--" sentenca="5">
+<word_123 token="os" lemma="o" pos="art" features="M=P" ></word_123>
+<word_124 token="cachorros" lemma="cachorro" pos="n" features="M=P" ></word_124>
+<word_125 token="modernos" lemma="moderno" pos="adj" features="M=P" ></word_125>
+</sn>
+<sn id="48" tokens="184...187" nucleo="cães" sintagma="os primeiros cães domésticos" Categoria="--" sentenca="6">
+<word_184 token="os" lemma="o" pos="art" features="M=P" ></word_184>
+<word_185 token="primeiros" lemma="" pos="adj" features="M=P" ></word_185>
+<word_186 token="cães" lemma="cão" pos="n" features="M=P" ></word_186>
+<word_187 token="domésticos" lemma="doméstico" pos="adj" features="M=P" ></word_187>
+</sn>
+<sn id="54" tokens="215...216" nucleo="cães" sintagma="os cães" Categoria="--" sentenca="7">
+<word_215 token="os" lemma="o" pos="art" features="M=P" ></word_215>
+<word_216 token="cães" lemma="cão" pos="n" features="M=P" ></word_216>
+</sn>
+<sn id="64" tokens="256...256" nucleo="cachorros" sintagma="cachorros" Categoria="--" sentenca="8">
+<word_256 token="cachorros" lemma="cachorro" pos="n" features="M=P" ></word_256>
+</sn>
+<sn id="73" tokens="286...287" nucleo="cães" sintagma="os cães" Categoria="--" sentenca="9">
+<word_286 token="os" lemma="o" pos="art" features="M=P" ></word_286>
+<word_287 token="cães" lemma="cão" pos="n" features="M=P" ></word_287>
+</sn>
+<sn id="77" tokens="307...308" nucleo="cães" sintagma="cães domésticos" Categoria="--" sentenca="10">
+<word_307 token="cães" lemma="cão" pos="n" features="M=P" ></word_307>
+<word_308 token="domésticos" lemma="doméstico" pos="adj" features="M=P" ></word_308>
+</sn>
+<sn id="89" tokens="358...359" nucleo="cães" sintagma="os cães" Categoria="--" sentenca="12">
+<word_358 token="os" lemma="o" pos="art" features="M=P" ></word_358>
+<word_359 token="cães" lemma="cão" pos="n" features="M=P" ></word_359>
+</sn>
+<sn id="95" tokens="376...377" nucleo="Cães" sintagma="Cães indígenas" Categoria="--" sentenca="13">
+<word_376 token="Cães" lemma="cão" pos="n" features="M=P" ></word_376>
+<word_377 token="indígenas" lemma="" pos="adj" features="M=P" ></word_377>
+</sn>
+<sn id="105" tokens="406...408" nucleo="cachorro" sintagma="cachorro sabidamente anteriores" Categoria="--" sentenca="14">
+<word_406 token="cachorro" lemma="cachorro" pos="n" features="M=S" ></word_406>
+<word_407 token="sabidamente" lemma="" pos="adj" features="M=S" ></word_407>
+<word_408 token="anteriores" lemma="anterior" pos="adj" features="M=P" ></word_408>
+</sn>
+<sn id="113" tokens="438...439" nucleo="cães" sintagma="os cães" Categoria="--" sentenca="16">
+<word_438 token="os" lemma="o" pos="art" features="M=P" ></word_438>
+<word_439 token="cães" lemma="cão" pos="n" features="M=P" ></word_439>
+</sn>
+<sn id="120" tokens="467...467" nucleo="cães" sintagma="cães" Categoria="--" sentenca="17">
+<word_467 token="cães" lemma="cão" pos="n" features="M=P" ></word_467>
+</sn>
+<sn id="135" tokens="524...525" nucleo="cachorros" sintagma="os cachorros" Categoria="--" sentenca="20">
+<word_524 token="os" lemma="o" pos="art" features="M=P" ></word_524>
+<word_525 token="cachorros" lemma="cachorro" pos="n" features="M=P" ></word_525>
+</sn>
+</Cadeia_64>
+
+<Cadeia_78> 
+<sn id="50" tokens="196...197" nucleo="Oriente_Médio" sintagma="o Oriente Médio" Categoria="EN_LOC" sentenca="6">
+<word_196 token="o" lemma="o" pos="art" features="M=S" ></word_196>
+<word_197 token="Oriente_Médio" lemma="" pos="prop" features="M=S" ></word_197>
+</sn>
+<sn id="78" tokens="313...314" nucleo="Oriente_Médio" sintagma="o Oriente Médio" Categoria="EN_LOC" sentenca="10">
+<word_313 token="o" lemma="o" pos="art" features="M=S" ></word_313>
+<word_314 token="Oriente_Médio" lemma="" pos="prop" features="M=S" ></word_314>
+</sn>
+</Cadeia_78>
+
+<Cadeia_80> 
+<sn id="43" tokens="155...157" nucleo="material" sintagma="o material genético" Categoria="--" sentenca="6">
+<word_155 token="o" lemma="o" pos="art" features="M=S" ></word_155>
+<word_156 token="material" lemma="material" pos="n" features="M=S" ></word_156>
+<word_157 token="genético" lemma="genético" pos="adj" features="M=S" ></word_157>
+</sn>
+<sn id="80" tokens="320...320" nucleo="selvagens" sintagma="selvagens" Categoria="--" sentenca="11">
+<word_320 token="selvagens" lemma="selvagem" pos="n" features="M=P" ></word_320>
+</sn>
+<sn id="103" tokens="400...408" nucleo="material" sintagma="o material genético de raças de cachorro sabidamente anteriores" Categoria="--" sentenca="14">
+<word_400 token="o" lemma="o" pos="art" features="M=S" ></word_400>
+<word_401 token="material" lemma="material" pos="n" features="M=S" ></word_401>
+<word_402 token="genético" lemma="genético" pos="adj" features="M=S" ></word_402>
+<word_403 token="de" lemma="de" pos="prp" features="-" ></word_403>
+<word_404 token="raças" lemma="raça" pos="n" features="F=P" ></word_404>
+<word_405 token="de" lemma="de" pos="prp" features="-" ></word_405>
+<word_406 token="cachorro" lemma="cachorro" pos="n" features="M=S" ></word_406>
+<word_407 token="sabidamente" lemma="" pos="adj" features="M=S" ></word_407>
+<word_408 token="anteriores" lemma="anterior" pos="adj" features="M=P" ></word_408>
+</sn>
+</Cadeia_80>
+
+<Cadeia_81> 
+<sn id="35" tokens="128...137" nucleo="viagem" sintagma="a viagem de volta da Eurásia às Américas" Categoria="EN_AMC/BIBL" sentenca="5">
+<word_128 token="a" lemma="o" pos="art" features="F=S" ></word_128>
+<word_129 token="viagem" lemma="viagem" pos="n" features="F=S" ></word_129>
+<word_130 token="de" lemma="de" pos="prp" features="-" ></word_130>
+<word_131 token="volta" lemma="volta" pos="n" features="F=S" ></word_131>
+<word_132 token="de" lemma="de" pos="prp" features="-" ></word_132>
+<word_133 token="a" lemma="o" pos="art" features="F=S" ></word_133>
+<word_134 token="Eurásia" lemma="" pos="prop" features="F=S" ></word_134>
+<word_135 token="a" lemma="a" pos="prp" features="-" ></word_135>
+<word_136 token="as" lemma="o" pos="art" features="F=P" ></word_136>
+<word_137 token="Américas" lemma="Américas" pos="prop" features="M=S" ></word_137>
+</sn>
+<sn id="38" tokens="136...137" nucleo="Américas" sintagma="as Américas" Categoria="EN_AMC/BIBL" sentenca="5">
+<word_136 token="as" lemma="o" pos="art" features="F=P" ></word_136>
+<word_137 token="Américas" lemma="Américas" pos="prop" features="M=S" ></word_137>
+</sn>
+<sn id="52" tokens="208...209" nucleo="Américas" sintagma="as Américas" Categoria="EN_AMC/BIBL" sentenca="7">
+<word_208 token="as" lemma="o" pos="art" features="F=P" ></word_208>
+<word_209 token="Américas" lemma="Américas" pos="prop" features="M=S" ></word_209>
+</sn>
+<sn id="81" tokens="322...323" nucleo="Américas" sintagma="as Américas" Categoria="EN_AMC/BIBL" sentenca="11">
+<word_322 token="as" lemma="o" pos="art" features="F=P" ></word_322>
+<word_323 token="Américas" lemma="Américas" pos="prop" features="M=S" ></word_323>
+</sn>
+</Cadeia_81>
+
+<Cadeia_86> 
+<sn id="76" tokens="296...297" nucleo="domesticação" sintagma="a domesticação" Categoria="EN_AMC/PRDIC" sentenca="10">
+<word_296 token="a" lemma="o" pos="art" features="F=S" ></word_296>
+<word_297 token="domesticação" lemma="domesticar" pos="n" features="F=S" ></word_297>
+</sn>
+<sn id="86" tokens="345...345" nucleo="domesticação" sintagma="domesticação" Categoria="EN_AMC/PRDIC" sentenca="11">
+<word_345 token="domesticação" lemma="domesticar" pos="n" features="F=S" ></word_345>
+</sn>
+<sn id="88" tokens="353...355" nucleo="domesticação" sintagma="uma domesticação independente" Categoria="EN_AMC/PRDIC" sentenca="12">
+<word_353 token="uma" lemma="um" pos="art" features="F=S" ></word_353>
+<word_354 token="domesticação" lemma="domesticar" pos="n" features="F=S" ></word_354>
+<word_355 token="independente" lemma="independente" pos="adj" features="F=S" ></word_355>
+</sn>
+<sn id="150" tokens="576...577" nucleo="domesticação" sintagma="a domesticação" Categoria="EN_AMC/PRDIC" sentenca="22">
+<word_576 token="a" lemma="o" pos="art" features="F=S" ></word_576>
+<word_577 token="domesticação" lemma="domesticar" pos="n" features="F=S" ></word_577>
+</sn>
+</Cadeia_86>
+
+<Cadeia_109> 
+<sn id="36" tokens="131...131" nucleo="volta" sintagma="volta" Categoria="--" sentenca="5">
+<word_131 token="volta" lemma="volta" pos="n" features="F=S" ></word_131>
+</sn>
+<sn id="82" tokens="326...327" nucleo="chegada" sintagma="a chegada" Categoria="--" sentenca="11">
+<word_326 token="a" lemma="o" pos="art" features="F=S" ></word_326>
+<word_327 token="chegada" lemma="chegada" pos="n" features="F=S" ></word_327>
+</sn>
+<sn id="106" tokens="410...411" nucleo="chegada" sintagma="a chegada" Categoria="--" sentenca="14">
+<word_410 token="a" lemma="o" pos="art" features="F=S" ></word_410>
+<word_411 token="chegada" lemma="chegada" pos="n" features="F=S" ></word_411>
+</sn>
+<sn id="109" tokens="419...421" nucleo="conclusões" sintagma="a duas conclusões" Categoria="--" sentenca="15">
+<word_419 token="a" lemma="o" pos="art" features="F=S" ></word_419>
+<word_420 token="duas" lemma="dois" pos="num" features="F=P" ></word_420>
+<word_421 token="conclusões" lemma="conclusão" pos="n" features="F=P" ></word_421>
+</sn>
+</Cadeia_109>
+
+<Cadeia_114> 
+<sn id="30" tokens="113...115" nucleo="continente" sintagma="o continente americano" Categoria="EN_LOC" sentenca="5">
+<word_113 token="o" lemma="o" pos="art" features="M=S" ></word_113>
+<word_114 token="continente" lemma="continente" pos="n" features="M=S" ></word_114>
+<word_115 token="americano" lemma="americano" pos="adj" features="M=S" ></word_115>
+</sn>
+<sn id="55" tokens="218...219" nucleo="continente" sintagma="o continente" Categoria="EN_LOC" sentenca="7">
+<word_218 token="o" lemma="o" pos="art" features="M=S" ></word_218>
+<word_219 token="continente" lemma="continente" pos="n" features="M=S" ></word_219>
+</sn>
+<sn id="87" tokens="347...349" nucleo="continente" sintagma="o novo continente" Categoria="EN_LOC" sentenca="11">
+<word_347 token="o" lemma="o" pos="art" features="M=S" ></word_347>
+<word_348 token="novo" lemma="novo" pos="adj" features="M=S" ></word_348>
+<word_349 token="continente" lemma="continente" pos="n" features="M=S" ></word_349>
+</sn>
+<sn id="114" tokens="445...446" nucleo="continente" sintagma="o continente" Categoria="EN_LOC" sentenca="16">
+<word_445 token="o" lemma="o" pos="art" features="M=S" ></word_445>
+<word_446 token="continente" lemma="continente" pos="n" features="M=S" ></word_446>
+</sn>
+</Cadeia_114>
+
+<Cadeia_119> 
+<sn id="23" tokens="89...90" nucleo="América_do_Norte" sintagma="a América do Norte" Categoria="EN_SER" sentenca="4">
+<word_89 token="a" lemma="o" pos="art" features="F=S" ></word_89>
+<word_90 token="América_do_Norte" lemma="" pos="prop" features="F=S" ></word_90>
+</sn>
+<sn id="119" tokens="460...461" nucleo="América" sintagma="a América" Categoria="EN_SER" sentenca="17">
+<word_460 token="a" lemma="o" pos="art" features="F=S" ></word_460>
+<word_461 token="América" lemma="América" pos="prop" features="M=S" ></word_461>
+</sn>
+</Cadeia_119>
+
+<Cadeia_123> 
+<sn id="110" tokens="425...427" nucleo="raças" sintagma="as raças indígenas" Categoria="EN_SER" sentenca="16">
+<word_425 token="as" lemma="o" pos="art" features="F=P" ></word_425>
+<word_426 token="raças" lemma="raça" pos="n" features="F=P" ></word_426>
+<word_427 token="indígenas" lemma="" pos="adj" features="F=P" ></word_427>
+</sn>
+<sn id="118" tokens="455...461" nucleo="raças" sintagma="as raças hoje comuns na América" Categoria="EN_SER" sentenca="17">
+<word_455 token="as" lemma="o" pos="art" features="F=P" ></word_455>
+<word_456 token="raças" lemma="raça" pos="n" features="F=P" ></word_456>
+<word_457 token="hoje" lemma="hoje" pos="adv" features="-" ></word_457>
+<word_458 token="comuns" lemma="comum" pos="adj" features="F=P" ></word_458>
+<word_459 token="em" lemma="em" pos="prp" features="-" ></word_459>
+<word_460 token="a" lemma="o" pos="art" features="F=S" ></word_460>
+<word_461 token="América" lemma="América" pos="prop" features="M=S" ></word_461>
+</sn>
+<sn id="123" tokens="477...480" nucleo="raças" sintagma="as raças caninas atuais" Categoria="EN_SER" sentenca="18">
+<word_477 token="as" lemma="o" pos="art" features="F=P" ></word_477>
+<word_478 token="raças" lemma="raça" pos="n" features="F=P" ></word_478>
+<word_479 token="caninas" lemma="canino" pos="adj" features="F=P" ></word_479>
+<word_480 token="atuais" lemma="atual" pos="adj" features="F=P" ></word_480>
+</sn>
+</Cadeia_123>
+
+<Cadeia_131> 
+<sn id="8" tokens="32...32" nucleo="lobos" sintagma="lobos" Categoria="EN_SER" sentenca="2">
+<word_32 token="lobos" lemma="lobo" pos="n" features="M=P" ></word_32>
+</sn>
+<sn id="29" tokens="108...109" nucleo="lobos" sintagma="os lobos" Categoria="EN_SER" sentenca="5">
+<word_108 token="os" lemma="o" pos="art" features="M=P" ></word_108>
+<word_109 token="lobos" lemma="lobo" pos="n" features="M=P" ></word_109>
+</sn>
+<sn id="79" tokens="319...323" nucleo="lobos" sintagma="lobos selvagens nas Américas" Categoria="EN_SER" sentenca="11">
+<word_319 token="lobos" lemma="lobo" pos="n" features="M=P" ></word_319>
+<word_320 token="selvagens" lemma="selvagem" pos="n" features="M=P" ></word_320>
+<word_321 token="em" lemma="em" pos="prp" features="-" ></word_321>
+<word_322 token="as" lemma="o" pos="art" features="F=P" ></word_322>
+<word_323 token="Américas" lemma="Américas" pos="prop" features="M=S" ></word_323>
+</sn>
+<sn id="131" tokens="512...513" nucleo="lobo" sintagma="o lobo" Categoria="EN_SER" sentenca="19">
+<word_512 token="o" lemma="o" pos="art" features="M=S" ></word_512>
+<word_513 token="lobo" lemma="lobo" pos="n" features="M=S" ></word_513>
+</sn>
+</Cadeia_131>
+
+<Cadeia_140> 
+<sn id="42" tokens="152...160" nucleo="estudos" sintagma="Dois estudos sobre o material genético dos cães" Categoria="EN_LOC" sentenca="6">
+<word_152 token="Dois" lemma="dois" pos="num" features="M=P" ></word_152>
+<word_153 token="estudos" lemma="estudo" pos="n" features="M=P" ></word_153>
+<word_154 token="sobre" lemma="sobre" pos="prp" features="-" ></word_154>
+<word_155 token="o" lemma="o" pos="art" features="M=S" ></word_155>
+<word_156 token="material" lemma="material" pos="n" features="M=S" ></word_156>
+<word_157 token="genético" lemma="genético" pos="adj" features="M=S" ></word_157>
+<word_158 token="de" lemma="de" pos="prp" features="-" ></word_158>
+<word_159 token="os" lemma="o" pos="art" features="M=P" ></word_159>
+<word_160 token="cães" lemma="cão" pos="n" features="M=P" ></word_160>
+</sn>
+<sn id="60" tokens="237...241" nucleo="estudos" sintagma="Um dos estudos" Categoria="EN_LOC" sentenca="8">
+<word_237 token="Um" lemma="um" pos="num" features="M=S" ></word_237>
+<word_238 token="de" lemma="de" pos="prp" features="-" ></word_238>
+<word_239 token="os" lemma="o" pos="art" features="M=P" ></word_239>
+<word_240 token="estudos" lemma="estudo" pos="n" features="M=P" ></word_240>
+<word_241 token="," lemma="" pos="," features="-" ></word_241>
+</sn>
+<sn id="62" tokens="250...262" nucleo="análise" sintagma="a análise do DNA de cachorros de várias partes do planeta" Categoria="EN_LOC" sentenca="8">
+<word_250 token="a" lemma="o" pos="art" features="F=S" ></word_250>
+<word_251 token="análise" lemma="análise" pos="n" features="F=S" ></word_251>
+<word_252 token="de" lemma="de" pos="prp" features="-" ></word_252>
+<word_253 token="o" lemma="o" pos="art" features="M=S" ></word_253>
+<word_254 token="DNA" lemma="" pos="prop" features="M=S" ></word_254>
+<word_255 token="de" lemma="de" pos="prp" features="-" ></word_255>
+<word_256 token="cachorros" lemma="cachorro" pos="n" features="M=P" ></word_256>
+<word_257 token="de" lemma="de" pos="prp" features="-" ></word_257>
+<word_258 token="várias" lemma="" pos="pron-det" features="F=P" ></word_258>
+<word_259 token="partes" lemma="parte" pos="n" features="F=P" ></word_259>
+<word_260 token="de" lemma="de" pos="prp" features="-" ></word_260>
+<word_261 token="o" lemma="o" pos="art" features="M=S" ></word_261>
+<word_262 token="planeta" lemma="planeta" pos="n" features="M=S" ></word_262>
+</sn>
+<sn id="108" tokens="416...417" nucleo="análise" sintagma="A análise" Categoria="EN_LOC" sentenca="15">
+<word_416 token="A" lemma="o" pos="art" features="F=S" ></word_416>
+<word_417 token="análise" lemma="análise" pos="n" features="F=S" ></word_417>
+</sn>
+<sn id="139" tokens="542...543" nucleo="estudos" sintagma="Os estudos" Categoria="EN_LOC" sentenca="21">
+<word_542 token="Os" lemma="o" pos="art" features="M=P" ></word_542>
+<word_543 token="estudos" lemma="estudo" pos="n" features="M=P" ></word_543>
+</sn>
+<sn id="140" tokens="545...554" nucleo="análise" sintagma="análise do DNA de uma estrutura das células" Categoria="EN_LOC" sentenca="21">
+<word_545 token="análise" lemma="análise" pos="n" features="F=S" ></word_545>
+<word_546 token="de" lemma="de" pos="prp" features="-" ></word_546>
+<word_547 token="o" lemma="o" pos="art" features="M=S" ></word_547>
+<word_548 token="DNA" lemma="" pos="prop" features="M=S" ></word_548>
+<word_549 token="de" lemma="de" pos="prp" features="-" ></word_549>
+<word_550 token="uma" lemma="um" pos="art" features="F=S" ></word_550>
+<word_551 token="estrutura" lemma="estrutura" pos="n" features="F=S" ></word_551>
+<word_552 token="de" lemma="de" pos="prp" features="-" ></word_552>
+<word_553 token="as" lemma="o" pos="art" features="F=P" ></word_553>
+<word_554 token="células" lemma="célula" pos="n" features="F=P" ></word_554>
+</sn>
+</Cadeia_140>
+
+<Cadeia_141> 
+<sn id="63" tokens="253...254" nucleo="DNA" sintagma="o DNA" Categoria="EN_PROD/MARC" sentenca="8">
+<word_253 token="o" lemma="o" pos="art" features="M=S" ></word_253>
+<word_254 token="DNA" lemma="" pos="prop" features="M=S" ></word_254>
+</sn>
+<sn id="141" tokens="547...548" nucleo="DNA" sintagma="o DNA" Categoria="EN_PROD/MARC" sentenca="21">
+<word_547 token="o" lemma="o" pos="art" features="M=S" ></word_547>
+<word_548 token="DNA" lemma="" pos="prop" features="M=S" ></word_548>
+</sn>
+</Cadeia_141>
+
+<Cadeia_146> 
+<sn id="6" tokens="24...26" nucleo="origem" sintagma="uma origem comum" Categoria="EN_LOC" sentenca="1">
+<word_24 token="uma" lemma="um" pos="art" features="F=S" ></word_24>
+<word_25 token="origem" lemma="origem" pos="n" features="F=S" ></word_25>
+<word_26 token="comum" lemma="comum" pos="adj" features="F=S" ></word_26>
+</sn>
+<sn id="10" tokens="39...40" nucleo="leste" sintagma="o leste" Categoria="EN_LOC" sentenca="2">
+<word_39 token="o" lemma="o" pos="art" features="M=S" ></word_39>
+<word_40 token="leste" lemma="leste" pos="n" features="M=S" ></word_40>
+</sn>
+<sn id="74" tokens="289...291" nucleo="leste" sintagma="o leste asiático" Categoria="EN_LOC" sentenca="9">
+<word_289 token="o" lemma="o" pos="art" features="M=S" ></word_289>
+<word_290 token="leste" lemma="leste" pos="n" features="M=S" ></word_290>
+<word_291 token="asiático" lemma="asiático" pos="adj" features="M=S" ></word_291>
+</sn>
+<sn id="104" tokens="404...404" nucleo="raças" sintagma="raças" Categoria="EN_LOC" sentenca="14">
+<word_404 token="raças" lemma="raça" pos="n" features="F=P" ></word_404>
+</sn>
+<sn id="146" tokens="564...565" nucleo="mães" sintagma="as mães" Categoria="EN_LOC" sentenca="21">
+<word_564 token="as" lemma="o" pos="art" features="F=P" ></word_564>
+<word_565 token="mães" lemma="mãe" pos="n" features="F=P" ></word_565>
+</sn>
+</Cadeia_146>
+
+<Cadeia_148> 
+<sn id="72" tokens="280...282" nucleo="diversidade" sintagma="a diversidade genética" Categoria="EN_SER" sentenca="9">
+<word_280 token="a" lemma="o" pos="art" features="F=S" ></word_280>
+<word_281 token="diversidade" lemma="diversidade, diverso" pos="n" features="F=S" ></word_281>
+<word_282 token="genética" lemma="genético" pos="adj" features="F=S" ></word_282>
+</sn>
+<sn id="115" tokens="451...451" nucleo="diferenças" sintagma="diferenças" Categoria="EN_SER" sentenca="17">
+<word_451 token="diferenças" lemma="diferença" pos="n" features="F=P" ></word_451>
+</sn>
+<sn id="122" tokens="474...487" nucleo="diferenças" sintagma="As diferenças entre as raças caninas atuais do lulu-da-Pomerânia a o pastor alemão" Categoria="EN_SER" sentenca="18">
+<word_474 token="As" lemma="o" pos="art" features="F=P" ></word_474>
+<word_475 token="diferenças" lemma="diferença" pos="n" features="F=P" ></word_475>
+<word_476 token="entre" lemma="entre" pos="prp" features="-" ></word_476>
+<word_477 token="as" lemma="o" pos="art" features="F=P" ></word_477>
+<word_478 token="raças" lemma="raça" pos="n" features="F=P" ></word_478>
+<word_479 token="caninas" lemma="canino" pos="adj" features="F=P" ></word_479>
+<word_480 token="atuais" lemma="atual" pos="adj" features="F=P" ></word_480>
+<word_481 token="de" lemma="de" pos="prp" features="-" ></word_481>
+<word_482 token="o" lemma="o" pos="art" features="M=S" ></word_482>
+<word_483 token="lulu-da-Pomerânia" lemma="" pos="n" features="M=S" ></word_483>
+<word_484 token="a" lemma="a" pos="prp" features="-" ></word_484>
+<word_485 token="o" lemma="o" pos="art" features="M=S" ></word_485>
+<word_486 token="pastor" lemma="pastor" pos="n" features="M=S" ></word_486>
+<word_487 token="alemão" lemma="alemão" pos="adj" features="M=S" ></word_487>
+</sn>
+<sn id="148" tokens="570...570" nucleo="diferenças" sintagma="diferenças" Categoria="EN_SER" sentenca="22">
+<word_570 token="diferenças" lemma="diferença" pos="n" features="F=P" ></word_570>
+</sn>
+</Cadeia_148>
+
+<Cadeia_149> 
+<sn id="61" tokens="244...247" nucleo="cientistas" sintagma="cientistas suecos e chineses" Categoria="EN_SER" sentenca="8">
+<word_244 token="cientistas" lemma="cientista, ciente" pos="n" features="M=P" ></word_244>
+<word_245 token="suecos" lemma="sueco" pos="adj" features="M=P" ></word_245>
+<word_246 token="e" lemma="e" pos="conj-c" features="-" ></word_246>
+<word_247 token="chineses" lemma="chinês" pos="n-adj" features="M=P" ></word_247>
+</sn>
+<sn id="149" tokens="572...573" nucleo="cientistas" sintagma="os cientistas" Categoria="EN_SER" sentenca="22">
+<word_572 token="os" lemma="o" pos="art" features="M=P" ></word_572>
+<word_573 token="cientistas" lemma="cientista, ciente" pos="n" features="M=P" ></word_573>
+</sn>
+</Cadeia_149>
+
+</Cadeias><Mencoes_Unicas><sn id="0" tokens="1...22" nucleo="poodle" sintagma="um poodle ou um pitbull , um cocker spaniel ou um dinamarquês , o seu cachorro e os dos seus amigos" sentenca="1">
+<word_1 token="um" lemma="um" pos="art" features="M=S" ></word_1>
+<word_2 token="poodle" lemma="" pos="n" features="M=S" ></word_2>
+<word_3 token="ou" lemma="ou" pos="conj-c" features="-" ></word_3>
+<word_4 token="um" lemma="um" pos="art" features="M=S" ></word_4>
+<word_5 token="pitbull" lemma="" pos="n" features="M=S" ></word_5>
+<word_6 token="," lemma="" pos="," features="-" ></word_6>
+<word_7 token="um" lemma="um" pos="art" features="M=S" ></word_7>
+<word_8 token="cocker" lemma="" pos="n" features="M=S" ></word_8>
+<word_9 token="spaniel" lemma="" pos="adj" features="M=S" ></word_9>
+<word_3 token="ou" lemma="ou" pos="conj-c" features="-" ></word_3>
+<word_11 token="um" lemma="um" pos="art" features="M=S" ></word_11>
+<word_12 token="dinamarquês" lemma="dinamarquês" pos="n" features="M=S" ></word_12>
+<word_13 token="," lemma="" pos="," features="-" ></word_13>
+<word_14 token="o" lemma="o" pos="art" features="M=S" ></word_14>
+<word_15 token="seu" lemma="seu" pos="pron-det" features="M=S" ></word_15>
+<word_16 token="cachorro" lemma="cachorro" pos="n" features="M=S" ></word_16>
+<word_17 token="e" lemma="e" pos="conj-c" features="-" ></word_17>
+<word_18 token="os" lemma="o" pos="pron-det" features="M=P" ></word_18>
+<word_19 token="de" lemma="de" pos="prp" features="-" ></word_19>
+<word_20 token="os" lemma="o" pos="art" features="M=P" ></word_20>
+<word_21 token="seus" lemma="seu" pos="pron-det" features="M=P" ></word_21>
+<word_22 token="amigos" lemma="amigo" pos="n" features="M=P" ></word_22>
+</sn>
+<sn id="2" tokens="7...9" nucleo="cocker" sintagma="um cocker spaniel" sentenca="1">
+<word_7 token="um" lemma="um" pos="art" features="M=S" ></word_7>
+<word_8 token="cocker" lemma="" pos="n" features="M=S" ></word_8>
+<word_9 token="spaniel" lemma="" pos="adj" features="M=S" ></word_9>
+</sn>
+<sn id="3" tokens="11...12" nucleo="dinamarquês" sintagma="um dinamarquês" sentenca="1">
+<word_11 token="um" lemma="um" pos="art" features="M=S" ></word_11>
+<word_12 token="dinamarquês" lemma="dinamarquês" pos="n" features="M=S" ></word_12>
+</sn>
+<sn id="4" tokens="14...16" nucleo="seu" sintagma="o seu cachorro" sentenca="1">
+<word_14 token="o" lemma="o" pos="art" features="M=S" ></word_14>
+<word_15 token="seu" lemma="seu" pos="pron-det" features="M=S" ></word_15>
+<word_16 token="cachorro" lemma="cachorro" pos="n" features="M=S" ></word_16>
+</sn>
+<sn id="5" tokens="20...22" nucleo="seus" sintagma="os seus amigos" sentenca="1">
+<word_20 token="os" lemma="o" pos="art" features="M=P" ></word_20>
+<word_21 token="seus" lemma="seu" pos="pron-det" features="M=P" ></word_21>
+<word_22 token="amigos" lemma="amigo" pos="n" features="M=P" ></word_22>
+</sn>
+<sn id="7" tokens="28...29" nucleo="todos" sintagma="todos eles" sentenca="2">
+<word_28 token="todos" lemma="todo" pos="pron-det" features="M=P" ></word_28>
+<word_29 token="eles" lemma="ele" pos="pron-pers" features="M=3P=NOM" ></word_29>
+</sn>
+<sn id="11" tokens="42...43" nucleo="Ásia" sintagma="a Ásia" sentenca="2">
+<word_42 token="a" lemma="o" pos="art" features="F=S" ></word_42>
+<word_43 token="Ásia" lemma="Ásia" pos="prop" features="F=S" ></word_43>
+</sn>
+<sn id="15" tokens="56...57" nucleo="esse" sintagma="esse período" sentenca="3">
+<word_56 token="esse" lemma="esse" pos="pron-det" features="M=S" ></word_56>
+<word_57 token="período" lemma="período" pos="n" features="M=S" ></word_57>
+</sn>
+<sn id="17" tokens="64...64" nucleo="evolução" sintagma="evolução" sentenca="3">
+<word_64 token="evolução" lemma="evolução" pos="n" features="F=S" ></word_64>
+</sn>
+<sn id="18" tokens="66...68" nucleo="animais" sintagma="Os primeiros animais" sentenca="4">
+<word_66 token="Os" lemma="o" pos="art" features="M=P" ></word_66>
+<word_67 token="primeiros" lemma="" pos="adj" features="M=P" ></word_67>
+<word_68 token="animais" lemma="animal" pos="n" features="M=P" ></word_68>
+</sn>
+<sn id="20" tokens="74...76" nucleo="canídeos" sintagma="os primeiros canídeos" sentenca="4">
+<word_74 token="os" lemma="o" pos="art" features="M=P" ></word_74>
+<word_75 token="primeiros" lemma="" pos="adj" features="M=P" ></word_75>
+<word_76 token="canídeos" lemma="" pos="n" features="M=P" ></word_76>
+</sn>
+<sn id="31" tokens="117...121" nucleo="dezenas" sintagma="dezenas de milhares de anos" sentenca="5">
+<word_117 token="dezenas" lemma="" pos="pron-det" features="M=S" ></word_117>
+<word_118 token="de" lemma="de" pos="prp" features="-" ></word_118>
+<word_119 token="milhares" lemma="" pos="n" features="M=P" ></word_119>
+<word_120 token="de" lemma="de" pos="prp" features="-" ></word_120>
+<word_121 token="anos" lemma="ano" pos="n" features="M=P" ></word_121>
+</sn>
+<sn id="32" tokens="119...119" nucleo="milhares" sintagma="milhares" sentenca="5">
+<word_119 token="milhares" lemma="" pos="n" features="M=P" ></word_119>
+</sn>
+<sn id="37" tokens="133...134" nucleo="Eurásia" sintagma="a Eurásia" sentenca="5">
+<word_133 token="a" lemma="o" pos="art" features="F=S" ></word_133>
+<word_134 token="Eurásia" lemma="" pos="prop" features="F=S" ></word_134>
+</sn>
+<sn id="41" tokens="148...150" nucleo="levas" sintagma="levas migratórias humanas" sentenca="5">
+<word_148 token="levas" lemma="leva" pos="n" features="F=P" ></word_148>
+<word_149 token="migratórias" lemma="migratório" pos="adj" features="F=P" ></word_149>
+<word_150 token="humanas" lemma="humano" pos="adj" features="F=P" ></word_150>
+</sn>
+<sn id="49" tokens="190...191" nucleo="Extremo_Oriente" sintagma="o Extremo Oriente" sentenca="6">
+<word_190 token="o" lemma="o" pos="art" features="M=S" ></word_190>
+<word_191 token="Extremo_Oriente" lemma="" pos="prop" features="M=S" ></word_191>
+</sn>
+<sn id="51" tokens="203...206" nucleo="sua" sintagma="a sua longa permanência" sentenca="7">
+<word_203 token="a" lemma="o" pos="art" features="F=S" ></word_203>
+<word_204 token="sua" lemma="sua" pos="pron-det" features="F=S" ></word_204>
+<word_205 token="longa" lemma="longa, longo" pos="adj" features="F=S" ></word_205>
+<word_206 token="permanência" lemma="permanência" pos="n" features="F=S" ></word_206>
+</sn>
+<sn id="53" tokens="211...219" nucleo="maioria" sintagma="a grande maioria dos cães do continente" sentenca="7">
+<word_211 token="a" lemma="o" pos="art" features="F=S" ></word_211>
+<word_212 token="grande" lemma="grande" pos="adj" features="F=S" ></word_212>
+<word_213 token="maioria" lemma="maioria" pos="n" features="F=S" ></word_213>
+<word_214 token="de" lemma="de" pos="prp" features="-" ></word_214>
+<word_215 token="os" lemma="o" pos="art" features="M=P" ></word_215>
+<word_216 token="cães" lemma="cão" pos="n" features="M=P" ></word_216>
+<word_217 token="de" lemma="de" pos="prp" features="-" ></word_217>
+<word_218 token="o" lemma="o" pos="art" features="M=S" ></word_218>
+<word_219 token="continente" lemma="continente" pos="n" features="M=S" ></word_219>
+</sn>
+<sn id="56" tokens="221...224" nucleo="mesmo" sintagma="mesmo da Europa" sentenca="7">
+<word_221 token="mesmo" lemma="mesmo" pos="pron-det" features="M=S" ></word_221>
+<word_222 token="de" lemma="de" pos="prp" features="-" ></word_222>
+<word_223 token="a" lemma="o" pos="art" features="F=S" ></word_223>
+<word_224 token="Europa" lemma="Europa" pos="prop" features="-" ></word_224>
+</sn>
+<sn id="59" tokens="232...232" nucleo="Cristóvão_Colombo" sintagma="Cristóvão Colombo" sentenca="7">
+<word_232 token="Cristóvão_Colombo" lemma="" pos="prop" features="M=S" ></word_232>
+</sn>
+<sn id="65" tokens="258...259" nucleo="várias" sintagma="várias partes" sentenca="8">
+<word_258 token="várias" lemma="" pos="pron-det" features="F=P" ></word_258>
+<word_259 token="partes" lemma="parte" pos="n" features="F=P" ></word_259>
+</sn>
+<sn id="66" tokens="261...262" nucleo="planeta" sintagma="o planeta" sentenca="8">
+<word_261 token="o" lemma="o" pos="art" features="M=S" ></word_261>
+<word_262 token="planeta" lemma="planeta" pos="n" features="M=S" ></word_262>
+</sn>
+<sn id="67" tokens="264...275" nucleo="equipe" sintagma="A equipe de Peter Savolainen , do Instituto Real de Tecnologia , de Estocolmo" sentenca="9">
+<word_264 token="A" lemma="o" pos="art" features="F=S" ></word_264>
+<word_265 token="equipe" lemma="" pos="n" features="F=S" ></word_265>
+<word_266 token="de" lemma="de" pos="prp" features="-" ></word_266>
+<word_267 token="Peter_Savolainen" lemma="" pos="prop" features="M=S" ></word_267>
+<word_268 token="," lemma="" pos="," features="-" ></word_268>
+<word_269 token="de" lemma="de" pos="prp" features="-" ></word_269>
+<word_270 token="o" lemma="o" pos="art" features="M=S" ></word_270>
+<word_271 token="Instituto_Real_de_Tecnologia" lemma="" pos="prop" features="M=S" ></word_271>
+<word_272 token="," lemma="" pos="," features="-" ></word_272>
+<word_273 token="de" lemma="de" pos="prp" features="-" ></word_273>
+<word_274 token="Estocolmo" lemma="Estocolmo" pos="prop" features="M=S" ></word_274>
+<word_268 token="," lemma="" pos="," features="-" ></word_268>
+</sn>
+<sn id="68" tokens="267...267" nucleo="Peter_Savolainen" sintagma="Peter Savolainen" sentenca="9">
+<word_267 token="Peter_Savolainen" lemma="" pos="prop" features="M=S" ></word_267>
+</sn>
+<sn id="69" tokens="270...271" nucleo="Instituto_Real_de_Tecnologia" sintagma="o Instituto Real de Tecnologia" sentenca="9">
+<word_270 token="o" lemma="o" pos="art" features="M=S" ></word_270>
+<word_271 token="Instituto_Real_de_Tecnologia" lemma="" pos="prop" features="M=S" ></word_271>
+</sn>
+<sn id="70" tokens="274...274" nucleo="Estocolmo" sintagma="Estocolmo" sentenca="9">
+<word_274 token="Estocolmo" lemma="Estocolmo" pos="prop" features="M=S" ></word_274>
+</sn>
+<sn id="71" tokens="276...276" nucleo="Suécia" sintagma="Suécia" sentenca="9">
+<word_276 token="Suécia" lemma="Suécia" pos="prop" features="F=S" ></word_276>
+</sn>
+<sn id="75" tokens="293...293" nucleo="Isso" sintagma="Isso" sentenca="10">
+<word_293 token="Isso" lemma="isso" pos="pron-indp" features="M=S" ></word_293>
+</sn>
+<sn id="83" tokens="329...330" nucleo="humanos" sintagma="os humanos" sentenca="11">
+<word_329 token="os" lemma="o" pos="art" features="M=P" ></word_329>
+<word_330 token="humanos" lemma="humanos" pos="n" features="M=P" ></word_330>
+</sn>
+<sn id="84" tokens="332...333" nucleo="outros" sintagma="outros cientistas" sentenca="11">
+<word_332 token="outros" lemma="outro" pos="pron-det" features="M=P" ></word_332>
+<word_333 token="cientistas" lemma="cientista, ciente" pos="n" features="M=P" ></word_333>
+</sn>
+<sn id="85" tokens="336...339" nucleo="hipóteses" sintagma="as hipóteses de como" sentenca="11">
+<word_336 token="as" lemma="o" pos="art" features="F=P" ></word_336>
+<word_337 token="hipóteses" lemma="hipótese" pos="n" features="F=P" ></word_337>
+<word_338 token="de" lemma="de" pos="prp" features="-" ></word_338>
+<word_339 token="como" lemma="como" pos="adv" features="-" ></word_339>
+</sn>
+<sn id="90" tokens="363...365" nucleo="migrações" sintagma="as migrações humanas" sentenca="12">
+<word_363 token="as" lemma="o" pos="art" features="F=P" ></word_363>
+<word_364 token="migrações" lemma="migrar" pos="n" features="F=P" ></word_364>
+<word_365 token="humanas" lemma="humano" pos="adj" features="F=P" ></word_365>
+</sn>
+<sn id="91" tokens="367...374" nucleo="estreito" sintagma="estreito de Bering , entre Rússia e Alasca?" sentenca="12">
+<word_367 token="estreito" lemma="estreito" pos="n" features="M=S" ></word_367>
+<word_368 token="de" lemma="de" pos="prp" features="-" ></word_368>
+<word_369 token="Bering" lemma="" pos="prop" features="M=S" ></word_369>
+<word_370 token="," lemma="" pos="," features="-" ></word_370>
+<word_371 token="entre" lemma="entre" pos="prp" features="-" ></word_371>
+<word_372 token="Rússia" lemma="Rússia" pos="prop" features="F=S" ></word_372>
+<word_373 token="e" lemma="e" pos="conj-c" features="-" ></word_373>
+<word_374 token="Alasca?" lemma="" pos="prop" features="M=S" ></word_374>
+</sn>
+<sn id="92" tokens="369...369" nucleo="Bering" sintagma="Bering" sentenca="12">
+<word_369 token="Bering" lemma="" pos="prop" features="M=S" ></word_369>
+</sn>
+<sn id="93" tokens="372...372" nucleo="Rússia" sintagma="Rússia" sentenca="12">
+<word_372 token="Rússia" lemma="Rússia" pos="prop" features="F=S" ></word_372>
+</sn>
+<sn id="94" tokens="374...374" nucleo="Alasca?" sintagma="Alasca?" sentenca="12">
+<word_374 token="Alasca?" lemma="" pos="prop" features="M=S" ></word_374>
+</sn>
+<sn id="96" tokens="379...397" nucleo="Jennifer_Leonard" sintagma="Jennifer Leonard , da Universidade da Califórnia em Los Angeles , e colegas de instituições do Peru e do México" sentenca="14">
+<word_379 token="Jennifer_Leonard" lemma="" pos="prop" features="M=S" ></word_379>
+<word_380 token="," lemma="" pos="," features="-" ></word_380>
+<word_381 token="de" lemma="de" pos="prp" features="-" ></word_381>
+<word_382 token="a" lemma="o" pos="art" features="F=S" ></word_382>
+<word_383 token="Universidade_da_Califórnia" lemma="" pos="prop" features="F=S" ></word_383>
+<word_384 token="em" lemma="em" pos="prp" features="-" ></word_384>
+<word_385 token="Los_Angeles" lemma="" pos="prop" features="M=S" ></word_385>
+<word_386 token="," lemma="" pos="," features="-" ></word_386>
+<word_387 token="e" lemma="e" pos="conj-c" features="-" ></word_387>
+<word_388 token="colegas" lemma="colega" pos="n" features="F=P" ></word_388>
+<word_389 token="de" lemma="de" pos="prp" features="-" ></word_389>
+<word_390 token="instituições" lemma="instituição, instituir" pos="n" features="F=P" ></word_390>
+<word_391 token="de" lemma="de" pos="prp" features="-" ></word_391>
+<word_392 token="o" lemma="o" pos="art" features="M=S" ></word_392>
+<word_393 token="Peru" lemma="" pos="prop" features="M=S" ></word_393>
+<word_394 token="e" lemma="e" pos="conj-c" features="-" ></word_394>
+<word_395 token="de" lemma="de" pos="prp" features="-" ></word_395>
+<word_396 token="o" lemma="o" pos="art" features="M=S" ></word_396>
+<word_397 token="México" lemma="México" pos="prop" features="M=S" ></word_397>
+</sn>
+<sn id="97" tokens="382...383" nucleo="Universidade_da_Califórnia" sintagma="a Universidade da Califórnia" sentenca="14">
+<word_382 token="a" lemma="o" pos="art" features="F=S" ></word_382>
+<word_383 token="Universidade_da_Califórnia" lemma="" pos="prop" features="F=S" ></word_383>
+</sn>
+<sn id="98" tokens="385...385" nucleo="Los_Angeles" sintagma="Los Angeles" sentenca="14">
+<word_385 token="Los_Angeles" lemma="" pos="prop" features="M=S" ></word_385>
+</sn>
+<sn id="99" tokens="388...388" nucleo="colegas" sintagma="colegas" sentenca="14">
+<word_388 token="colegas" lemma="colega" pos="n" features="F=P" ></word_388>
+</sn>
+<sn id="100" tokens="390...390" nucleo="instituições" sintagma="instituições" sentenca="14">
+<word_390 token="instituições" lemma="instituição, instituir" pos="n" features="F=P" ></word_390>
+</sn>
+<sn id="101" tokens="392...393" nucleo="Peru" sintagma="o Peru" sentenca="14">
+<word_392 token="o" lemma="o" pos="art" features="M=S" ></word_392>
+<word_393 token="Peru" lemma="" pos="prop" features="M=S" ></word_393>
+</sn>
+<sn id="102" tokens="396...397" nucleo="México" sintagma="o México" sentenca="14">
+<word_396 token="o" lemma="o" pos="art" features="M=S" ></word_396>
+<word_397 token="México" lemma="México" pos="prop" features="M=S" ></word_397>
+</sn>
+<sn id="107" tokens="413...414" nucleo="europeus" sintagma="os europeus" sentenca="14">
+<word_413 token="os" lemma="o" pos="art" features="M=P" ></word_413>
+<word_414 token="europeus" lemma="europeu" pos="n" features="M=P" ></word_414>
+</sn>
+<sn id="111" tokens="434...434" nucleo="que" sintagma="que" sentenca="16">
+<word_434 token="que" lemma="que" pos="pron-indp" features="F=P" ></word_434>
+</sn>
+<sn id="112" tokens="437...437" nucleo="que" sintagma="que" sentenca="16">
+<word_434 token="que" lemma="que" pos="pron-indp" features="F=P" ></word_434>
+</sn>
+<sn id="116" tokens="452...452" nucleo="que" sintagma="que" sentenca="17">
+<word_452 token="que" lemma="que" pos="pron-indp" features="F=P" ></word_452>
+</sn>
+<sn id="117" tokens="454...454" nucleo="que" sintagma="que" sentenca="17">
+<word_452 token="que" lemma="que" pos="pron-indp" features="F=P" ></word_452>
+</sn>
+<sn id="121" tokens="470...472" nucleo="colonos" sintagma="os colonos europeus" sentenca="17">
+<word_470 token="os" lemma="o" pos="art" features="M=P" ></word_470>
+<word_471 token="colonos" lemma="colono" pos="n" features="M=P" ></word_471>
+<word_472 token="europeus" lemma="europeu" pos="adj" features="M=P" ></word_472>
+</sn>
+<sn id="124" tokens="482...483" nucleo="lulu-da-Pomerânia" sintagma="o lulu-da-Pomerânia" sentenca="18">
+<word_482 token="o" lemma="o" pos="art" features="M=S" ></word_482>
+<word_483 token="lulu-da-Pomerânia" lemma="" pos="n" features="M=S" ></word_483>
+</sn>
+<sn id="125" tokens="485...487" nucleo="pastor" sintagma="o pastor alemão" sentenca="18">
+<word_485 token="o" lemma="o" pos="art" features="M=S" ></word_485>
+<word_486 token="pastor" lemma="pastor" pos="n" features="M=S" ></word_486>
+<word_487 token="alemão" lemma="alemão" pos="adj" features="M=S" ></word_487>
+</sn>
+<sn id="126" tokens="489...493" nucleo="todas" sintagma="todas resultados de cruzamentos seletivos" sentenca="18">
+<word_489 token="todas" lemma="todo" pos="pron-det" features="F=P" ></word_489>
+<word_490 token="resultados" lemma="" pos="n" features="M=P" ></word_490>
+<word_491 token="de" lemma="de" pos="prp" features="-" ></word_491>
+<word_492 token="cruzamentos" lemma="cruzar" pos="n" features="M=P" ></word_492>
+<word_493 token="seletivos" lemma="seletivo" pos="adj" features="M=P" ></word_493>
+</sn>
+<sn id="127" tokens="492...493" nucleo="cruzamentos" sintagma="cruzamentos seletivos" sentenca="18">
+<word_492 token="cruzamentos" lemma="cruzar" pos="n" features="M=P" ></word_492>
+<word_493 token="seletivos" lemma="seletivo" pos="adj" features="M=P" ></word_493>
+</sn>
+<sn id="128" tokens="495...498" nucleo="anos" sintagma="os últimos 500 anos" sentenca="18">
+<word_495 token="os" lemma="o" pos="art" features="M=P" ></word_495>
+<word_496 token="últimos" lemma="último" pos="adj" features="M=P" ></word_496>
+<word_497 token="500" lemma="" pos="num" features="M=P" ></word_497>
+<word_498 token="anos" lemma="ano" pos="n" features="M=P" ></word_498>
+</sn>
+<sn id="129" tokens="501...509" nucleo="todos" sintagma="todos esses bichos com o nome científico Canis familiaris" sentenca="19">
+<word_501 token="todos" lemma="todo" pos="pron-det" features="M=P" ></word_501>
+<word_502 token="esses" lemma="esse" pos="pron-det" features="M=P" ></word_502>
+<word_503 token="bichos" lemma="bicho" pos="n" features="M=P" ></word_503>
+<word_504 token="com" lemma="com" pos="prp" features="-" ></word_504>
+<word_505 token="o" lemma="o" pos="art" features="M=S" ></word_505>
+<word_506 token="nome" lemma="nome" pos="n" features="M=S" ></word_506>
+<word_507 token="científico" lemma="científico" pos="adj" features="M=S" ></word_507>
+<word_508 token="Canis" lemma="" pos="prop" features="M=S" ></word_508>
+<word_509 token="familiaris" lemma="" pos="adj" features="M=P" ></word_509>
+</sn>
+<sn id="130" tokens="505...507" nucleo="nome" sintagma="o nome científico" sentenca="19">
+<word_505 token="o" lemma="o" pos="art" features="M=S" ></word_505>
+<word_506 token="nome" lemma="nome" pos="n" features="M=S" ></word_506>
+<word_507 token="científico" lemma="científico" pos="adj" features="M=S" ></word_507>
+</sn>
+<sn id="132" tokens="514...516" nucleo="Canis" sintagma="o Canis lupus" sentenca="19">
+<word_514 token="o" lemma="o" pos="art" features="M=S" ></word_514>
+<word_515 token="Canis" lemma="" pos="prop" features="M=S" ></word_515>
+<word_516 token="lupus" lemma="" pos="adj" features="M=P" ></word_516>
+</sn>
+<sn id="133" tokens="518...529" nucleo="rapidez" sintagma="A rapidez da disseminação dos cachorros com seus donos humanos" sentenca="20">
+<word_518 token="A" lemma="o" pos="art" features="F=S" ></word_518>
+<word_519 token="rapidez" lemma="rapidez" pos="n" features="F=S" ></word_519>
+<word_520 token="de" lemma="de" pos="prp" features="-" ></word_520>
+<word_521 token="a" lemma="o" pos="art" features="F=S" ></word_521>
+<word_522 token="disseminação" lemma="disseminar" pos="n" features="F=S" ></word_522>
+<word_523 token="de" lemma="de" pos="prp" features="-" ></word_523>
+<word_524 token="os" lemma="o" pos="art" features="M=P" ></word_524>
+<word_525 token="cachorros" lemma="cachorro" pos="n" features="M=P" ></word_525>
+<word_526 token="com" lemma="com" pos="prp" features="-" ></word_526>
+<word_527 token="seus" lemma="seu" pos="pron-det" features="M=P" ></word_527>
+<word_528 token="donos" lemma="dono" pos="n" features="M=P" ></word_528>
+<word_529 token="humanos" lemma="humano" pos="adj" features="M=P" ></word_529>
+</sn>
+<sn id="134" tokens="521...522" nucleo="disseminação" sintagma="a disseminação" sentenca="20">
+<word_521 token="a" lemma="o" pos="art" features="F=S" ></word_521>
+<word_522 token="disseminação" lemma="disseminar" pos="n" features="F=S" ></word_522>
+</sn>
+<sn id="136" tokens="527...529" nucleo="seus" sintagma="seus donos humanos" sentenca="20">
+<word_527 token="seus" lemma="seu" pos="pron-det" features="M=P" ></word_527>
+<word_528 token="donos" lemma="dono" pos="n" features="M=P" ></word_528>
+<word_529 token="humanos" lemma="humano" pos="adj" features="M=P" ></word_529>
+</sn>
+<sn id="137" tokens="532...532" nucleo="eles" sintagma="eles" sentenca="20">
+<word_532 token="eles" lemma="ele" pos="pron-pers" features="M=3P=NOM" ></word_532>
+</sn>
+<sn id="138" tokens="535...540" nucleo="caçadores-coletores" sintagma="particularmente úteis a os primitivos caçadores-coletores" sentenca="20">
+<word_535 token="particularmente" lemma="particular" pos="adv" features="-" ></word_535>
+<word_536 token="úteis" lemma="útil" pos="adj" features="M=P" ></word_536>
+<word_537 token="a" lemma="a" pos="prp" features="-" ></word_537>
+<word_538 token="os" lemma="o" pos="art" features="M=P" ></word_538>
+<word_539 token="primitivos" lemma="primitivo" pos="adj" features="M=P" ></word_539>
+<word_540 token="caçadores-coletores" lemma="" pos="n" features="M=P" ></word_540>
+</sn>
+<sn id="142" tokens="550...551" nucleo="estrutura" sintagma="uma estrutura" sentenca="21">
+<word_550 token="uma" lemma="um" pos="art" features="F=S" ></word_550>
+<word_551 token="estrutura" lemma="estrutura" pos="n" features="F=S" ></word_551>
+</sn>
+<sn id="143" tokens="553...554" nucleo="células" sintagma="as células" sentenca="21">
+<word_553 token="as" lemma="o" pos="art" features="F=P" ></word_553>
+<word_554 token="células" lemma="célula" pos="n" features="F=P" ></word_554>
+</sn>
+<sn id="144" tokens="556...559" nucleo="mitocôndrias" sintagma="as mitocôndrias , que" sentenca="21">
+<word_556 token="as" lemma="o" pos="art" features="F=P" ></word_556>
+<word_557 token="mitocôndrias" lemma="" pos="n" features="F=P" ></word_557>
+<word_558 token="," lemma="" pos="," features="-" ></word_558>
+<word_559 token="que" lemma="que" pos="pron-indp" features="F=S" ></word_559>
+</sn>
+<sn id="145" tokens="559...559" nucleo="que" sintagma="que" sentenca="21">
+<word_559 token="que" lemma="que" pos="pron-indp" features="F=S" ></word_559>
+</sn>
+<sn id="147" tokens="568...570" nucleo="semelhanças" sintagma="semelhanças e diferenças" sentenca="22">
+<word_568 token="semelhanças" lemma="semelhança" pos="n" features="F=P" ></word_568>
+<word_569 token="e" lemma="e" pos="conj-c" features="-" ></word_569>
+<word_570 token="diferenças" lemma="diferença" pos="n" features="F=P" ></word_570>
+</sn>
+</Mencoes_Unicas>
+</CIENCIA_2002_22010.txt>

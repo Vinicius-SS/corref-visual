@@ -65,5 +65,5 @@ public class Fachada
     {
         return listaGrupoController.imprime_Correfs(sintagmas);
     }
-
+    
 }

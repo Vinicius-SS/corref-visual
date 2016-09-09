@@ -1,0 +1,692 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<CIENCIA_2005_6515.txt>
+
+<Texto conteudo="O Ibama (Instituto Brasileiro do Meio Ambiente e dos Recursos Naturais Renováveis) aplicou, desde maio passado, multas de cerca de R$ 50 milhões a pelo menos 200 fazendeiros cujas terras estão às margens do Taquari.
+Segundo o Ibama, nas propriedades multadas houve desmatamento nas margens do rio, com a finalidade de abrir espaço à agricultura ou à criação de gado. Em conseqüência, a erosão despejou toneladas de terra no Taquari.
+&quot;O objetivo é despertar a consciência ambiental. A multa pode ser reduzida em 90% se for apresentado um plano de recuperação da área&quot;, afirmou o gerente-executivo do Ibama em Campo Grande (MS), Nereu Fontes.
+O coordenador do Programa Pantanal do Ministério do Meio Ambiente, Paulo Guilherme Cabral, recebeu o estudo da Embrapa sobre o Taquari no início de julho. Ele disse que a ministra Marina Silva criou um grupo de trabalho para analisar as propostas.
+Existem, segundo Cabral, projetos polêmicos dentro do estudo, como a dragagem (retirada de terra do rio). &quot;Onde vamos colocar essa terra no Pantanal?&quot;, questiona. A Sema (Secretaria do Meio Ambiente de Mato Grosso do Sul) informou que defende a dragagem e estuda a contratação de uma empresa para o serviço.
+A situação do rio Taquari motivou a criação do Programa Pantanal, quando o então presidente Fernando Henrique Cardoso, em 1995, sobrevoou a região e ficou impressionado com o rio assoreado, invadindo fazendas. 
+(EO e HC)
+" ></Texto>
+
+<Tokens> 
+<word_0 token="O" lemma="o" pos="art" features="M=S" ></word_0>
+<word_1 token="Ibama" lemma="" pos="prop" features="M=S" ></word_1>
+<word_2 token="(" lemma="(" pos="(" features="-" ></word_2>
+<word_3 token="Instituto_Brasileiro_do_Meio_Ambiente" lemma="" pos="prop" features="M=S" ></word_3>
+<word_4 token="e" lemma="e" pos="conj-c" features="-" ></word_4>
+<word_5 token="de" lemma="de" pos="prp" features="-" ></word_5>
+<word_6 token="os" lemma="o" pos="art" features="M=P" ></word_6>
+<word_7 token="Recursos_Naturais_Renováveis" lemma="" pos="prop" features="M=P" ></word_7>
+<word_8 token=")" lemma=")" pos=")" features="-" ></word_8>
+<word_9 token="aplicou" lemma="aplicar" pos="v-fin" features="PS=3S=IND" ></word_9>
+<word_10 token="," lemma="" pos="," features="-" ></word_10>
+<word_11 token="desde" lemma="desde" pos="prp" features="-" ></word_11>
+<word_12 token="maio" lemma="maio, maio" pos="n" features="M=S" ></word_12>
+<word_13 token="passado" lemma="passar" pos="v-pcp" features="M=S" ></word_13>
+<word_14 token="," lemma="" pos="," features="-" ></word_14>
+<word_15 token="multas" lemma="multa" pos="n" features="F=P" ></word_15>
+<word_16 token="de" lemma="de" pos="prp" features="-" ></word_16>
+<word_17 token="cerca" lemma="cerca" pos="n" features="F=S" ></word_17>
+<word_18 token="de" lemma="de" pos="prp" features="-" ></word_18>
+<word_19 token="R$" lemma="" pos="n" features="M=P" ></word_19>
+<word_20 token="50" lemma="" pos="num" features="M=P" ></word_20>
+<word_21 token="milhões" lemma="" pos="n" features="M=P" ></word_21>
+<word_22 token="a" lemma="a" pos="prp" features="-" ></word_22>
+<word_23 token="por" lemma="por" pos="prp" features="-" ></word_23>
+<word_24 token="o" lemma="o" pos="art" features="M=S" ></word_24>
+<word_25 token="menos" lemma="menos" pos="pron-det" features="M=P" ></word_25>
+<word_26 token="200" lemma="" pos="num" features="M=P" ></word_26>
+<word_27 token="fazendeiros" lemma="fazendeiro" pos="n" features="M=P" ></word_27>
+<word_28 token="cujas" lemma="cujo" pos="pron-det" features="F=P" ></word_28>
+<word_29 token="terras" lemma="terra" pos="n" features="F=P" ></word_29>
+<word_30 token="estão" lemma="estar" pos="v-fin" features="PR=3P=IND" ></word_30>
+<word_31 token="a" lemma="a" pos="prp" features="-" ></word_31>
+<word_32 token="as" lemma="o" pos="art" features="F=P" ></word_32>
+<word_33 token="margens" lemma="margem" pos="n" features="F=P" ></word_33>
+<word_34 token="de" lemma="de" pos="prp" features="-" ></word_34>
+<word_35 token="o" lemma="o" pos="art" features="M=S" ></word_35>
+<word_36 token="Taquari" lemma="" pos="prop" features="M=S" ></word_36>
+<word_37 token="." lemma="." pos="." features="-" ></word_37>
+<word_38 token="Segundo" lemma="segundo" pos="prp" features="-" ></word_38>
+<word_39 token="o" lemma="o" pos="art" features="M=S" ></word_39>
+<word_40 token="Ibama" lemma="" pos="prop" features="M=S" ></word_40>
+<word_41 token="," lemma="" pos="," features="-" ></word_41>
+<word_42 token="em" lemma="em" pos="prp" features="-" ></word_42>
+<word_43 token="as" lemma="o" pos="art" features="F=P" ></word_43>
+<word_44 token="propriedades" lemma="propriedade" pos="n" features="F=P" ></word_44>
+<word_45 token="multadas" lemma="multar" pos="v-pcp" features="F=P" ></word_45>
+<word_46 token="houve" lemma="haver" pos="v-fin" features="PS=3S=IND" ></word_46>
+<word_47 token="desmatamento" lemma="" pos="n" features="M=S" ></word_47>
+<word_48 token="em" lemma="em" pos="prp" features="-" ></word_48>
+<word_49 token="as" lemma="o" pos="art" features="F=P" ></word_49>
+<word_50 token="margens" lemma="margem" pos="n" features="F=P" ></word_50>
+<word_51 token="de" lemma="de" pos="prp" features="-" ></word_51>
+<word_52 token="o" lemma="o" pos="art" features="M=S" ></word_52>
+<word_53 token="rio" lemma="rio" pos="n" features="M=S" ></word_53>
+<word_54 token="," lemma="" pos="," features="-" ></word_54>
+<word_55 token="com" lemma="com" pos="prp" features="-" ></word_55>
+<word_56 token="a" lemma="o" pos="art" features="F=S" ></word_56>
+<word_57 token="finalidade" lemma="finalidade, final" pos="n" features="F=S" ></word_57>
+<word_58 token="de" lemma="de" pos="prp" features="-" ></word_58>
+<word_59 token="abrir" lemma="abrir" pos="v-inf" features="-" ></word_59>
+<word_60 token="espaço" lemma="espaço" pos="n" features="M=S" ></word_60>
+<word_61 token="a" lemma="a" pos="prp" features="-" ></word_61>
+<word_62 token="a" lemma="o" pos="art" features="F=S" ></word_62>
+<word_63 token="agricultura" lemma="agricultura" pos="n" features="F=S" ></word_63>
+<word_64 token="ou" lemma="ou" pos="conj-c" features="-" ></word_64>
+<word_65 token="a" lemma="a" pos="prp" features="-" ></word_65>
+<word_66 token="a" lemma="o" pos="art" features="F=S" ></word_66>
+<word_67 token="criação" lemma="criação, criar" pos="n" features="F=S" ></word_67>
+<word_68 token="de" lemma="de" pos="prp" features="-" ></word_68>
+<word_69 token="gado" lemma="gado" pos="n" features="M=S" ></word_69>
+<word_70 token="." lemma="." pos="." features="-" ></word_70>
+<word_71 token="Em" lemma="em" pos="prp" features="-" ></word_71>
+<word_72 token="conseqüência" lemma="" pos="n" features="F=S" ></word_72>
+<word_73 token="," lemma="" pos="," features="-" ></word_73>
+<word_74 token="a" lemma="o" pos="art" features="F=S" ></word_74>
+<word_75 token="erosão" lemma="erosão" pos="n" features="F=S" ></word_75>
+<word_76 token="despejou" lemma="despejar" pos="v-fin" features="PS=3S=IND" ></word_76>
+<word_77 token="toneladas" lemma="tonelada" pos="n" features="F=P" ></word_77>
+<word_78 token="de" lemma="de" pos="prp" features="-" ></word_78>
+<word_79 token="terra" lemma="terra" pos="n" features="F=S" ></word_79>
+<word_80 token="em" lemma="em" pos="prp" features="-" ></word_80>
+<word_81 token="o" lemma="o" pos="art" features="M=S" ></word_81>
+<word_82 token="Taquari" lemma="" pos="prop" features="M=S" ></word_82>
+<word_83 token="." lemma="." pos="." features="-" ></word_83>
+<word_84 token="&quot;" lemma="&quot;" pos="&quot;" features="-" ></word_84>
+<word_85 token="O" lemma="o" pos="art" features="M=S" ></word_85>
+<word_86 token="objetivo" lemma="objetivo" pos="n" features="M=S" ></word_86>
+<word_87 token="é" lemma="ser" pos="v-fin" features="PR=3S=IND" ></word_87>
+<word_88 token="despertar" lemma="despertar" pos="v-inf" features="-" ></word_88>
+<word_89 token="a" lemma="o" pos="art" features="F=S" ></word_89>
+<word_90 token="consciência" lemma="consciência" pos="n" features="F=S" ></word_90>
+<word_91 token="ambiental" lemma="ambiental" pos="adj" features="F=S" ></word_91>
+<word_92 token="." lemma="." pos="." features="-" ></word_92>
+<word_93 token="A" lemma="o" pos="art" features="F=S" ></word_93>
+<word_94 token="multa" lemma="multa" pos="n" features="F=S" ></word_94>
+<word_95 token="pode" lemma="poder, podar" pos="v-fin" features="PR=3S=IND" ></word_95>
+<word_96 token="ser" lemma="ser" pos="v-inf" features="-" ></word_96>
+<word_97 token="reduzida" lemma="reduzir" pos="v-pcp" features="F=S" ></word_97>
+<word_98 token="em" lemma="em" pos="prp" features="-" ></word_98>
+<word_99 token="90" lemma="" pos="num" features="M=P" ></word_99>
+<word_100 token="%" lemma="" pos="n" features="M=P" ></word_100>
+<word_101 token="se" lemma="se" pos="pron-pers" features="M=3S=ACC" ></word_101>
+<word_102 token="for" lemma="ir, ser" pos="v-fin" features="FUT=3S=SUBJ" ></word_102>
+<word_103 token="apresentado" lemma="apresentar" pos="v-pcp" features="M=S" ></word_103>
+<word_104 token="um" lemma="um" pos="art" features="M=S" ></word_104>
+<word_105 token="plano" lemma="plano" pos="n" features="M=S" ></word_105>
+<word_106 token="de" lemma="de" pos="prp" features="-" ></word_106>
+<word_107 token="recuperação" lemma="recuperar" pos="n" features="F=S" ></word_107>
+<word_108 token="de" lemma="de" pos="prp" features="-" ></word_108>
+<word_109 token="a" lemma="o" pos="art" features="F=S" ></word_109>
+<word_110 token="área" lemma="área" pos="n" features="F=S" ></word_110>
+<word_111 token="&quot;" lemma="&quot;" pos="&quot;" features="-" ></word_111>
+<word_112 token="," lemma="" pos="," features="-" ></word_112>
+<word_113 token="afirmou" lemma="afirmar" pos="v-fin" features="PS=3S=IND" ></word_113>
+<word_114 token="o" lemma="o" pos="art" features="M=S" ></word_114>
+<word_115 token="gerente-executivo" lemma="" pos="n" features="M=S" ></word_115>
+<word_116 token="de" lemma="de" pos="prp" features="-" ></word_116>
+<word_117 token="o" lemma="o" pos="art" features="M=S" ></word_117>
+<word_118 token="Ibama" lemma="" pos="prop" features="M=S" ></word_118>
+<word_119 token="em" lemma="em" pos="prp" features="-" ></word_119>
+<word_120 token="Campo_Grande" lemma="" pos="prop" features="M=S" ></word_120>
+<word_121 token="(" lemma="(" pos="(" features="-" ></word_121>
+<word_122 token="MS" lemma="" pos="prop" features="M=S" ></word_122>
+<word_123 token=")" lemma=")" pos=")" features="-" ></word_123>
+<word_124 token="," lemma="" pos="," features="-" ></word_124>
+<word_125 token="Nereu_Fontes" lemma="" pos="prop" features="M=S" ></word_125>
+<word_126 token="." lemma="." pos="." features="-" ></word_126>
+<word_127 token="O" lemma="o" pos="art" features="M=S" ></word_127>
+<word_128 token="coordenador" lemma="coordenador, coordenar" pos="n" features="M=S" ></word_128>
+<word_129 token="de" lemma="de" pos="prp" features="-" ></word_129>
+<word_130 token="o" lemma="o" pos="art" features="M=S" ></word_130>
+<word_131 token="Programa_Pantanal" lemma="" pos="prop" features="M=S" ></word_131>
+<word_132 token="de" lemma="de" pos="prp" features="-" ></word_132>
+<word_133 token="o" lemma="o" pos="art" features="M=S" ></word_133>
+<word_134 token="Ministério_do_Meio_Ambiente" lemma="" pos="prop" features="M=S" ></word_134>
+<word_135 token="," lemma="" pos="," features="-" ></word_135>
+<word_136 token="Paulo_Guilherme_Cabral" lemma="" pos="prop" features="M=S" ></word_136>
+<word_137 token="," lemma="" pos="," features="-" ></word_137>
+<word_138 token="recebeu" lemma="receber" pos="v-fin" features="PS=3S=IND" ></word_138>
+<word_139 token="o" lemma="o" pos="art" features="M=S" ></word_139>
+<word_140 token="estudo" lemma="estudo" pos="n" features="M=S" ></word_140>
+<word_141 token="de" lemma="de" pos="prp" features="-" ></word_141>
+<word_142 token="a" lemma="o" pos="art" features="F=S" ></word_142>
+<word_143 token="Embrapa" lemma="" pos="n" features="F=S" ></word_143>
+<word_144 token="sobre" lemma="sobre" pos="prp" features="-" ></word_144>
+<word_145 token="o" lemma="o" pos="art" features="M=S" ></word_145>
+<word_146 token="Taquari" lemma="" pos="prop" features="M=S" ></word_146>
+<word_147 token="em" lemma="em" pos="prp" features="-" ></word_147>
+<word_148 token="o" lemma="o" pos="art" features="M=S" ></word_148>
+<word_149 token="início" lemma="início" pos="n" features="M=S" ></word_149>
+<word_150 token="de" lemma="de" pos="prp" features="-" ></word_150>
+<word_151 token="julho" lemma="julho" pos="n" features="M=S" ></word_151>
+<word_152 token="." lemma="." pos="." features="-" ></word_152>
+<word_153 token="Ele" lemma="ele" pos="pron-pers" features="M=3S=NOM" ></word_153>
+<word_154 token="disse" lemma="dizer" pos="v-fin" features="PS=3S=IND" ></word_154>
+<word_155 token="que" lemma="que" pos="conj-s" features="-" ></word_155>
+<word_156 token="a" lemma="o" pos="art" features="F=S" ></word_156>
+<word_157 token="ministra" lemma="ministro" pos="n" features="F=S" ></word_157>
+<word_158 token="Marina_Silva" lemma="" pos="prop" features="F=S" ></word_158>
+<word_159 token="criou" lemma="criar" pos="v-fin" features="PS=3S=IND" ></word_159>
+<word_160 token="um" lemma="um" pos="art" features="M=S" ></word_160>
+<word_161 token="grupo" lemma="grupo" pos="n" features="M=S" ></word_161>
+<word_162 token="de" lemma="de" pos="prp" features="-" ></word_162>
+<word_163 token="trabalho" lemma="trabalho" pos="n" features="M=S" ></word_163>
+<word_164 token="para" lemma="para" pos="prp" features="-" ></word_164>
+<word_165 token="analisar" lemma="analisar" pos="v-inf" features="-" ></word_165>
+<word_166 token="as" lemma="o" pos="art" features="F=P" ></word_166>
+<word_167 token="propostas" lemma="proposta" pos="n" features="F=P" ></word_167>
+<word_168 token="." lemma="." pos="." features="-" ></word_168>
+<word_169 token="Existem" lemma="existir" pos="v-fin" features="PR=3P=IND" ></word_169>
+<word_170 token="," lemma="" pos="," features="-" ></word_170>
+<word_171 token="segundo" lemma="segundo" pos="prp" features="-" ></word_171>
+<word_172 token="Cabral" lemma="Cabral" pos="prop" features="-" ></word_172>
+<word_173 token="," lemma="" pos="," features="-" ></word_173>
+<word_174 token="projetos" lemma="projeto" pos="n" features="M=P" ></word_174>
+<word_175 token="polêmicos" lemma="polêmico" pos="adj" features="M=P" ></word_175>
+<word_176 token="dentro_do" lemma="" pos="prp" features="-" ></word_176>
+<word_177 token="o" lemma="o" pos="art" features="M=S" ></word_177>
+<word_178 token="estudo" lemma="estudo" pos="n" features="M=S" ></word_178>
+<word_179 token="," lemma="" pos="," features="-" ></word_179>
+<word_180 token="como" lemma="como" pos="adv" features="-" ></word_180>
+<word_181 token="a" lemma="o" pos="art" features="F=S" ></word_181>
+<word_182 token="dragagem" lemma="dragagem" pos="n" features="F=S" ></word_182>
+<word_183 token="(" lemma="(" pos="(" features="-" ></word_183>
+<word_184 token="retirada" lemma="retirada" pos="n" features="F=S" ></word_184>
+<word_185 token="de" lemma="de" pos="prp" features="-" ></word_185>
+<word_186 token="terra" lemma="terra" pos="n" features="F=S" ></word_186>
+<word_187 token="de" lemma="de" pos="prp" features="-" ></word_187>
+<word_188 token="o" lemma="o" pos="art" features="M=S" ></word_188>
+<word_189 token="rio" lemma="rio" pos="n" features="M=S" ></word_189>
+<word_190 token=")" lemma=")" pos=")" features="-" ></word_190>
+<word_191 token="." lemma="." pos="." features="-" ></word_191>
+<word_192 token="&quot;" lemma="&quot;" pos="&quot;" features="-" ></word_192>
+<word_193 token="Onde" lemma="onde" pos="adv" features="-" ></word_193>
+<word_194 token="vamos" lemma="ir" pos="v-fin" features="PR=1P=IND" ></word_194>
+<word_195 token="colocar" lemma="colocar" pos="v-inf" features="-" ></word_195>
+<word_196 token="essa" lemma="esse" pos="pron-det" features="F=S" ></word_196>
+<word_197 token="terra" lemma="terra" pos="n" features="F=S" ></word_197>
+<word_198 token="em" lemma="em" pos="prp" features="-" ></word_198>
+<word_199 token="o" lemma="o" pos="art" features="M=S" ></word_199>
+<word_200 token="Pantanal" lemma="" pos="prop" features="M=S" ></word_200>
+<word_201 token="?" lemma="?" pos="?" features="-" ></word_201>
+<word_202 token="&quot;" lemma="&quot;" pos="&quot;" features="-" ></word_202>
+<word_203 token="," lemma="" pos="," features="-" ></word_203>
+<word_204 token="questiona" lemma="questionar" pos="v-fin" features="PR=3S=IND" ></word_204>
+<word_205 token="." lemma="." pos="." features="-" ></word_205>
+<word_206 token="A" lemma="o" pos="art" features="F=S" ></word_206>
+<word_207 token="Sema" lemma="" pos="prop" features="F=S" ></word_207>
+<word_208 token="(" lemma="(" pos="(" features="-" ></word_208>
+<word_209 token="Secretaria_do_Meio_Ambiente_de_Mato_Grosso_do_Sul" lemma="" pos="prop" features="F=S" ></word_209>
+<word_210 token=")" lemma=")" pos=")" features="-" ></word_210>
+<word_211 token="informou" lemma="informar" pos="v-fin" features="PS=3S=IND" ></word_211>
+<word_212 token="que" lemma="que" pos="conj-s" features="-" ></word_212>
+<word_213 token="defende" lemma="defender" pos="v-fin" features="PR=3S=IND" ></word_213>
+<word_214 token="a" lemma="o" pos="art" features="F=S" ></word_214>
+<word_215 token="dragagem" lemma="dragagem" pos="n" features="F=S" ></word_215>
+<word_216 token="e" lemma="e" pos="conj-c" features="-" ></word_216>
+<word_217 token="estuda" lemma="estudar" pos="v-fin" features="PR=3S=IND" ></word_217>
+<word_218 token="a" lemma="o" pos="art" features="F=S" ></word_218>
+<word_219 token="contratação" lemma="contratar" pos="n" features="F=S" ></word_219>
+<word_220 token="de" lemma="de" pos="prp" features="-" ></word_220>
+<word_221 token="uma" lemma="um" pos="art" features="F=S" ></word_221>
+<word_222 token="empresa" lemma="empresa" pos="n" features="F=S" ></word_222>
+<word_223 token="para" lemma="para" pos="prp" features="-" ></word_223>
+<word_224 token="o" lemma="o" pos="art" features="M=S" ></word_224>
+<word_225 token="serviço" lemma="serviço" pos="n" features="M=S" ></word_225>
+<word_226 token="." lemma="." pos="." features="-" ></word_226>
+<word_227 token="A" lemma="o" pos="art" features="F=S" ></word_227>
+<word_228 token="situação" lemma="situação, situar" pos="n" features="F=S" ></word_228>
+<word_229 token="de" lemma="de" pos="prp" features="-" ></word_229>
+<word_230 token="o" lemma="o" pos="art" features="M=S" ></word_230>
+<word_231 token="rio" lemma="rio" pos="n" features="M=S" ></word_231>
+<word_232 token="Taquari" lemma="" pos="prop" features="M=S" ></word_232>
+<word_233 token="motivou" lemma="motivar" pos="v-fin" features="PS=3S=IND" ></word_233>
+<word_234 token="a" lemma="o" pos="art" features="F=S" ></word_234>
+<word_235 token="criação" lemma="criação, criar" pos="n" features="F=S" ></word_235>
+<word_236 token="de" lemma="de" pos="prp" features="-" ></word_236>
+<word_237 token="o" lemma="o" pos="art" features="M=S" ></word_237>
+<word_238 token="Programa_Pantanal" lemma="" pos="prop" features="M=S" ></word_238>
+<word_239 token="," lemma="" pos="," features="-" ></word_239>
+<word_240 token="quando" lemma="quando" pos="adv" features="-" ></word_240>
+<word_241 token="o" lemma="o" pos="art" features="M=S" ></word_241>
+<word_242 token="então" lemma="então" pos="adv" features="-" ></word_242>
+<word_243 token="presidente" lemma="presidente" pos="n" features="M=S" ></word_243>
+<word_244 token="Fernando_Henrique_Cardoso" lemma="" pos="prop" features="M=S" ></word_244>
+<word_245 token="," lemma="" pos="," features="-" ></word_245>
+<word_246 token="em" lemma="em" pos="prp" features="-" ></word_246>
+<word_247 token="1995" lemma="" pos="num" features="M=S" ></word_247>
+<word_248 token="," lemma="" pos="," features="-" ></word_248>
+<word_249 token="sobrevoou" lemma="sobrevoar" pos="v-fin" features="PS=3S=IND" ></word_249>
+<word_250 token="a" lemma="o" pos="art" features="F=S" ></word_250>
+<word_251 token="região" lemma="região" pos="n" features="F=S" ></word_251>
+<word_252 token="e" lemma="e" pos="conj-c" features="-" ></word_252>
+<word_253 token="ficou" lemma="ficar" pos="v-fin" features="PS=3S=IND" ></word_253>
+<word_254 token="impressionado" lemma="impressionar" pos="v-pcp" features="M=S" ></word_254>
+<word_255 token="com" lemma="com" pos="prp" features="-" ></word_255>
+<word_256 token="o" lemma="o" pos="art" features="M=S" ></word_256>
+<word_257 token="rio" lemma="rio" pos="n" features="M=S" ></word_257>
+<word_258 token="assoreado" lemma="assorear" pos="v-pcp" features="M=S" ></word_258>
+<word_259 token="," lemma="" pos="," features="-" ></word_259>
+<word_260 token="invadindo" lemma="invadir" pos="v-ger" features="-" ></word_260>
+<word_261 token="fazendas" lemma="fazenda" pos="n" features="F=P" ></word_261>
+<word_262 token="." lemma="." pos="." features="-" ></word_262>
+<word_263 token="." lemma="." pos="." features="-" ></word_263>
+<word_264 token="(" lemma="(" pos="(" features="-" ></word_264>
+<word_265 token="EO" lemma="" pos="prop" features="M=S" ></word_265>
+<word_266 token="e" lemma="e" pos="conj-c" features="-" ></word_266>
+<word_267 token="HC" lemma="" pos="prop" features="M=S" ></word_267>
+<word_268 token=")" lemma=")" pos=")" features="-" ></word_268>
+<word_269 token="." lemma="." pos="." features="-" ></word_269>
+</Tokens> 
+
+<Cadeias> 
+
+<Cadeia_9> 
+<sn id="8" tokens="24...27" nucleo="menos" sintagma="o menos 200 fazendeiros" Categoria="--" sentenca="1">
+<word_24 token="o" lemma="o" pos="art" features="M=S" ></word_24>
+<word_25 token="menos" lemma="menos" pos="pron-det" features="M=P" ></word_25>
+<word_26 token="200" lemma="" pos="num" features="M=P" ></word_26>
+<word_27 token="fazendeiros" lemma="fazendeiro" pos="n" features="M=P" ></word_27>
+</sn>
+<sn id="9" tokens="28...28" nucleo="cujas" sintagma="cujas " Categoria="--" sentenca="1">
+<word_28 token="cujas" lemma="cujo" pos="pron-det" features="F=P" ></word_28>
+</sn>
+</Cadeia_9>
+
+<Cadeia_29> 
+<sn id="4" tokens="15...15" nucleo="multas" sintagma="multas" Categoria="--" sentenca="1">
+<word_15 token="multas" lemma="multa" pos="n" features="F=P" ></word_15>
+</sn>
+<sn id="29" tokens="93...94" nucleo="multa" sintagma="A multa" Categoria="--" sentenca="5">
+<word_93 token="A" lemma="o" pos="art" features="F=S" ></word_93>
+<word_94 token="multa" lemma="multa" pos="n" features="F=S" ></word_94>
+</sn>
+</Cadeia_29>
+
+<Cadeia_34> 
+<sn id="10" tokens="32...33" nucleo="margens" sintagma="as margens" Categoria="EN_LOC/POV" sentenca="1">
+<word_32 token="as" lemma="o" pos="art" features="F=P" ></word_32>
+<word_33 token="margens" lemma="margem" pos="n" features="F=P" ></word_33>
+</sn>
+<sn id="15" tokens="49...50" nucleo="margens" sintagma="as margens" Categoria="EN_LOC/POV" sentenca="2">
+<word_49 token="as" lemma="o" pos="art" features="F=P" ></word_49>
+<word_50 token="margens" lemma="margem" pos="n" features="F=P" ></word_50>
+</sn>
+<sn id="18" tokens="60...60" nucleo="espaço" sintagma="espaço" Categoria="EN_LOC/POV" sentenca="2">
+<word_60 token="espaço" lemma="espaço" pos="n" features="M=S" ></word_60>
+</sn>
+<sn id="34" tokens="109...110" nucleo="área" sintagma="a área" Categoria="EN_LOC/POV" sentenca="5">
+<word_109 token="a" lemma="o" pos="art" features="F=S" ></word_109>
+<word_110 token="área" lemma="área" pos="n" features="F=S" ></word_110>
+</sn>
+</Cadeia_34>
+
+<Cadeia_36> 
+<sn id="0" tokens="0...8" nucleo="Ibama" sintagma="O Ibama ( Instituto Brasileiro do Meio Ambiente e dos Recursos Naturais Renováveis )" Categoria="EN_ORG/GOVADM" sentenca="1">
+<word_0 token="O" lemma="o" pos="art" features="M=S" ></word_0>
+<word_1 token="Ibama" lemma="" pos="prop" features="M=S" ></word_1>
+<word_2 token="(" lemma="(" pos="(" features="-" ></word_2>
+<word_3 token="Instituto_Brasileiro_do_Meio_Ambiente" lemma="" pos="prop" features="M=S" ></word_3>
+<word_4 token="e" lemma="e" pos="conj-c" features="-" ></word_4>
+<word_5 token="de" lemma="de" pos="prp" features="-" ></word_5>
+<word_6 token="os" lemma="o" pos="art" features="M=P" ></word_6>
+<word_7 token="Recursos_Naturais_Renováveis" lemma="" pos="prop" features="M=P" ></word_7>
+<word_8 token=")" lemma=")" pos=")" features="-" ></word_8>
+</sn>
+<sn id="12" tokens="39...40" nucleo="Ibama" sintagma="o Ibama" Categoria="EN_ORG/GOVADM" sentenca="2">
+<word_39 token="o" lemma="o" pos="art" features="M=S" ></word_39>
+<word_40 token="Ibama" lemma="" pos="prop" features="M=S" ></word_40>
+</sn>
+<sn id="36" tokens="117...118" nucleo="Ibama" sintagma="o Ibama" Categoria="EN_ORG/GOVADM" sentenca="5">
+<word_117 token="o" lemma="o" pos="art" features="M=S" ></word_117>
+<word_118 token="Ibama" lemma="" pos="prop" features="M=S" ></word_118>
+</sn>
+</Cadeia_36>
+
+<Cadeia_37> 
+<sn id="37" tokens="120...120" nucleo="Campo_Grande" sintagma="Campo Grande" Categoria="EN_LOC" sentenca="5">
+<word_120 token="Campo_Grande" lemma="" pos="prop" features="M=S" ></word_120>
+</sn>
+<sn id="38" tokens="122...122" nucleo="MS" sintagma="MS" Categoria="EN_LOC" sentenca="5">
+<word_122 token="MS" lemma="" pos="prop" features="M=S" ></word_122>
+</sn>
+</Cadeia_37>
+
+<Cadeia_46> 
+<sn id="11" tokens="35...36" nucleo="Taquari" sintagma="o Taquari" Categoria="EN_LOC" sentenca="1">
+<word_35 token="o" lemma="o" pos="art" features="M=S" ></word_35>
+<word_36 token="Taquari" lemma="" pos="prop" features="M=S" ></word_36>
+</sn>
+<sn id="26" tokens="81...82" nucleo="Taquari" sintagma="o Taquari" Categoria="EN_LOC" sentenca="3">
+<word_81 token="o" lemma="o" pos="art" features="M=S" ></word_81>
+<word_82 token="Taquari" lemma="" pos="prop" features="M=S" ></word_82>
+</sn>
+<sn id="46" tokens="145...146" nucleo="Taquari" sintagma="o Taquari" Categoria="EN_LOC" sentenca="6">
+<word_145 token="o" lemma="o" pos="art" features="M=S" ></word_145>
+<word_146 token="Taquari" lemma="" pos="prop" features="M=S" ></word_146>
+</sn>
+</Cadeia_46>
+
+<Cadeia_47> 
+<sn id="20" tokens="66...67" nucleo="criação" sintagma="a criação" Categoria="--" sentenca="2">
+<word_66 token="a" lemma="o" pos="art" features="F=S" ></word_66>
+<word_67 token="criação" lemma="criação, criar" pos="n" features="F=S" ></word_67>
+</sn>
+<sn id="47" tokens="148...149" nucleo="início" sintagma="o início" Categoria="--" sentenca="6">
+<word_148 token="o" lemma="o" pos="art" features="M=S" ></word_148>
+<word_149 token="início" lemma="início" pos="n" features="M=S" ></word_149>
+</sn>
+<sn id="73" tokens="234...239" nucleo="criação" sintagma="a criação do Programa Pantanal" Categoria="--" sentenca="11">
+<word_234 token="a" lemma="o" pos="art" features="F=S" ></word_234>
+<word_235 token="criação" lemma="criação, criar" pos="n" features="F=S" ></word_235>
+<word_236 token="de" lemma="de" pos="prp" features="-" ></word_236>
+<word_237 token="o" lemma="o" pos="art" features="M=S" ></word_237>
+<word_238 token="Programa_Pantanal" lemma="" pos="prop" features="M=S" ></word_238>
+<word_239 token="," lemma="" pos="," features="-" ></word_239>
+</sn>
+</Cadeia_47>
+
+<Cadeia_57> 
+<sn id="44" tokens="139...146" nucleo="estudo" sintagma="o estudo da Embrapa sobre o Taquari" Categoria="EN_SER" sentenca="6">
+<word_139 token="o" lemma="o" pos="art" features="M=S" ></word_139>
+<word_140 token="estudo" lemma="estudo" pos="n" features="M=S" ></word_140>
+<word_141 token="de" lemma="de" pos="prp" features="-" ></word_141>
+<word_142 token="a" lemma="o" pos="art" features="F=S" ></word_142>
+<word_143 token="Embrapa" lemma="" pos="n" features="F=S" ></word_143>
+<word_144 token="sobre" lemma="sobre" pos="prp" features="-" ></word_144>
+<word_145 token="o" lemma="o" pos="art" features="M=S" ></word_145>
+<word_146 token="Taquari" lemma="" pos="prop" features="M=S" ></word_146>
+</sn>
+<sn id="57" tokens="177...178" nucleo="estudo" sintagma="o estudo" Categoria="EN_SER" sentenca="8">
+<word_177 token="o" lemma="o" pos="art" features="M=S" ></word_177>
+<word_178 token="estudo" lemma="estudo" pos="n" features="M=S" ></word_178>
+</sn>
+</Cadeia_57>
+
+<Cadeia_63> 
+<sn id="40" tokens="127...135" nucleo="coordenador" sintagma="O coordenador do Programa Pantanal do Ministério do Meio Ambiente" Categoria="EN_AMC/PRDIC" sentenca="6">
+<word_127 token="O" lemma="o" pos="art" features="M=S" ></word_127>
+<word_128 token="coordenador" lemma="coordenador, coordenar" pos="n" features="M=S" ></word_128>
+<word_129 token="de" lemma="de" pos="prp" features="-" ></word_129>
+<word_130 token="o" lemma="o" pos="art" features="M=S" ></word_130>
+<word_131 token="Programa_Pantanal" lemma="" pos="prop" features="M=S" ></word_131>
+<word_132 token="de" lemma="de" pos="prp" features="-" ></word_132>
+<word_133 token="o" lemma="o" pos="art" features="M=S" ></word_133>
+<word_134 token="Ministério_do_Meio_Ambiente" lemma="" pos="prop" features="M=S" ></word_134>
+<word_135 token="," lemma="" pos="," features="-" ></word_135>
+</sn>
+<sn id="43" tokens="136...136" nucleo="Paulo_Guilherme_Cabral" sintagma="Paulo Guilherme Cabral" Categoria="EN_AMC/PRDIC" sentenca="6">
+<word_136 token="Paulo_Guilherme_Cabral" lemma="" pos="prop" features="M=S" ></word_136>
+</sn>
+<sn id="55" tokens="172...172" nucleo="Cabral" sintagma="Cabral" Categoria="EN_AMC/PRDIC" sentenca="8">
+<word_172 token="Cabral" lemma="Cabral" pos="prop" features="-" ></word_172>
+</sn>
+<sn id="63" tokens="199...200" nucleo="Pantanal" sintagma="o Pantanal" Categoria="EN_AMC/PRDIC" sentenca="9">
+<word_199 token="o" lemma="o" pos="art" features="M=S" ></word_199>
+<word_200 token="Pantanal" lemma="" pos="prop" features="M=S" ></word_200>
+</sn>
+<sn id="74" tokens="237...238" nucleo="Programa_Pantanal" sintagma="o Programa Pantanal" Categoria="EN_AMC/PRDIC" sentenca="11">
+<word_237 token="o" lemma="o" pos="art" features="M=S" ></word_237>
+<word_238 token="Programa_Pantanal" lemma="" pos="prop" features="M=S" ></word_238>
+</sn>
+</Cadeia_63>
+
+<Cadeia_64> 
+<sn id="64" tokens="206...208" nucleo="Sema" sintagma="A Sema (" Categoria="EN_LOC" sentenca="10">
+<word_206 token="A" lemma="o" pos="art" features="F=S" ></word_206>
+<word_207 token="Sema" lemma="" pos="prop" features="F=S" ></word_207>
+<word_208 token="(" lemma="(" pos="(" features="-" ></word_208>
+</sn>
+<sn id="65" tokens="209...209" nucleo="Secretaria_do_Meio_Ambiente_de_Mato_Grosso_do_Sul" sintagma="Secretaria_do_Meio_Ambiente_de_Mato_Grosso_do_Sul" Categoria="EN_LOC" sentenca="10">
+<word_209 token="Secretaria_do_Meio_Ambiente_de_Mato_Grosso_do_Sul" lemma="" pos="prop" features="F=S" ></word_209>
+</sn>
+</Cadeia_64>
+
+<Cadeia_66> 
+<sn id="58" tokens="181...190" nucleo="dragagem" sintagma="a dragagem ( retirada de terra do rio )" Categoria="EN_LOC" sentenca="8">
+<word_181 token="a" lemma="o" pos="art" features="F=S" ></word_181>
+<word_182 token="dragagem" lemma="dragagem" pos="n" features="F=S" ></word_182>
+<word_183 token="(" lemma="(" pos="(" features="-" ></word_183>
+<word_184 token="retirada" lemma="retirada" pos="n" features="F=S" ></word_184>
+<word_185 token="de" lemma="de" pos="prp" features="-" ></word_185>
+<word_186 token="terra" lemma="terra" pos="n" features="F=S" ></word_186>
+<word_187 token="de" lemma="de" pos="prp" features="-" ></word_187>
+<word_188 token="o" lemma="o" pos="art" features="M=S" ></word_188>
+<word_189 token="rio" lemma="rio" pos="n" features="M=S" ></word_189>
+<word_190 token=")" lemma=")" pos=")" features="-" ></word_190>
+</sn>
+<sn id="66" tokens="214...215" nucleo="dragagem" sintagma="a dragagem" Categoria="EN_LOC" sentenca="10">
+<word_214 token="a" lemma="o" pos="art" features="F=S" ></word_214>
+<word_215 token="dragagem" lemma="dragagem" pos="n" features="F=S" ></word_215>
+</sn>
+</Cadeia_66>
+
+<Cadeia_68> 
+<sn id="17" tokens="56...57" nucleo="finalidade" sintagma="a finalidade" Categoria="EN_SER/GHUM" sentenca="2">
+<word_56 token="a" lemma="o" pos="art" features="F=S" ></word_56>
+<word_57 token="finalidade" lemma="finalidade, final" pos="n" features="F=S" ></word_57>
+</sn>
+<sn id="27" tokens="85...86" nucleo="objetivo" sintagma="O objetivo" Categoria="EN_SER/GHUM" sentenca="4">
+<word_85 token="O" lemma="o" pos="art" features="M=S" ></word_85>
+<word_86 token="objetivo" lemma="objetivo" pos="n" features="M=S" ></word_86>
+</sn>
+<sn id="32" tokens="104...111" nucleo="plano" sintagma="um plano de recuperação da área " Categoria="EN_SER/GHUM" sentenca="5">
+<word_104 token="um" lemma="um" pos="art" features="M=S" ></word_104>
+<word_105 token="plano" lemma="plano" pos="n" features="M=S" ></word_105>
+<word_106 token="de" lemma="de" pos="prp" features="-" ></word_106>
+<word_107 token="recuperação" lemma="recuperar" pos="n" features="F=S" ></word_107>
+<word_108 token="de" lemma="de" pos="prp" features="-" ></word_108>
+<word_109 token="a" lemma="o" pos="art" features="F=S" ></word_109>
+<word_110 token="área" lemma="área" pos="n" features="F=S" ></word_110>
+</sn>
+<sn id="56" tokens="174...175" nucleo="projetos" sintagma="projetos polêmicos" Categoria="EN_SER/GHUM" sentenca="8">
+<word_174 token="projetos" lemma="projeto" pos="n" features="M=P" ></word_174>
+<word_175 token="polêmicos" lemma="polêmico" pos="adj" features="M=P" ></word_175>
+</sn>
+<sn id="68" tokens="221...222" nucleo="empresa" sintagma="uma empresa" Categoria="EN_SER/GHUM" sentenca="10">
+<word_221 token="uma" lemma="um" pos="art" features="F=S" ></word_221>
+<word_222 token="empresa" lemma="empresa" pos="n" features="F=S" ></word_222>
+</sn>
+</Cadeia_68>
+
+<Cadeia_69> 
+<sn id="53" tokens="163...163" nucleo="trabalho" sintagma="trabalho" Categoria="--" sentenca="7">
+<word_163 token="trabalho" lemma="trabalho" pos="n" features="M=S" ></word_163>
+</sn>
+<sn id="69" tokens="224...225" nucleo="serviço" sintagma="o serviço" Categoria="--" sentenca="10">
+<word_224 token="o" lemma="o" pos="art" features="M=S" ></word_224>
+<word_225 token="serviço" lemma="serviço" pos="n" features="M=S" ></word_225>
+</sn>
+</Cadeia_69>
+
+<Cadeia_72> 
+<sn id="16" tokens="52...53" nucleo="rio" sintagma="o rio" Categoria="EN_LOC" sentenca="2">
+<word_52 token="o" lemma="o" pos="art" features="M=S" ></word_52>
+<word_53 token="rio" lemma="rio" pos="n" features="M=S" ></word_53>
+</sn>
+<sn id="61" tokens="188...189" nucleo="rio" sintagma="o rio" Categoria="EN_LOC" sentenca="8">
+<word_188 token="o" lemma="o" pos="art" features="M=S" ></word_188>
+<word_189 token="rio" lemma="rio" pos="n" features="M=S" ></word_189>
+</sn>
+<sn id="71" tokens="230...231" nucleo="rio" sintagma="o rio" Categoria="EN_LOC" sentenca="11">
+<word_230 token="o" lemma="o" pos="art" features="M=S" ></word_230>
+<word_231 token="rio" lemma="rio" pos="n" features="M=S" ></word_231>
+</sn>
+<sn id="72" tokens="232...232" nucleo="Taquari" sintagma="Taquari" Categoria="EN_LOC" sentenca="11">
+<word_232 token="Taquari" lemma="" pos="prop" features="M=S" ></word_232>
+</sn>
+<sn id="78" tokens="230...232" nucleo="rio" sintagma="o rio assoreado" Categoria="EN_LOC" sentenca="11">
+<word_230 token="o" lemma="o" pos="art" features="M=S" ></word_230>
+<word_257 token="rio" lemma="rio" pos="n" features="M=S" ></word_257>
+<word_258 token="assoreado" lemma="assorear" pos="v-pcp" features="M=S" ></word_258>
+</sn>
+</Cadeia_72>
+
+<Cadeia_79> 
+<sn id="13" tokens="43...45" nucleo="propriedades" sintagma="as propriedades multadas" Categoria="EN_SER/MITLG" sentenca="2">
+<word_43 token="as" lemma="o" pos="art" features="F=P" ></word_43>
+<word_44 token="propriedades" lemma="propriedade" pos="n" features="F=P" ></word_44>
+<word_45 token="multadas" lemma="multar" pos="v-pcp" features="F=P" ></word_45>
+</sn>
+<sn id="25" tokens="79...79" nucleo="terra" sintagma="terra" Categoria="EN_SER/MITLG" sentenca="3">
+<word_79 token="terra" lemma="terra" pos="n" features="F=S" ></word_79>
+</sn>
+<sn id="52" tokens="160...163" nucleo="grupo" sintagma="um grupo de trabalho" Categoria="EN_SER/MITLG" sentenca="7">
+<word_160 token="um" lemma="um" pos="art" features="M=S" ></word_160>
+<word_161 token="grupo" lemma="grupo" pos="n" features="M=S" ></word_161>
+<word_162 token="de" lemma="de" pos="prp" features="-" ></word_162>
+<word_163 token="trabalho" lemma="trabalho" pos="n" features="M=S" ></word_163>
+</sn>
+<sn id="54" tokens="166...167" nucleo="propostas" sintagma="as propostas" Categoria="EN_SER/MITLG" sentenca="7">
+<word_166 token="as" lemma="o" pos="art" features="F=P" ></word_166>
+<word_167 token="propostas" lemma="proposta" pos="n" features="F=P" ></word_167>
+</sn>
+<sn id="60" tokens="186...186" nucleo="terra" sintagma="terra" Categoria="EN_SER/MITLG" sentenca="8">
+<word_186 token="terra" lemma="terra" pos="n" features="F=S" ></word_186>
+</sn>
+<sn id="77" tokens="250...251" nucleo="região" sintagma="a região" Categoria="EN_SER/MITLG" sentenca="11">
+<word_250 token="a" lemma="o" pos="art" features="F=S" ></word_250>
+<word_251 token="região" lemma="região" pos="n" features="F=S" ></word_251>
+</sn>
+<sn id="79" tokens="261...261" nucleo="fazendas" sintagma="fazendas" Categoria="EN_SER/MITLG" sentenca="11">
+<word_261 token="fazendas" lemma="fazenda" pos="n" features="F=P" ></word_261>
+</sn>
+</Cadeia_79>
+
+</Cadeias><Mencoes_Unicas><sn id="2" tokens="6...7" nucleo="Recursos_Naturais_Renováveis" sintagma="os Recursos Naturais Renováveis" sentenca="1">
+<word_6 token="os" lemma="o" pos="art" features="M=P" ></word_6>
+<word_7 token="Recursos_Naturais_Renováveis" lemma="" pos="prop" features="M=P" ></word_7>
+</sn>
+<sn id="5" tokens="17...17" nucleo="cerca" sintagma="cerca" sentenca="1">
+<word_17 token="cerca" lemma="cerca" pos="n" features="F=S" ></word_17>
+</sn>
+<sn id="6" tokens="19...19" nucleo="R$" sintagma="R$" sentenca="1">
+<word_19 token="R$" lemma="" pos="n" features="M=P" ></word_19>
+</sn>
+<sn id="14" tokens="47...58" nucleo="desmatamento" sintagma="desmatamento nas margens do rio , com a finalidade de" sentenca="2">
+<word_47 token="desmatamento" lemma="" pos="n" features="M=S" ></word_47>
+<word_42 token="em" lemma="em" pos="prp" features="-" ></word_42>
+<word_49 token="as" lemma="o" pos="art" features="F=P" ></word_49>
+<word_50 token="margens" lemma="margem" pos="n" features="F=P" ></word_50>
+<word_51 token="de" lemma="de" pos="prp" features="-" ></word_51>
+<word_52 token="o" lemma="o" pos="art" features="M=S" ></word_52>
+<word_53 token="rio" lemma="rio" pos="n" features="M=S" ></word_53>
+<word_54 token="," lemma="" pos="," features="-" ></word_54>
+<word_55 token="com" lemma="com" pos="prp" features="-" ></word_55>
+<word_56 token="a" lemma="o" pos="art" features="F=S" ></word_56>
+<word_57 token="finalidade" lemma="finalidade, final" pos="n" features="F=S" ></word_57>
+<word_51 token="de" lemma="de" pos="prp" features="-" ></word_51>
+</sn>
+<sn id="19" tokens="62...63" nucleo="agricultura" sintagma="a agricultura" sentenca="2">
+<word_62 token="a" lemma="o" pos="art" features="F=S" ></word_62>
+<word_63 token="agricultura" lemma="agricultura" pos="n" features="F=S" ></word_63>
+</sn>
+<sn id="21" tokens="69...69" nucleo="gado" sintagma="gado" sentenca="2">
+<word_69 token="gado" lemma="gado" pos="n" features="M=S" ></word_69>
+</sn>
+<sn id="22" tokens="72...72" nucleo="conseqüência" sintagma="conseqüência" sentenca="3">
+<word_72 token="conseqüência" lemma="" pos="n" features="F=S" ></word_72>
+</sn>
+<sn id="23" tokens="74...75" nucleo="erosão" sintagma="a erosão" sentenca="3">
+<word_74 token="a" lemma="o" pos="art" features="F=S" ></word_74>
+<word_75 token="erosão" lemma="erosão" pos="n" features="F=S" ></word_75>
+</sn>
+<sn id="24" tokens="77...79" nucleo="toneladas" sintagma="toneladas de terra" sentenca="3">
+<word_77 token="toneladas" lemma="tonelada" pos="n" features="F=P" ></word_77>
+<word_78 token="de" lemma="de" pos="prp" features="-" ></word_78>
+<word_79 token="terra" lemma="terra" pos="n" features="F=S" ></word_79>
+</sn>
+<sn id="28" tokens="89...91" nucleo="consciência" sintagma="a consciência ambiental" sentenca="4">
+<word_89 token="a" lemma="o" pos="art" features="F=S" ></word_89>
+<word_90 token="consciência" lemma="consciência" pos="n" features="F=S" ></word_90>
+<word_91 token="ambiental" lemma="ambiental" pos="adj" features="F=S" ></word_91>
+</sn>
+<sn id="31" tokens="101...101" nucleo="se" sintagma="se" sentenca="5">
+<word_101 token="se" lemma="se" pos="pron-pers" features="M=3S=ACC" ></word_101>
+</sn>
+<sn id="33" tokens="107...107" nucleo="recuperação" sintagma="recuperação" sentenca="5">
+<word_107 token="recuperação" lemma="recuperar" pos="n" features="F=S" ></word_107>
+</sn>
+<sn id="35" tokens="114...125" nucleo="gerente-executivo" sintagma="o gerente-executivo do Ibama em Campo Grande ( MS ) , Nereu Fontes" sentenca="5">
+<word_114 token="o" lemma="o" pos="art" features="M=S" ></word_114>
+<word_115 token="gerente-executivo" lemma="" pos="n" features="M=S" ></word_115>
+<word_116 token="de" lemma="de" pos="prp" features="-" ></word_116>
+<word_117 token="o" lemma="o" pos="art" features="M=S" ></word_117>
+<word_118 token="Ibama" lemma="" pos="prop" features="M=S" ></word_118>
+<word_119 token="em" lemma="em" pos="prp" features="-" ></word_119>
+<word_120 token="Campo_Grande" lemma="" pos="prop" features="M=S" ></word_120>
+<word_121 token="(" lemma="(" pos="(" features="-" ></word_121>
+<word_122 token="MS" lemma="" pos="prop" features="M=S" ></word_122>
+<word_123 token=")" lemma=")" pos=")" features="-" ></word_123>
+<word_124 token="," lemma="" pos="," features="-" ></word_124>
+<word_125 token="Nereu_Fontes" lemma="" pos="prop" features="M=S" ></word_125>
+</sn>
+<sn id="39" tokens="125...125" nucleo="Nereu_Fontes" sintagma="Nereu Fontes" sentenca="5">
+<word_125 token="Nereu_Fontes" lemma="" pos="prop" features="M=S" ></word_125>
+</sn>
+<sn id="42" tokens="133...134" nucleo="Ministério_do_Meio_Ambiente" sintagma="o Ministério do Meio Ambiente" sentenca="6">
+<word_133 token="o" lemma="o" pos="art" features="M=S" ></word_133>
+<word_134 token="Ministério_do_Meio_Ambiente" lemma="" pos="prop" features="M=S" ></word_134>
+</sn>
+<sn id="45" tokens="142...143" nucleo="Embrapa" sintagma="a Embrapa" sentenca="6">
+<word_142 token="a" lemma="o" pos="art" features="F=S" ></word_142>
+<word_143 token="Embrapa" lemma="" pos="n" features="F=S" ></word_143>
+</sn>
+<sn id="48" tokens="151...151" nucleo="julho" sintagma="julho" sentenca="6">
+<word_151 token="julho" lemma="julho" pos="n" features="M=S" ></word_151>
+</sn>
+<sn id="49" tokens="153...153" nucleo="Ele" sintagma="Ele" sentenca="7">
+<word_153 token="Ele" lemma="ele" pos="pron-pers" features="M=3S=NOM" ></word_153>
+</sn>
+<sn id="50" tokens="156...158" nucleo="ministra" sintagma="a ministra Marina Silva" sentenca="7">
+<word_156 token="a" lemma="o" pos="art" features="F=S" ></word_156>
+<word_157 token="ministra" lemma="ministro" pos="n" features="F=S" ></word_157>
+<word_158 token="Marina_Silva" lemma="" pos="prop" features="F=S" ></word_158>
+</sn>
+<sn id="51" tokens="158...158" nucleo="Marina_Silva" sintagma="Marina Silva" sentenca="7">
+<word_158 token="Marina_Silva" lemma="" pos="prop" features="F=S" ></word_158>
+</sn>
+<sn id="62" tokens="196...197" nucleo="essa" sintagma="essa terra" sentenca="9">
+<word_196 token="essa" lemma="esse" pos="pron-det" features="F=S" ></word_196>
+<word_197 token="terra" lemma="terra" pos="n" features="F=S" ></word_197>
+</sn>
+<sn id="67" tokens="218...225" nucleo="contratação" sintagma="a contratação de uma empresa para o serviço" sentenca="10">
+<word_218 token="a" lemma="o" pos="art" features="F=S" ></word_218>
+<word_219 token="contratação" lemma="contratar" pos="n" features="F=S" ></word_219>
+<word_220 token="de" lemma="de" pos="prp" features="-" ></word_220>
+<word_221 token="uma" lemma="um" pos="art" features="F=S" ></word_221>
+<word_222 token="empresa" lemma="empresa" pos="n" features="F=S" ></word_222>
+<word_223 token="para" lemma="para" pos="prp" features="-" ></word_223>
+<word_224 token="o" lemma="o" pos="art" features="M=S" ></word_224>
+<word_225 token="serviço" lemma="serviço" pos="n" features="M=S" ></word_225>
+</sn>
+<sn id="70" tokens="227...232" nucleo="situação" sintagma="A situação do rio Taquari" sentenca="11">
+<word_227 token="A" lemma="o" pos="art" features="F=S" ></word_227>
+<word_228 token="situação" lemma="situação, situar" pos="n" features="F=S" ></word_228>
+<word_229 token="de" lemma="de" pos="prp" features="-" ></word_229>
+<word_230 token="o" lemma="o" pos="art" features="M=S" ></word_230>
+<word_231 token="rio" lemma="rio" pos="n" features="M=S" ></word_231>
+<word_232 token="Taquari" lemma="" pos="prop" features="M=S" ></word_232>
+</sn>
+<sn id="75" tokens="241...244" nucleo="presidente" sintagma="o então presidente Fernando Henrique Cardoso" sentenca="11">
+<word_241 token="o" lemma="o" pos="art" features="M=S" ></word_241>
+<word_242 token="então" lemma="então" pos="adv" features="-" ></word_242>
+<word_243 token="presidente" lemma="presidente" pos="n" features="M=S" ></word_243>
+<word_244 token="Fernando_Henrique_Cardoso" lemma="" pos="prop" features="M=S" ></word_244>
+</sn>
+<sn id="76" tokens="244...244" nucleo="Fernando_Henrique_Cardoso" sintagma="Fernando Henrique Cardoso" sentenca="11">
+<word_244 token="Fernando_Henrique_Cardoso" lemma="" pos="prop" features="M=S" ></word_244>
+</sn>
+<sn id="80" tokens="265...266" nucleo="EO" sintagma="EO e" sentenca="13">
+<word_265 token="EO" lemma="" pos="prop" features="M=S" ></word_265>
+<word_266 token="e" lemma="e" pos="conj-c" features="-" ></word_266>
+</sn>
+<sn id="81" tokens="267...267" nucleo="HC" sintagma="HC" sentenca="13">
+<word_267 token="HC" lemma="" pos="prop" features="M=S" ></word_267>
+</sn>
+</Mencoes_Unicas>
+</CIENCIA_2005_6515.txt>

@@ -1,0 +1,489 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<CIENCIA_2001_6406.txt>
+
+<Texto conteudo="Pesquisadores da Uenf (Universidade Estadual do Norte Fluminense) também estão usando o gene da HBsAg para conseguir uma alface que funcione como vacina comestível contra a hepatite B.
+&quot;Já temos brotos de alface comprovadamente transgênicos&quot;, disse Jackson Marcondes de Souza. Sob a orientação do pesquisador Ekkehard Hansen, ele desenvolve o projeto como parte de seu doutorado. Falta ainda obter plantas transgênicas adultas e comprovar que o gene está sendo expressado, ou seja, que a proteína capaz de provocar a imunização está presente na planta, e não só o gene correspondente.
+Outros cientistas se concentram sobre alimentos que possam ser transformados em suco, como tomates e maçãs.
+É o caso de Schuyler Korban, da Universidade de Illinois (EUA). Ele pesquisa uma vacina produzida em tomates contra o vírus respiratório sincicial, que ataca recém-nascidos. Testada em camundongos, conseguiu provocar a produção de anticorpos contra o vírus. Os resultados saíram na publicação &quot;Transgenic Research&quot; (www.wkap.nl/jour 
+nals/ transgenic_res).
+Depois dos tomates, ele agora pesquisa macieiras. Prevê que serão necessários três anos para estabilizar a vacina na maçã.
+" ></Texto>
+
+<Tokens> 
+<word_0 token="Pesquisadores" lemma="pesquisar" pos="n" features="M=P" ></word_0>
+<word_1 token="de" lemma="de" pos="prp" features="-" ></word_1>
+<word_2 token="a" lemma="o" pos="art" features="F=S" ></word_2>
+<word_3 token="Uenf" lemma="" pos="prop" features="F=S" ></word_3>
+<word_4 token="(" lemma="(" pos="(" features="-" ></word_4>
+<word_5 token="Universidade_Estadual_do_Norte_Fluminense" lemma="" pos="prop" features="F=S" ></word_5>
+<word_6 token=")" lemma=")" pos=")" features="-" ></word_6>
+<word_7 token="também" lemma="também" pos="adv" features="-" ></word_7>
+<word_8 token="estão" lemma="estar" pos="v-fin" features="PR=3P=IND" ></word_8>
+<word_9 token="usando" lemma="usar" pos="v-ger" features="-" ></word_9>
+<word_10 token="o" lemma="o" pos="art" features="M=S" ></word_10>
+<word_11 token="gene" lemma="gene" pos="n" features="M=S" ></word_11>
+<word_12 token="de" lemma="de" pos="prp" features="-" ></word_12>
+<word_13 token="a" lemma="o" pos="art" features="F=S" ></word_13>
+<word_14 token="HBsAg" lemma="" pos="prop" features="F=S" ></word_14>
+<word_15 token="para" lemma="para" pos="prp" features="-" ></word_15>
+<word_16 token="conseguir" lemma="conseguir" pos="v-inf" features="-" ></word_16>
+<word_17 token="uma" lemma="um" pos="art" features="F=S" ></word_17>
+<word_18 token="alface" lemma="alface" pos="n" features="F=S" ></word_18>
+<word_19 token="que" lemma="que" pos="pron-indp" features="F=S" ></word_19>
+<word_20 token="funcione" lemma="funcionar" pos="v-fin" features="PR=3S=SUBJ" ></word_20>
+<word_21 token="como" lemma="como" pos="adv" features="-" ></word_21>
+<word_22 token="vacina" lemma="vacina" pos="n" features="F=S" ></word_22>
+<word_23 token="comestível" lemma="comestível" pos="adj" features="F=S" ></word_23>
+<word_24 token="contra" lemma="contra" pos="prp" features="-" ></word_24>
+<word_25 token="a" lemma="o" pos="art" features="F=S" ></word_25>
+<word_26 token="hepatite" lemma="hepatite" pos="n" features="F=S" ></word_26>
+<word_27 token="B." lemma="" pos="prop" features="F=S" ></word_27>
+<word_28 token="&quot;" lemma="&quot;" pos="&quot;" features="-" ></word_28>
+<word_29 token="Já" lemma="já" pos="adv" features="-" ></word_29>
+<word_30 token="temos" lemma="ter" pos="v-fin" features="PR=1P=IND" ></word_30>
+<word_31 token="brotos" lemma="broto" pos="n" features="M=P" ></word_31>
+<word_32 token="de" lemma="de" pos="prp" features="-" ></word_32>
+<word_33 token="alface" lemma="alface" pos="n" features="F=S" ></word_33>
+<word_34 token="comprovadamente" lemma="comprovar" pos="adv" features="-" ></word_34>
+<word_35 token="transgênicos" lemma="transgênico" pos="adj" features="M=P" ></word_35>
+<word_36 token="&quot;" lemma="&quot;" pos="&quot;" features="-" ></word_36>
+<word_37 token="," lemma="" pos="," features="-" ></word_37>
+<word_38 token="disse" lemma="dizer" pos="v-fin" features="PS=3S=IND" ></word_38>
+<word_39 token="Jackson_Marcondes_de_Souza" lemma="" pos="prop" features="M=S" ></word_39>
+<word_40 token="." lemma="." pos="." features="-" ></word_40>
+<word_41 token="Sob" lemma="sob" pos="prp" features="-" ></word_41>
+<word_42 token="a" lemma="o" pos="art" features="F=S" ></word_42>
+<word_43 token="orientação" lemma="orientação, orientar" pos="n" features="F=S" ></word_43>
+<word_44 token="de" lemma="de" pos="prp" features="-" ></word_44>
+<word_45 token="o" lemma="o" pos="art" features="M=S" ></word_45>
+<word_46 token="pesquisador" lemma="pesquisador, pesquisar" pos="n" features="M=S" ></word_46>
+<word_47 token="Ekkehard_Hansen" lemma="" pos="prop" features="M=S" ></word_47>
+<word_48 token="," lemma="" pos="," features="-" ></word_48>
+<word_49 token="ele" lemma="ele" pos="pron-pers" features="M=3S=NOM" ></word_49>
+<word_50 token="desenvolve" lemma="desenvolver" pos="v-fin" features="PR=3S=IND" ></word_50>
+<word_51 token="o" lemma="o" pos="art" features="M=S" ></word_51>
+<word_52 token="projeto" lemma="projeto" pos="n" features="M=S" ></word_52>
+<word_53 token="como" lemma="como" pos="adv" features="-" ></word_53>
+<word_54 token="parte" lemma="parte" pos="n" features="F=S" ></word_54>
+<word_55 token="de" lemma="de" pos="prp" features="-" ></word_55>
+<word_56 token="seu" lemma="seu" pos="pron-det" features="M=S" ></word_56>
+<word_57 token="doutorado" lemma="doutorado" pos="n" features="M=S" ></word_57>
+<word_58 token="." lemma="." pos="." features="-" ></word_58>
+<word_59 token="Falta" lemma="faltar" pos="v-fin" features="PR=3S=IND" ></word_59>
+<word_60 token="ainda" lemma="ainda" pos="adv" features="-" ></word_60>
+<word_61 token="obter" lemma="obter" pos="v-inf" features="-" ></word_61>
+<word_62 token="plantas" lemma="planta" pos="n" features="F=P" ></word_62>
+<word_63 token="transgênicas" lemma="transgênico" pos="adj" features="F=P" ></word_63>
+<word_64 token="adultas" lemma="adulto" pos="adj" features="F=P" ></word_64>
+<word_65 token="e" lemma="e" pos="conj-c" features="-" ></word_65>
+<word_66 token="comprovar" lemma="" pos="v-fin" features="FUT=3S=SUBJ" ></word_66>
+<word_67 token="que" lemma="que" pos="conj-s" features="-" ></word_67>
+<word_68 token="o" lemma="o" pos="art" features="M=S" ></word_68>
+<word_69 token="gene" lemma="gene" pos="n" features="M=S" ></word_69>
+<word_70 token="está" lemma="estar" pos="v-fin" features="PR=3S=IND" ></word_70>
+<word_71 token="sendo" lemma="ser" pos="v-ger" features="-" ></word_71>
+<word_72 token="expressado" lemma="expressar" pos="v-pcp" features="M=S" ></word_72>
+<word_73 token="," lemma="" pos="," features="-" ></word_73>
+<word_74 token="ou" lemma="ou" pos="conj-c" features="-" ></word_74>
+<word_75 token="seja" lemma="ser" pos="v-fin" features="PR=3S=SUBJ" ></word_75>
+<word_76 token="," lemma="" pos="," features="-" ></word_76>
+<word_77 token="que" lemma="que" pos="conj-s" features="-" ></word_77>
+<word_78 token="a" lemma="o" pos="art" features="F=S" ></word_78>
+<word_79 token="proteína" lemma="proteína" pos="n" features="F=S" ></word_79>
+<word_80 token="capaz" lemma="capaz" pos="adj" features="F=S" ></word_80>
+<word_81 token="de" lemma="de" pos="prp" features="-" ></word_81>
+<word_82 token="provocar" lemma="provocar" pos="v-inf" features="-" ></word_82>
+<word_83 token="a" lemma="o" pos="art" features="F=S" ></word_83>
+<word_84 token="imunização" lemma="imunizar" pos="n" features="F=S" ></word_84>
+<word_85 token="está" lemma="estar" pos="v-fin" features="PR=3S=IND" ></word_85>
+<word_86 token="presente" lemma="presente" pos="adj" features="F=S" ></word_86>
+<word_87 token="em" lemma="em" pos="prp" features="-" ></word_87>
+<word_88 token="a" lemma="o" pos="art" features="F=S" ></word_88>
+<word_89 token="planta" lemma="planta" pos="n" features="F=S" ></word_89>
+<word_90 token="," lemma="" pos="," features="-" ></word_90>
+<word_91 token="e" lemma="e" pos="conj-c" features="-" ></word_91>
+<word_92 token="não" lemma="não" pos="adv" features="-" ></word_92>
+<word_93 token="só" lemma="só" pos="adv" features="-" ></word_93>
+<word_94 token="o" lemma="o" pos="art" features="M=S" ></word_94>
+<word_95 token="gene" lemma="gene" pos="n" features="M=S" ></word_95>
+<word_96 token="correspondente" lemma="correspondente, corresponder" pos="adj" features="M=S" ></word_96>
+<word_97 token="." lemma="." pos="." features="-" ></word_97>
+<word_98 token="Outros" lemma="outro" pos="pron-det" features="M=P" ></word_98>
+<word_99 token="cientistas" lemma="cientista, ciente" pos="n" features="M=P" ></word_99>
+<word_100 token="se" lemma="se" pos="pron-pers" features="M=3P=ACC" ></word_100>
+<word_101 token="concentram" lemma="concentrar" pos="v-fin" features="PR=3P=IND" ></word_101>
+<word_102 token="sobre" lemma="sobre" pos="prp" features="-" ></word_102>
+<word_103 token="alimentos" lemma="alimento" pos="n" features="M=P" ></word_103>
+<word_104 token="que" lemma="que" pos="pron-indp" features="M=P" ></word_104>
+<word_105 token="possam" lemma="poder" pos="v-fin" features="PR=3P=SUBJ" ></word_105>
+<word_106 token="ser" lemma="ser" pos="v-inf" features="-" ></word_106>
+<word_107 token="transformados" lemma="transformar" pos="v-pcp" features="M=P" ></word_107>
+<word_108 token="em" lemma="em" pos="prp" features="-" ></word_108>
+<word_109 token="suco" lemma="suco" pos="n" features="M=S" ></word_109>
+<word_110 token="," lemma="" pos="," features="-" ></word_110>
+<word_111 token="como" lemma="como" pos="adv" features="-" ></word_111>
+<word_112 token="tomates" lemma="tomate" pos="n" features="M=P" ></word_112>
+<word_113 token="e" lemma="e" pos="conj-c" features="-" ></word_113>
+<word_114 token="maçãs" lemma="maçã" pos="n" features="F=P" ></word_114>
+<word_115 token="." lemma="." pos="." features="-" ></word_115>
+<word_116 token="É" lemma="ser" pos="v-fin" features="PR=3S=IND" ></word_116>
+<word_117 token="o" lemma="o" pos="art" features="M=S" ></word_117>
+<word_118 token="caso" lemma="caso" pos="n" features="M=S" ></word_118>
+<word_119 token="de" lemma="de" pos="prp" features="-" ></word_119>
+<word_120 token="Schuyler_Korban" lemma="" pos="prop" features="M=S" ></word_120>
+<word_121 token="," lemma="" pos="," features="-" ></word_121>
+<word_122 token="de" lemma="de" pos="prp" features="-" ></word_122>
+<word_123 token="a" lemma="o" pos="art" features="F=S" ></word_123>
+<word_124 token="Universidade_de_Illinois" lemma="" pos="prop" features="F=S" ></word_124>
+<word_125 token="(" lemma="(" pos="(" features="-" ></word_125>
+<word_126 token="EUA" lemma="EUA" pos="prop" features="M=P" ></word_126>
+<word_127 token=")" lemma=")" pos=")" features="-" ></word_127>
+<word_128 token="." lemma="." pos="." features="-" ></word_128>
+<word_129 token="Ele" lemma="ele" pos="pron-pers" features="M=3S=NOM" ></word_129>
+<word_130 token="pesquisa" lemma="pesquisar" pos="v-fin" features="PR=3S=IND" ></word_130>
+<word_131 token="uma" lemma="um" pos="art" features="F=S" ></word_131>
+<word_132 token="vacina" lemma="vacina" pos="n" features="F=S" ></word_132>
+<word_133 token="produzida" lemma="produzir" pos="v-pcp" features="F=S" ></word_133>
+<word_134 token="em" lemma="em" pos="prp" features="-" ></word_134>
+<word_135 token="tomates" lemma="tomate" pos="n" features="M=P" ></word_135>
+<word_136 token="contra" lemma="contra" pos="prp" features="-" ></word_136>
+<word_137 token="o" lemma="o" pos="art" features="M=S" ></word_137>
+<word_138 token="vírus" lemma="vírus" pos="n" features="M=S" ></word_138>
+<word_139 token="respiratório" lemma="respiratório" pos="adj" features="M=S" ></word_139>
+<word_140 token="sincicial" lemma="" pos="adj" features="M=S" ></word_140>
+<word_141 token="," lemma="" pos="," features="-" ></word_141>
+<word_142 token="que" lemma="que" pos="pron-indp" features="M=S" ></word_142>
+<word_143 token="ataca" lemma="atacar" pos="v-fin" features="PR=3S=IND" ></word_143>
+<word_144 token="recém" lemma="recém" pos="ec" features="-" ></word_144>
+<word_145 token="-" lemma="" pos="-" features="-" ></word_145>
+<word_146 token="nascidos" lemma="nascer" pos="v-pcp" features="M=P" ></word_146>
+<word_147 token="." lemma="." pos="." features="-" ></word_147>
+<word_148 token="Testada" lemma="testar" pos="v-pcp" features="F=S" ></word_148>
+<word_149 token="em" lemma="em" pos="prp" features="-" ></word_149>
+<word_150 token="camundongos" lemma="" pos="n" features="M=P" ></word_150>
+<word_151 token="," lemma="" pos="," features="-" ></word_151>
+<word_152 token="conseguiu" lemma="conseguir" pos="v-fin" features="PS=3S=IND" ></word_152>
+<word_153 token="provocar" lemma="provocar" pos="v-inf" features="-" ></word_153>
+<word_154 token="a" lemma="o" pos="art" features="F=S" ></word_154>
+<word_155 token="produção" lemma="produção" pos="n" features="F=S" ></word_155>
+<word_156 token="de" lemma="de" pos="prp" features="-" ></word_156>
+<word_157 token="anticorpos" lemma="anticorpo" pos="n" features="M=P" ></word_157>
+<word_158 token="contra" lemma="contra" pos="prp" features="-" ></word_158>
+<word_159 token="o" lemma="o" pos="art" features="M=S" ></word_159>
+<word_160 token="vírus" lemma="vírus" pos="n" features="M=S" ></word_160>
+<word_161 token="." lemma="." pos="." features="-" ></word_161>
+<word_162 token="Os" lemma="o" pos="art" features="M=P" ></word_162>
+<word_163 token="resultados" lemma="" pos="n" features="M=P" ></word_163>
+<word_164 token="saíram" lemma="sair" pos="v-fin" features="MQP=3P=IND" ></word_164>
+<word_165 token="em" lemma="em" pos="prp" features="-" ></word_165>
+<word_166 token="a" lemma="o" pos="art" features="F=S" ></word_166>
+<word_167 token="publicação" lemma="publicar" pos="n" features="F=S" ></word_167>
+<word_168 token="&quot;" lemma="&quot;" pos="&quot;" features="-" ></word_168>
+<word_169 token="Transgenic_Research" lemma="" pos="prop" features="M=S" ></word_169>
+<word_170 token="&quot;" lemma="&quot;" pos="&quot;" features="-" ></word_170>
+<word_171 token="(" lemma="(" pos="(" features="-" ></word_171>
+<word_172 token="www.wkap" lemma="" pos="prop" features="M=S" ></word_172>
+<word_173 token=".nl/jour" lemma="" pos="prop" features="M=S" ></word_173>
+<word_174 token="." lemma="." pos="." features="-" ></word_174>
+<word_175 token="nals/" lemma="" pos="prp" features="-" ></word_175>
+<word_176 token="transgenic" lemma="" pos="n" features="M=S" ></word_176>
+<word_177 token="res" lemma="" pos="adj" features="M=P" ></word_177>
+<word_178 token=")" lemma=")" pos=")" features="-" ></word_178>
+<word_179 token="." lemma="." pos="." features="-" ></word_179>
+<word_180 token="Depois" lemma="depois" pos="adv" features="-" ></word_180>
+<word_181 token="de" lemma="de" pos="prp" features="-" ></word_181>
+<word_182 token="os" lemma="o" pos="art" features="M=P" ></word_182>
+<word_183 token="tomates" lemma="tomate" pos="n" features="M=P" ></word_183>
+<word_184 token="," lemma="" pos="," features="-" ></word_184>
+<word_185 token="ele" lemma="ele" pos="pron-pers" features="M=3S=NOM" ></word_185>
+<word_186 token="agora" lemma="agora" pos="adv" features="-" ></word_186>
+<word_187 token="pesquisa" lemma="pesquisar" pos="v-fin" features="PR=3S=IND" ></word_187>
+<word_188 token="macieiras" lemma="macieira" pos="n" features="F=P" ></word_188>
+<word_189 token="." lemma="." pos="." features="-" ></word_189>
+<word_190 token="Prevê" lemma="prever" pos="v-fin" features="PR=3S=IND" ></word_190>
+<word_191 token="que" lemma="que" pos="conj-s" features="-" ></word_191>
+<word_192 token="serão" lemma="ser" pos="v-fin" features="FUT=3P=IND" ></word_192>
+<word_193 token="necessários" lemma="necessário" pos="adj" features="M=P" ></word_193>
+<word_194 token="três" lemma="três" pos="num" features="M=P" ></word_194>
+<word_195 token="anos" lemma="ano" pos="n" features="M=P" ></word_195>
+<word_196 token="para" lemma="para" pos="prp" features="-" ></word_196>
+<word_197 token="estabilizar" lemma="estabilizar" pos="v-inf" features="-" ></word_197>
+<word_198 token="a" lemma="o" pos="art" features="F=S" ></word_198>
+<word_199 token="vacina" lemma="vacina" pos="n" features="F=S" ></word_199>
+<word_200 token="em" lemma="em" pos="prp" features="-" ></word_200>
+<word_201 token="a" lemma="o" pos="art" features="F=S" ></word_201>
+<word_202 token="maçã" lemma="maçã" pos="n" features="F=S" ></word_202>
+<word_203 token="." lemma="." pos="." features="-" ></word_203>
+</Tokens> 
+
+<Cadeias> 
+
+<Cadeia_1> 
+<sn id="1" tokens="2...3" nucleo="Uenf" sintagma="a Uenf" Categoria="EN_ORG" sentenca="1">
+<word_2 token="a" lemma="o" pos="art" features="F=S" ></word_2>
+<word_3 token="Uenf" lemma="" pos="prop" features="F=S" ></word_3>
+</sn>
+<sn id="2" tokens="5...5" nucleo="Universidade_Estadual_do_Norte_Fluminense" sintagma="Universidade_Estadual_do_Norte_Fluminense" Categoria="EN_ORG" sentenca="1">
+<word_5 token="Universidade_Estadual_do_Norte_Fluminense" lemma="" pos="prop" features="F=S" ></word_5>
+</sn>
+</Cadeia_1>
+
+<Cadeia_8> 
+<sn id="7" tokens="25...26" nucleo="hepatite" sintagma="a hepatite" Categoria="EN_ABS/ESTCOND" sentenca="1">
+<word_25 token="a" lemma="o" pos="art" features="F=S" ></word_25>
+<word_26 token="hepatite" lemma="hepatite" pos="n" features="F=S" ></word_26>
+</sn>
+<sn id="8" tokens="27...27" nucleo="B." sintagma="B." Categoria="EN_ABS/ESTCOND" sentenca="1">
+<word_27 token="B." lemma="" pos="prop" features="F=S" ></word_27>
+</sn>
+</Cadeia_8>
+
+<Cadeia_22> 
+<sn id="16" tokens="51...52" nucleo="projeto" sintagma="o projeto" Categoria="EN_AMC/PRDIC" sentenca="2">
+<word_51 token="o" lemma="o" pos="art" features="M=S" ></word_51>
+<word_52 token="projeto" lemma="projeto" pos="n" features="M=S" ></word_52>
+</sn>
+<sn id="19" tokens="62...64" nucleo="plantas" sintagma="plantas transgênicas adultas" Categoria="EN_AMC/PRDIC" sentenca="3">
+<word_62 token="plantas" lemma="planta" pos="n" features="F=P" ></word_62>
+<word_63 token="transgênicas" lemma="transgênico" pos="adj" features="F=P" ></word_63>
+<word_64 token="adultas" lemma="adulto" pos="adj" features="F=P" ></word_64>
+</sn>
+<sn id="22" tokens="88...89" nucleo="planta" sintagma="a planta" Categoria="EN_AMC/PRDIC" sentenca="3">
+<word_88 token="a" lemma="o" pos="art" features="F=S" ></word_88>
+<word_89 token="planta" lemma="planta" pos="n" features="F=S" ></word_89>
+</sn>
+</Cadeia_22>
+
+<Cadeia_24> 
+<sn id="3" tokens="10...14" nucleo="gene" sintagma="o gene da HBsAg" Categoria="EN_NAT/FENAT" sentenca="1">
+<word_10 token="o" lemma="o" pos="art" features="M=S" ></word_10>
+<word_11 token="gene" lemma="gene" pos="n" features="M=S" ></word_11>
+<word_1 token="de" lemma="de" pos="prp" features="-" ></word_1>
+<word_13 token="a" lemma="o" pos="art" features="F=S" ></word_13>
+<word_14 token="HBsAg" lemma="" pos="prop" features="F=S" ></word_14>
+</sn>
+<sn id="24" tokens="68...70" nucleo="gene" sintagma="o gene correspondente" Categoria="EN_NAT/FENAT" sentenca="3">
+<word_68 token="o" lemma="o" pos="art" features="M=S" ></word_68>
+<word_95 token="gene" lemma="gene" pos="n" features="M=S" ></word_95>
+<word_96 token="correspondente" lemma="correspondente, corresponder" pos="adj" features="M=S" ></word_96>
+</sn>
+</Cadeia_24>
+
+<Cadeia_29> 
+<sn id="27" tokens="103...103" nucleo="alimentos" sintagma="alimentos" Categoria="--" sentenca="4">
+<word_103 token="alimentos" lemma="alimento" pos="n" features="M=P" ></word_103>
+</sn>
+<sn id="29" tokens="109...109" nucleo="suco" sintagma="suco" Categoria="--" sentenca="4">
+<word_109 token="suco" lemma="suco" pos="n" features="M=S" ></word_109>
+</sn>
+</Cadeia_29>
+
+<Cadeia_34> 
+<sn id="34" tokens="123...124" nucleo="Universidade_de_Illinois" sintagma="a Universidade de Illinois" Categoria="EN_ORG" sentenca="5">
+<word_123 token="a" lemma="o" pos="art" features="F=S" ></word_123>
+<word_124 token="Universidade_de_Illinois" lemma="" pos="prop" features="F=S" ></word_124>
+</sn>
+<sn id="35" tokens="126...126" nucleo="EUA" sintagma="EUA" Categoria="EN_ORG" sentenca="5">
+<word_126 token="EUA" lemma="EUA" pos="prop" features="M=P" ></word_126>
+</sn>
+</Cadeia_34>
+
+<Cadeia_44> 
+<sn id="39" tokens="137...140" nucleo="vírus" sintagma="o vírus respiratório sincicial" Categoria="EN_AMC/FILMVID" sentenca="6">
+<word_137 token="o" lemma="o" pos="art" features="M=S" ></word_137>
+<word_138 token="vírus" lemma="vírus" pos="n" features="M=S" ></word_138>
+<word_139 token="respiratório" lemma="respiratório" pos="adj" features="M=S" ></word_139>
+<word_140 token="sincicial" lemma="" pos="adj" features="M=S" ></word_140>
+</sn>
+<sn id="44" tokens="159...160" nucleo="vírus" sintagma="o vírus" Categoria="EN_AMC/FILMVID" sentenca="7">
+<word_159 token="o" lemma="o" pos="art" features="M=S" ></word_159>
+<word_160 token="vírus" lemma="vírus" pos="n" features="M=S" ></word_160>
+</sn>
+</Cadeia_44>
+
+<Cadeia_51> 
+<sn id="30" tokens="112...114" nucleo="tomates" sintagma="tomates e maçãs" Categoria="--" sentenca="4">
+<word_112 token="tomates" lemma="tomate" pos="n" features="M=P" ></word_112>
+<word_113 token="e" lemma="e" pos="conj-c" features="-" ></word_113>
+<word_114 token="maçãs" lemma="maçã" pos="n" features="F=P" ></word_114>
+</sn>
+<sn id="38" tokens="135...135" nucleo="tomates" sintagma="tomates" Categoria="--" sentenca="6">
+<word_135 token="tomates" lemma="tomate" pos="n" features="M=P" ></word_135>
+</sn>
+<sn id="51" tokens="182...183" nucleo="tomates" sintagma="os tomates" Categoria="--" sentenca="10">
+<word_182 token="os" lemma="o" pos="art" features="M=P" ></word_182>
+<word_183 token="tomates" lemma="tomate" pos="n" features="M=P" ></word_183>
+</sn>
+</Cadeia_51>
+
+<Cadeia_55> 
+<sn id="6" tokens="22...28" nucleo="vacina" sintagma="vacina comestível contra a hepatite B. " Categoria="EN_ABS/ESTCOND" sentenca="1">
+<word_22 token="vacina" lemma="vacina" pos="n" features="F=S" ></word_22>
+<word_23 token="comestível" lemma="comestível" pos="adj" features="F=S" ></word_23>
+<word_24 token="contra" lemma="contra" pos="prp" features="-" ></word_24>
+<word_25 token="a" lemma="o" pos="art" features="F=S" ></word_25>
+<word_26 token="hepatite" lemma="hepatite" pos="n" features="F=S" ></word_26>
+<word_27 token="B." lemma="" pos="prop" features="F=S" ></word_27>
+</sn>
+<sn id="37" tokens="131...132" nucleo="vacina" sintagma="uma vacina" Categoria="EN_ABS/ESTCOND" sentenca="6">
+<word_131 token="uma" lemma="um" pos="art" features="F=S" ></word_131>
+<word_132 token="vacina" lemma="vacina" pos="n" features="F=S" ></word_132>
+</sn>
+<sn id="55" tokens="198...199" nucleo="vacina" sintagma="a vacina" Categoria="EN_ABS/ESTCOND" sentenca="11">
+<word_198 token="a" lemma="o" pos="art" features="F=S" ></word_198>
+<word_199 token="vacina" lemma="vacina" pos="n" features="F=S" ></word_199>
+</sn>
+</Cadeia_55>
+
+<Cadeia_56> 
+<sn id="31" tokens="114...114" nucleo="maçãs" sintagma="maçãs" Categoria="EN_LOC" sentenca="4">
+<word_114 token="maçãs" lemma="maçã" pos="n" features="F=P" ></word_114>
+</sn>
+<sn id="53" tokens="188...188" nucleo="macieiras" sintagma="macieiras" Categoria="EN_LOC" sentenca="10">
+<word_188 token="macieiras" lemma="macieira" pos="n" features="F=P" ></word_188>
+</sn>
+<sn id="56" tokens="201...202" nucleo="maçã" sintagma="a maçã" Categoria="EN_LOC" sentenca="11">
+<word_201 token="a" lemma="o" pos="art" features="F=S" ></word_201>
+<word_202 token="maçã" lemma="maçã" pos="n" features="F=S" ></word_202>
+</sn>
+</Cadeia_56>
+
+</Cadeias><Mencoes_Unicas><sn id="0" tokens="0...4" nucleo="Pesquisadores" sintagma="Pesquisadores da Uenf (" sentenca="1">
+<word_0 token="Pesquisadores" lemma="pesquisar" pos="n" features="M=P" ></word_0>
+<word_1 token="de" lemma="de" pos="prp" features="-" ></word_1>
+<word_2 token="a" lemma="o" pos="art" features="F=S" ></word_2>
+<word_3 token="Uenf" lemma="" pos="prop" features="F=S" ></word_3>
+<word_4 token="(" lemma="(" pos="(" features="-" ></word_4>
+</sn>
+<sn id="4" tokens="13...14" nucleo="HBsAg" sintagma="a HBsAg" sentenca="1">
+<word_13 token="a" lemma="o" pos="art" features="F=S" ></word_13>
+<word_14 token="HBsAg" lemma="" pos="prop" features="F=S" ></word_14>
+</sn>
+<sn id="5" tokens="19...19" nucleo="que" sintagma="que" sentenca="1">
+<word_19 token="que" lemma="que" pos="pron-indp" features="F=S" ></word_19>
+</sn>
+<sn id="9" tokens="31...35" nucleo="brotos" sintagma="brotos de alface comprovadamente transgênicos" sentenca="1">
+<word_31 token="brotos" lemma="broto" pos="n" features="M=P" ></word_31>
+<word_32 token="de" lemma="de" pos="prp" features="-" ></word_32>
+<word_33 token="alface" lemma="alface" pos="n" features="F=S" ></word_33>
+<word_34 token="comprovadamente" lemma="comprovar" pos="adv" features="-" ></word_34>
+<word_35 token="transgênicos" lemma="transgênico" pos="adj" features="M=P" ></word_35>
+</sn>
+<sn id="10" tokens="17...18" nucleo="alface" sintagma="uma alface" sentenca="1">
+<word_17 token="uma" lemma="um" pos="art" features="F=S" ></word_17>
+<word_18 token="alface" lemma="alface" pos="n" features="F=S" ></word_18>
+</sn>
+<sn id="11" tokens="39...39" nucleo="Jackson_Marcondes_de_Souza" sintagma="Jackson Marcondes de Souza" sentenca="1">
+<word_39 token="Jackson_Marcondes_de_Souza" lemma="" pos="prop" features="M=S" ></word_39>
+</sn>
+<sn id="12" tokens="42...43" nucleo="orientação" sintagma="a orientação" sentenca="2">
+<word_42 token="a" lemma="o" pos="art" features="F=S" ></word_42>
+<word_43 token="orientação" lemma="orientação, orientar" pos="n" features="F=S" ></word_43>
+</sn>
+<sn id="13" tokens="45...46" nucleo="pesquisador" sintagma="o pesquisador" sentenca="2">
+<word_45 token="o" lemma="o" pos="art" features="M=S" ></word_45>
+<word_46 token="pesquisador" lemma="pesquisador, pesquisar" pos="n" features="M=S" ></word_46>
+</sn>
+<sn id="14" tokens="47...47" nucleo="Ekkehard_Hansen" sintagma="Ekkehard Hansen" sentenca="2">
+<word_47 token="Ekkehard_Hansen" lemma="" pos="prop" features="M=S" ></word_47>
+</sn>
+<sn id="15" tokens="49...49" nucleo="ele" sintagma="ele" sentenca="2">
+<word_49 token="ele" lemma="ele" pos="pron-pers" features="M=3S=NOM" ></word_49>
+</sn>
+<sn id="17" tokens="54...57" nucleo="parte" sintagma="parte de seu doutorado" sentenca="2">
+<word_54 token="parte" lemma="parte" pos="n" features="F=S" ></word_54>
+<word_55 token="de" lemma="de" pos="prp" features="-" ></word_55>
+<word_56 token="seu" lemma="seu" pos="pron-det" features="M=S" ></word_56>
+<word_57 token="doutorado" lemma="doutorado" pos="n" features="M=S" ></word_57>
+</sn>
+<sn id="18" tokens="56...57" nucleo="seu" sintagma="seu doutorado" sentenca="2">
+<word_56 token="seu" lemma="seu" pos="pron-det" features="M=S" ></word_56>
+<word_57 token="doutorado" lemma="doutorado" pos="n" features="M=S" ></word_57>
+</sn>
+<sn id="20" tokens="78...81" nucleo="proteína" sintagma="a proteína capaz de" sentenca="3">
+<word_78 token="a" lemma="o" pos="art" features="F=S" ></word_78>
+<word_79 token="proteína" lemma="proteína" pos="n" features="F=S" ></word_79>
+<word_80 token="capaz" lemma="capaz" pos="adj" features="F=S" ></word_80>
+<word_81 token="de" lemma="de" pos="prp" features="-" ></word_81>
+</sn>
+<sn id="21" tokens="83...84" nucleo="imunização" sintagma="a imunização" sentenca="3">
+<word_83 token="a" lemma="o" pos="art" features="F=S" ></word_83>
+<word_84 token="imunização" lemma="imunizar" pos="n" features="F=S" ></word_84>
+</sn>
+<sn id="25" tokens="98...99" nucleo="Outros" sintagma="Outros cientistas" sentenca="4">
+<word_98 token="Outros" lemma="outro" pos="pron-det" features="M=P" ></word_98>
+<word_99 token="cientistas" lemma="cientista, ciente" pos="n" features="M=P" ></word_99>
+</sn>
+<sn id="26" tokens="100...100" nucleo="se" sintagma="se" sentenca="4">
+<word_100 token="se" lemma="se" pos="pron-pers" features="M=3P=ACC" ></word_100>
+</sn>
+<sn id="28" tokens="104...104" nucleo="que" sintagma="que" sentenca="4">
+<word_104 token="que" lemma="que" pos="pron-indp" features="M=P" ></word_104>
+</sn>
+<sn id="32" tokens="117...125" nucleo="caso" sintagma="o caso de Schuyler Korban , da Universidade de Illinois (" sentenca="5">
+<word_117 token="o" lemma="o" pos="art" features="M=S" ></word_117>
+<word_118 token="caso" lemma="caso" pos="n" features="M=S" ></word_118>
+<word_119 token="de" lemma="de" pos="prp" features="-" ></word_119>
+<word_120 token="Schuyler_Korban" lemma="" pos="prop" features="M=S" ></word_120>
+<word_121 token="," lemma="" pos="," features="-" ></word_121>
+<word_122 token="de" lemma="de" pos="prp" features="-" ></word_122>
+<word_123 token="a" lemma="o" pos="art" features="F=S" ></word_123>
+<word_124 token="Universidade_de_Illinois" lemma="" pos="prop" features="F=S" ></word_124>
+<word_125 token="(" lemma="(" pos="(" features="-" ></word_125>
+</sn>
+<sn id="33" tokens="120...120" nucleo="Schuyler_Korban" sintagma="Schuyler Korban" sentenca="5">
+<word_120 token="Schuyler_Korban" lemma="" pos="prop" features="M=S" ></word_120>
+</sn>
+<sn id="36" tokens="129...129" nucleo="Ele" sintagma="Ele" sentenca="6">
+<word_129 token="Ele" lemma="ele" pos="pron-pers" features="M=3S=NOM" ></word_129>
+</sn>
+<sn id="40" tokens="142...142" nucleo="que" sintagma="que" sentenca="6">
+<word_142 token="que" lemma="que" pos="pron-indp" features="M=S" ></word_142>
+</sn>
+<sn id="41" tokens="150...150" nucleo="camundongos" sintagma="camundongos" sentenca="7">
+<word_150 token="camundongos" lemma="" pos="n" features="M=P" ></word_150>
+</sn>
+<sn id="42" tokens="154...160" nucleo="produção" sintagma="a produção de anticorpos contra o vírus" sentenca="7">
+<word_154 token="a" lemma="o" pos="art" features="F=S" ></word_154>
+<word_155 token="produção" lemma="produção" pos="n" features="F=S" ></word_155>
+<word_156 token="de" lemma="de" pos="prp" features="-" ></word_156>
+<word_157 token="anticorpos" lemma="anticorpo" pos="n" features="M=P" ></word_157>
+<word_158 token="contra" lemma="contra" pos="prp" features="-" ></word_158>
+<word_159 token="o" lemma="o" pos="art" features="M=S" ></word_159>
+<word_160 token="vírus" lemma="vírus" pos="n" features="M=S" ></word_160>
+</sn>
+<sn id="43" tokens="157...157" nucleo="anticorpos" sintagma="anticorpos" sentenca="7">
+<word_157 token="anticorpos" lemma="anticorpo" pos="n" features="M=P" ></word_157>
+</sn>
+<sn id="45" tokens="162...163" nucleo="resultados" sintagma="Os resultados" sentenca="8">
+<word_162 token="Os" lemma="o" pos="art" features="M=P" ></word_162>
+<word_163 token="resultados" lemma="" pos="n" features="M=P" ></word_163>
+</sn>
+<sn id="46" tokens="166...167" nucleo="publicação" sintagma="a publicação" sentenca="8">
+<word_166 token="a" lemma="o" pos="art" features="F=S" ></word_166>
+<word_167 token="publicação" lemma="publicar" pos="n" features="F=S" ></word_167>
+</sn>
+<sn id="47" tokens="169...170" nucleo="Transgenic_Research" sintagma="Transgenic Research " sentenca="8">
+<word_169 token="Transgenic_Research" lemma="" pos="prop" features="M=S" ></word_169>
+</sn>
+<sn id="48" tokens="172...172" nucleo="www.wkap" sintagma="www.wkap" sentenca="8">
+<word_172 token="www.wkap" lemma="" pos="prop" features="M=S" ></word_172>
+</sn>
+<sn id="49" tokens="173...173" nucleo=".nl/jour" sintagma=".nl/jour" sentenca="8">
+<word_173 token=".nl/jour" lemma="" pos="prop" features="M=S" ></word_173>
+</sn>
+<sn id="50" tokens="176...177" nucleo="transgenic" sintagma="transgenic res" sentenca="9">
+<word_176 token="transgenic" lemma="" pos="n" features="M=S" ></word_176>
+<word_177 token="res" lemma="" pos="adj" features="M=P" ></word_177>
+</sn>
+<sn id="52" tokens="185...185" nucleo="ele" sintagma="ele" sentenca="10">
+<word_185 token="ele" lemma="ele" pos="pron-pers" features="M=3S=NOM" ></word_185>
+</sn>
+<sn id="54" tokens="193...196" nucleo="anos" sintagma="necessários três anos para" sentenca="11">
+<word_193 token="necessários" lemma="necessário" pos="adj" features="M=P" ></word_193>
+<word_194 token="três" lemma="três" pos="num" features="M=P" ></word_194>
+<word_195 token="anos" lemma="ano" pos="n" features="M=P" ></word_195>
+<word_196 token="para" lemma="para" pos="prp" features="-" ></word_196>
+</sn>
+</Mencoes_Unicas>
+</CIENCIA_2001_6406.txt>

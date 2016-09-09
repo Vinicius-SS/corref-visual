@@ -1,0 +1,1217 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<CIENCIA_2005_28754.txt>
+
+<Texto conteudo="Numa entrevista coletiva conduzida ontem à noite, os gerentes da Nasa deram o veredicto: o Discovery precisa de reparos antes de voltar para casa. O trabalho será conduzido amanhã pelo astronauta americano Stephen Robinson, durante a terceira caminhada espacial prevista para a missão.
+Sua tarefa consistirá em cortar arestas do material usado para preencher o vão entre as telhas térmicas da barriga do ônibus. Para chegar lá, o tripulante será preso à ponta do braço robótico da ISS (Estação Espacial Internacional), onde o Discovery agora está atracado. Esse procedimento jamais foi tentado no espaço ou praticado em terra antes.
+As protuberâncias encontradas _são duas no total_ já foram vistas antes em ônibus espaciais, mas somente após seu retorno à Terra. Graças ao novo sistema de inspeção da nave, foi possível detectar o fenômeno no espaço.
+&quot;A conclusão da equipe é de que há grande incerteza sobre o que pode acontecer [durante a reentrada]&quot;, disse ontem Wayne Hale, vice-diretor do programa do ônibus espacial. &quot;Entre essas incertezas e o que sabemos sobre EVA [sigla para &quot;atividade extra-veicular&quot;, as caminhadas espaciais], foi uma decisão fácil&quot;, concluiu.
+O aparecimento das protuberâncias não tem nada a ver com o desprendimento de espuma sólida do tanque externo durante a decolagem _problema que causou a destruição do Columbia, em 2003, e que a Nasa ainda precisa resolver antes de lançar o Atlantis.
+Ontem pela manhã ocorreu a segunda caminhada espacial da missão. Mais uma vez, os trabalhos foram conduzidos por Soichi Noguchi, do Japão, acompanhado por Robinson. A dupla trocou um giroscópio defeituoso da ISS.
+A estação agora opera pela primeira vez em três anos com todos os seus quatro giroscópios funcionando. Eles servem para mudar a orientação da ISS no espaço.
+Foi a 60ª caminhada espacial conduzida em conexão com a construção e manutenção da estação. A última acontece amanhã, de novo a ser efetuada por Robinson e Noguchi. A principal tarefa agendada será instalar uma plataforma de armazenamento do lado de fora da estação. O procedimento de reparo será conduzido apenas por Robinson, para minimizar risco de novos danos à nave.
+Se tudo correr bem, o ônibus espacial Discovery deve retornar à Terra na próxima segunda-feira.
+Futuro sem ônibus
+Enquanto a Nasa trabalha furiosamente para manter suas naves em operação, a despeito dos problemas com a espuma, os parceiros internacionais no projeto da construção da ISS estão preocupados. Um módulo-laboratório japonês está neste momento no Centro Espacial Kennedy, esperando uma carona dos ônibus para ser instalado. Um equivalente europeu está na Alemanha, aguardando o mesmo fim.
+Temendo que a Nasa tenha de aposentar seus ônibus espaciais antes mesmo de 2010, a ESA (Agência Espacial Européia) já está estudando o que fazer caso seu módulo não possa ir ao espaço.
+" ></Texto>
+
+<Tokens> 
+<word_0 token="em" lemma="em" pos="prp" features="-" ></word_0>
+<word_1 token="uma" lemma="um" pos="art" features="F=S" ></word_1>
+<word_2 token="entrevista" lemma="entrevista" pos="n" features="F=S" ></word_2>
+<word_3 token="coletiva" lemma="coletivo" pos="adj" features="F=S" ></word_3>
+<word_4 token="conduzida" lemma="conduzir" pos="v-pcp" features="F=S" ></word_4>
+<word_5 token="ontem" lemma="ontem" pos="adv" features="-" ></word_5>
+<word_6 token="a" lemma="a" pos="prp" features="-" ></word_6>
+<word_7 token="a" lemma="o" pos="art" features="F=S" ></word_7>
+<word_8 token="noite" lemma="noite" pos="n" features="F=S" ></word_8>
+<word_9 token="," lemma="" pos="," features="-" ></word_9>
+<word_10 token="os" lemma="o" pos="art" features="M=P" ></word_10>
+<word_11 token="gerentes" lemma="gerente" pos="n" features="M=P" ></word_11>
+<word_12 token="de" lemma="de" pos="prp" features="-" ></word_12>
+<word_13 token="a" lemma="o" pos="art" features="F=S" ></word_13>
+<word_14 token="Nasa" lemma="" pos="prop" features="F=S" ></word_14>
+<word_15 token="deram" lemma="dar" pos="v-fin" features="PS=3P=IND" ></word_15>
+<word_16 token="o" lemma="o" pos="art" features="M=S" ></word_16>
+<word_17 token="veredicto" lemma="veredicto" pos="n" features="M=S" ></word_17>
+<word_18 token=":" lemma=":" pos=":" features="-" ></word_18>
+<word_19 token="o" lemma="o" pos="art" features="M=S" ></word_19>
+<word_20 token="Discovery" lemma="" pos="prop" features="M=S" ></word_20>
+<word_21 token="precisa" lemma="precisar" pos="v-fin" features="PR=3S=IND" ></word_21>
+<word_22 token="de" lemma="de" pos="prp" features="-" ></word_22>
+<word_23 token="reparos" lemma="reparo" pos="n" features="M=P" ></word_23>
+<word_24 token="antes" lemma="antes" pos="adv" features="-" ></word_24>
+<word_25 token="de" lemma="de" pos="prp" features="-" ></word_25>
+<word_26 token="voltar" lemma="voltar" pos="v-inf" features="-" ></word_26>
+<word_27 token="para" lemma="para" pos="prp" features="-" ></word_27>
+<word_28 token="casa" lemma="casa" pos="n" features="F=S" ></word_28>
+<word_29 token="." lemma="." pos="." features="-" ></word_29>
+<word_30 token="O" lemma="o" pos="art" features="M=S" ></word_30>
+<word_31 token="trabalho" lemma="trabalho" pos="n" features="M=S" ></word_31>
+<word_32 token="será" lemma="ser" pos="v-fin" features="FUT=3S=IND" ></word_32>
+<word_33 token="conduzido" lemma="conduzir" pos="v-pcp" features="M=S" ></word_33>
+<word_34 token="amanhã" lemma="amanhã" pos="adv" features="-" ></word_34>
+<word_35 token="por" lemma="por" pos="prp" features="-" ></word_35>
+<word_36 token="o" lemma="o" pos="art" features="M=S" ></word_36>
+<word_37 token="astronauta" lemma="astronauta" pos="n" features="M=S" ></word_37>
+<word_38 token="americano" lemma="americano" pos="adj" features="M=S" ></word_38>
+<word_39 token="Stephen_Robinson" lemma="" pos="prop" features="M=S" ></word_39>
+<word_40 token="," lemma="" pos="," features="-" ></word_40>
+<word_41 token="durante" lemma="durante" pos="prp" features="-" ></word_41>
+<word_42 token="a" lemma="o" pos="art" features="F=S" ></word_42>
+<word_43 token="terceira" lemma="" pos="adj" features="F=S" ></word_43>
+<word_44 token="caminhada" lemma="caminhada" pos="n" features="F=S" ></word_44>
+<word_45 token="espacial" lemma="espacial" pos="adj" features="F=S" ></word_45>
+<word_46 token="prevista" lemma="prever" pos="v-pcp" features="F=S" ></word_46>
+<word_47 token="para" lemma="para" pos="prp" features="-" ></word_47>
+<word_48 token="a" lemma="o" pos="art" features="F=S" ></word_48>
+<word_49 token="missão" lemma="missão" pos="n" features="F=S" ></word_49>
+<word_50 token="." lemma="." pos="." features="-" ></word_50>
+<word_51 token="Sua" lemma="sua" pos="pron-det" features="F=S" ></word_51>
+<word_52 token="tarefa" lemma="tarefa" pos="n" features="F=S" ></word_52>
+<word_53 token="consistirá" lemma="consistir" pos="v-fin" features="FUT=3S=IND" ></word_53>
+<word_54 token="em" lemma="em" pos="prp" features="-" ></word_54>
+<word_55 token="cortar" lemma="cortar" pos="v-inf" features="-" ></word_55>
+<word_56 token="arestas" lemma="aresta" pos="n" features="F=P" ></word_56>
+<word_57 token="de" lemma="de" pos="prp" features="-" ></word_57>
+<word_58 token="o" lemma="o" pos="art" features="M=S" ></word_58>
+<word_59 token="material" lemma="material" pos="n" features="M=S" ></word_59>
+<word_60 token="usado" lemma="usar" pos="v-pcp" features="M=S" ></word_60>
+<word_61 token="para" lemma="para" pos="prp" features="-" ></word_61>
+<word_62 token="preencher" lemma="preencher" pos="v-inf" features="-" ></word_62>
+<word_63 token="o" lemma="o" pos="art" features="M=S" ></word_63>
+<word_64 token="vão" lemma="ir" pos="v-fin" features="PR=3P=IND" ></word_64>
+<word_65 token="entre" lemma="entre" pos="prp" features="-" ></word_65>
+<word_66 token="as" lemma="o" pos="art" features="F=P" ></word_66>
+<word_67 token="telhas" lemma="telha" pos="n" features="F=P" ></word_67>
+<word_68 token="térmicas" lemma="térmico" pos="adj" features="F=P" ></word_68>
+<word_69 token="de" lemma="de" pos="prp" features="-" ></word_69>
+<word_70 token="a" lemma="o" pos="art" features="F=S" ></word_70>
+<word_71 token="barriga" lemma="barriga" pos="n" features="F=S" ></word_71>
+<word_72 token="de" lemma="de" pos="prp" features="-" ></word_72>
+<word_73 token="o" lemma="o" pos="art" features="M=S" ></word_73>
+<word_74 token="ônibus" lemma="ônibus" pos="n" features="M=S" ></word_74>
+<word_75 token="." lemma="." pos="." features="-" ></word_75>
+<word_76 token="Para" lemma="para" pos="prp" features="-" ></word_76>
+<word_77 token="chegar" lemma="chegar" pos="v-inf" features="-" ></word_77>
+<word_78 token="lá" lemma="lá" pos="adv" features="-" ></word_78>
+<word_79 token="," lemma="" pos="," features="-" ></word_79>
+<word_80 token="o" lemma="o" pos="art" features="M=S" ></word_80>
+<word_81 token="tripulante" lemma="tripulante" pos="n" features="M=S" ></word_81>
+<word_82 token="será" lemma="ser" pos="v-fin" features="FUT=3S=IND" ></word_82>
+<word_83 token="preso" lemma="" pos="v-pcp" features="M=S" ></word_83>
+<word_84 token="a" lemma="a" pos="prp" features="-" ></word_84>
+<word_85 token="a" lemma="o" pos="art" features="F=S" ></word_85>
+<word_86 token="ponta" lemma="ponta" pos="n" features="F=S" ></word_86>
+<word_87 token="de" lemma="de" pos="prp" features="-" ></word_87>
+<word_88 token="o" lemma="o" pos="art" features="M=S" ></word_88>
+<word_89 token="braço" lemma="braço" pos="n" features="M=S" ></word_89>
+<word_90 token="robótico" lemma="" pos="adj" features="M=S" ></word_90>
+<word_91 token="de" lemma="de" pos="prp" features="-" ></word_91>
+<word_92 token="a" lemma="o" pos="art" features="F=S" ></word_92>
+<word_93 token="ISS" lemma="" pos="prop" features="F=S" ></word_93>
+<word_94 token="(" lemma="(" pos="(" features="-" ></word_94>
+<word_95 token="Estação_Espacial_Internacional" lemma="" pos="prop" features="F=S" ></word_95>
+<word_96 token=")" lemma=")" pos=")" features="-" ></word_96>
+<word_97 token="," lemma="" pos="," features="-" ></word_97>
+<word_98 token="onde" lemma="onde" pos="adv" features="-" ></word_98>
+<word_99 token="o" lemma="o" pos="art" features="M=S" ></word_99>
+<word_100 token="Discovery" lemma="" pos="prop" features="M=S" ></word_100>
+<word_101 token="agora" lemma="agora" pos="adv" features="-" ></word_101>
+<word_102 token="está" lemma="estar" pos="v-fin" features="PR=3S=IND" ></word_102>
+<word_103 token="atracado" lemma="atracar" pos="v-pcp" features="M=S" ></word_103>
+<word_104 token="." lemma="." pos="." features="-" ></word_104>
+<word_105 token="Esse" lemma="esse" pos="pron-det" features="M=S" ></word_105>
+<word_106 token="procedimento" lemma="proceder" pos="n" features="M=S" ></word_106>
+<word_107 token="jamais" lemma="jamais" pos="adv" features="-" ></word_107>
+<word_108 token="foi" lemma="ir, ser" pos="v-fin" features="PS=3S=IND" ></word_108>
+<word_109 token="tentado" lemma="tentar" pos="v-pcp" features="M=S" ></word_109>
+<word_110 token="em" lemma="em" pos="prp" features="-" ></word_110>
+<word_111 token="o" lemma="o" pos="art" features="M=S" ></word_111>
+<word_112 token="espaço" lemma="espaço" pos="n" features="M=S" ></word_112>
+<word_113 token="ou" lemma="ou" pos="conj-c" features="-" ></word_113>
+<word_114 token="praticado" lemma="praticar" pos="v-pcp" features="M=S" ></word_114>
+<word_115 token="em" lemma="em" pos="prp" features="-" ></word_115>
+<word_116 token="terra" lemma="terra" pos="n" features="F=S" ></word_116>
+<word_117 token="antes" lemma="antes" pos="adv" features="-" ></word_117>
+<word_118 token="." lemma="." pos="." features="-" ></word_118>
+<word_119 token="As" lemma="o" pos="art" features="F=P" ></word_119>
+<word_120 token="protuberâncias" lemma="protuberância" pos="n" features="F=P" ></word_120>
+<word_121 token="encontradas" lemma="encontrar" pos="v-pcp" features="F=P" ></word_121>
+<word_122 token="são" lemma="ser" pos="v-fin" features="PR=3P=IND" ></word_122>
+<word_123 token="duas" lemma="dois" pos="num" features="F=P" ></word_123>
+<word_124 token="em" lemma="em" pos="prp" features="-" ></word_124>
+<word_125 token="o" lemma="o" pos="art" features="M=S" ></word_125>
+<word_126 token="total" lemma="total" pos="n" features="M=S" ></word_126>
+<word_127 token="já" lemma="já" pos="adv" features="-" ></word_127>
+<word_128 token="foram" lemma="ir, ser" pos="v-fin" features="MQP=3P=IND" ></word_128>
+<word_129 token="vistas" lemma="ver" pos="v-pcp" features="F=P" ></word_129>
+<word_130 token="antes" lemma="antes" pos="adv" features="-" ></word_130>
+<word_131 token="em" lemma="em" pos="prp" features="-" ></word_131>
+<word_132 token="ônibus" lemma="ônibus" pos="n" features="M=S" ></word_132>
+<word_133 token="espaciais" lemma="espacial" pos="adj" features="M=P" ></word_133>
+<word_134 token="," lemma="" pos="," features="-" ></word_134>
+<word_135 token="mas" lemma="mas" pos="conj-c" features="-" ></word_135>
+<word_136 token="somente" lemma="somente" pos="adv" features="-" ></word_136>
+<word_137 token="após" lemma="após" pos="prp" features="-" ></word_137>
+<word_138 token="seu" lemma="seu" pos="pron-det" features="M=S" ></word_138>
+<word_139 token="retorno" lemma="retorno" pos="n" features="M=S" ></word_139>
+<word_140 token="a" lemma="a" pos="prp" features="-" ></word_140>
+<word_141 token="a" lemma="o" pos="art" features="F=S" ></word_141>
+<word_142 token="Terra" lemma="terra" pos="n" features="F=S" ></word_142>
+<word_143 token="." lemma="." pos="." features="-" ></word_143>
+<word_144 token="Graças" lemma="" pos="prop" features="F=P" ></word_144>
+<word_145 token="a" lemma="a" pos="prp" features="-" ></word_145>
+<word_146 token="o" lemma="o" pos="art" features="M=S" ></word_146>
+<word_147 token="novo" lemma="novo" pos="adj" features="M=S" ></word_147>
+<word_148 token="sistema" lemma="sistema" pos="n" features="M=S" ></word_148>
+<word_149 token="de" lemma="de" pos="prp" features="-" ></word_149>
+<word_150 token="inspeção" lemma="inspeção" pos="n" features="F=S" ></word_150>
+<word_151 token="de" lemma="de" pos="prp" features="-" ></word_151>
+<word_152 token="a" lemma="o" pos="art" features="F=S" ></word_152>
+<word_153 token="nave" lemma="nave" pos="n" features="F=S" ></word_153>
+<word_154 token="," lemma="" pos="," features="-" ></word_154>
+<word_155 token="foi" lemma="ir, ser" pos="v-fin" features="PS=3S=IND" ></word_155>
+<word_156 token="possível" lemma="possível" pos="adj" features="M=S" ></word_156>
+<word_157 token="detectar" lemma="" pos="v-inf" features="-" ></word_157>
+<word_158 token="o" lemma="o" pos="art" features="M=S" ></word_158>
+<word_159 token="fenômeno" lemma="fenômeno" pos="n" features="M=S" ></word_159>
+<word_160 token="em" lemma="em" pos="prp" features="-" ></word_160>
+<word_161 token="o" lemma="o" pos="art" features="M=S" ></word_161>
+<word_162 token="espaço" lemma="espaço" pos="n" features="M=S" ></word_162>
+<word_163 token="." lemma="." pos="." features="-" ></word_163>
+<word_164 token="&quot;" lemma="&quot;" pos="&quot;" features="-" ></word_164>
+<word_165 token="A" lemma="o" pos="art" features="F=S" ></word_165>
+<word_166 token="conclusão" lemma="conclusão" pos="n" features="F=S" ></word_166>
+<word_167 token="de" lemma="de" pos="prp" features="-" ></word_167>
+<word_168 token="a" lemma="o" pos="art" features="F=S" ></word_168>
+<word_169 token="equipe" lemma="" pos="n" features="F=S" ></word_169>
+<word_170 token="é" lemma="ser" pos="v-fin" features="PR=3S=IND" ></word_170>
+<word_171 token="de" lemma="de" pos="prp" features="-" ></word_171>
+<word_172 token="que" lemma="que" pos="conj-s" features="-" ></word_172>
+<word_173 token="há" lemma="haver" pos="v-fin" features="PR=3S=IND" ></word_173>
+<word_174 token="grande" lemma="grande" pos="adj" features="F=S" ></word_174>
+<word_175 token="incerteza" lemma="incerteza" pos="n" features="F=S" ></word_175>
+<word_176 token="sobre" lemma="sobre" pos="prp" features="-" ></word_176>
+<word_177 token="o" lemma="" pos="pron-det" features="M=S" ></word_177>
+<word_178 token="que" lemma="que" pos="pron-indp" features="M=S" ></word_178>
+<word_179 token="pode" lemma="poder, podar" pos="v-fin" features="PR=3S=IND" ></word_179>
+<word_180 token="acontecer" lemma="acontecer" pos="v-inf" features="-" ></word_180>
+<word_181 token="(" lemma="(" pos="(" features="-" ></word_181>
+<word_182 token="durante" lemma="durante" pos="prp" features="-" ></word_182>
+<word_183 token="a" lemma="o" pos="art" features="F=S" ></word_183>
+<word_184 token="reentrada" lemma="entrar" pos="v-pcp" features="F=S" ></word_184>
+<word_185 token=")" lemma=")" pos=")" features="-" ></word_185>
+<word_186 token="&quot;" lemma="&quot;" pos="&quot;" features="-" ></word_186>
+<word_187 token="," lemma="" pos="," features="-" ></word_187>
+<word_188 token="disse" lemma="dizer" pos="v-fin" features="PS=3S=IND" ></word_188>
+<word_189 token="ontem" lemma="ontem" pos="adv" features="-" ></word_189>
+<word_190 token="Wayne_Hale" lemma="" pos="prop" features="M=S" ></word_190>
+<word_191 token="," lemma="" pos="," features="-" ></word_191>
+<word_192 token="vice-diretor" lemma="diretor" pos="n" features="M=S" ></word_192>
+<word_193 token="de" lemma="de" pos="prp" features="-" ></word_193>
+<word_194 token="o" lemma="o" pos="art" features="M=S" ></word_194>
+<word_195 token="programa" lemma="programa" pos="n" features="M=S" ></word_195>
+<word_196 token="de" lemma="de" pos="prp" features="-" ></word_196>
+<word_197 token="o" lemma="o" pos="art" features="M=S" ></word_197>
+<word_198 token="ônibus" lemma="ônibus" pos="n" features="M=S" ></word_198>
+<word_199 token="espacial" lemma="espacial" pos="adj" features="M=S" ></word_199>
+<word_200 token="." lemma="." pos="." features="-" ></word_200>
+<word_201 token="&quot;" lemma="&quot;" pos="&quot;" features="-" ></word_201>
+<word_202 token="Entre" lemma="entre" pos="prp" features="-" ></word_202>
+<word_203 token="essas" lemma="esse" pos="pron-det" features="F=P" ></word_203>
+<word_204 token="incertezas" lemma="incerteza" pos="n" features="F=P" ></word_204>
+<word_205 token="e" lemma="e" pos="conj-c" features="-" ></word_205>
+<word_206 token="o" lemma="" pos="pron-det" features="M=S" ></word_206>
+<word_207 token="que" lemma="que" pos="pron-indp" features="M=S" ></word_207>
+<word_208 token="sabemos" lemma="saber" pos="v-fin" features="PR=1P=IND" ></word_208>
+<word_209 token="sobre" lemma="sobre" pos="prp" features="-" ></word_209>
+<word_210 token="EVA" lemma="" pos="prop" features="M=S" ></word_210>
+<word_211 token="(" lemma="(" pos="(" features="-" ></word_211>
+<word_212 token="sigla" lemma="sigla" pos="n" features="F=S" ></word_212>
+<word_213 token="para" lemma="para" pos="prp" features="-" ></word_213>
+<word_214 token="&quot;" lemma="&quot;" pos="&quot;" features="-" ></word_214>
+<word_215 token="atividade" lemma="atividade, ativo" pos="n" features="F=S" ></word_215>
+<word_216 token="extra-veicular" lemma="" pos="n" features="F=S" ></word_216>
+<word_217 token="&quot;" lemma="&quot;" pos="&quot;" features="-" ></word_217>
+<word_218 token="," lemma="" pos="," features="-" ></word_218>
+<word_219 token="as" lemma="o" pos="art" features="F=P" ></word_219>
+<word_220 token="caminhadas" lemma="" pos="n" features="F=P" ></word_220>
+<word_221 token="espaciais" lemma="espacial" pos="adj" features="F=P" ></word_221>
+<word_222 token=")" lemma=")" pos=")" features="-" ></word_222>
+<word_223 token="," lemma="" pos="," features="-" ></word_223>
+<word_224 token="foi" lemma="ir, ser" pos="v-fin" features="PS=3S=IND" ></word_224>
+<word_225 token="uma" lemma="um" pos="art" features="F=S" ></word_225>
+<word_226 token="decisão" lemma="decisão" pos="n" features="F=S" ></word_226>
+<word_227 token="fácil" lemma="fácil" pos="adj" features="F=S" ></word_227>
+<word_228 token="&quot;" lemma="&quot;" pos="&quot;" features="-" ></word_228>
+<word_229 token="," lemma="" pos="," features="-" ></word_229>
+<word_230 token="concluiu" lemma="concluir" pos="v-fin" features="PS=3S=IND" ></word_230>
+<word_231 token="." lemma="." pos="." features="-" ></word_231>
+<word_232 token="O" lemma="o" pos="art" features="M=S" ></word_232>
+<word_233 token="aparecimento" lemma="aparecer" pos="n" features="M=S" ></word_233>
+<word_234 token="de" lemma="de" pos="prp" features="-" ></word_234>
+<word_235 token="as" lemma="o" pos="art" features="F=P" ></word_235>
+<word_236 token="protuberâncias" lemma="protuberância" pos="n" features="F=P" ></word_236>
+<word_237 token="não" lemma="não" pos="adv" features="-" ></word_237>
+<word_238 token="tem" lemma="ter" pos="v-fin" features="PR=3S=IND" ></word_238>
+<word_239 token="nada" lemma="nada" pos="pron-indp" features="M=S" ></word_239>
+<word_240 token="a" lemma="a" pos="prp" features="-" ></word_240>
+<word_241 token="ver" lemma="ver" pos="v-inf" features="-" ></word_241>
+<word_242 token="com" lemma="com" pos="prp" features="-" ></word_242>
+<word_243 token="o" lemma="o" pos="art" features="M=S" ></word_243>
+<word_244 token="desprendimento" lemma="desprender" pos="n" features="M=S" ></word_244>
+<word_245 token="de" lemma="de" pos="prp" features="-" ></word_245>
+<word_246 token="espuma" lemma="espuma" pos="n" features="F=S" ></word_246>
+<word_247 token="sólida" lemma="sólido" pos="adj" features="F=S" ></word_247>
+<word_248 token="de" lemma="de" pos="prp" features="-" ></word_248>
+<word_249 token="o" lemma="o" pos="art" features="M=S" ></word_249>
+<word_250 token="tanque" lemma="tanque" pos="n" features="M=S" ></word_250>
+<word_251 token="externo" lemma="externo" pos="adj" features="M=S" ></word_251>
+<word_252 token="durante" lemma="durante" pos="prp" features="-" ></word_252>
+<word_253 token="a" lemma="o" pos="art" features="F=S" ></word_253>
+<word_254 token="decolagem" lemma="" pos="n" features="F=S" ></word_254>
+<word_255 token="problema" lemma="problema" pos="n" features="M=S" ></word_255>
+<word_256 token="que" lemma="que" pos="pron-indp" features="F=S" ></word_256>
+<word_257 token="causou" lemma="causar" pos="v-fin" features="PS=3S=IND" ></word_257>
+<word_258 token="a" lemma="o" pos="art" features="F=S" ></word_258>
+<word_259 token="destruição" lemma="destruir" pos="n" features="F=S" ></word_259>
+<word_260 token="de" lemma="de" pos="prp" features="-" ></word_260>
+<word_261 token="o" lemma="o" pos="art" features="M=S" ></word_261>
+<word_262 token="Columbia" lemma="" pos="prop" features="M=S" ></word_262>
+<word_263 token="," lemma="" pos="," features="-" ></word_263>
+<word_264 token="em" lemma="em" pos="prp" features="-" ></word_264>
+<word_265 token="2003" lemma="" pos="num" features="M=S" ></word_265>
+<word_266 token="," lemma="" pos="," features="-" ></word_266>
+<word_267 token="e" lemma="e" pos="conj-c" features="-" ></word_267>
+<word_268 token="que" lemma="que" pos="conj-s" features="-" ></word_268>
+<word_269 token="a" lemma="o" pos="art" features="F=S" ></word_269>
+<word_270 token="Nasa" lemma="" pos="prop" features="F=S" ></word_270>
+<word_271 token="ainda" lemma="ainda" pos="adv" features="-" ></word_271>
+<word_272 token="precisa" lemma="precisar" pos="v-fin" features="PR=3S=IND" ></word_272>
+<word_273 token="resolver" lemma="resolver" pos="v-inf" features="-" ></word_273>
+<word_274 token="antes" lemma="antes" pos="adv" features="-" ></word_274>
+<word_275 token="de" lemma="de" pos="prp" features="-" ></word_275>
+<word_276 token="lançar" lemma="lançar" pos="v-inf" features="-" ></word_276>
+<word_277 token="o" lemma="o" pos="art" features="M=S" ></word_277>
+<word_278 token="Atlantis" lemma="" pos="prop" features="M=S" ></word_278>
+<word_279 token="." lemma="." pos="." features="-" ></word_279>
+<word_280 token="Ontem" lemma="ontem" pos="adv" features="-" ></word_280>
+<word_281 token="por" lemma="por" pos="prp" features="-" ></word_281>
+<word_282 token="a" lemma="o" pos="art" features="F=S" ></word_282>
+<word_283 token="manhã" lemma="manhã" pos="n" features="F=S" ></word_283>
+<word_284 token="ocorreu" lemma="ocorrer" pos="v-fin" features="PS=3S=IND" ></word_284>
+<word_285 token="a" lemma="o" pos="art" features="F=S" ></word_285>
+<word_286 token="segunda" lemma="" pos="adj" features="F=S" ></word_286>
+<word_287 token="caminhada" lemma="caminhada" pos="n" features="F=S" ></word_287>
+<word_288 token="espacial" lemma="espacial" pos="adj" features="F=S" ></word_288>
+<word_289 token="de" lemma="de" pos="prp" features="-" ></word_289>
+<word_290 token="a" lemma="o" pos="art" features="F=S" ></word_290>
+<word_291 token="missão" lemma="missão" pos="n" features="F=S" ></word_291>
+<word_292 token="." lemma="." pos="." features="-" ></word_292>
+<word_293 token="Mais_uma_vez" lemma="" pos="adv" features="-" ></word_293>
+<word_294 token="," lemma="" pos="," features="-" ></word_294>
+<word_295 token="os" lemma="o" pos="art" features="M=P" ></word_295>
+<word_296 token="trabalhos" lemma="trabalho" pos="n" features="M=P" ></word_296>
+<word_297 token="foram" lemma="ir, ser" pos="v-fin" features="MQP=3P=IND" ></word_297>
+<word_298 token="conduzidos" lemma="conduzir" pos="v-pcp" features="M=P" ></word_298>
+<word_299 token="por" lemma="por" pos="prp" features="-" ></word_299>
+<word_300 token="Soichi_Noguchi" lemma="" pos="prop" features="M=S" ></word_300>
+<word_301 token="," lemma="" pos="," features="-" ></word_301>
+<word_302 token="de" lemma="de" pos="prp" features="-" ></word_302>
+<word_303 token="o" lemma="o" pos="art" features="M=S" ></word_303>
+<word_304 token="Japão" lemma="Japão" pos="prop" features="M=S" ></word_304>
+<word_305 token="," lemma="" pos="," features="-" ></word_305>
+<word_306 token="acompanhado" lemma="acompanhar" pos="v-pcp" features="M=S" ></word_306>
+<word_307 token="por" lemma="por" pos="prp" features="-" ></word_307>
+<word_308 token="Robinson" lemma="Robinson" pos="prop" features="-" ></word_308>
+<word_309 token="." lemma="." pos="." features="-" ></word_309>
+<word_310 token="A" lemma="o" pos="art" features="F=S" ></word_310>
+<word_311 token="dupla" lemma="duplo" pos="n" features="F=S" ></word_311>
+<word_312 token="trocou" lemma="trocar" pos="v-fin" features="PS=3S=IND" ></word_312>
+<word_313 token="um" lemma="um" pos="art" features="M=S" ></word_313>
+<word_314 token="giroscópio" lemma="giroscópio" pos="n" features="M=S" ></word_314>
+<word_315 token="defeituoso" lemma="defeituoso" pos="adj" features="M=S" ></word_315>
+<word_316 token="de" lemma="de" pos="prp" features="-" ></word_316>
+<word_317 token="a" lemma="o" pos="art" features="F=S" ></word_317>
+<word_318 token="ISS" lemma="" pos="prop" features="F=S" ></word_318>
+<word_319 token="." lemma="." pos="." features="-" ></word_319>
+<word_320 token="A" lemma="o" pos="art" features="F=S" ></word_320>
+<word_321 token="estação" lemma="estação" pos="n" features="F=S" ></word_321>
+<word_322 token="agora" lemma="agora" pos="adv" features="-" ></word_322>
+<word_323 token="opera" lemma="operar" pos="v-fin" features="PR=3S=IND" ></word_323>
+<word_324 token="por" lemma="por" pos="prp" features="-" ></word_324>
+<word_325 token="a" lemma="o" pos="art" features="F=S" ></word_325>
+<word_326 token="primeira" lemma="" pos="adj" features="F=S" ></word_326>
+<word_327 token="vez" lemma="vez" pos="n" features="F=S" ></word_327>
+<word_328 token="em" lemma="em" pos="prp" features="-" ></word_328>
+<word_329 token="três" lemma="três" pos="num" features="M=P" ></word_329>
+<word_330 token="anos" lemma="ano" pos="n" features="M=P" ></word_330>
+<word_331 token="com" lemma="com" pos="prp" features="-" ></word_331>
+<word_332 token="todos" lemma="todo" pos="pron-det" features="M=P" ></word_332>
+<word_333 token="os" lemma="o" pos="art" features="M=P" ></word_333>
+<word_334 token="seus" lemma="seu" pos="pron-det" features="M=P" ></word_334>
+<word_335 token="quatro" lemma="quatro" pos="num" features="M=P" ></word_335>
+<word_336 token="giroscópios" lemma="giroscópio" pos="n" features="M=P" ></word_336>
+<word_337 token="funcionando" lemma="funcionar" pos="v-ger" features="-" ></word_337>
+<word_338 token="." lemma="." pos="." features="-" ></word_338>
+<word_339 token="Eles" lemma="ele" pos="pron-pers" features="M=3P=NOM" ></word_339>
+<word_340 token="servem" lemma="servir" pos="v-fin" features="PR=3P=IND" ></word_340>
+<word_341 token="para" lemma="para" pos="prp" features="-" ></word_341>
+<word_342 token="mudar" lemma="mudar" pos="v-inf" features="-" ></word_342>
+<word_343 token="a" lemma="o" pos="art" features="F=S" ></word_343>
+<word_344 token="orientação" lemma="orientação, orientar" pos="n" features="F=S" ></word_344>
+<word_345 token="de" lemma="de" pos="prp" features="-" ></word_345>
+<word_346 token="a" lemma="o" pos="art" features="F=S" ></word_346>
+<word_347 token="ISS" lemma="" pos="prop" features="F=S" ></word_347>
+<word_348 token="em" lemma="em" pos="prp" features="-" ></word_348>
+<word_349 token="o" lemma="o" pos="art" features="M=S" ></word_349>
+<word_350 token="espaço" lemma="espaço" pos="n" features="M=S" ></word_350>
+<word_351 token="." lemma="." pos="." features="-" ></word_351>
+<word_352 token="Foi" lemma="ir, ser" pos="v-fin" features="PS=3S=IND" ></word_352>
+<word_353 token="a" lemma="a" pos="prp" features="-" ></word_353>
+<word_354 token="60ª" lemma="" pos="num" features="M=P" ></word_354>
+<word_355 token="caminhada" lemma="caminhada" pos="n" features="F=S" ></word_355>
+<word_356 token="espacial" lemma="espacial" pos="adj" features="F=S" ></word_356>
+<word_357 token="conduzida" lemma="conduzir" pos="v-pcp" features="F=S" ></word_357>
+<word_358 token="em" lemma="em" pos="prp" features="-" ></word_358>
+<word_359 token="conexão" lemma="conexão" pos="n" features="F=S" ></word_359>
+<word_360 token="com" lemma="com" pos="prp" features="-" ></word_360>
+<word_361 token="a" lemma="o" pos="art" features="F=S" ></word_361>
+<word_362 token="construção" lemma="construção" pos="n" features="F=S" ></word_362>
+<word_363 token="e" lemma="e" pos="conj-c" features="-" ></word_363>
+<word_364 token="manutenção" lemma="manutenção" pos="n" features="F=S" ></word_364>
+<word_365 token="de" lemma="de" pos="prp" features="-" ></word_365>
+<word_366 token="a" lemma="o" pos="art" features="F=S" ></word_366>
+<word_367 token="estação" lemma="estação" pos="n" features="F=S" ></word_367>
+<word_368 token="." lemma="." pos="." features="-" ></word_368>
+<word_369 token="A" lemma="o" pos="art" features="F=S" ></word_369>
+<word_370 token="última" lemma="último" pos="adj" features="F=S" ></word_370>
+<word_371 token="acontece" lemma="acontecer" pos="v-fin" features="PR=3S=IND" ></word_371>
+<word_372 token="amanhã" lemma="amanhã" pos="adv" features="-" ></word_372>
+<word_373 token="," lemma="" pos="," features="-" ></word_373>
+<word_374 token="de" lemma="de" pos="prp" features="-" ></word_374>
+<word_375 token="novo" lemma="novo" pos="adj" features="M=S" ></word_375>
+<word_376 token="a" lemma="a" pos="prp" features="-" ></word_376>
+<word_377 token="ser" lemma="ser" pos="v-inf" features="-" ></word_377>
+<word_378 token="efetuada" lemma="efetuar" pos="v-pcp" features="F=S" ></word_378>
+<word_379 token="por" lemma="por" pos="prp" features="-" ></word_379>
+<word_380 token="Robinson" lemma="Robinson" pos="prop" features="-" ></word_380>
+<word_381 token="e" lemma="e" pos="conj-c" features="-" ></word_381>
+<word_382 token="Noguchi" lemma="" pos="prop" features="M=S" ></word_382>
+<word_383 token="." lemma="." pos="." features="-" ></word_383>
+<word_384 token="A" lemma="o" pos="art" features="F=S" ></word_384>
+<word_385 token="principal" lemma="principal" pos="adj" features="F=S" ></word_385>
+<word_386 token="tarefa" lemma="tarefa" pos="n" features="F=S" ></word_386>
+<word_387 token="agendada" lemma="agendar" pos="v-pcp" features="F=S" ></word_387>
+<word_388 token="será" lemma="ser" pos="v-fin" features="FUT=3S=IND" ></word_388>
+<word_389 token="instalar" lemma="instalar" pos="v-inf" features="-" ></word_389>
+<word_390 token="uma" lemma="um" pos="art" features="F=S" ></word_390>
+<word_391 token="plataforma" lemma="plataforma" pos="n" features="F=S" ></word_391>
+<word_392 token="de" lemma="de" pos="prp" features="-" ></word_392>
+<word_393 token="armazenamento" lemma="armazenar" pos="n" features="M=S" ></word_393>
+<word_394 token="de" lemma="de" pos="prp" features="-" ></word_394>
+<word_395 token="o" lemma="o" pos="art" features="M=S" ></word_395>
+<word_396 token="lado" lemma="lado" pos="n" features="M=S" ></word_396>
+<word_397 token="de" lemma="de" pos="prp" features="-" ></word_397>
+<word_398 token="fora_da" lemma="" pos="prp" features="-" ></word_398>
+<word_399 token="a" lemma="o" pos="art" features="F=S" ></word_399>
+<word_400 token="estação" lemma="estação" pos="n" features="F=S" ></word_400>
+<word_401 token="." lemma="." pos="." features="-" ></word_401>
+<word_402 token="O" lemma="o" pos="art" features="M=S" ></word_402>
+<word_403 token="procedimento" lemma="proceder" pos="n" features="M=S" ></word_403>
+<word_404 token="de" lemma="de" pos="prp" features="-" ></word_404>
+<word_405 token="reparo" lemma="reparo" pos="n" features="M=S" ></word_405>
+<word_406 token="será" lemma="ser" pos="v-fin" features="FUT=3S=IND" ></word_406>
+<word_407 token="conduzido" lemma="conduzir" pos="v-pcp" features="M=S" ></word_407>
+<word_408 token="apenas" lemma="apenas" pos="adv" features="-" ></word_408>
+<word_409 token="por" lemma="por" pos="prp" features="-" ></word_409>
+<word_410 token="Robinson" lemma="Robinson" pos="prop" features="-" ></word_410>
+<word_411 token="," lemma="" pos="," features="-" ></word_411>
+<word_412 token="para" lemma="para" pos="prp" features="-" ></word_412>
+<word_413 token="minimizar" lemma="minimizar" pos="v-inf" features="-" ></word_413>
+<word_414 token="risco" lemma="risco" pos="n" features="M=S" ></word_414>
+<word_415 token="de" lemma="de" pos="prp" features="-" ></word_415>
+<word_416 token="novos" lemma="novo" pos="adj" features="M=P" ></word_416>
+<word_417 token="danos" lemma="dano" pos="n" features="M=P" ></word_417>
+<word_418 token="a" lemma="a" pos="prp" features="-" ></word_418>
+<word_419 token="a" lemma="o" pos="art" features="F=S" ></word_419>
+<word_420 token="nave" lemma="nave" pos="n" features="F=S" ></word_420>
+<word_421 token="." lemma="." pos="." features="-" ></word_421>
+<word_422 token="Se" lemma="se" pos="conj-s" features="-" ></word_422>
+<word_423 token="tudo" lemma="tudo" pos="pron-indp" features="M=S" ></word_423>
+<word_424 token="correr" lemma="correr" pos="v-inf" features="-" ></word_424>
+<word_425 token="bem" lemma="bem" pos="adv" features="-" ></word_425>
+<word_426 token="," lemma="" pos="," features="-" ></word_426>
+<word_427 token="o" lemma="o" pos="art" features="M=S" ></word_427>
+<word_428 token="ônibus" lemma="ônibus" pos="n" features="M=S" ></word_428>
+<word_429 token="espacial" lemma="espacial" pos="adj" features="M=S" ></word_429>
+<word_430 token="Discovery" lemma="" pos="prop" features="M=S" ></word_430>
+<word_431 token="deve" lemma="dever" pos="v-fin" features="PR=3S=IND" ></word_431>
+<word_432 token="retornar" lemma="retornar" pos="v-inf" features="-" ></word_432>
+<word_433 token="a" lemma="a" pos="prp" features="-" ></word_433>
+<word_434 token="a" lemma="o" pos="art" features="F=S" ></word_434>
+<word_435 token="Terra" lemma="terra" pos="n" features="F=S" ></word_435>
+<word_436 token="em" lemma="em" pos="prp" features="-" ></word_436>
+<word_437 token="a" lemma="o" pos="art" features="F=S" ></word_437>
+<word_438 token="próxima" lemma="próximo" pos="adj" features="F=S" ></word_438>
+<word_439 token="segunda-feira" lemma="segunda-feira" pos="n" features="F=S" ></word_439>
+<word_440 token="." lemma="." pos="." features="-" ></word_440>
+<word_441 token="Futuro" lemma="futuro" pos="n" features="M=S" ></word_441>
+<word_442 token="sem" lemma="sem" pos="prp" features="-" ></word_442>
+<word_443 token="ônibus" lemma="ônibus" pos="n" features="M=S" ></word_443>
+<word_444 token="." lemma="." pos="." features="-" ></word_444>
+<word_445 token="Enquanto" lemma="" pos="adv" features="-" ></word_445>
+<word_446 token="a" lemma="o" pos="art" features="F=S" ></word_446>
+<word_447 token="Nasa" lemma="" pos="prop" features="F=S" ></word_447>
+<word_448 token="trabalha" lemma="trabalhar" pos="v-fin" features="PR=3S=IND" ></word_448>
+<word_449 token="furiosamente" lemma="furioso" pos="adv" features="-" ></word_449>
+<word_450 token="para" lemma="para" pos="prp" features="-" ></word_450>
+<word_451 token="manter" lemma="manter" pos="v-inf" features="-" ></word_451>
+<word_452 token="suas" lemma="sua" pos="pron-det" features="F=P" ></word_452>
+<word_453 token="naves" lemma="nave" pos="n" features="F=P" ></word_453>
+<word_454 token="em" lemma="em" pos="prp" features="-" ></word_454>
+<word_455 token="operação" lemma="operação, operar" pos="n" features="F=S" ></word_455>
+<word_456 token="," lemma="" pos="," features="-" ></word_456>
+<word_457 token="a" lemma="a" pos="prp" features="-" ></word_457>
+<word_458 token="despeito" lemma="despeito" pos="n" features="M=S" ></word_458>
+<word_459 token="de" lemma="de" pos="prp" features="-" ></word_459>
+<word_460 token="os" lemma="o" pos="art" features="M=P" ></word_460>
+<word_461 token="problemas" lemma="problema" pos="n" features="M=P" ></word_461>
+<word_462 token="com" lemma="com" pos="prp" features="-" ></word_462>
+<word_463 token="a" lemma="o" pos="art" features="F=S" ></word_463>
+<word_464 token="espuma" lemma="espuma" pos="n" features="F=S" ></word_464>
+<word_465 token="," lemma="" pos="," features="-" ></word_465>
+<word_466 token="os" lemma="o" pos="art" features="M=P" ></word_466>
+<word_467 token="parceiros" lemma="parceiro" pos="n" features="M=P" ></word_467>
+<word_468 token="internacionais" lemma="internacional" pos="adj" features="M=P" ></word_468>
+<word_469 token="em" lemma="em" pos="prp" features="-" ></word_469>
+<word_470 token="o" lemma="o" pos="art" features="M=S" ></word_470>
+<word_471 token="projeto" lemma="projeto" pos="n" features="M=S" ></word_471>
+<word_472 token="de" lemma="de" pos="prp" features="-" ></word_472>
+<word_473 token="a" lemma="o" pos="art" features="F=S" ></word_473>
+<word_474 token="construção" lemma="construção" pos="n" features="F=S" ></word_474>
+<word_475 token="de" lemma="de" pos="prp" features="-" ></word_475>
+<word_476 token="a" lemma="o" pos="art" features="F=S" ></word_476>
+<word_477 token="ISS" lemma="" pos="prop" features="F=S" ></word_477>
+<word_478 token="estão" lemma="estar" pos="v-fin" features="PR=3P=IND" ></word_478>
+<word_479 token="preocupados" lemma="preocupar" pos="v-pcp" features="M=P" ></word_479>
+<word_480 token="." lemma="." pos="." features="-" ></word_480>
+<word_481 token="Um" lemma="um" pos="art" features="M=S" ></word_481>
+<word_482 token="módulo-laboratório" lemma="" pos="n" features="M=S" ></word_482>
+<word_483 token="japonês" lemma="japonês" pos="adj" features="M=S" ></word_483>
+<word_484 token="está" lemma="estar" pos="v-fin" features="PR=3S=IND" ></word_484>
+<word_485 token="em" lemma="em" pos="prp" features="-" ></word_485>
+<word_486 token="este" lemma="este" pos="pron-det" features="M=S" ></word_486>
+<word_487 token="momento" lemma="momento" pos="n" features="M=S" ></word_487>
+<word_488 token="em" lemma="em" pos="prp" features="-" ></word_488>
+<word_489 token="o" lemma="o" pos="art" features="M=S" ></word_489>
+<word_490 token="Centro_Espacial_Kennedy" lemma="" pos="prop" features="M=S" ></word_490>
+<word_491 token="," lemma="" pos="," features="-" ></word_491>
+<word_492 token="esperando" lemma="esperar" pos="v-ger" features="-" ></word_492>
+<word_493 token="uma" lemma="um" pos="art" features="F=S" ></word_493>
+<word_494 token="carona" lemma="" pos="n" features="F=S" ></word_494>
+<word_495 token="de" lemma="de" pos="prp" features="-" ></word_495>
+<word_496 token="os" lemma="o" pos="art" features="M=P" ></word_496>
+<word_497 token="ônibus" lemma="ônibus" pos="n" features="M=P" ></word_497>
+<word_498 token="para" lemma="para" pos="prp" features="-" ></word_498>
+<word_499 token="ser" lemma="ser" pos="v-inf" features="-" ></word_499>
+<word_500 token="instalado" lemma="instalar" pos="v-pcp" features="M=S" ></word_500>
+<word_501 token="." lemma="." pos="." features="-" ></word_501>
+<word_502 token="Um" lemma="um" pos="art" features="M=S" ></word_502>
+<word_503 token="equivalente" lemma="equivalente, equivaler" pos="adj" features="M=S" ></word_503>
+<word_504 token="europeu" lemma="europeu" pos="n" features="M=S" ></word_504>
+<word_505 token="está" lemma="estar" pos="v-fin" features="PR=3S=IND" ></word_505>
+<word_506 token="em" lemma="em" pos="prp" features="-" ></word_506>
+<word_507 token="a" lemma="o" pos="art" features="F=S" ></word_507>
+<word_508 token="Alemanha" lemma="Alemanha" pos="prop" features="F=S" ></word_508>
+<word_509 token="," lemma="" pos="," features="-" ></word_509>
+<word_510 token="aguardando" lemma="aguardar" pos="v-ger" features="-" ></word_510>
+<word_511 token="o" lemma="o" pos="art" features="M=S" ></word_511>
+<word_512 token="mesmo" lemma="mesmo" pos="pron-det" features="M=S" ></word_512>
+<word_513 token="fim" lemma="fim" pos="n" features="M=S" ></word_513>
+<word_514 token="." lemma="." pos="." features="-" ></word_514>
+<word_515 token="Temendo" lemma="temer" pos="v-ger" features="-" ></word_515>
+<word_516 token="que" lemma="que" pos="conj-s" features="-" ></word_516>
+<word_517 token="a" lemma="o" pos="art" features="F=S" ></word_517>
+<word_518 token="Nasa" lemma="" pos="prop" features="F=S" ></word_518>
+<word_519 token="tenha" lemma="ter" pos="v-fin" features="PR=3S=SUBJ" ></word_519>
+<word_520 token="de" lemma="de" pos="prp" features="-" ></word_520>
+<word_521 token="aposentar" lemma="aposentar" pos="v-inf" features="-" ></word_521>
+<word_522 token="seus" lemma="seu" pos="pron-det" features="M=P" ></word_522>
+<word_523 token="ônibus" lemma="ônibus" pos="n" features="M=P" ></word_523>
+<word_524 token="espaciais" lemma="espacial" pos="adj" features="M=P" ></word_524>
+<word_525 token="antes" lemma="antes" pos="adv" features="-" ></word_525>
+<word_526 token="mesmo" lemma="mesmo" pos="pron-det" features="M=S" ></word_526>
+<word_527 token="de" lemma="de" pos="prp" features="-" ></word_527>
+<word_528 token="2010" lemma="" pos="num" features="M=P" ></word_528>
+<word_529 token="," lemma="" pos="," features="-" ></word_529>
+<word_530 token="a" lemma="o" pos="art" features="F=S" ></word_530>
+<word_531 token="ESA" lemma="ESA" pos="prop" features="F=S" ></word_531>
+<word_532 token="(" lemma="(" pos="(" features="-" ></word_532>
+<word_533 token="Agência_Espacial_Européia" lemma="" pos="prop" features="F=S" ></word_533>
+<word_534 token=")" lemma=")" pos=")" features="-" ></word_534>
+<word_535 token="já" lemma="já" pos="adv" features="-" ></word_535>
+<word_536 token="está" lemma="estar" pos="v-fin" features="PR=3S=IND" ></word_536>
+<word_537 token="estudando" lemma="estudar" pos="v-ger" features="-" ></word_537>
+<word_538 token="o" lemma="" pos="pron-det" features="M=S" ></word_538>
+<word_539 token="que" lemma="que" pos="pron-indp" features="M=S" ></word_539>
+<word_540 token="fazer" lemma="fazer" pos="v-inf" features="-" ></word_540>
+<word_541 token="caso" lemma="" pos="conj-s" features="-" ></word_541>
+<word_542 token="seu" lemma="seu" pos="pron-det" features="M=S" ></word_542>
+<word_543 token="módulo" lemma="módulo" pos="n" features="M=S" ></word_543>
+<word_544 token="não" lemma="não" pos="adv" features="-" ></word_544>
+<word_545 token="possa" lemma="poder" pos="v-fin" features="PR=3S=SUBJ" ></word_545>
+<word_546 token="ir" lemma="ir" pos="v-inf" features="-" ></word_546>
+<word_547 token="a" lemma="a" pos="prp" features="-" ></word_547>
+<word_548 token="o" lemma="o" pos="art" features="M=S" ></word_548>
+<word_549 token="espaço" lemma="espaço" pos="n" features="M=S" ></word_549>
+<word_550 token="." lemma="." pos="." features="-" ></word_550>
+</Tokens> 
+
+<Cadeias> 
+
+<Cadeia_20> 
+<sn id="14" tokens="56...59" nucleo="arestas" sintagma="arestas do material" Categoria="--" sentenca="4">
+<word_56 token="arestas" lemma="aresta" pos="n" features="F=P" ></word_56>
+<word_57 token="de" lemma="de" pos="prp" features="-" ></word_57>
+<word_58 token="o" lemma="o" pos="art" features="M=S" ></word_58>
+<word_59 token="material" lemma="material" pos="n" features="M=S" ></word_59>
+</sn>
+<sn id="20" tokens="85...86" nucleo="ponta" sintagma="a ponta" Categoria="--" sentenca="5">
+<word_85 token="a" lemma="o" pos="art" features="F=S" ></word_85>
+<word_86 token="ponta" lemma="ponta" pos="n" features="F=S" ></word_86>
+</sn>
+</Cadeia_20>
+
+<Cadeia_43> 
+<sn id="2" tokens="10...14" nucleo="gerentes" sintagma="os gerentes da Nasa" Categoria="EN_SER" sentenca="1">
+<word_10 token="os" lemma="o" pos="art" features="M=P" ></word_10>
+<word_11 token="gerentes" lemma="gerente" pos="n" features="M=P" ></word_11>
+<word_12 token="de" lemma="de" pos="prp" features="-" ></word_12>
+<word_13 token="a" lemma="o" pos="art" features="F=S" ></word_13>
+<word_14 token="Nasa" lemma="" pos="prop" features="F=S" ></word_14>
+</sn>
+<sn id="43" tokens="192...192" nucleo="vice-diretor" sintagma="vice-diretor" Categoria="EN_SER" sentenca="9">
+<word_192 token="vice-diretor" lemma="diretor" pos="n" features="M=S" ></word_192>
+</sn>
+</Cadeia_43>
+
+<Cadeia_55> 
+<sn id="28" tokens="119...121" nucleo="protuberâncias" sintagma="As protuberâncias encontradas" Categoria="--" sentenca="7">
+<word_119 token="As" lemma="o" pos="art" features="F=P" ></word_119>
+<word_120 token="protuberâncias" lemma="protuberância" pos="n" features="F=P" ></word_120>
+<word_121 token="encontradas" lemma="encontrar" pos="v-pcp" features="F=P" ></word_121>
+</sn>
+<sn id="55" tokens="235...236" nucleo="protuberâncias" sintagma="as protuberâncias" Categoria="--" sentenca="11">
+<word_235 token="as" lemma="o" pos="art" features="F=P" ></word_235>
+<word_236 token="protuberâncias" lemma="protuberância" pos="n" features="F=P" ></word_236>
+</sn>
+</Cadeia_55>
+
+<Cadeia_70> 
+<sn id="8" tokens="30...31" nucleo="trabalho" sintagma="O trabalho" Categoria="EN_ORG/EMPR" sentenca="3">
+<word_30 token="O" lemma="o" pos="art" features="M=S" ></word_30>
+<word_31 token="trabalho" lemma="trabalho" pos="n" features="M=S" ></word_31>
+</sn>
+<sn id="12" tokens="48...49" nucleo="missão" sintagma="a missão" Categoria="EN_ORG/EMPR" sentenca="3">
+<word_48 token="a" lemma="o" pos="art" features="F=S" ></word_48>
+<word_49 token="missão" lemma="missão" pos="n" features="F=S" ></word_49>
+</sn>
+<sn id="22" tokens="92...93" nucleo="ISS" sintagma="a ISS" Categoria="EN_ORG/EMPR" sentenca="5">
+<word_92 token="a" lemma="o" pos="art" features="F=S" ></word_92>
+<word_93 token="ISS" lemma="" pos="prop" features="F=S" ></word_93>
+</sn>
+<sn id="23" tokens="95...95" nucleo="Estação_Espacial_Internacional" sintagma="Estação Espacial Internacional" Categoria="EN_ORG/EMPR" sentenca="5">
+<word_95 token="Estação_Espacial_Internacional" lemma="" pos="prop" features="F=S" ></word_95>
+</sn>
+<sn id="26" tokens="111...112" nucleo="espaço" sintagma="o espaço" Categoria="EN_ORG/EMPR" sentenca="6">
+<word_111 token="o" lemma="o" pos="art" features="M=S" ></word_111>
+<word_112 token="espaço" lemma="espaço" pos="n" features="M=S" ></word_112>
+</sn>
+<sn id="27" tokens="116...116" nucleo="terra" sintagma="terra" Categoria="EN_ORG/EMPR" sentenca="6">
+<word_116 token="terra" lemma="terra" pos="n" features="F=S" ></word_116>
+</sn>
+<sn id="32" tokens="141...142" nucleo="Terra" sintagma="a Terra" Categoria="EN_ORG/EMPR" sentenca="7">
+<word_141 token="a" lemma="o" pos="art" features="F=S" ></word_141>
+<word_142 token="Terra" lemma="terra" pos="n" features="F=S" ></word_142>
+</sn>
+<sn id="34" tokens="146...148" nucleo="sistema" sintagma="o novo sistema" Categoria="EN_ORG/EMPR" sentenca="8">
+<word_146 token="o" lemma="o" pos="art" features="M=S" ></word_146>
+<word_147 token="novo" lemma="novo" pos="adj" features="M=S" ></word_147>
+<word_148 token="sistema" lemma="sistema" pos="n" features="M=S" ></word_148>
+</sn>
+<sn id="36" tokens="152...153" nucleo="nave" sintagma="a nave" Categoria="EN_ORG/EMPR" sentenca="8">
+<word_152 token="a" lemma="o" pos="art" features="F=S" ></word_152>
+<word_153 token="nave" lemma="nave" pos="n" features="F=S" ></word_153>
+</sn>
+<sn id="38" tokens="161...162" nucleo="espaço" sintagma="o espaço" Categoria="EN_ORG/EMPR" sentenca="8">
+<word_161 token="o" lemma="o" pos="art" features="M=S" ></word_161>
+<word_162 token="espaço" lemma="espaço" pos="n" features="M=S" ></word_162>
+</sn>
+<sn id="44" tokens="194...195" nucleo="programa" sintagma="o programa" Categoria="EN_ORG/EMPR" sentenca="9">
+<word_194 token="o" lemma="o" pos="art" features="M=S" ></word_194>
+<word_195 token="programa" lemma="programa" pos="n" features="M=S" ></word_195>
+</sn>
+<sn id="50" tokens="214...215" nucleo="atividade" sintagma=" atividade" Categoria="EN_ORG/EMPR" sentenca="10">
+<word_215 token="atividade" lemma="atividade, ativo" pos="n" features="F=S" ></word_215>
+</sn>
+<sn id="69" tokens="290...291" nucleo="missão" sintagma="a missão" Categoria="EN_ORG/EMPR" sentenca="12">
+<word_290 token="a" lemma="o" pos="art" features="F=S" ></word_290>
+<word_291 token="missão" lemma="missão" pos="n" features="F=S" ></word_291>
+</sn>
+<sn id="70" tokens="295...296" nucleo="trabalhos" sintagma="os trabalhos" Categoria="EN_ORG/EMPR" sentenca="13">
+<word_295 token="os" lemma="o" pos="art" features="M=P" ></word_295>
+<word_296 token="trabalhos" lemma="trabalho" pos="n" features="M=P" ></word_296>
+</sn>
+<sn id="76" tokens="317...318" nucleo="ISS" sintagma="a ISS" Categoria="EN_ORG/EMPR" sentenca="14">
+<word_317 token="a" lemma="o" pos="art" features="F=S" ></word_317>
+<word_318 token="ISS" lemma="" pos="prop" features="F=S" ></word_318>
+</sn>
+<sn id="77" tokens="320...321" nucleo="estação" sintagma="A estação" Categoria="EN_ORG/EMPR" sentenca="15">
+<word_320 token="A" lemma="o" pos="art" features="F=S" ></word_320>
+<word_321 token="estação" lemma="estação" pos="n" features="F=S" ></word_321>
+</sn>
+<sn id="78" tokens="325...327" nucleo="vez" sintagma="a primeira vez" Categoria="EN_ORG/EMPR" sentenca="15">
+<word_325 token="a" lemma="o" pos="art" features="F=S" ></word_325>
+<word_326 token="primeira" lemma="" pos="adj" features="F=S" ></word_326>
+<word_327 token="vez" lemma="vez" pos="n" features="F=S" ></word_327>
+</sn>
+<sn id="79" tokens="329...330" nucleo="anos" sintagma="três anos" Categoria="EN_ORG/EMPR" sentenca="15">
+<word_329 token="três" lemma="três" pos="num" features="M=P" ></word_329>
+<word_330 token="anos" lemma="ano" pos="n" features="M=P" ></word_330>
+</sn>
+<sn id="83" tokens="346...347" nucleo="ISS" sintagma="a ISS" Categoria="EN_ORG/EMPR" sentenca="16">
+<word_346 token="a" lemma="o" pos="art" features="F=S" ></word_346>
+<word_347 token="ISS" lemma="" pos="prop" features="F=S" ></word_347>
+</sn>
+<sn id="84" tokens="349...350" nucleo="espaço" sintagma="o espaço" Categoria="EN_ORG/EMPR" sentenca="16">
+<word_349 token="o" lemma="o" pos="art" features="M=S" ></word_349>
+<word_350 token="espaço" lemma="espaço" pos="n" features="M=S" ></word_350>
+</sn>
+<sn id="89" tokens="366...367" nucleo="estação" sintagma="a estação" Categoria="EN_ORG/EMPR" sentenca="17">
+<word_366 token="a" lemma="o" pos="art" features="F=S" ></word_366>
+<word_367 token="estação" lemma="estação" pos="n" features="F=S" ></word_367>
+</sn>
+<sn id="96" tokens="399...400" nucleo="estação" sintagma="a estação" Categoria="EN_ORG/EMPR" sentenca="19">
+<word_399 token="a" lemma="o" pos="art" features="F=S" ></word_399>
+<word_400 token="estação" lemma="estação" pos="n" features="F=S" ></word_400>
+</sn>
+<sn id="102" tokens="419...420" nucleo="nave" sintagma="a nave" Categoria="EN_ORG/EMPR" sentenca="20">
+<word_419 token="a" lemma="o" pos="art" features="F=S" ></word_419>
+<word_420 token="nave" lemma="nave" pos="n" features="F=S" ></word_420>
+</sn>
+<sn id="106" tokens="434...435" nucleo="Terra" sintagma="a Terra" Categoria="EN_ORG/EMPR" sentenca="21">
+<word_434 token="a" lemma="o" pos="art" features="F=S" ></word_434>
+<word_435 token="Terra" lemma="terra" pos="n" features="F=S" ></word_435>
+</sn>
+<sn id="119" tokens="476...477" nucleo="ISS" sintagma="a ISS" Categoria="EN_ORG/EMPR" sentenca="23">
+<word_476 token="a" lemma="o" pos="art" features="F=S" ></word_476>
+<word_477 token="ISS" lemma="" pos="prop" features="F=S" ></word_477>
+</sn>
+<sn id="134" tokens="548...549" nucleo="espaço" sintagma="o espaço" Categoria="EN_ORG/EMPR" sentenca="26">
+<word_548 token="o" lemma="o" pos="art" features="M=S" ></word_548>
+<word_549 token="espaço" lemma="espaço" pos="n" features="M=S" ></word_549>
+</sn>
+</Cadeia_70>
+
+<Cadeia_91> 
+<sn id="71" tokens="300...300" nucleo="Soichi_Noguchi" sintagma="Soichi Noguchi" Categoria="--" sentenca="13">
+<word_300 token="Soichi_Noguchi" lemma="" pos="prop" features="M=S" ></word_300>
+</sn>
+<sn id="91" tokens="382...382" nucleo="Noguchi" sintagma="Noguchi" Categoria="--" sentenca="18">
+<word_382 token="Noguchi" lemma="" pos="prop" features="M=S" ></word_382>
+</sn>
+</Cadeia_91>
+
+<Cadeia_98> 
+<sn id="6" tokens="23...23" nucleo="reparos" sintagma="reparos" Categoria="--" sentenca="2">
+<word_23 token="reparos" lemma="reparo" pos="n" features="M=P" ></word_23>
+</sn>
+<sn id="98" tokens="405...405" nucleo="reparo" sintagma="reparo" Categoria="--" sentenca="20">
+<word_405 token="reparo" lemma="reparo" pos="n" features="M=S" ></word_405>
+</sn>
+</Cadeia_98>
+
+<Cadeia_99> 
+<sn id="9" tokens="36...38" nucleo="astronauta" sintagma="o astronauta americano" Categoria="EN_SER" sentenca="3">
+<word_36 token="o" lemma="o" pos="art" features="M=S" ></word_36>
+<word_37 token="astronauta" lemma="astronauta" pos="n" features="M=S" ></word_37>
+<word_38 token="americano" lemma="americano" pos="adj" features="M=S" ></word_38>
+</sn>
+<sn id="10" tokens="39...39" nucleo="Stephen_Robinson" sintagma="Stephen Robinson" Categoria="EN_SER" sentenca="3">
+<word_39 token="Stephen_Robinson" lemma="" pos="prop" features="M=S" ></word_39>
+</sn>
+<sn id="73" tokens="308...308" nucleo="Robinson" sintagma="Robinson" Categoria="EN_SER" sentenca="13">
+<word_308 token="Robinson" lemma="Robinson" pos="prop" features="-" ></word_308>
+</sn>
+<sn id="90" tokens="380...380" nucleo="Robinson" sintagma="Robinson" Categoria="EN_SER" sentenca="18">
+<word_380 token="Robinson" lemma="Robinson" pos="prop" features="-" ></word_380>
+</sn>
+<sn id="99" tokens="410...410" nucleo="Robinson" sintagma="Robinson" Categoria="EN_SER" sentenca="20">
+<word_410 token="Robinson" lemma="Robinson" pos="prop" features="-" ></word_410>
+</sn>
+</Cadeia_99>
+
+<Cadeia_105> 
+<sn id="5" tokens="19...20" nucleo="Discovery" sintagma="o Discovery" Categoria="--" sentenca="2">
+<word_19 token="o" lemma="o" pos="art" features="M=S" ></word_19>
+<word_20 token="Discovery" lemma="" pos="prop" features="M=S" ></word_20>
+</sn>
+<sn id="24" tokens="99...100" nucleo="Discovery" sintagma="o Discovery" Categoria="--" sentenca="5">
+<word_99 token="o" lemma="o" pos="art" features="M=S" ></word_99>
+<word_100 token="Discovery" lemma="" pos="prop" features="M=S" ></word_100>
+</sn>
+<sn id="105" tokens="430...430" nucleo="Discovery" sintagma="Discovery" Categoria="--" sentenca="21">
+<word_430 token="Discovery" lemma="" pos="prop" features="M=S" ></word_430>
+</sn>
+</Cadeia_105>
+
+<Cadeia_114> 
+<sn id="61" tokens="255...255" nucleo="problema" sintagma="problema" Categoria="--" sentenca="11">
+<word_255 token="problema" lemma="problema" pos="n" features="M=S" ></word_255>
+</sn>
+<sn id="114" tokens="460...461" nucleo="problemas" sintagma="os problemas" Categoria="--" sentenca="23">
+<word_460 token="os" lemma="o" pos="art" features="M=P" ></word_460>
+<word_461 token="problemas" lemma="problema" pos="n" features="M=P" ></word_461>
+</sn>
+</Cadeia_114>
+
+<Cadeia_115> 
+<sn id="58" tokens="246...247" nucleo="espuma" sintagma="espuma sólida" Categoria="--" sentenca="11">
+<word_246 token="espuma" lemma="espuma" pos="n" features="F=S" ></word_246>
+<word_247 token="sólida" lemma="sólido" pos="adj" features="F=S" ></word_247>
+</sn>
+<sn id="115" tokens="463...464" nucleo="espuma" sintagma="a espuma" Categoria="--" sentenca="23">
+<word_463 token="a" lemma="o" pos="art" features="F=S" ></word_463>
+<word_464 token="espuma" lemma="espuma" pos="n" features="F=S" ></word_464>
+</sn>
+</Cadeia_115>
+
+<Cadeia_118> 
+<sn id="87" tokens="362...363" nucleo="construção" sintagma="construção e" Categoria="--" sentenca="17">
+<word_362 token="construção" lemma="construção" pos="n" features="F=S" ></word_362>
+<word_363 token="e" lemma="e" pos="conj-c" features="-" ></word_363>
+</sn>
+<sn id="117" tokens="470...471" nucleo="projeto" sintagma="o projeto" Categoria="--" sentenca="23">
+<word_470 token="o" lemma="o" pos="art" features="M=S" ></word_470>
+<word_471 token="projeto" lemma="projeto" pos="n" features="M=S" ></word_471>
+</sn>
+<sn id="118" tokens="473...474" nucleo="construção" sintagma="a construção" Categoria="--" sentenca="23">
+<word_473 token="a" lemma="o" pos="art" features="F=S" ></word_473>
+<word_474 token="construção" lemma="construção" pos="n" features="F=S" ></word_474>
+</sn>
+</Cadeia_118>
+
+<Cadeia_124> 
+<sn id="18" tokens="73...74" nucleo="ônibus" sintagma="o ônibus" Categoria="--" sentenca="4">
+<word_73 token="o" lemma="o" pos="art" features="M=S" ></word_73>
+<word_74 token="ônibus" lemma="ônibus" pos="n" features="M=S" ></word_74>
+</sn>
+<sn id="30" tokens="132...133" nucleo="ônibus" sintagma="ônibus espaciais" Categoria="--" sentenca="7">
+<word_132 token="ônibus" lemma="ônibus" pos="n" features="M=S" ></word_132>
+<word_133 token="espaciais" lemma="espacial" pos="adj" features="M=P" ></word_133>
+</sn>
+<sn id="45" tokens="197...199" nucleo="ônibus" sintagma="o ônibus espacial" Categoria="--" sentenca="9">
+<word_197 token="o" lemma="o" pos="art" features="M=S" ></word_197>
+<word_198 token="ônibus" lemma="ônibus" pos="n" features="M=S" ></word_198>
+<word_199 token="espacial" lemma="espacial" pos="adj" features="M=S" ></word_199>
+</sn>
+<sn id="104" tokens="427...430" nucleo="ônibus" sintagma="o ônibus espacial Discovery" Categoria="--" sentenca="21">
+<word_427 token="o" lemma="o" pos="art" features="M=S" ></word_427>
+<word_428 token="ônibus" lemma="ônibus" pos="n" features="M=S" ></word_428>
+<word_429 token="espacial" lemma="espacial" pos="adj" features="M=S" ></word_429>
+<word_430 token="Discovery" lemma="" pos="prop" features="M=S" ></word_430>
+</sn>
+<sn id="109" tokens="443...443" nucleo="ônibus" sintagma="ônibus" Categoria="--" sentenca="22">
+<word_443 token="ônibus" lemma="ônibus" pos="n" features="M=S" ></word_443>
+</sn>
+<sn id="124" tokens="496...497" nucleo="ônibus" sintagma="os ônibus" Categoria="--" sentenca="24">
+<word_496 token="os" lemma="o" pos="art" features="M=P" ></word_496>
+<word_497 token="ônibus" lemma="ônibus" pos="n" features="M=P" ></word_497>
+</sn>
+</Cadeia_124>
+
+<Cadeia_128> 
+<sn id="3" tokens="13...14" nucleo="Nasa" sintagma="a Nasa" Categoria="--" sentenca="1">
+<word_13 token="a" lemma="o" pos="art" features="F=S" ></word_13>
+<word_14 token="Nasa" lemma="" pos="prop" features="F=S" ></word_14>
+</sn>
+<sn id="65" tokens="269...270" nucleo="Nasa" sintagma="a Nasa" Categoria="--" sentenca="11">
+<word_269 token="a" lemma="o" pos="art" features="F=S" ></word_269>
+<word_270 token="Nasa" lemma="" pos="prop" features="F=S" ></word_270>
+</sn>
+<sn id="110" tokens="446...447" nucleo="Nasa" sintagma="a Nasa" Categoria="--" sentenca="23">
+<word_446 token="a" lemma="o" pos="art" features="F=S" ></word_446>
+<word_447 token="Nasa" lemma="" pos="prop" features="F=S" ></word_447>
+</sn>
+<sn id="128" tokens="517...518" nucleo="Nasa" sintagma="a Nasa" Categoria="--" sentenca="26">
+<word_517 token="a" lemma="o" pos="art" features="F=S" ></word_517>
+<word_518 token="Nasa" lemma="" pos="prop" features="F=S" ></word_518>
+</sn>
+</Cadeia_128>
+
+<Cadeia_131> 
+<sn id="131" tokens="530...532" nucleo="ESA" sintagma="a ESA (" Categoria="EN_ORG/EMPR" sentenca="26">
+<word_530 token="a" lemma="o" pos="art" features="F=S" ></word_530>
+<word_531 token="ESA" lemma="ESA" pos="prop" features="F=S" ></word_531>
+<word_532 token="(" lemma="(" pos="(" features="-" ></word_532>
+</sn>
+<sn id="132" tokens="533...533" nucleo="Agência_Espacial_Européia" sintagma="Agência Espacial Européia" Categoria="EN_ORG/EMPR" sentenca="26">
+<word_533 token="Agência_Espacial_Européia" lemma="" pos="prop" features="F=S" ></word_533>
+</sn>
+</Cadeia_131>
+
+</Cadeias><Mencoes_Unicas><sn id="0" tokens="1...3" nucleo="entrevista" sintagma="uma entrevista coletiva" sentenca="1">
+<word_1 token="uma" lemma="um" pos="art" features="F=S" ></word_1>
+<word_2 token="entrevista" lemma="entrevista" pos="n" features="F=S" ></word_2>
+<word_3 token="coletiva" lemma="coletivo" pos="adj" features="F=S" ></word_3>
+</sn>
+<sn id="4" tokens="16...17" nucleo="veredicto" sintagma="o veredicto" sentenca="1">
+<word_16 token="o" lemma="o" pos="art" features="M=S" ></word_16>
+<word_17 token="veredicto" lemma="veredicto" pos="n" features="M=S" ></word_17>
+</sn>
+<sn id="7" tokens="28...28" nucleo="casa" sintagma="casa" sentenca="2">
+<word_28 token="casa" lemma="casa" pos="n" features="F=S" ></word_28>
+</sn>
+<sn id="11" tokens="42...45" nucleo="caminhada" sintagma="a terceira caminhada espacial" sentenca="3">
+<word_42 token="a" lemma="o" pos="art" features="F=S" ></word_42>
+<word_43 token="terceira" lemma="" pos="adj" features="F=S" ></word_43>
+<word_44 token="caminhada" lemma="caminhada" pos="n" features="F=S" ></word_44>
+<word_45 token="espacial" lemma="espacial" pos="adj" features="F=S" ></word_45>
+</sn>
+<sn id="13" tokens="51...52" nucleo="Sua" sintagma="Sua tarefa" sentenca="4">
+<word_51 token="Sua" lemma="sua" pos="pron-det" features="F=S" ></word_51>
+<word_52 token="tarefa" lemma="tarefa" pos="n" features="F=S" ></word_52>
+</sn>
+<sn id="15" tokens="58...59" nucleo="material" sintagma="o material" sentenca="4">
+<word_58 token="o" lemma="o" pos="art" features="M=S" ></word_58>
+<word_59 token="material" lemma="material" pos="n" features="M=S" ></word_59>
+</sn>
+<sn id="16" tokens="66...68" nucleo="telhas" sintagma="as telhas térmicas" sentenca="4">
+<word_66 token="as" lemma="o" pos="art" features="F=P" ></word_66>
+<word_67 token="telhas" lemma="telha" pos="n" features="F=P" ></word_67>
+<word_68 token="térmicas" lemma="térmico" pos="adj" features="F=P" ></word_68>
+</sn>
+<sn id="17" tokens="70...71" nucleo="barriga" sintagma="a barriga" sentenca="4">
+<word_70 token="a" lemma="o" pos="art" features="F=S" ></word_70>
+<word_71 token="barriga" lemma="barriga" pos="n" features="F=S" ></word_71>
+</sn>
+<sn id="19" tokens="80...81" nucleo="tripulante" sintagma="o tripulante" sentenca="5">
+<word_80 token="o" lemma="o" pos="art" features="M=S" ></word_80>
+<word_81 token="tripulante" lemma="tripulante" pos="n" features="M=S" ></word_81>
+</sn>
+<sn id="21" tokens="88...90" nucleo="braço" sintagma="o braço robótico" sentenca="5">
+<word_88 token="o" lemma="o" pos="art" features="M=S" ></word_88>
+<word_89 token="braço" lemma="braço" pos="n" features="M=S" ></word_89>
+<word_90 token="robótico" lemma="" pos="adj" features="M=S" ></word_90>
+</sn>
+<sn id="25" tokens="105...106" nucleo="Esse" sintagma="Esse procedimento" sentenca="6">
+<word_105 token="Esse" lemma="esse" pos="pron-det" features="M=S" ></word_105>
+<word_106 token="procedimento" lemma="proceder" pos="n" features="M=S" ></word_106>
+</sn>
+<sn id="29" tokens="125...126" nucleo="total" sintagma="o total" sentenca="7">
+<word_125 token="o" lemma="o" pos="art" features="M=S" ></word_125>
+<word_126 token="total" lemma="total" pos="n" features="M=S" ></word_126>
+</sn>
+<sn id="31" tokens="138...139" nucleo="seu" sintagma="seu retorno" sentenca="7">
+<word_138 token="seu" lemma="seu" pos="pron-det" features="M=S" ></word_138>
+<word_139 token="retorno" lemma="retorno" pos="n" features="M=S" ></word_139>
+</sn>
+<sn id="33" tokens="144...144" nucleo="Graças" sintagma="Graças" sentenca="8">
+<word_144 token="Graças" lemma="" pos="prop" features="F=P" ></word_144>
+</sn>
+<sn id="35" tokens="150...150" nucleo="inspeção" sintagma="inspeção" sentenca="8">
+<word_150 token="inspeção" lemma="inspeção" pos="n" features="F=S" ></word_150>
+</sn>
+<sn id="37" tokens="158...159" nucleo="fenômeno" sintagma="o fenômeno" sentenca="8">
+<word_158 token="o" lemma="o" pos="art" features="M=S" ></word_158>
+<word_159 token="fenômeno" lemma="fenômeno" pos="n" features="M=S" ></word_159>
+</sn>
+<sn id="39" tokens="165...169" nucleo="conclusão" sintagma="A conclusão da equipe" sentenca="9">
+<word_165 token="A" lemma="o" pos="art" features="F=S" ></word_165>
+<word_166 token="conclusão" lemma="conclusão" pos="n" features="F=S" ></word_166>
+<word_167 token="de" lemma="de" pos="prp" features="-" ></word_167>
+<word_168 token="a" lemma="o" pos="art" features="F=S" ></word_168>
+<word_169 token="equipe" lemma="" pos="n" features="F=S" ></word_169>
+</sn>
+<sn id="40" tokens="168...169" nucleo="equipe" sintagma="a equipe" sentenca="9">
+<word_168 token="a" lemma="o" pos="art" features="F=S" ></word_168>
+<word_169 token="equipe" lemma="" pos="n" features="F=S" ></word_169>
+</sn>
+<sn id="41" tokens="174...177" nucleo="incerteza" sintagma="grande incerteza sobre o" sentenca="9">
+<word_174 token="grande" lemma="grande" pos="adj" features="F=S" ></word_174>
+<word_175 token="incerteza" lemma="incerteza" pos="n" features="F=S" ></word_175>
+<word_176 token="sobre" lemma="sobre" pos="prp" features="-" ></word_176>
+<word_177 token="o" lemma="" pos="pron-det" features="M=S" ></word_177>
+</sn>
+<sn id="42" tokens="190...199" nucleo="Wayne_Hale" sintagma="Wayne Hale , vice-diretor do programa do ônibus espacial" sentenca="9">
+<word_190 token="Wayne_Hale" lemma="" pos="prop" features="M=S" ></word_190>
+<word_191 token="," lemma="" pos="," features="-" ></word_191>
+<word_192 token="vice-diretor" lemma="diretor" pos="n" features="M=S" ></word_192>
+<word_193 token="de" lemma="de" pos="prp" features="-" ></word_193>
+<word_194 token="o" lemma="o" pos="art" features="M=S" ></word_194>
+<word_195 token="programa" lemma="programa" pos="n" features="M=S" ></word_195>
+<word_196 token="de" lemma="de" pos="prp" features="-" ></word_196>
+<word_197 token="o" lemma="o" pos="art" features="M=S" ></word_197>
+<word_198 token="ônibus" lemma="ônibus" pos="n" features="M=S" ></word_198>
+<word_199 token="espacial" lemma="espacial" pos="adj" features="M=S" ></word_199>
+</sn>
+<sn id="46" tokens="203...204" nucleo="essas" sintagma="essas incertezas" sentenca="10">
+<word_203 token="essas" lemma="esse" pos="pron-det" features="F=P" ></word_203>
+<word_204 token="incertezas" lemma="incerteza" pos="n" features="F=P" ></word_204>
+</sn>
+<sn id="47" tokens="207...207" nucleo="que" sintagma="que" sentenca="10">
+<word_207 token="que" lemma="que" pos="pron-indp" features="M=S" ></word_207>
+</sn>
+<sn id="48" tokens="210...210" nucleo="EVA" sintagma="EVA" sentenca="10">
+<word_210 token="EVA" lemma="" pos="prop" features="M=S" ></word_210>
+</sn>
+<sn id="49" tokens="212...212" nucleo="sigla" sintagma="sigla" sentenca="10">
+<word_212 token="sigla" lemma="sigla" pos="n" features="F=S" ></word_212>
+</sn>
+<sn id="51" tokens="216...221" nucleo="extra-veicular" sintagma="extra-veicular  , as caminhadas espaciais" sentenca="10">
+<word_216 token="extra-veicular" lemma="" pos="n" features="F=S" ></word_216>
+<word_218 token="," lemma="" pos="," features="-" ></word_218>
+<word_219 token="as" lemma="o" pos="art" features="F=P" ></word_219>
+<word_220 token="caminhadas" lemma="" pos="n" features="F=P" ></word_220>
+<word_221 token="espaciais" lemma="espacial" pos="adj" features="F=P" ></word_221>
+</sn>
+<sn id="52" tokens="219...221" nucleo="caminhadas" sintagma="as caminhadas espaciais" sentenca="10">
+<word_219 token="as" lemma="o" pos="art" features="F=P" ></word_219>
+<word_220 token="caminhadas" lemma="" pos="n" features="F=P" ></word_220>
+<word_221 token="espaciais" lemma="espacial" pos="adj" features="F=P" ></word_221>
+</sn>
+<sn id="53" tokens="225...227" nucleo="decisão" sintagma="uma decisão fácil" sentenca="10">
+<word_225 token="uma" lemma="um" pos="art" features="F=S" ></word_225>
+<word_226 token="decisão" lemma="decisão" pos="n" features="F=S" ></word_226>
+<word_227 token="fácil" lemma="fácil" pos="adj" features="F=S" ></word_227>
+</sn>
+<sn id="54" tokens="232...236" nucleo="aparecimento" sintagma="O aparecimento das protuberâncias" sentenca="11">
+<word_232 token="O" lemma="o" pos="art" features="M=S" ></word_232>
+<word_233 token="aparecimento" lemma="aparecer" pos="n" features="M=S" ></word_233>
+<word_234 token="de" lemma="de" pos="prp" features="-" ></word_234>
+<word_235 token="as" lemma="o" pos="art" features="F=P" ></word_235>
+<word_236 token="protuberâncias" lemma="protuberância" pos="n" features="F=P" ></word_236>
+</sn>
+<sn id="56" tokens="239...239" nucleo="nada" sintagma="nada" sentenca="11">
+<word_239 token="nada" lemma="nada" pos="pron-indp" features="M=S" ></word_239>
+</sn>
+<sn id="57" tokens="243...244" nucleo="desprendimento" sintagma="o desprendimento" sentenca="11">
+<word_243 token="o" lemma="o" pos="art" features="M=S" ></word_243>
+<word_244 token="desprendimento" lemma="desprender" pos="n" features="M=S" ></word_244>
+</sn>
+<sn id="59" tokens="249...251" nucleo="tanque" sintagma="o tanque externo" sentenca="11">
+<word_249 token="o" lemma="o" pos="art" features="M=S" ></word_249>
+<word_250 token="tanque" lemma="tanque" pos="n" features="M=S" ></word_250>
+<word_251 token="externo" lemma="externo" pos="adj" features="M=S" ></word_251>
+</sn>
+<sn id="60" tokens="253...254" nucleo="decolagem" sintagma="a decolagem" sentenca="11">
+<word_253 token="a" lemma="o" pos="art" features="F=S" ></word_253>
+<word_254 token="decolagem" lemma="" pos="n" features="F=S" ></word_254>
+</sn>
+<sn id="62" tokens="256...256" nucleo="que" sintagma="que" sentenca="11">
+<word_256 token="que" lemma="que" pos="pron-indp" features="F=S" ></word_256>
+</sn>
+<sn id="63" tokens="258...268" nucleo="destruição" sintagma="a destruição do Columbia , em 2003 , e que" sentenca="11">
+<word_258 token="a" lemma="o" pos="art" features="F=S" ></word_258>
+<word_259 token="destruição" lemma="destruir" pos="n" features="F=S" ></word_259>
+<word_260 token="de" lemma="de" pos="prp" features="-" ></word_260>
+<word_261 token="o" lemma="o" pos="art" features="M=S" ></word_261>
+<word_262 token="Columbia" lemma="" pos="prop" features="M=S" ></word_262>
+<word_263 token="," lemma="" pos="," features="-" ></word_263>
+<word_264 token="em" lemma="em" pos="prp" features="-" ></word_264>
+<word_265 token="2003" lemma="" pos="num" features="M=S" ></word_265>
+<word_266 token="," lemma="" pos="," features="-" ></word_266>
+<word_267 token="e" lemma="e" pos="conj-c" features="-" ></word_267>
+<word_256 token="que" lemma="que" pos="pron-indp" features="F=S" ></word_256>
+</sn>
+<sn id="64" tokens="261...262" nucleo="Columbia" sintagma="o Columbia" sentenca="11">
+<word_261 token="o" lemma="o" pos="art" features="M=S" ></word_261>
+<word_262 token="Columbia" lemma="" pos="prop" features="M=S" ></word_262>
+</sn>
+<sn id="66" tokens="277...278" nucleo="Atlantis" sintagma="o Atlantis" sentenca="11">
+<word_277 token="o" lemma="o" pos="art" features="M=S" ></word_277>
+<word_278 token="Atlantis" lemma="" pos="prop" features="M=S" ></word_278>
+</sn>
+<sn id="67" tokens="282...283" nucleo="manhã" sintagma="a manhã" sentenca="12">
+<word_282 token="a" lemma="o" pos="art" features="F=S" ></word_282>
+<word_283 token="manhã" lemma="manhã" pos="n" features="F=S" ></word_283>
+</sn>
+<sn id="68" tokens="285...291" nucleo="caminhada" sintagma="a segunda caminhada espacial da missão" sentenca="12">
+<word_285 token="a" lemma="o" pos="art" features="F=S" ></word_285>
+<word_286 token="segunda" lemma="" pos="adj" features="F=S" ></word_286>
+<word_287 token="caminhada" lemma="caminhada" pos="n" features="F=S" ></word_287>
+<word_288 token="espacial" lemma="espacial" pos="adj" features="F=S" ></word_288>
+<word_289 token="de" lemma="de" pos="prp" features="-" ></word_289>
+<word_290 token="a" lemma="o" pos="art" features="F=S" ></word_290>
+<word_291 token="missão" lemma="missão" pos="n" features="F=S" ></word_291>
+</sn>
+<sn id="72" tokens="303...304" nucleo="Japão" sintagma="o Japão" sentenca="13">
+<word_303 token="o" lemma="o" pos="art" features="M=S" ></word_303>
+<word_304 token="Japão" lemma="Japão" pos="prop" features="M=S" ></word_304>
+</sn>
+<sn id="74" tokens="310...311" nucleo="dupla" sintagma="A dupla" sentenca="14">
+<word_310 token="A" lemma="o" pos="art" features="F=S" ></word_310>
+<word_311 token="dupla" lemma="duplo" pos="n" features="F=S" ></word_311>
+</sn>
+<sn id="75" tokens="313...318" nucleo="giroscópio" sintagma="um giroscópio defeituoso da ISS" sentenca="14">
+<word_313 token="um" lemma="um" pos="art" features="M=S" ></word_313>
+<word_314 token="giroscópio" lemma="giroscópio" pos="n" features="M=S" ></word_314>
+<word_315 token="defeituoso" lemma="defeituoso" pos="adj" features="M=S" ></word_315>
+<word_316 token="de" lemma="de" pos="prp" features="-" ></word_316>
+<word_317 token="a" lemma="o" pos="art" features="F=S" ></word_317>
+<word_318 token="ISS" lemma="" pos="prop" features="F=S" ></word_318>
+</sn>
+<sn id="80" tokens="332...336" nucleo="todos" sintagma="todos os seus quatro giroscópios" sentenca="15">
+<word_332 token="todos" lemma="todo" pos="pron-det" features="M=P" ></word_332>
+<word_333 token="os" lemma="o" pos="art" features="M=P" ></word_333>
+<word_334 token="seus" lemma="seu" pos="pron-det" features="M=P" ></word_334>
+<word_335 token="quatro" lemma="quatro" pos="num" features="M=P" ></word_335>
+<word_336 token="giroscópios" lemma="giroscópio" pos="n" features="M=P" ></word_336>
+</sn>
+<sn id="81" tokens="339...339" nucleo="Eles" sintagma="Eles" sentenca="16">
+<word_339 token="Eles" lemma="ele" pos="pron-pers" features="M=3P=NOM" ></word_339>
+</sn>
+<sn id="82" tokens="343...347" nucleo="orientação" sintagma="a orientação da ISS" sentenca="16">
+<word_343 token="a" lemma="o" pos="art" features="F=S" ></word_343>
+<word_344 token="orientação" lemma="orientação, orientar" pos="n" features="F=S" ></word_344>
+<word_345 token="de" lemma="de" pos="prp" features="-" ></word_345>
+<word_346 token="a" lemma="o" pos="art" features="F=S" ></word_346>
+<word_347 token="ISS" lemma="" pos="prop" features="F=S" ></word_347>
+</sn>
+<sn id="86" tokens="359...359" nucleo="conexão" sintagma="conexão" sentenca="17">
+<word_359 token="conexão" lemma="conexão" pos="n" features="F=S" ></word_359>
+</sn>
+<sn id="88" tokens="364...364" nucleo="manutenção" sintagma="manutenção" sentenca="17">
+<word_364 token="manutenção" lemma="manutenção" pos="n" features="F=S" ></word_364>
+</sn>
+<sn id="92" tokens="384...387" nucleo="tarefa" sintagma="A principal tarefa agendada" sentenca="19">
+<word_384 token="A" lemma="o" pos="art" features="F=S" ></word_384>
+<word_385 token="principal" lemma="principal" pos="adj" features="F=S" ></word_385>
+<word_386 token="tarefa" lemma="tarefa" pos="n" features="F=S" ></word_386>
+<word_387 token="agendada" lemma="agendar" pos="v-pcp" features="F=S" ></word_387>
+</sn>
+<sn id="93" tokens="390...400" nucleo="plataforma" sintagma="uma plataforma de armazenamento do lado de fora da a estação" sentenca="19">
+<word_390 token="uma" lemma="um" pos="art" features="F=S" ></word_390>
+<word_391 token="plataforma" lemma="plataforma" pos="n" features="F=S" ></word_391>
+<word_392 token="de" lemma="de" pos="prp" features="-" ></word_392>
+<word_393 token="armazenamento" lemma="armazenar" pos="n" features="M=S" ></word_393>
+<word_394 token="de" lemma="de" pos="prp" features="-" ></word_394>
+<word_395 token="o" lemma="o" pos="art" features="M=S" ></word_395>
+<word_396 token="lado" lemma="lado" pos="n" features="M=S" ></word_396>
+<word_397 token="de" lemma="de" pos="prp" features="-" ></word_397>
+<word_398 token="fora_da" lemma="" pos="prp" features="-" ></word_398>
+<word_399 token="a" lemma="o" pos="art" features="F=S" ></word_399>
+<word_400 token="estação" lemma="estação" pos="n" features="F=S" ></word_400>
+</sn>
+<sn id="94" tokens="393...393" nucleo="armazenamento" sintagma="armazenamento" sentenca="19">
+<word_393 token="armazenamento" lemma="armazenar" pos="n" features="M=S" ></word_393>
+</sn>
+<sn id="95" tokens="395...396" nucleo="lado" sintagma="o lado" sentenca="19">
+<word_395 token="o" lemma="o" pos="art" features="M=S" ></word_395>
+<word_396 token="lado" lemma="lado" pos="n" features="M=S" ></word_396>
+</sn>
+<sn id="97" tokens="402...405" nucleo="procedimento" sintagma="O procedimento de reparo" sentenca="20">
+<word_402 token="O" lemma="o" pos="art" features="M=S" ></word_402>
+<word_403 token="procedimento" lemma="proceder" pos="n" features="M=S" ></word_403>
+<word_404 token="de" lemma="de" pos="prp" features="-" ></word_404>
+<word_405 token="reparo" lemma="reparo" pos="n" features="M=S" ></word_405>
+</sn>
+<sn id="100" tokens="414...420" nucleo="risco" sintagma="risco de novos danos a a nave" sentenca="20">
+<word_414 token="risco" lemma="risco" pos="n" features="M=S" ></word_414>
+<word_415 token="de" lemma="de" pos="prp" features="-" ></word_415>
+<word_416 token="novos" lemma="novo" pos="adj" features="M=P" ></word_416>
+<word_417 token="danos" lemma="dano" pos="n" features="M=P" ></word_417>
+<word_418 token="a" lemma="a" pos="prp" features="-" ></word_418>
+<word_419 token="a" lemma="o" pos="art" features="F=S" ></word_419>
+<word_420 token="nave" lemma="nave" pos="n" features="F=S" ></word_420>
+</sn>
+<sn id="101" tokens="416...417" nucleo="danos" sintagma="novos danos" sentenca="20">
+<word_416 token="novos" lemma="novo" pos="adj" features="M=P" ></word_416>
+<word_417 token="danos" lemma="dano" pos="n" features="M=P" ></word_417>
+</sn>
+<sn id="103" tokens="423...423" nucleo="tudo" sintagma="tudo" sentenca="21">
+<word_423 token="tudo" lemma="tudo" pos="pron-indp" features="M=S" ></word_423>
+</sn>
+<sn id="107" tokens="437...439" nucleo="segunda-feira" sintagma="a próxima segunda-feira" sentenca="21">
+<word_437 token="a" lemma="o" pos="art" features="F=S" ></word_437>
+<word_438 token="próxima" lemma="próximo" pos="adj" features="F=S" ></word_438>
+<word_439 token="segunda-feira" lemma="segunda-feira" pos="n" features="F=S" ></word_439>
+</sn>
+<sn id="108" tokens="441...441" nucleo="Futuro" sintagma="Futuro" sentenca="22">
+<word_441 token="Futuro" lemma="futuro" pos="n" features="M=S" ></word_441>
+</sn>
+<sn id="111" tokens="452...453" nucleo="suas" sintagma="suas naves" sentenca="23">
+<word_452 token="suas" lemma="sua" pos="pron-det" features="F=P" ></word_452>
+<word_453 token="naves" lemma="nave" pos="n" features="F=P" ></word_453>
+</sn>
+<sn id="112" tokens="455...455" nucleo="operação" sintagma="operação" sentenca="23">
+<word_455 token="operação" lemma="operação, operar" pos="n" features="F=S" ></word_455>
+</sn>
+<sn id="113" tokens="458...458" nucleo="despeito" sintagma="despeito" sentenca="23">
+<word_458 token="despeito" lemma="despeito" pos="n" features="M=S" ></word_458>
+</sn>
+<sn id="116" tokens="466...477" nucleo="parceiros" sintagma="os parceiros internacionais no projeto da construção da ISS" sentenca="23">
+<word_466 token="os" lemma="o" pos="art" features="M=P" ></word_466>
+<word_467 token="parceiros" lemma="parceiro" pos="n" features="M=P" ></word_467>
+<word_468 token="internacionais" lemma="internacional" pos="adj" features="M=P" ></word_468>
+<word_469 token="em" lemma="em" pos="prp" features="-" ></word_469>
+<word_470 token="o" lemma="o" pos="art" features="M=S" ></word_470>
+<word_471 token="projeto" lemma="projeto" pos="n" features="M=S" ></word_471>
+<word_472 token="de" lemma="de" pos="prp" features="-" ></word_472>
+<word_473 token="a" lemma="o" pos="art" features="F=S" ></word_473>
+<word_474 token="construção" lemma="construção" pos="n" features="F=S" ></word_474>
+<word_475 token="de" lemma="de" pos="prp" features="-" ></word_475>
+<word_476 token="a" lemma="o" pos="art" features="F=S" ></word_476>
+<word_477 token="ISS" lemma="" pos="prop" features="F=S" ></word_477>
+</sn>
+<sn id="120" tokens="481...483" nucleo="módulo-laboratório" sintagma="Um módulo-laboratório japonês" sentenca="24">
+<word_481 token="Um" lemma="um" pos="art" features="M=S" ></word_481>
+<word_482 token="módulo-laboratório" lemma="" pos="n" features="M=S" ></word_482>
+<word_483 token="japonês" lemma="japonês" pos="adj" features="M=S" ></word_483>
+</sn>
+<sn id="121" tokens="486...487" nucleo="este" sintagma="este momento" sentenca="24">
+<word_486 token="este" lemma="este" pos="pron-det" features="M=S" ></word_486>
+<word_487 token="momento" lemma="momento" pos="n" features="M=S" ></word_487>
+</sn>
+<sn id="122" tokens="489...490" nucleo="Centro_Espacial_Kennedy" sintagma="o Centro Espacial Kennedy" sentenca="24">
+<word_489 token="o" lemma="o" pos="art" features="M=S" ></word_489>
+<word_490 token="Centro_Espacial_Kennedy" lemma="" pos="prop" features="M=S" ></word_490>
+</sn>
+<sn id="123" tokens="493...498" nucleo="carona" sintagma="uma carona dos ônibus para" sentenca="24">
+<word_493 token="uma" lemma="um" pos="art" features="F=S" ></word_493>
+<word_494 token="carona" lemma="" pos="n" features="F=S" ></word_494>
+<word_495 token="de" lemma="de" pos="prp" features="-" ></word_495>
+<word_496 token="os" lemma="o" pos="art" features="M=P" ></word_496>
+<word_497 token="ônibus" lemma="ônibus" pos="n" features="M=P" ></word_497>
+<word_498 token="para" lemma="para" pos="prp" features="-" ></word_498>
+</sn>
+<sn id="125" tokens="502...504" nucleo="europeu" sintagma="Um equivalente europeu" sentenca="25">
+<word_502 token="Um" lemma="um" pos="art" features="M=S" ></word_502>
+<word_503 token="equivalente" lemma="equivalente, equivaler" pos="adj" features="M=S" ></word_503>
+<word_504 token="europeu" lemma="europeu" pos="n" features="M=S" ></word_504>
+</sn>
+<sn id="126" tokens="507...508" nucleo="Alemanha" sintagma="a Alemanha" sentenca="25">
+<word_507 token="a" lemma="o" pos="art" features="F=S" ></word_507>
+<word_508 token="Alemanha" lemma="Alemanha" pos="prop" features="F=S" ></word_508>
+</sn>
+<sn id="127" tokens="511...513" nucleo="mesmo" sintagma="o mesmo fim" sentenca="25">
+<word_511 token="o" lemma="o" pos="art" features="M=S" ></word_511>
+<word_512 token="mesmo" lemma="mesmo" pos="pron-det" features="M=S" ></word_512>
+<word_513 token="fim" lemma="fim" pos="n" features="M=S" ></word_513>
+</sn>
+<sn id="129" tokens="522...524" nucleo="seus" sintagma="seus ônibus espaciais" sentenca="26">
+<word_522 token="seus" lemma="seu" pos="pron-det" features="M=P" ></word_522>
+<word_523 token="ônibus" lemma="ônibus" pos="n" features="M=P" ></word_523>
+<word_524 token="espaciais" lemma="espacial" pos="adj" features="M=P" ></word_524>
+</sn>
+<sn id="130" tokens="526...526" nucleo="mesmo" sintagma="mesmo" sentenca="26">
+<word_526 token="mesmo" lemma="mesmo" pos="pron-det" features="M=S" ></word_526>
+</sn>
+<sn id="133" tokens="542...543" nucleo="seu" sintagma="seu módulo" sentenca="26">
+<word_542 token="seu" lemma="seu" pos="pron-det" features="M=S" ></word_542>
+<word_543 token="módulo" lemma="módulo" pos="n" features="M=S" ></word_543>
+</sn>
+</Mencoes_Unicas>
+</CIENCIA_2005_28754.txt>
