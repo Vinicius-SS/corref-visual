@@ -4,8 +4,14 @@
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
             <file>file:/home/pln/NetBeansProjects/CorrefVisual/src/view/MainPanel.java</file>
+            <file>file:/home/pln/NetBeansProjects/CorrefVisual/src/model/Sintagma.java</file>
             <file>file:/home/pln/NetBeansProjects/CorrefVisual/src/ManipulaArquivos.java</file>
-            <file>file:/home/pln/NetBeansProjects/CorrefVisual/src/Leitor.java</file>
+            <file>file:/home/pln/NetBeansProjects/CorrefVisual/src/controller/GrupoController.java</file>
+            <file>file:/home/pln/NetBeansProjects/CorrefVisual/src/controller/Fachada.java</file>
+            <file>file:/home/pln/NetBeansProjects/CorrefVisual/src/controller/SintagmaController.java</file>
+            <file>file:/home/pln/NetBeansProjects/CorrefVisual/src/model/Word.java</file>
+            <file>file:/home/pln/NetBeansProjects/CorrefVisual/src/Word.java</file>
+            <file>file:/home/pln/NetBeansProjects/CorrefVisual/src/Acesso.java</file>
         </group>
     </open-files>
 </project-private>

@@ -65,7 +65,9 @@ public class ListaDeGrupoController
                 return true;
             }
 
-        addGrupo(new Grupo(s));
+        Grupo g = new Grupo();
+        addGrupo(g);
+        g.addSintagma(s);
         return false;
 
     }

@@ -10,14 +10,6 @@ public class Grupo
     private ArrayList<Sintagma> listaSintagmas;
     private final Color cor;
 
-    public Grupo(Sintagma entidade)
-    {
-        listaSintagmas = new ArrayList<>();
-        listaSintagmas.add(entidade);
-        Random r = new Random();
-        cor = new Color(r.nextInt(256),r.nextInt(256),r.nextInt(256));
-    }
-
     public Grupo(ArrayList<Sintagma> lista)
     {
         listaSintagmas = new ArrayList<>();
