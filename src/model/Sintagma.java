@@ -55,6 +55,7 @@ public class Sintagma implements Serializable
         this.paiDe = paiDe;
         this.filhoDe = filhoDe;
         this.globalID=0;
+        this.categoriaSemantica = categoriaSemantica;
     }
 
     @Override

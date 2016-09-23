@@ -13,6 +13,7 @@ public class Token
 {
     public String token;
     public int startChar;
+    public int endChar;
     
     public Token(String token, int startChar)
     {

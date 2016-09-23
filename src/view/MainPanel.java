@@ -1,22 +1,28 @@
 package view;
 
 import controller.Fachada;
-import java.awt.*;
-import java.awt.datatransfer.*;
+import java.awt.BorderLayout;
+import java.awt.Color;
+import java.awt.Component;
+import java.awt.Container;
+import java.awt.Dimension;
+import java.awt.EventQueue;
+import java.awt.Graphics;
+import java.awt.HeadlessException;
+import java.awt.datatransfer.DataFlavor;
+import java.awt.datatransfer.Transferable;
+import java.awt.datatransfer.UnsupportedFlavorException;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.KeyEvent;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.io.PrintWriter;
 import java.lang.reflect.InvocationTargetException;
-import java.lang.reflect.Method;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Collections;
 import java.util.Comparator;
-import java.util.HashMap;
 import java.util.Random;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -30,18 +36,21 @@ import javax.swing.text.*;
 import model.Grupo;
 import model.Sintagma;
 import model.Token;
+import model.Word;
+import org.jdom2.Attribute;
 import org.jdom2.input.SAXBuilder;
 import org.jdom2.Document;
 import org.jdom2.JDOMException;
+import org.jdom2.output.Format;
+import org.jdom2.output.XMLOutputter;
 
-public class MainPanel extends JPanel
+public final class MainPanel extends JPanel
 {
 
     public static int pos = 0;
     public Random cores = new Random();
     private Fachada fachada = Fachada.getInstance();
     private ArrayList<Sintagma> listaSintagma, listaOriginal;
-    private ArrayList<String> sentencas;
     private ArrayList<Color> colors;
     private ArrayList<JList> jlistas;
     private String barra, texto;
@@ -50,23 +59,16 @@ public class MainPanel extends JPanel
     private JPanel rightGroupPanel, leftPanel, upPanel;
     private JScrollPane leftGroupPanel;
     private JButton botao;
-    private JTextPane tP;
+    private JTextPane textPane;
     private JMenuBar jMenuBarMain;
     private JMenu jMenuArquivo, jMenuAjuda;
     private JMenuItem jMenuImportar, jMenuExportar;
     private TransferHandler h;
     public static int maiorSet;
-    private static String path;
     public static MainPanel m;
-    private Class leitor;
-    private Comparator<Sintagma> ordenador;
-    private JList jListSnSolitarios;
     private List<Token> listTokens;
-
-    public static void setPath(String path)
-    {
-        MainPanel.path = path;
-    }
+    private String tituloTexto;
+    private List<org.jdom2.Element> cadeias, sentencas, mencoes_unicas, tokens;
 
     private MainPanel() throws ClassNotFoundException, NoSuchMethodException
     {
@@ -79,25 +81,21 @@ public class MainPanel extends JPanel
         jMenuArquivo.setText("Arquivo");
         jMenuAjuda.setText("Ajuda");
         jMenuImportar.setText("Importar texto");
-        jMenuExportar.setText("Exportar alterações");
+        jMenuExportar.setText("Salvar alterações");
         jMenuArquivo.add(jMenuImportar);
         jMenuArquivo.add(jMenuExportar);
         jMenuBarMain.add(jMenuArquivo);
         jMenuBarMain.add(jMenuAjuda);
-        tP = new JTextPane();
-        tP.setEditable(false);
-
+        textPane = new JTextPane();
+        textPane.setEditable(false);
         barra = "/";
         jlistas = new ArrayList<>();
         colors = new ArrayList<>();
         gerarCores(10);
-
-        leitor = Class.forName("Acesso");
-
         upPanel = createHorizontalBoxPanel(150, 100);
         upPanel.add(jMenuBarMain);
-        leftPanel = createVerticalBoxPanel(this.getPreferredSize());
-        leftPanel.add(createPanelForComponent(new JScrollPane(tP), ""));
+        leftPanel = createVerticalBoxPanel(getPreferredSize());
+        leftPanel.add(createPanelForComponent(new JScrollPane(textPane), ""));
         leftGroupPanel = createVerticalScrollBoxPanel(this.getPreferredSize());
         rightGroupPanel = createVerticalBoxPanel(this.getPreferredSize());
 
@@ -117,16 +115,29 @@ public class MainPanel extends JPanel
             private void addBox()
             {
                 //TODO arrumar a categoria semântica aqui depois
-                Component component = cont.getComponent(0);
-                JPanel jp = (JPanel) component;
-                Component component2 = jp.getComponent(0);
-                Component component3 = ((JScrollPane) component2).getComponent(0);
-                Component component4 = ((JViewport) component3).getComponent(0);
-                JList jl = (JList) component4;
                 ArrayList<Sintagma> lista = new ArrayList<>();
                 JList jListSintagma = makeList(h, lista);
                 jlistas.add(jListSintagma);
                 JScrollPane jsp = new JScrollPane(jListSintagma);
+                JComboBox<String> categorias = new JComboBox();
+                for (model.CategoriasSemanticas categs
+                        : model.CategoriasSemanticas.values())
+                    categorias.addItem(categs.getCateg());
+                //TODO oi
+                ((BasicComboPopup) categorias.getAccessibleContext().
+                        getAccessibleChild(0)).
+                        getList().setSelectionBackground(new Color(cores.
+                                nextInt(256), cores.nextInt(256),
+                                cores.nextInt(256)));
+                categorias.setRenderer(new DefaultListCellRenderer()
+                {
+                    @Override
+                    public void paint(Graphics grafix)
+                    {
+                        super.paint(grafix);
+                    }
+                });
+                //jsp.setColumnHeaderView(categorias);
                 cont.add(createPanelForComponent(jsp, ""), 0);
                 jListSintagma.setSelectionModel(new DefaultListSelectionModel()
                 {
@@ -161,28 +172,31 @@ public class MainPanel extends JPanel
         this.add(leftGroupPanel);
         this.add(rightGroupPanel);
 
-        splitGroupPane = new JSplitPane(JSplitPane.HORIZONTAL_SPLIT, leftGroupPanel, rightGroupPanel);
+        splitGroupPane = new JSplitPane(JSplitPane.HORIZONTAL_SPLIT,
+                leftGroupPanel, rightGroupPanel);
         splitGroupPane.setResizeWeight(0.5);
         this.add(splitGroupPane);
 
-        splitPane = new JSplitPane(JSplitPane.HORIZONTAL_SPLIT, leftPanel, splitGroupPane);
+        splitPane = new JSplitPane(JSplitPane.HORIZONTAL_SPLIT, leftPanel,
+                splitGroupPane);
 
-        upSplitPane = new JSplitPane(JSplitPane.HORIZONTAL_SPLIT, upPanel, btPanel);
+        upSplitPane = new JSplitPane(JSplitPane.HORIZONTAL_SPLIT, upPanel,
+                btPanel);
         upSplitPane.setResizeWeight(0.527);
 
-        splitAllPane = new JSplitPane(JSplitPane.VERTICAL_SPLIT, upSplitPane, splitPane);
+        splitAllPane = new JSplitPane(JSplitPane.VERTICAL_SPLIT, upSplitPane,
+                splitPane);
 
         splitPane.setOneTouchExpandable(true);
         splitPane.setResizeWeight(0.55);
         splitAllPane.setResizeWeight(0.01);
         this.add(splitAllPane, BorderLayout.CENTER);
 
-        jMenuImportar.addActionListener(new java.awt.event.ActionListener()
+        jMenuImportar.addActionListener(new ActionListener()
         {
             @Override
             public void actionPerformed(java.awt.event.ActionEvent evt)
             {
-
                 {//faxina tudo antes de importar o próximo texto
                     pos = 0;
                     cont.removeAll();
@@ -196,21 +210,27 @@ public class MainPanel extends JPanel
                 try
                 {
                     JFileChooser chooser = new JFileChooser();
-                    chooser.setCurrentDirectory(new File("XMLsQueNãoDescompassamTextoPuroComTokens"));
+                    chooser.setCurrentDirectory(
+                            new File("XML Novos aspas fixed"));
                     chooser.showOpenDialog(null);
                     File xml = chooser.getSelectedFile();
                     botao.setEnabled(true);
                     Document document = new SAXBuilder().build(xml);
-                    String texto = document.getRootElement().getChildren().get(0).getAttributeValue("conteudo");
-                    ArrayList<Sintagma> listaSintagma = new ArrayList<>();
-                    List<org.jdom2.Element> cadeias = document.getRootElement().getChildren().get(3).getChildren();
-                    List<org.jdom2.Element> mencoes_unicas = document.getRootElement().getChildren().get(4).getChildren();
-                    List<org.jdom2.Element> tokens = document.getRootElement().getChildren().get(2).getChildren();
-
+                    String texto = document.getRootElement().getChildren().
+                            get(0).getAttributeValue("conteudo");
+                    tituloTexto = document.getRootElement().getName();
+                    listaSintagma = new ArrayList<>();
+                    cadeias = document.getRootElement().getChildren().get(3).
+                            getChildren();
+                    sentencas = document.getRootElement().getChildren().get(1).
+                            getChildren();
+                    mencoes_unicas = document.getRootElement().getChildren().
+                            get(4).getChildren();
+                    tokens = document.getRootElement().getChildren().get(2).
+                            getChildren();
                     for (org.jdom2.Element mencao_unica : mencoes_unicas)
                     {
-                        //para cada sintagma
-                        //cria as words
+                        //para cada sintagma cria as words
                         boolean prop = false;
                         boolean featured = false;
                         String genero = "";
@@ -218,10 +238,15 @@ public class MainPanel extends JPanel
                         ArrayList<model.Word> words = new ArrayList<>();
                         for (org.jdom2.Element word : mencao_unica.getChildren())
                         {
-                            model.Word w = new model.Word(word.getAttributeValue("token"),
-                                    word.getAttributeValue("pos"), word.getAttributeValue("features"),
-                                    word.getAttributeValue("lemma"), Integer.parseInt(mencao_unica.getAttributeValue("sentenca")),
-                                    Integer.parseInt(word.getName().split("_")[1]));
+                            model.Word w = new model.Word(word.
+                                    getAttributeValue("token"),
+                                    word.getAttributeValue("pos"), word.
+                                    getAttributeValue("features"),
+                                    word.getAttributeValue("lemma"), Integer.
+                                    parseInt(mencao_unica.getAttributeValue(
+                                            "sentenca")),
+                                    Integer.parseInt(
+                                            word.getName().split("_")[1]));
                             words.add(w);
                             if (w.pos.equals("prop"))
                                 prop = true;
@@ -234,17 +259,26 @@ public class MainPanel extends JPanel
                             }
                         }
                         //cria o sintagma
-                        Sintagma s = new Sintagma(document.getRootElement().getName(), mencao_unica.getAttributeValue("sintagma"),
-                                Integer.parseInt(mencao_unica.getAttributeValue("sentenca")), words,
-                                Integer.parseInt(mencao_unica.getAttributeValue("id")), Integer.parseInt(mencao_unica.getAttributeValue("id")),
-                                mencao_unica.getAttributeValue("nucleo"), mencao_unica.getAttributeValue("lemma"), prop,
-                                genero, numero, false, "", false, new ArrayList<>(), new Integer(0), "");
+                        Sintagma s = new Sintagma(document.getRootElement().
+                                getName(), mencao_unica.getAttributeValue(
+                                        "sintagma"),
+                                Integer.parseInt(mencao_unica.getAttributeValue(
+                                        "sentenca")), words,
+                                Integer.parseInt(mencao_unica.getAttributeValue(
+                                        "id")), Integer.parseInt(mencao_unica.
+                                        getAttributeValue("id")),
+                                mencao_unica.getAttributeValue("nucleo"),
+                                mencao_unica.getAttributeValue("lemma"), prop,
+                                genero, numero, false, "", false,
+                                new ArrayList<>(), new Integer(0), mencao_unica.
+                                getAttributeValue("Categoria"));
                         listaSintagma.add(s);
                     }
-
-                    for (org.jdom2.Element cadeia : cadeias)//para cada cadeia
+                    for (org.jdom2.Element cadeia : cadeias)
+                        //para cada cadeia
                         for (org.jdom2.Element sintagma : cadeia.getChildren())
-                        {//para cada sintagma
+                        {
+                            //para cada sintagma
                             //cria as words
                             boolean prop = false;
                             boolean featured = false;
@@ -253,10 +287,15 @@ public class MainPanel extends JPanel
                             ArrayList<model.Word> words = new ArrayList<>();
                             for (org.jdom2.Element word : sintagma.getChildren())
                             {
-                                model.Word w = new model.Word(word.getAttributeValue("token"),
-                                        word.getAttributeValue("pos"), word.getAttributeValue("features"),
-                                        word.getAttributeValue("lemma"), Integer.parseInt(sintagma.getAttributeValue("sentenca")),
-                                        Integer.parseInt(word.getName().split("_")[1]));
+                                model.Word w = new model.Word(word.
+                                        getAttributeValue("token"),
+                                        word.getAttributeValue("pos"), word.
+                                        getAttributeValue("features"),
+                                        word.getAttributeValue("lemma"),
+                                        Integer.parseInt(sintagma.
+                                                getAttributeValue("sentenca")),
+                                        Integer.parseInt(word.getName().split(
+                                                "_")[1]));
                                 words.add(w);
                                 if (w.pos.equals("prop"))
                                     prop = true;
@@ -269,14 +308,22 @@ public class MainPanel extends JPanel
                                 }
                             }
                             //cria o sintagma
-                            Sintagma s = new Sintagma(document.getRootElement().getName(), sintagma.getAttributeValue("sintagma"),
-                                    Integer.parseInt(sintagma.getAttributeValue("sentenca")), words,
-                                    Integer.parseInt(cadeia.getName().split("_")[1]), Integer.parseInt(sintagma.getAttributeValue("id")),
-                                    sintagma.getAttributeValue("nucleo"), sintagma.getAttributeValue("lemma"), prop,
-                                    genero, numero, false, "", false, new ArrayList<>(), new Integer(0), "");
+                            Sintagma s = new Sintagma(document.getRootElement().
+                                    getName(), sintagma.getAttributeValue(
+                                            "sintagma"),
+                                    Integer.parseInt(sintagma.getAttributeValue(
+                                            "sentenca")), words,
+                                    Integer.parseInt(
+                                            cadeia.getName().split("_")[1]),
+                                    Integer.parseInt(sintagma.getAttributeValue(
+                                            "id")),
+                                    sintagma.getAttributeValue("nucleo"),
+                                    sintagma.getAttributeValue("lemma"), prop,
+                                    genero, numero, false, "", false,
+                                    new ArrayList<>(), new Integer(0), sintagma.
+                                    getAttributeValue("Categoria"));
                             listaSintagma.add(s);
                         }
-
                     for (Sintagma s : listaSintagma)
                     {
                         if (s.set > maiorSet)
@@ -284,11 +331,9 @@ public class MainPanel extends JPanel
                         //s.sn = fachada.trataString(s.sn);
                         fachada.addSintagmaNoGrupo(s);
                     }
-                    //texto = fachada.trataString(texto);
                     setTexto(texto);
                     fachada.organizaGrupos();
                     fachada.ordenaPorQtdFilhos();
-
                     for (int i = 0; i < listaSintagma.size(); i++)
                     {
                         Sintagma s = listaSintagma.get(i);
@@ -297,23 +342,26 @@ public class MainPanel extends JPanel
                     }
                     for (org.jdom2.Element token : tokens)
                     {
-                        listTokens.add(new Token(token.getAttributeValue("token"), pos));
-                        Token tt = listTokens.get(listTokens.size() - 1);
-                        pos += listTokens.get(listTokens.size() - 1).token.length();
-                        if (  ! (tt.token.equals(",") || tt.token.equals(".")))
-                            pos++;
+                        Token tt = new Token(token.getAttributeValue("token"),
+                                pos);
+                        tt.endChar = tt.startChar + tt.token.length() + 1;
+                        pos += tt.token.length() + 1;
+                        listTokens.add(tt);
                     }
-                    //guarda os originais antes de qualquer alteração
+                    //                    for(Token token : listTokens)
+//                        System.out.print(token.token+" ");
+//guarda os originais antes de qualquer alteração
                     listaOriginal = new ArrayList<>();
                     for (Sintagma s : listaSintagma)
                         listaOriginal.add(s);
-
                     cont.removeAll();
                     rightGroupPanel.removeAll();
-                    JList jListSnSolitarios = makeList(h, fachada.getGrupoSolitario().getListaSintagmas());
-                    rightGroupPanel.add(createPanelForComponent(new JScrollPane(jListSnSolitarios), ""));
-
-                    jListSnSolitarios.setSelectionModel(new DefaultListSelectionModel()
+                    JList jListSnSolitarios = makeList(h, fachada.
+                            getGrupoSolitario().getListaSintagmas());
+                    rightGroupPanel.add(createPanelForComponent(new JScrollPane(
+                            jListSnSolitarios), ""));
+                    jListSnSolitarios.setSelectionModel(
+                            new DefaultListSelectionModel()
                     {
                         @Override
                         public void setSelectionInterval(int start, int end)
@@ -331,7 +379,6 @@ public class MainPanel extends JPanel
                             }
                         }
                     });
-
                     for (Grupo g : fachada.getGrupos())
                     {
                         JList jListSintagma = makeList(h, g.getListaSintagmas());
@@ -339,9 +386,11 @@ public class MainPanel extends JPanel
                         JScrollPane jsp = new JScrollPane(jListSintagma);
                         cont.add(createPanelForComponent(jsp, ""));
                         JComboBox<String> categorias = new JComboBox();
-                        for (model.CategoriasSemanticas categs : model.CategoriasSemanticas.values())
+                        for (model.CategoriasSemanticas categs
+                                : model.CategoriasSemanticas.values())
                             categorias.addItem(categs.getCateg());
-                        ((BasicComboPopup) categorias.getAccessibleContext().getAccessibleChild(0)).
+                        ((BasicComboPopup) categorias.getAccessibleContext().
+                                getAccessibleChild(0)).
                                 getList().setSelectionBackground(g.getColor());
                         categorias.setRenderer(new DefaultListCellRenderer()
                         {
@@ -351,8 +400,9 @@ public class MainPanel extends JPanel
                                 super.paint(grafix);
                             }
                         });
-                        jsp.setColumnHeaderView(categorias);
-                        jListSintagma.setSelectionModel(new DefaultListSelectionModel()
+                        //jsp.setColumnHeaderView(categorias);
+                        jListSintagma.setSelectionModel(
+                                new DefaultListSelectionModel()
                         {
                             @Override
                             public void setSelectionInterval(int start, int end)
@@ -370,13 +420,9 @@ public class MainPanel extends JPanel
                                 }
                             }
                         });
-
                     }
-
                     jlistas.add(jListSnSolitarios);
-
                     cont.repaint();
-
                     for (JList jl : jlistas)
                     {
                         String ACTION_KEY = "theAction";
@@ -392,26 +438,24 @@ public class MainPanel extends JPanel
                                 }
                             }
                         };
-                        KeyStroke enter = KeyStroke.getKeyStroke(KeyEvent.VK_ESCAPE, 0, true);
+                        KeyStroke enter = KeyStroke.getKeyStroke(
+                                KeyEvent.VK_ESCAPE, 0, true);
                         InputMap inputMap = jl.getInputMap();
                         inputMap.put(enter, ACTION_KEY);
-                        ActionMap actionMap = jl.getActionMap();
-                        actionMap.put(ACTION_KEY, actionListener);
-                        jl.setActionMap(actionMap);
+                        ActionMap actionMap1 = jl.getActionMap();
+                        actionMap1.put(ACTION_KEY, actionListener);
+                        jl.setActionMap(actionMap1);
                     }
-
-                    Component[] component = cont.getComponents();
-
-                    for (int i = 0; i < component.length; i++)
-                        if (component[i] instanceof JPanel)
+                    Component[] component1 = cont.getComponents();
+                    for (int i = 0; i < component1.length; i++)
+                        if (component1[i] instanceof JPanel)
                         {
-                            JPanel jp = (JPanel) component[i];
+                            JPanel jp = (JPanel) component1[i];
                             jp.setForeground(colors.get(i));
                             jp.setBackground(colors.get(i));
                         }
-
-                    Component[] componentSolitarios = rightGroupPanel.getComponents();
-
+                    Component[] componentSolitarios = rightGroupPanel.
+                            getComponents();
                     for (Component componentSolitario : componentSolitarios)
                         if (componentSolitario instanceof JPanel)
                         {
@@ -419,8 +463,8 @@ public class MainPanel extends JPanel
                             jp.setForeground(colors.get(colors.size() - 1));
                             jp.setBackground(colors.get(colors.size() - 1));
                         }
-
-                } catch (HeadlessException | JDOMException | IOException | NumberFormatException e)
+                } catch (HeadlessException | JDOMException | IOException |
+                        NumberFormatException e)
                 {
                 }
                 splitAllPane.revalidate();
@@ -430,80 +474,140 @@ public class MainPanel extends JPanel
 
         jMenuExportar.addActionListener(new java.awt.event.ActionListener()
         {
-
             @Override
             public void actionPerformed(java.awt.event.ActionEvent evt)
             {
-                jMenuExportarActionPerformed(evt);
-            }
-
-            private void jMenuExportarActionPerformed(ActionEvent evt)
-            {
-                JFileChooser chooser = new JFileChooser();
-                chooser.setCurrentDirectory(null);
-                chooser.showSaveDialog(null);
-                File f = chooser.getSelectedFile();
-
-                listaSintagma.clear();
-                HashMap<Integer, ArrayList<Sintagma>> lista = new HashMap<>();
-                Component[] component = cont.getComponents();
-
-                for (Component component1 : component)
+                org.jdom2.Element root = new org.jdom2.Element(tituloTexto);
+                Document saida = new Document(root);
+                /*saida.setRootElement(root);
+                tudo é content da root
+                Texto*/
+                org.jdom2.Element elementTexto = new org.jdom2.Element("Texto");
+                elementTexto.setAttribute(new Attribute("conteudo", texto));
+                saida.getRootElement().addContent(elementTexto);
+                /*Sentencas
+                não mexi nas sentenças, então só copio
+                 */
+                org.jdom2.Element elementSentencas = new org.jdom2.Element(
+                        "Sentencas");
+                for (org.jdom2.Element sentenca : sentencas)
                 {
-                    JPanel jp = (JPanel) component1;
-                    Component[] component2 = jp.getComponents();
-                    Component[] component3 = ((JScrollPane) component2[0]).getComponents();
-                    Component[] component4 = ((JViewport) component3[0]).getComponents();
-                    JList jl = (JList) component4[0];
-                    for (int j = 0; j < jl.getModel().getSize(); j++)
-                        listaSintagma.add((Sintagma) jl.getModel().getElementAt(j));
+                    org.jdom2.Element sentencaCopy = (org.jdom2.Element) sentenca.
+                            clone();
+                    elementSentencas.addContent(sentencaCopy.detach());
                 }
-
-                Component[] componentSolitarios = rightGroupPanel.getComponents();
-                Component[] component2 = ((JPanel) componentSolitarios[0]).getComponents();
-                Component[] component3 = ((JScrollPane) component2[0]).getComponents();
-                Component[] component4 = ((JViewport) component3[0]).getComponents();
-                JList jl = (JList) component4[0];
+                saida.getRootElement().addContent(elementSentencas);
+                /*Tokens
+                mesma lógica das sentenças
+                 */
+                org.jdom2.Element elementTokens = new org.jdom2.Element("Tokens");
+                for (org.jdom2.Element token : tokens)
+                {
+                    org.jdom2.Element tokenCopy = (org.jdom2.Element) token.
+                            clone();
+                    elementTokens.addContent(tokenCopy.detach());
+                }
+                saida.getRootElement().addContent(elementTokens);
+                //Cadeias
+                org.jdom2.Element elementCadeias = new org.jdom2.Element(
+                        "Cadeias");
+                saida.getRootElement().addContent(elementCadeias);
+                Component[] component = cont.getComponents();
+                for (Component component1 : component)
+                {//para cada cadeia
+                    JList jl = (JList) ((JViewport) ((JScrollPane) ((JPanel) component1).
+                            getComponents()[0]).getComponents()[0]).
+                            getComponents()[0];
+                    if (jl.getModel().getSize() < 1)
+                    {
+                    } //se não tiver nenhum item, nada a se fazer aqui
+                    else
+                    {
+                        int setNumber = ((Sintagma) jl.getModel().
+                                getElementAt(0)).set;
+                        org.jdom2.Element cadeia = new org.jdom2.Element(
+                                "Cadeia_" + setNumber);
+                        elementCadeias.addContent(cadeia);
+                        for (int j = 0; j < jl.getModel().getSize(); j++)
+                        {
+                            //TODO passar isso para dentro de um método no futuro para despoluir e não repetir o código
+                            Sintagma sint = (Sintagma) jl.getModel().
+                                    getElementAt(j);
+                            org.jdom2.Element sintagmaElement = new org.jdom2.Element(
+                                    "sn");
+                            cadeia.addContent(sintagmaElement);
+                            sintagmaElement.setAttribute("id", Integer.
+                                    toString(sint.snID));
+                            sintagmaElement.setAttribute("tokens",
+                                    sint.startToken + "..." + sint.endToken);
+                            sintagmaElement.setAttribute("nucleo", sint.nucleo);
+                            sintagmaElement.setAttribute("sintagma", sint.sn);
+                            sintagmaElement.setAttribute("Categoria",
+                                    sint.categoriaSemantica);
+                            sintagmaElement.setAttribute("sentenca", Integer.
+                                    toString(sint.sentenca));
+                            for (Word word : sint.words)
+                            {
+                                org.jdom2.Element wordElement = new org.jdom2.Element(
+                                        "word_" + word.tokenID);
+                                sintagmaElement.addContent(wordElement);
+                                wordElement.setAttribute("token", word.word);
+                                wordElement.setAttribute("lemma", word.lemma);
+                                wordElement.setAttribute("pos", word.pos);
+                                wordElement.setAttribute("features", word.morfo);
+                            }
+                        }
+                    }
+                }
+                JList jl = (JList) ((JViewport) ((JScrollPane) ((JPanel) rightGroupPanel.getComponents()[0]).
+                        getComponents()[0]).getComponents()[0]).getComponents()[0];
+                //Mencoes_Unicas
+                org.jdom2.Element solitariosElement = new org.jdom2.Element(
+                        "Mencoes_Unicas");
+                saida.getRootElement().addContent(solitariosElement);
                 for (int j = 0; j < jl.getModel().getSize(); j++)
-                    listaSintagma.add((Sintagma) jl.getModel().getElementAt(j));
-
-                Class leitor;
+                {//para cada sintagma
+                    Sintagma sint = (Sintagma) jl.getModel().
+                            getElementAt(j);
+                    org.jdom2.Element sintagmaElement = new org.jdom2.Element(
+                            "sn");
+                    solitariosElement.addContent(sintagmaElement);
+                    sintagmaElement.setAttribute("id", Integer.
+                            toString(sint.snID));
+                    sintagmaElement.setAttribute("tokens",
+                            sint.startToken + "..." + sint.endToken);
+                    sintagmaElement.setAttribute("nucleo", sint.nucleo);
+                    sintagmaElement.setAttribute("sintagma", sint.sn);
+                    sintagmaElement.setAttribute("Categoria",
+                            sint.categoriaSemantica);
+                    sintagmaElement.setAttribute("sentenca", Integer.
+                            toString(sint.sentenca));
+                    for (Word word : sint.words)
+                    {
+                        org.jdom2.Element wordElement = new org.jdom2.Element(
+                                "word_" + word.tokenID);
+                        sintagmaElement.addContent(wordElement);
+                        wordElement.setAttribute("token", word.word);
+                        wordElement.setAttribute("lemma", word.lemma);
+                        wordElement.setAttribute("pos", word.pos);
+                        wordElement.setAttribute("features", word.morfo);
+                    }
+                }
+                Comparator<org.jdom2.Element> ordenador = (org.jdom2.Element cadeia1,
+                        org.jdom2.Element cadeia2) -> cadeia1.getName().compareTo(cadeia2.getName());
+                Collections.sort(saida.getRootElement().getChildren().get(3).getChildren(), ordenador);
                 try
                 {
-                    leitor = Class.forName("Acesso");
-                    Method salvarSintagmas = leitor.getMethod("salvarSintagmas", new Class[]
-                    {
-                        ArrayList.class, File.class
-                    });
-                    File file;
-                    if (f.getName().contains(".dat"))
-                        file = new File(f.getPath());
-                    else
-                        file = new File(f.getPath() + ".dat");
-
-                    salvarSintagmas.invoke(leitor.newInstance(), listaSintagma, file);
-                    try (FileWriter arq = new FileWriter(path + barra + "logs" + barra + f.getName().substring(0, f.getName().indexOf(".")) + "-original.txt"))
-                    {
-                        PrintWriter gravarArq = new PrintWriter(arq);
-                        String log = fachada.imprimeCorref(listaOriginal);
-                        gravarArq.printf(log);
-                    }
-                    try (FileWriter arq = new FileWriter(path + barra + "logs" + barra + f.getName().substring(0, f.getName().indexOf(".")) + "-modificado.txt"))
-                    {
-                        PrintWriter gravarArq = new PrintWriter(arq);
-                        String log = fachada.imprimeCorref(listaSintagma);
-                        gravarArq.printf(log);
-                    }
-                    try (FileWriter arq = new FileWriter(path + barra + "logs" + barra + f.getName().substring(0, f.getName().indexOf(".")) + ".csv"))
-                    {
-                        PrintWriter gravarArq = new PrintWriter(arq);
-                        String log = fachada.getLog(listaOriginal, listaSintagma);
-                        gravarArq.printf(log);
-                    }
-
-                } catch (InstantiationException | IOException | InvocationTargetException | ClassNotFoundException | IllegalArgumentException | IllegalAccessException | SecurityException | NoSuchMethodException ex)
+                    XMLOutputter exporter = new XMLOutputter();
+                    exporter.setFormat(Format.getPrettyFormat());
+                    File dirSaida = new File("saida");
+                    if (!dirSaida.exists())
+                        dirSaida.mkdir();
+                    exporter.output(saida, new FileWriter(dirSaida +"/"+ tituloTexto + ".xml"));
+                    JOptionPane.showMessageDialog(null, "Alterações salvas com sucesso no diretório de saída");
+                } catch (IOException ex)
                 {
-                    Logger.getLogger(MainPanel.class.getName()).log(Level.SEVERE, null, ex);
+                    JOptionPane.showMessageDialog(null, "Houve um erro no salvamento das alterações.", "ERRO", JOptionPane.ERROR_MESSAGE);
                 }
             }
         });
@@ -511,9 +615,8 @@ public class MainPanel extends JPanel
 
     public void highlightSelecionados()
     {
-        HashMap<ArrayList<Sintagma>, Color> lista = new HashMap<>();
         Component[] component = cont.getComponents();
-
+        List<List<Sintagma>> listaLista = new ArrayList<>();
         for (int i = 0; i < component.length; i++)
         {
             JPanel jp = (JPanel) component[i];
@@ -521,59 +624,49 @@ public class MainPanel extends JPanel
             Component[] component3 = ((JScrollPane) component2[0]).getComponents();
             Component[] component4 = ((JViewport) component3[0]).getComponents();
             JList jl = (JList) component4[0];
-            lista.put(new ArrayList<>(jl.getSelectedValuesList()), colors.get(i));
+            listaLista.add(new ArrayList<>(jl.getSelectedValuesList()));
             jp.setForeground(colors.get(i));
             jp.setBackground(colors.get(i));
         }
+        listaLista.add(new ArrayList<>(((JList) ((JViewport) ((JScrollPane) ((JPanel) rightGroupPanel.getComponents()[0]).getComponents()[0]).getComponents()[0]).getComponents()[0]).getSelectedValuesList()));
 
-        Component[] componentSolitarios = rightGroupPanel.getComponents();
-        Component[] component2 = ((JPanel) componentSolitarios[0]).getComponents();
-        Component[] component3 = ((JScrollPane) component2[0]).getComponents();
-        Component[] component4 = ((JViewport) component3[0]).getComponents();
-        JList jl = (JList) component4[0];
-        lista.put(new ArrayList<>(jl.getSelectedValuesList()), colors.get(colors.size() - 1));
-
-        int i = 0;
         setTexto(texto);
-        for (ArrayList<Sintagma> lst : lista.keySet())
-        {
-            Color cor = lista.get(lst);
+        for (List<Sintagma> lst : listaLista)
             for (Sintagma s : lst)
                 highlightSintagma(s);
-        }
     }
 
     public void highlightSintagma(Sintagma s)
     {
         Token t = listTokens.get(s.startToken);
         int startChar = t.startChar;
-        int length = s.sn.length();
-
-        StyledDocument doc = tP.getStyledDocument();
+        StyledDocument doc = textPane.getStyledDocument();
         SimpleAttributeSet keyWord = new SimpleAttributeSet();
         StyleConstants.setForeground(keyWord, s.cor);
         StyleConstants.setBold(keyWord, true);
         StyleConstants.setFontSize(keyWord, 14);
-        doc.setCharacterAttributes(startChar, length, keyWord, false);
+        doc.setCharacterAttributes(startChar, s.sn.length(), keyWord, false);
     }
 
     public void setTexto(String texto)
     {
         this.texto = texto;
 
-        tP.setText(texto);
-        tP.setEditable(false);
-        tP.setBackground(Color.WHITE);
-        tP.setBorder(null);
+        textPane.setText(texto);
+        textPane.setEditable(false);
+        textPane.setBackground(Color.WHITE);
+        textPane.setBorder(null);
 
-        StyledDocument doc = tP.getStyledDocument();
+        StyledDocument doc = textPane.getStyledDocument();
         SimpleAttributeSet keyWord = new SimpleAttributeSet();
         StyleConstants.setForeground(keyWord, Color.BLACK);
         StyleConstants.setFontSize(keyWord, 15);
-//        StyleConstants.setLineSpacing(keyWord, 1f);
-        doc.setCharacterAttributes(0, texto.length(), keyWord, false);
+        StyleConstants.setAlignment(keyWord, StyleConstants.ALIGN_JUSTIFIED);
+        textPane.getStyledDocument().setParagraphAttributes(0, texto.length(),
+                keyWord, false);
+        //doc.setCharacterAttributes(0, texto.length(), keyWord, false);
 
-        tP.setVisible(true);
+        textPane.setVisible(true);
     }
 
     protected JScrollPane createVerticalScrollBoxPanel(Dimension d)
@@ -609,7 +702,8 @@ public class MainPanel extends JPanel
         return panel;
     }
 
-    private static JList<Sintagma> makeList(TransferHandler handler, ArrayList<Sintagma> lista)
+    private static JList<Sintagma> makeList(TransferHandler handler,
+            ArrayList<Sintagma> lista)
     {
         DefaultListModel<Sintagma> listModel = new DefaultListModel<>();
         for (Sintagma s : lista)
@@ -619,13 +713,17 @@ public class MainPanel extends JPanel
         list.setCellRenderer(new DefaultListCellRenderer()
         {
             @Override
-            public Component getListCellRendererComponent(JList list, Object value, int index, boolean isSelected, boolean cellHasFocus)
+            public Component getListCellRendererComponent(JList list,
+                    Object value, int index, boolean isSelected,
+                    boolean cellHasFocus)
             {
-                Component c = super.getListCellRendererComponent(list, ((Sintagma) value).sn, index, isSelected, cellHasFocus);
+                Component c = super.getListCellRendererComponent(list,
+                        ((Sintagma) value).sn, index, isSelected, cellHasFocus);
                 return c;
             }
         });
-        list.getSelectionModel().setSelectionMode(ListSelectionModel.MULTIPLE_INTERVAL_SELECTION);
+        list.getSelectionModel().setSelectionMode(
+                ListSelectionModel.MULTIPLE_INTERVAL_SELECTION);
         list.setDropMode(DropMode.INSERT);
         list.setDragEnabled(true);
         list.setTransferHandler(handler);
@@ -654,7 +752,9 @@ public class MainPanel extends JPanel
                     {
                         createAndShowGUI();
 
-                    } catch (ClassNotFoundException | NoSuchMethodException | IllegalAccessException | IllegalArgumentException | InvocationTargetException | InstantiationException ex)
+                    } catch (ClassNotFoundException | NoSuchMethodException |
+                            IllegalAccessException | IllegalArgumentException |
+                            InvocationTargetException | InstantiationException ex)
                     {
                         Logger.getLogger(MainPanel.class
                                 .getName()).log(Level.SEVERE, null, ex);
@@ -662,13 +762,17 @@ public class MainPanel extends JPanel
         });
     }
 
-    public static void createAndShowGUI() throws ClassNotFoundException, NoSuchMethodException, IllegalAccessException, IllegalArgumentException, InvocationTargetException, InstantiationException
+    public static void createAndShowGUI() throws ClassNotFoundException,
+            NoSuchMethodException, IllegalAccessException,
+            IllegalArgumentException, InvocationTargetException,
+            InstantiationException
     {
         try
         {
             UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
 
-        } catch (ClassNotFoundException | InstantiationException | IllegalAccessException | UnsupportedLookAndFeelException ex)
+        } catch (ClassNotFoundException | InstantiationException |
+                IllegalAccessException | UnsupportedLookAndFeelException ex)
         {
         }
         JFrame frame = new JFrame("CorrefVisual");
@@ -685,7 +789,8 @@ public class MainPanel extends JPanel
     {
         Random r = new Random();
         for (int i = 0; i < n * 10; i++)
-            colors.add(new Color(r.nextInt(256), r.nextInt(256), r.nextInt(256)));
+            colors.
+                    add(new Color(r.nextInt(256), r.nextInt(256), r.nextInt(256)));
     }
 
     public class ListItemTransferHandler extends TransferHandler
@@ -700,7 +805,8 @@ public class MainPanel extends JPanel
         public ListItemTransferHandler()
         {
             super();
-            localObjectFlavor = new ActivationDataFlavor(Object[].class, DataFlavor.javaJVMLocalObjectMimeType, "Array of items");
+            localObjectFlavor = new ActivationDataFlavor(Object[].class,
+                    DataFlavor.javaJVMLocalObjectMimeType, "Array of items");
         }
 
         @Override
@@ -709,13 +815,15 @@ public class MainPanel extends JPanel
             source = (JList) c;
             indices = source.getSelectedIndices();
             Object[] transferedObjects = source.getSelectedValues();
-            return new DataHandler(transferedObjects, localObjectFlavor.getMimeType());
+            return new DataHandler(transferedObjects, localObjectFlavor.
+                    getMimeType());
         }
 
         @Override
         public boolean canImport(TransferHandler.TransferSupport info)
         {
-            return info.isDrop() && info.isDataFlavorSupported(localObjectFlavor);
+            return info.isDrop() && info.
+                    isDataFlavorSupported(localObjectFlavor);
         }
 
         @Override
@@ -743,7 +851,8 @@ public class MainPanel extends JPanel
 
             try
             {
-                Object[] values = (Object[]) info.getTransferable().getTransferData(localObjectFlavor);
+                Object[] values = (Object[]) info.getTransferable().
+                        getTransferData(localObjectFlavor);
                 Color oldColor = null;
                 for (Object value : values)
                 {
@@ -752,6 +861,7 @@ public class MainPanel extends JPanel
                     int idx = index++;
                     listModel.add(idx, value);
                     target.addSelectionInterval(idx, idx);
+                    //ajusta o set dos sintagmas arrastados
                     if (listModel.size() <= 1)
                         ((Sintagma) value).set = MainPanel.maiorSet++;
                     else
@@ -773,7 +883,8 @@ public class MainPanel extends JPanel
                             foundColor = true;
                     }
                 }
-                ordenador = (Sintagma s1, Sintagma s2) -> new Integer(s1.snID).compareTo(s2.snID);
+                Comparator<Sintagma> ordenador = (Sintagma s1, Sintagma s2) -> new Integer(
+                        s1.snID).compareTo(s2.snID);
                 Collections.sort(sints, ordenador);
                 listModel.clear();
                 /*se newColor tiver chegado até aqui null, tem alguma coisa
@@ -783,7 +894,9 @@ public class MainPanel extends JPanel
                  */
                 if (newColor == null)
                     newColor
-                            = new Color(cores.nextInt(256), cores.nextInt(256), cores.nextInt(256));
+                            = new Color(cores.nextInt(256), cores.nextInt(256),
+                                    cores.nextInt(256));
+
                 for (Sintagma sint : sints)
                 {//arruma as cores
                     sint.cor = newColor;
@@ -792,7 +905,6 @@ public class MainPanel extends JPanel
                 return true;
             } catch (UnsupportedFlavorException | IOException ex)
             {
-                ex.printStackTrace();
             }
             return false;
         }
