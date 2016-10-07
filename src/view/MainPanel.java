@@ -423,8 +423,11 @@ public final class MainPanel extends JPanel
                                 super.paint(grafix);
                             }
                         });
+                        listsToBoxes.put(jListSintagma, categorias);
+                        boxesToColors.put(categorias, ((BasicComboPopup) categorias
+                                .getAccessibleContext().getAccessibleChild(0))
+                                .getList().getSelectionBackground());
                         categorias.setSelectedItem(g.getListaSintagmas().get(0).categoriaSemantica);
-
                         categorias.addActionListener(new ActionListener()
                         {
                             @Override
@@ -880,7 +883,6 @@ public final class MainPanel extends JPanel
             if (index < 0 || index > max)
                 index = max;
             addIndex = index;
-
             try
             {
                 Object[] values = (Object[]) info.getTransferable().
@@ -908,6 +910,7 @@ public final class MainPanel extends JPanel
                 addCount = target.equals(source) ? values.length : 0;
                 Object[] modelToArray = listModel.toArray();
                 ArrayList<Sintagma> sints = new ArrayList<>();
+                String novaCategoria = (String) listsToBoxes.get(target).getSelectedItem();
                 for (Object obj : modelToArray)
                 {//descobre a cor dos sintagmas;
                     sints.add((Sintagma) obj);
@@ -933,11 +936,12 @@ public final class MainPanel extends JPanel
                                     cores.nextInt(256));
 
                 for (Sintagma sint : sints)
-                {//arruma as cores
+                {//arruma as cores e a categoria semântica
+                    sint.categoriaSemantica = novaCategoria;
                     sint.cor = newColor;
                     listModel.addElement(sint);
                 }
-                
+
                 return true;
             } catch (UnsupportedFlavorException | IOException ex)
             {
