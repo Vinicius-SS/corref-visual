@@ -23,6 +23,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Collections;
 import java.util.Comparator;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Random;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -64,6 +66,8 @@ public final class MainPanel extends JPanel
     private JMenu jMenuArquivo, jMenuAjuda;
     private JMenuItem jMenuImportar, jMenuExportar;
     private TransferHandler h;
+    private Map<javax.swing.JList, javax.swing.JComboBox> listsToBoxes;
+    private Map<javax.swing.JComboBox, Color> boxesToColors;
     public static int maiorSet;
     public static MainPanel m;
     private List<Token> listTokens;
@@ -98,6 +102,8 @@ public final class MainPanel extends JPanel
         leftPanel.add(createPanelForComponent(new JScrollPane(textPane), ""));
         leftGroupPanel = createVerticalScrollBoxPanel(this.getPreferredSize());
         rightGroupPanel = createVerticalBoxPanel(this.getPreferredSize());
+        listsToBoxes = new HashMap<>();
+        boxesToColors = new HashMap<>();
 
         JPanel btPanel = createHorizontalBoxPanel(100, 100);
         botao = new JButton("Novo Grupo");
@@ -123,7 +129,6 @@ public final class MainPanel extends JPanel
                 for (model.CategoriasSemanticas categs
                         : model.CategoriasSemanticas.values())
                     categorias.addItem(categs.getCateg());
-                //TODO oi
                 ((BasicComboPopup) categorias.getAccessibleContext().
                         getAccessibleChild(0)).
                         getList().setSelectionBackground(new Color(cores.
@@ -137,7 +142,26 @@ public final class MainPanel extends JPanel
                         super.paint(grafix);
                     }
                 });
-                //jsp.setColumnHeaderView(categorias);
+                //TODO acho que dá para tirar um hashmap daqui
+                listsToBoxes.put(jListSintagma, categorias);
+                boxesToColors.put(categorias, ((BasicComboPopup) categorias
+                        .getAccessibleContext().getAccessibleChild(0))
+                        .getList().getSelectionBackground());
+                categorias.setSelectedItem("--");
+
+                categorias.addActionListener(new ActionListener()
+                {
+                    @Override
+                    public void actionPerformed(ActionEvent e)
+                    {
+                        String newCateg = (String) categorias.getSelectedItem();
+                        DefaultListModel<Sintagma> listaAlterada = (DefaultListModel) jListSintagma.getModel();
+                        for (int i = 0; i < listaAlterada.getSize(); i++)
+                            ((Sintagma) listaAlterada.getElementAt(i)).categoriaSemantica = newCateg;
+                    }
+                });
+
+                jsp.setColumnHeaderView(categorias);
                 cont.add(createPanelForComponent(jsp, ""), 0);
                 jListSintagma.setSelectionModel(new DefaultListSelectionModel()
                 {
@@ -200,10 +224,11 @@ public final class MainPanel extends JPanel
                 {//faxina tudo antes de importar o próximo texto
                     pos = 0;
                     cont.removeAll();
-                    //listaOriginal.clear(); //acredito que tenha que limpar isso aqui tb
                     rightGroupPanel.removeAll();
                     fachada.getGrupos().clear();
                     fachada.getGrupoSolitario().getListaSintagmas().clear();
+                    listsToBoxes.clear();
+                    boxesToColors.clear();
                     maiorSet = -1;
                     listTokens = new ArrayList<>();
                 }
@@ -348,9 +373,7 @@ public final class MainPanel extends JPanel
                         pos += tt.token.length() + 1;
                         listTokens.add(tt);
                     }
-                    //                    for(Token token : listTokens)
-//                        System.out.print(token.token+" ");
-//guarda os originais antes de qualquer alteração
+                    //guarda os originais antes de qualquer alteração
                     listaOriginal = new ArrayList<>();
                     for (Sintagma s : listaSintagma)
                         listaOriginal.add(s);
@@ -400,7 +423,21 @@ public final class MainPanel extends JPanel
                                 super.paint(grafix);
                             }
                         });
-                        //jsp.setColumnHeaderView(categorias);
+                        categorias.setSelectedItem(g.getListaSintagmas().get(0).categoriaSemantica);
+
+                        categorias.addActionListener(new ActionListener()
+                        {
+                            @Override
+                            public void actionPerformed(ActionEvent e)
+                            {
+                                String newCateg = (String) categorias.getSelectedItem();
+                                DefaultListModel<Sintagma> listaAlterada = (DefaultListModel) jListSintagma.getModel();
+                                for (int i = 0; i < listaAlterada.getSize(); i++)
+                                    ((Sintagma) listaAlterada.getElementAt(i)).categoriaSemantica = newCateg;
+                            }
+                        });
+
+                        jsp.setColumnHeaderView(categorias);
                         jListSintagma.setSelectionModel(
                                 new DefaultListSelectionModel()
                         {
@@ -603,7 +640,7 @@ public final class MainPanel extends JPanel
                     File dirSaida = new File("saida");
                     if (!dirSaida.exists())
                         dirSaida.mkdir();
-                    exporter.output(saida, new FileWriter(dirSaida +"/"+ tituloTexto + ".xml"));
+                    exporter.output(saida, new FileWriter(dirSaida + "/" + tituloTexto + ".xml"));
                     JOptionPane.showMessageDialog(null, "Alterações salvas com sucesso no diretório de saída");
                 } catch (IOException ex)
                 {
@@ -651,21 +688,16 @@ public final class MainPanel extends JPanel
     public void setTexto(String texto)
     {
         this.texto = texto;
-
         textPane.setText(texto);
         textPane.setEditable(false);
         textPane.setBackground(Color.WHITE);
         textPane.setBorder(null);
-
-        StyledDocument doc = textPane.getStyledDocument();
         SimpleAttributeSet keyWord = new SimpleAttributeSet();
         StyleConstants.setForeground(keyWord, Color.BLACK);
         StyleConstants.setFontSize(keyWord, 15);
         StyleConstants.setAlignment(keyWord, StyleConstants.ALIGN_JUSTIFIED);
         textPane.getStyledDocument().setParagraphAttributes(0, texto.length(),
                 keyWord, false);
-        //doc.setCharacterAttributes(0, texto.length(), keyWord, false);
-
         textPane.setVisible(true);
     }
 
@@ -854,6 +886,8 @@ public final class MainPanel extends JPanel
                 Object[] values = (Object[]) info.getTransferable().
                         getTransferData(localObjectFlavor);
                 Color oldColor = null;
+                Color newColor = null;
+                boolean foundColor = false;
                 for (Object value : values)
                 {
                     if (((Sintagma) value).cor != null)
@@ -863,16 +897,17 @@ public final class MainPanel extends JPanel
                     target.addSelectionInterval(idx, idx);
                     //ajusta o set dos sintagmas arrastados
                     if (listModel.size() <= 1)
+                    {
                         ((Sintagma) value).set = MainPanel.maiorSet++;
-                    else
+                        foundColor = true;
+                        newColor = boxesToColors.get(listsToBoxes.get(target));
+                    } else
                         ((Sintagma) value).set = ((Sintagma) listModel.get(0)).set;
                 }
 
                 addCount = target.equals(source) ? values.length : 0;
                 Object[] modelToArray = listModel.toArray();
                 ArrayList<Sintagma> sints = new ArrayList<>();
-                boolean foundColor = false;
-                Color newColor = null;
                 for (Object obj : modelToArray)
                 {//descobre a cor dos sintagmas;
                     sints.add((Sintagma) obj);
@@ -902,6 +937,7 @@ public final class MainPanel extends JPanel
                     sint.cor = newColor;
                     listModel.addElement(sint);
                 }
+                
                 return true;
             } catch (UnsupportedFlavorException | IOException ex)
             {
