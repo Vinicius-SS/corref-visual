@@ -92,7 +92,6 @@ public final class MainPanel extends JPanel
         jMenuBarMain.add(jMenuAjuda);
         textPane = new JTextPane();
         textPane.setEditable(false);
-        barra = "/";
         jlistas = new ArrayList<>();
         colors = new ArrayList<>();
         gerarCores(10);
@@ -643,7 +642,7 @@ public final class MainPanel extends JPanel
                     File dirSaida = new File("saida");
                     if (!dirSaida.exists())
                         dirSaida.mkdir();
-                    exporter.output(saida, new FileWriter(dirSaida + "/" + tituloTexto + ".xml"));
+                    exporter.output(saida, new FileWriter(dirSaida + File.separator + tituloTexto + ".xml"));
                     JOptionPane.showMessageDialog(null, "Alterações salvas com sucesso no diretório de saída");
                 } catch (IOException ex)
                 {
