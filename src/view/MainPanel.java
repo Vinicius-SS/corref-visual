@@ -380,6 +380,9 @@ public final class MainPanel extends JPanel
                     rightGroupPanel.removeAll();
                     JList jListSnSolitarios = makeList(h, fachada.
                             getGrupoSolitario().getListaSintagmas());
+                    JComboBox solitariosBox = new JComboBox<String>();
+                    solitariosBox.setSelectedItem("--");
+                    listsToBoxes.put(jListSnSolitarios, solitariosBox);
                     rightGroupPanel.add(createPanelForComponent(new JScrollPane(
                             jListSnSolitarios), ""));
                     jListSnSolitarios.setSelectionModel(
@@ -581,6 +584,8 @@ public final class MainPanel extends JPanel
                                     sint.startToken + "..." + sint.endToken);
                             sintagmaElement.setAttribute("nucleo", sint.nucleo);
                             sintagmaElement.setAttribute("sintagma", sint.sn);
+                            if(sint.categoriaSemantica==null)
+                                    sintagmaElement.setAttribute("Categoria", "--");
                             sintagmaElement.setAttribute("Categoria",
                                     sint.categoriaSemantica);
                             sintagmaElement.setAttribute("sentenca", Integer.
@@ -617,7 +622,10 @@ public final class MainPanel extends JPanel
                             sint.startToken + "..." + sint.endToken);
                     sintagmaElement.setAttribute("nucleo", sint.nucleo);
                     sintagmaElement.setAttribute("sintagma", sint.sn);
-                    sintagmaElement.setAttribute("Categoria",
+                    if(sint.categoriaSemantica==null)
+                        sintagmaElement.setAttribute("Categoria", "--");
+                    else
+                        sintagmaElement.setAttribute("Categoria",
                             sint.categoriaSemantica);
                     sintagmaElement.setAttribute("sentenca", Integer.
                             toString(sint.sentenca));
@@ -637,8 +645,9 @@ public final class MainPanel extends JPanel
                 Collections.sort(saida.getRootElement().getChildren().get(3).getChildren(), ordenador);
                 try
                 {
-                    XMLOutputter exporter = new XMLOutputter();
-                    exporter.setFormat(Format.getPrettyFormat());
+                    Format format = Format.getPrettyFormat();
+                    format.setEncoding("ISO-8859-1");
+                    XMLOutputter exporter = new XMLOutputter(format);
                     File dirSaida = new File("saida");
                     if (!dirSaida.exists())
                         dirSaida.mkdir();
