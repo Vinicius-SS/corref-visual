@@ -2,3 +2,5 @@ XML*
 saida*
 build/classes/*
 dist*
+build*
+*~
