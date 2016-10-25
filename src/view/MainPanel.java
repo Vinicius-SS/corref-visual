@@ -246,9 +246,7 @@ public final class MainPanel extends JPanel
         splitAllPane.setResizeWeight(0.01);
         this.add(splitAllPane, BorderLayout.CENTER);
 
-        private abstract class sorterEncapsulator
-        {
-        
+                
         jSortSolitariosPorAparicao.addActionListener(new ActionListener()
         {
             @Override
@@ -284,8 +282,6 @@ public final class MainPanel extends JPanel
             }
         }
         );
-        
-        }
 
         jMenuImportar.addActionListener(new ActionListener()
         {
@@ -898,13 +894,18 @@ public final class MainPanel extends JPanel
         {
         }
         JFrame frame = new JFrame("CorrefVisual");
+        JFrame floating = new JFrame("Sintagmas");
         frame.setDefaultCloseOperation(WindowConstants.DO_NOTHING_ON_CLOSE);
+        floating.setDefaultCloseOperation(WindowConstants.DO_NOTHING_ON_CLOSE);
         m = new MainPanel();
         frame.getContentPane().add(m);
         frame.pack();
+        floating.pack();
         frame.setLocationRelativeTo(null);
+        floating.setLocationRelativeTo(null);
         frame.setExtendedState(JFrame.MAXIMIZED_BOTH);
         frame.setVisible(true);
+        floating.setVisible(true);
         frame.addWindowListener(new WindowAdapter()
         {
             @Override
@@ -916,9 +917,11 @@ public final class MainPanel extends JPanel
                     case JOptionPane.YES_OPTION:
                         m.export();
                         frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
+                        //floating.dispose();
                         break;
                     case JOptionPane.NO_OPTION:
                         frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
+                        //floating.dispose();
                         break;
                     case JOptionPane.CANCEL_OPTION:
                         break;
