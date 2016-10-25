@@ -26,6 +26,7 @@ import java.util.List;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.HashMap;
+import java.util.Locale;
 import java.util.Map;
 import java.util.Random;
 import java.util.logging.Level;
@@ -521,103 +522,72 @@ public final class MainPanel extends JPanel
             @Override
             public void actionPerformed(java.awt.event.ActionEvent evt)
             {
-                org.jdom2.Element root = new org.jdom2.Element(tituloTexto);
-                Document saida = new Document(root);
-                /*saida.setRootElement(root);
+                export();
+            }
+        });
+    }
+
+    public void export()
+    {
+        org.jdom2.Element root = new org.jdom2.Element(tituloTexto);
+        Document saida = new Document(root);
+        /*saida.setRootElement(root);
                 tudo é content da root
                 Texto*/
-                org.jdom2.Element elementTexto = new org.jdom2.Element("Texto");
-                elementTexto.setAttribute(new Attribute("conteudo", texto));
-                saida.getRootElement().addContent(elementTexto);
-                /*Sentencas
+        org.jdom2.Element elementTexto = new org.jdom2.Element("Texto");
+        elementTexto.setAttribute(new Attribute("conteudo", texto));
+        saida.getRootElement().addContent(elementTexto);
+        /*Sentencas
                 não mexi nas sentenças, então só copio
-                 */
-                org.jdom2.Element elementSentencas = new org.jdom2.Element(
-                        "Sentencas");
-                for (org.jdom2.Element sentenca : sentencas)
-                {
-                    org.jdom2.Element sentencaCopy = (org.jdom2.Element) sentenca.
-                            clone();
-                    elementSentencas.addContent(sentencaCopy.detach());
-                }
-                saida.getRootElement().addContent(elementSentencas);
-                /*Tokens
+         */
+        org.jdom2.Element elementSentencas = new org.jdom2.Element(
+                "Sentencas");
+        for (org.jdom2.Element sentenca : sentencas)
+        {
+            org.jdom2.Element sentencaCopy = (org.jdom2.Element) sentenca.
+                    clone();
+            elementSentencas.addContent(sentencaCopy.detach());
+        }
+        saida.getRootElement().addContent(elementSentencas);
+        /*Tokens
                 mesma lógica das sentenças
-                 */
-                org.jdom2.Element elementTokens = new org.jdom2.Element("Tokens");
-                for (org.jdom2.Element token : tokens)
-                {
-                    org.jdom2.Element tokenCopy = (org.jdom2.Element) token.
-                            clone();
-                    elementTokens.addContent(tokenCopy.detach());
-                }
-                saida.getRootElement().addContent(elementTokens);
-                //Cadeias
-                org.jdom2.Element elementCadeias = new org.jdom2.Element(
-                        "Cadeias");
-                saida.getRootElement().addContent(elementCadeias);
-                Component[] component = cont.getComponents();
-                for (Component component1 : component)
-                {//para cada cadeia
-                    JList jl = (JList) ((JViewport) ((JScrollPane) ((JPanel) component1).
-                            getComponents()[0]).getComponents()[0]).
-                            getComponents()[0];
-                    if (jl.getModel().getSize() < 1)
-                    {
-                    } //se não tiver nenhum item, nada a se fazer aqui
-                    else
-                    {
-                        int setNumber = ((Sintagma) jl.getModel().
-                                getElementAt(0)).set;
-                        org.jdom2.Element cadeia = new org.jdom2.Element(
-                                "Cadeia_" + setNumber);
-                        elementCadeias.addContent(cadeia);
-                        for (int j = 0; j < jl.getModel().getSize(); j++)
-                        {
-                            //TODO passar isso para dentro de um método no futuro para despoluir e não repetir o código
-                            Sintagma sint = (Sintagma) jl.getModel().
-                                    getElementAt(j);
-                            org.jdom2.Element sintagmaElement = new org.jdom2.Element(
-                                    "sn");
-                            cadeia.addContent(sintagmaElement);
-                            sintagmaElement.setAttribute("id", Integer.
-                                    toString(sint.snID));
-                            sintagmaElement.setAttribute("tokens",
-                                    sint.startToken + "..." + sint.endToken);
-                            sintagmaElement.setAttribute("nucleo", sint.nucleo);
-                            sintagmaElement.setAttribute("sintagma", sint.sn);
-                            if (sint.categoriaSemantica == null)
-                                sintagmaElement.setAttribute("Categoria", "--");
-                            sintagmaElement.setAttribute("Categoria",
-                                    sint.categoriaSemantica);
-                            sintagmaElement.setAttribute("sentenca", Integer.
-                                    toString(sint.sentenca));
-                            for (Word word : sint.words)
-                            {
-                                org.jdom2.Element wordElement = new org.jdom2.Element(
-                                        "word_" + word.tokenID);
-                                sintagmaElement.addContent(wordElement);
-                                wordElement.setAttribute("token", word.word);
-                                wordElement.setAttribute("lemma", word.lemma);
-                                wordElement.setAttribute("pos", word.pos);
-                                wordElement.setAttribute("features", word.morfo);
-                            }
-                        }
-                    }
-                }
-                JList jl = (JList) ((JViewport) ((JScrollPane) ((JPanel) rightGroupPanel.getComponents()[0]).
-                        getComponents()[0]).getComponents()[0]).getComponents()[0];
-                //Mencoes_Unicas
-                org.jdom2.Element solitariosElement = new org.jdom2.Element(
-                        "Mencoes_Unicas");
-                saida.getRootElement().addContent(solitariosElement);
+         */
+        org.jdom2.Element elementTokens = new org.jdom2.Element("Tokens");
+        for (org.jdom2.Element token : tokens)
+        {
+            org.jdom2.Element tokenCopy = (org.jdom2.Element) token.
+                    clone();
+            elementTokens.addContent(tokenCopy.detach());
+        }
+        saida.getRootElement().addContent(elementTokens);
+        //Cadeias
+        org.jdom2.Element elementCadeias = new org.jdom2.Element(
+                "Cadeias");
+        saida.getRootElement().addContent(elementCadeias);
+        Component[] component = cont.getComponents();
+        for (Component component1 : component)
+        {//para cada cadeia
+            JList jl = (JList) ((JViewport) ((JScrollPane) ((JPanel) component1).
+                    getComponents()[0]).getComponents()[0]).
+                    getComponents()[0];
+            if (jl.getModel().getSize() < 1)
+            {
+            } //se não tiver nenhum item, nada a se fazer aqui
+            else
+            {
+                int setNumber = ((Sintagma) jl.getModel().
+                        getElementAt(0)).set;
+                org.jdom2.Element cadeia = new org.jdom2.Element(
+                        "Cadeia_" + setNumber);
+                elementCadeias.addContent(cadeia);
                 for (int j = 0; j < jl.getModel().getSize(); j++)
-                {//para cada sintagma
+                {
+                    //TODO passar isso para dentro de um método no futuro para despoluir e não repetir o código
                     Sintagma sint = (Sintagma) jl.getModel().
                             getElementAt(j);
                     org.jdom2.Element sintagmaElement = new org.jdom2.Element(
                             "sn");
-                    solitariosElement.addContent(sintagmaElement);
+                    cadeia.addContent(sintagmaElement);
                     sintagmaElement.setAttribute("id", Integer.
                             toString(sint.snID));
                     sintagmaElement.setAttribute("tokens",
@@ -626,9 +596,8 @@ public final class MainPanel extends JPanel
                     sintagmaElement.setAttribute("sintagma", sint.sn);
                     if (sint.categoriaSemantica == null)
                         sintagmaElement.setAttribute("Categoria", "--");
-                    else
-                        sintagmaElement.setAttribute("Categoria",
-                                sint.categoriaSemantica);
+                    sintagmaElement.setAttribute("Categoria",
+                            sint.categoriaSemantica);
                     sintagmaElement.setAttribute("sentenca", Integer.
                             toString(sint.sentenca));
                     for (Word word : sint.words)
@@ -642,25 +611,62 @@ public final class MainPanel extends JPanel
                         wordElement.setAttribute("features", word.morfo);
                     }
                 }
-                Comparator<org.jdom2.Element> ordenador = (org.jdom2.Element cadeia1,
-                        org.jdom2.Element cadeia2) -> cadeia1.getName().compareTo(cadeia2.getName());
-                Collections.sort(saida.getRootElement().getChildren().get(3).getChildren(), ordenador);
-                try
-                {
-                    Format format = Format.getPrettyFormat();
-                    format.setEncoding("ISO-8859-1");
-                    XMLOutputter exporter = new XMLOutputter(format);
-                    File dirSaida = new File("saida");
-                    if (!dirSaida.exists())
-                        dirSaida.mkdir();
-                    exporter.output(saida, new FileWriter(dirSaida + File.separator + tituloTexto + ".xml"));
-                    JOptionPane.showMessageDialog(null, "Alterações salvas com sucesso no diretório de saída");
-                } catch (IOException ex)
-                {
-                    JOptionPane.showMessageDialog(null, "Houve um erro no salvamento das alterações.", "ERRO", JOptionPane.ERROR_MESSAGE);
-                }
             }
-        });
+        }
+        JList jl = (JList) ((JViewport) ((JScrollPane) ((JPanel) rightGroupPanel.getComponents()[0]).
+                getComponents()[0]).getComponents()[0]).getComponents()[0];
+        //Mencoes_Unicas
+        org.jdom2.Element solitariosElement = new org.jdom2.Element(
+                "Mencoes_Unicas");
+        saida.getRootElement().addContent(solitariosElement);
+        for (int j = 0; j < jl.getModel().getSize(); j++)
+        {//para cada sintagma
+            Sintagma sint = (Sintagma) jl.getModel().
+                    getElementAt(j);
+            org.jdom2.Element sintagmaElement = new org.jdom2.Element(
+                    "sn");
+            solitariosElement.addContent(sintagmaElement);
+            sintagmaElement.setAttribute("id", Integer.
+                    toString(sint.snID));
+            sintagmaElement.setAttribute("tokens",
+                    sint.startToken + "..." + sint.endToken);
+            sintagmaElement.setAttribute("nucleo", sint.nucleo);
+            sintagmaElement.setAttribute("sintagma", sint.sn);
+            if (sint.categoriaSemantica == null)
+                sintagmaElement.setAttribute("Categoria", "--");
+            else
+                sintagmaElement.setAttribute("Categoria",
+                        sint.categoriaSemantica);
+            sintagmaElement.setAttribute("sentenca", Integer.
+                    toString(sint.sentenca));
+            for (Word word : sint.words)
+            {
+                org.jdom2.Element wordElement = new org.jdom2.Element(
+                        "word_" + word.tokenID);
+                sintagmaElement.addContent(wordElement);
+                wordElement.setAttribute("token", word.word);
+                wordElement.setAttribute("lemma", word.lemma);
+                wordElement.setAttribute("pos", word.pos);
+                wordElement.setAttribute("features", word.morfo);
+            }
+        }
+        Comparator<org.jdom2.Element> ordenador = (org.jdom2.Element cadeia1,
+                org.jdom2.Element cadeia2) -> cadeia1.getName().compareTo(cadeia2.getName());
+        Collections.sort(saida.getRootElement().getChildren().get(3).getChildren(), ordenador);
+        try
+        {
+            Format format = Format.getPrettyFormat();
+            format.setEncoding("ISO-8859-1");
+            XMLOutputter exporter = new XMLOutputter(format);
+            File dirSaida = new File("saida");
+            if (!dirSaida.exists())
+                dirSaida.mkdir();
+            exporter.output(saida, new FileWriter(dirSaida + File.separator + tituloTexto + ".xml"));
+            JOptionPane.showMessageDialog(null, "Alterações salvas com sucesso no diretório de saída");
+        } catch (IOException ex)
+        {
+            JOptionPane.showMessageDialog(null, "Houve um erro no salvamento das alterações.", "ERRO", JOptionPane.ERROR_MESSAGE);
+        }
     }
 
     public void highlightSelecionados()
@@ -790,6 +796,7 @@ public final class MainPanel extends JPanel
 
     public static void main(String... args)
     {
+        
         EventQueue.invokeLater(()
                 -> 
                 {
@@ -812,8 +819,9 @@ public final class MainPanel extends JPanel
             IllegalArgumentException, InvocationTargetException,
             InstantiationException
     {
-        try
-        {
+        Locale.setDefault(new Locale("pt","BR"));
+        try 
+       {
             UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
 
         } catch (ClassNotFoundException | InstantiationException |
@@ -833,7 +841,19 @@ public final class MainPanel extends JPanel
             @Override
             public void windowClosing(WindowEvent e)
             {
-                JOptionPane.showMessageDialog(null, "ois", "faustão", JOptionPane.ERROR_MESSAGE);
+                int option = JOptionPane.showConfirmDialog(null, "Deseja salvar as alterações feitas?");
+                switch (option)
+                {
+                    case JOptionPane.YES_OPTION:
+                        m.export();
+                        frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
+                        break;
+                    case JOptionPane.NO_OPTION:
+                        frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
+                        break;
+                    case JOptionPane.CANCEL_OPTION:
+                        break;
+                }
             }
         }
         );
