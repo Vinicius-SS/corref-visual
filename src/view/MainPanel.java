@@ -66,8 +66,11 @@ public final class MainPanel extends JPanel
     private JButton botao;
     private JTextPane textPane;
     private JMenuBar jMenuBarMain;
-    private JMenu jMenuArquivo, jMenuAjuda;
+    private JMenu jMenuArquivo, jMenuOrdenar, jMenuAjuda;
     private JMenuItem jMenuImportar, jMenuExportar;
+    private JRadioButtonMenuItem jSortSolitariosPorAparicao, jSortSolitariosPorNomeAZ,
+            jSortSolitariosPorNomeZA;
+    private ButtonGroup ordenacaoSolitarios;
     private TransferHandler h;
     private Map<javax.swing.JList, javax.swing.JComboBox> listsToBoxes;
     private Map<javax.swing.JComboBox, Color> boxesToColors;
@@ -81,18 +84,35 @@ public final class MainPanel extends JPanel
     {
         super(new BorderLayout());
         jMenuArquivo = new javax.swing.JMenu();
+        jMenuOrdenar = new javax.swing.JMenu();
         jMenuAjuda = new javax.swing.JMenu();
         jMenuBarMain = new javax.swing.JMenuBar();
         jMenuImportar = new javax.swing.JMenuItem();
         jMenuExportar = new javax.swing.JMenuItem();
         jMenuArquivo.setText("Arquivo");
+        jMenuOrdenar.setText("Ordenar por...");
         jMenuAjuda.setText("Ajuda");
         jMenuImportar.setText("Importar XML");
         jMenuExportar.setText("Salvar alterações");
         jMenuArquivo.add(jMenuImportar);
         jMenuArquivo.add(jMenuExportar);
         jMenuBarMain.add(jMenuArquivo);
+        jMenuBarMain.add(jMenuOrdenar);
         jMenuBarMain.add(jMenuAjuda);
+        ordenacaoSolitarios = new ButtonGroup();
+        jSortSolitariosPorAparicao = new javax.swing.JRadioButtonMenuItem();
+        jSortSolitariosPorAparicao.setText("Aparição no texto");
+        jSortSolitariosPorAparicao.setSelected(true);
+        jSortSolitariosPorNomeAZ = new javax.swing.JRadioButtonMenuItem();
+        jSortSolitariosPorNomeAZ.setText("Ordem alfabética (A->Z)");
+        jSortSolitariosPorNomeZA = new javax.swing.JRadioButtonMenuItem();
+        jSortSolitariosPorNomeZA.setText("Ordem alfabética (Z->A)");
+        ordenacaoSolitarios.add(jSortSolitariosPorAparicao);
+        ordenacaoSolitarios.add(jSortSolitariosPorNomeAZ);
+        ordenacaoSolitarios.add(jSortSolitariosPorNomeZA);
+        jMenuOrdenar.add(jSortSolitariosPorAparicao);
+        jMenuOrdenar.add(jSortSolitariosPorNomeAZ);
+        jMenuOrdenar.add(jSortSolitariosPorNomeZA);
         textPane = new JTextPane();
         textPane.setEditable(false);
         jlistas = new ArrayList<>();
@@ -998,6 +1018,7 @@ public final class MainPanel extends JPanel
             cleanup(c, action == MOVE);
         }
 
+        //TODO destruir isso aqui se estiver vazio
         private void cleanup(JComponent c, boolean remove)
         {
             if (remove && indices != null)
