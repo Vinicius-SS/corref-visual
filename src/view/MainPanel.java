@@ -49,6 +49,12 @@ import org.jdom2.JDOMException;
 import org.jdom2.output.Format;
 import org.jdom2.output.XMLOutputter;
 
+/**
+ * Não é exatamente só o MainPanel, mas sim uma amálgama que também conta com
+ * 95% da lógica do programa. Em um breve futuro isso vai ser refatorado.
+ *
+ * @author Vinicius <vinicius.s.sesti@gmail.com>
+ */
 public final class MainPanel extends JPanel
 {
 
@@ -57,6 +63,7 @@ public final class MainPanel extends JPanel
     private Fachada fachada = Fachada.getInstance();
     private ArrayList<Sintagma> listaSintagma, listaOriginal;
     private ArrayList<Color> colors;
+    private JList jListSnSolitarios;
     private ArrayList<JList> jlistas;
     private String barra, texto;
     private Container cont;
@@ -79,6 +86,7 @@ public final class MainPanel extends JPanel
     private List<Token> listTokens;
     private String tituloTexto;
     private List<org.jdom2.Element> cadeias, sentencas, mencoes_unicas, tokens;
+    private Comparator<Sintagma> ordenador;
 
     private MainPanel() throws ClassNotFoundException, NoSuchMethodException
     {
@@ -237,6 +245,47 @@ public final class MainPanel extends JPanel
         splitPane.setResizeWeight(0.55);
         splitAllPane.setResizeWeight(0.01);
         this.add(splitAllPane, BorderLayout.CENTER);
+
+        private abstract class sorterEncapsulator
+        {
+        
+        jSortSolitariosPorAparicao.addActionListener(new ActionListener()
+        {
+            @Override
+            public void actionPerformed(ActionEvent evt)
+            {
+                ordenador = (Sintagma s1, Sintagma s2) -> new Integer(
+                        s1.snID).compareTo(s2.snID);
+                ordenaTudo();
+            }
+        }
+        );
+
+        jSortSolitariosPorNomeAZ.addActionListener(new ActionListener()
+        {
+            @Override
+            public void actionPerformed(ActionEvent evt)
+            {
+                ordenador = (Sintagma s1, Sintagma s2) -> 
+                        s1.sn.toLowerCase().compareTo(s2.sn.toLowerCase());
+                ordenaTudo();
+            }
+        }
+        );
+
+        jSortSolitariosPorNomeZA.addActionListener(new ActionListener()
+        {
+            @Override
+            public void actionPerformed(ActionEvent evt)
+            {
+                ordenador = (Sintagma s1, Sintagma s2) -> 
+                        s2.sn.toLowerCase().compareTo(s1.sn.toLowerCase());
+                ordenaTudo();
+            }
+        }
+        );
+        
+        }
 
         jMenuImportar.addActionListener(new ActionListener()
         {
@@ -401,7 +450,7 @@ public final class MainPanel extends JPanel
                         listaOriginal.add(s);
                     cont.removeAll();
                     rightGroupPanel.removeAll();
-                    JList jListSnSolitarios = makeList(h, fachada.
+                    jListSnSolitarios = makeList(h, fachada.
                             getGrupoSolitario().getListaSintagmas());
                     JComboBox solitariosBox = new JComboBox<String>();
                     solitariosBox.setSelectedItem("--");
@@ -537,7 +586,7 @@ public final class MainPanel extends JPanel
             }
         });
 
-        jMenuExportar.addActionListener(new java.awt.event.ActionListener()
+        jMenuExportar.addActionListener(new ActionListener()
         {
             @Override
             public void actionPerformed(java.awt.event.ActionEvent evt)
@@ -816,7 +865,7 @@ public final class MainPanel extends JPanel
 
     public static void main(String... args)
     {
-        
+
         EventQueue.invokeLater(()
                 -> 
                 {
@@ -839,9 +888,9 @@ public final class MainPanel extends JPanel
             IllegalArgumentException, InvocationTargetException,
             InstantiationException
     {
-        Locale.setDefault(new Locale("pt","BR"));
-        try 
-       {
+        Locale.setDefault(new Locale("pt", "BR"));
+        try
+        {
             UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
 
         } catch (ClassNotFoundException | InstantiationException |
@@ -878,6 +927,26 @@ public final class MainPanel extends JPanel
         }
         );
 
+    }
+    
+    public void ordenaTudo()
+    {
+        for(JList cadeia : jlistas)
+            sortJList(cadeia,ordenador);
+        sortJList(jListSnSolitarios,ordenador);
+    }
+    
+    private void sortJList(JList sortee, Comparator<Sintagma> comparator)
+    {
+        DefaultListModel model = (DefaultListModel) sortee.getModel();
+        Object [] modelToArray = model.toArray();
+        model.clear();
+        ArrayList<Sintagma> sints = new ArrayList<>();
+        for(Object obj : modelToArray)
+            sints.add((Sintagma)obj);
+        Collections.sort(sints, comparator);
+        for(Sintagma s : sints)
+            model.addElement(s);
     }
 
     private void gerarCores(int n)
@@ -984,8 +1053,13 @@ public final class MainPanel extends JPanel
                             foundColor = true;
                     }
                 }
-                Comparator<Sintagma> ordenador = (Sintagma s1, Sintagma s2) -> new Integer(
-                        s1.snID).compareTo(s2.snID);
+                /*TODO eu *SEI* que isso aqui tá ordenado de acordo com algum critério
+                dá para fazer inserção binária aqui em vez de inserir e só depois
+                ordenar. de O(n2) para O(log n)...  
+                */
+                
+                //TODO exterminar esse sort sujo aqui no meio depois que eu garantir
+                //que o meu novo sort com os botões tá funcionando
                 Collections.sort(sints, ordenador);
                 listModel.clear();
                 /*se newColor tiver chegado até aqui null, tem alguma coisa
@@ -1018,7 +1092,7 @@ public final class MainPanel extends JPanel
             cleanup(c, action == MOVE);
         }
 
-        //TODO destruir isso aqui se estiver vazio
+        //TODO destruir a caixa se estiver vazia
         private void cleanup(JComponent c, boolean remove)
         {
             if (remove && indices != null)
@@ -1038,4 +1112,7 @@ public final class MainPanel extends JPanel
             MainPanel.m.highlightSelecionados();
         }
     }
+
+    
+
 }
