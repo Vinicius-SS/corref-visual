@@ -15,6 +15,8 @@ import java.awt.datatransfer.UnsupportedFlavorException;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.KeyEvent;
+import java.awt.event.WindowAdapter;
+import java.awt.event.WindowEvent;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -84,7 +86,7 @@ public final class MainPanel extends JPanel
         jMenuExportar = new javax.swing.JMenuItem();
         jMenuArquivo.setText("Arquivo");
         jMenuAjuda.setText("Ajuda");
-        jMenuImportar.setText("Importar texto");
+        jMenuImportar.setText("Importar XML");
         jMenuExportar.setText("Salvar alterações");
         jMenuArquivo.add(jMenuImportar);
         jMenuArquivo.add(jMenuExportar);
@@ -584,8 +586,8 @@ public final class MainPanel extends JPanel
                                     sint.startToken + "..." + sint.endToken);
                             sintagmaElement.setAttribute("nucleo", sint.nucleo);
                             sintagmaElement.setAttribute("sintagma", sint.sn);
-                            if(sint.categoriaSemantica==null)
-                                    sintagmaElement.setAttribute("Categoria", "--");
+                            if (sint.categoriaSemantica == null)
+                                sintagmaElement.setAttribute("Categoria", "--");
                             sintagmaElement.setAttribute("Categoria",
                                     sint.categoriaSemantica);
                             sintagmaElement.setAttribute("sentenca", Integer.
@@ -622,11 +624,11 @@ public final class MainPanel extends JPanel
                             sint.startToken + "..." + sint.endToken);
                     sintagmaElement.setAttribute("nucleo", sint.nucleo);
                     sintagmaElement.setAttribute("sintagma", sint.sn);
-                    if(sint.categoriaSemantica==null)
+                    if (sint.categoriaSemantica == null)
                         sintagmaElement.setAttribute("Categoria", "--");
                     else
                         sintagmaElement.setAttribute("Categoria",
-                            sint.categoriaSemantica);
+                                sint.categoriaSemantica);
                     sintagmaElement.setAttribute("sentenca", Integer.
                             toString(sint.sentenca));
                     for (Word word : sint.words)
@@ -692,7 +694,7 @@ public final class MainPanel extends JPanel
         SimpleAttributeSet keyWord = new SimpleAttributeSet();
         StyleConstants.setForeground(keyWord, s.cor);
         StyleConstants.setBold(keyWord, true);
-        StyleConstants.setFontSize(keyWord, 14);
+        StyleConstants.setFontSize(keyWord, 18);
         doc.setCharacterAttributes(startChar, s.sn.length(), keyWord, false);
     }
 
@@ -819,13 +821,23 @@ public final class MainPanel extends JPanel
         {
         }
         JFrame frame = new JFrame("CorrefVisual");
-        frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
+        frame.setDefaultCloseOperation(WindowConstants.DO_NOTHING_ON_CLOSE);
         m = new MainPanel();
         frame.getContentPane().add(m);
         frame.pack();
         frame.setLocationRelativeTo(null);
         frame.setExtendedState(JFrame.MAXIMIZED_BOTH);
         frame.setVisible(true);
+        frame.addWindowListener(new WindowAdapter()
+        {
+            @Override
+            public void windowClosing(WindowEvent e)
+            {
+                JOptionPane.showMessageDialog(null, "ois", "faustão", JOptionPane.ERROR_MESSAGE);
+            }
+        }
+        );
+
     }
 
     private void gerarCores(int n)
@@ -895,6 +907,9 @@ public final class MainPanel extends JPanel
             {
                 Object[] values = (Object[]) info.getTransferable().
                         getTransferData(localObjectFlavor);
+                //estou tentando arrastar para a mesma cadeia?
+                if (((Sintagma) values[0]).set == ((Sintagma) listModel.elementAt(0)).set)
+                    return false;
                 Color oldColor = null;
                 Color newColor = null;
                 boolean foundColor = false;
