@@ -64,11 +64,12 @@ public final class MainPanel extends JPanel
     private ArrayList<Sintagma> listaSintagma, listaOriginal;
     private ArrayList<Color> colors;
     private JList jListSnSolitarios;
-    private ArrayList<JList> jlistas;
-    private String barra, texto;
+    private ArrayList<JList> jlistas, listaApoio;
+    private String texto;
     private Container cont;
-    private JSplitPane splitGroupPane, splitPane, upSplitPane, splitAllPane;
-    private JPanel rightGroupPanel, leftPanel, upPanel;
+    private JSplitPane splitGroupPane, splitPane, upSplitPane, splitAllPane,
+            splitApoioDeCadeias;
+    private JPanel rightGroupPanel, leftPanel, upPanel, painelApoio;
     private JScrollPane leftGroupPanel;
     private JButton botao;
     private JTextPane textPane;
@@ -246,9 +247,6 @@ public final class MainPanel extends JPanel
         splitAllPane.setResizeWeight(0.01);
         this.add(splitAllPane, BorderLayout.CENTER);
 
-        private abstract class sorterEncapsulator
-        {
-        
         jSortSolitariosPorAparicao.addActionListener(new ActionListener()
         {
             @Override
@@ -266,8 +264,8 @@ public final class MainPanel extends JPanel
             @Override
             public void actionPerformed(ActionEvent evt)
             {
-                ordenador = (Sintagma s1, Sintagma s2) -> 
-                        s1.sn.toLowerCase().compareTo(s2.sn.toLowerCase());
+                ordenador = (Sintagma s1, Sintagma s2)
+                        -> s1.sn.toLowerCase().compareTo(s2.sn.toLowerCase());
                 ordenaTudo();
             }
         }
@@ -278,14 +276,12 @@ public final class MainPanel extends JPanel
             @Override
             public void actionPerformed(ActionEvent evt)
             {
-                ordenador = (Sintagma s1, Sintagma s2) -> 
-                        s2.sn.toLowerCase().compareTo(s1.sn.toLowerCase());
+                ordenador = (Sintagma s1, Sintagma s2)
+                        -> s2.sn.toLowerCase().compareTo(s1.sn.toLowerCase());
                 ordenaTudo();
             }
         }
         );
-        
-        }
 
         jMenuImportar.addActionListener(new ActionListener()
         {
@@ -928,24 +924,24 @@ public final class MainPanel extends JPanel
         );
 
     }
-    
+
     public void ordenaTudo()
     {
-        for(JList cadeia : jlistas)
-            sortJList(cadeia,ordenador);
-        sortJList(jListSnSolitarios,ordenador);
+        for (JList cadeia : jlistas)
+            sortJList(cadeia, ordenador);
+        sortJList(jListSnSolitarios, ordenador);
     }
-    
+
     private void sortJList(JList sortee, Comparator<Sintagma> comparator)
     {
         DefaultListModel model = (DefaultListModel) sortee.getModel();
-        Object [] modelToArray = model.toArray();
+        Object[] modelToArray = model.toArray();
         model.clear();
         ArrayList<Sintagma> sints = new ArrayList<>();
-        for(Object obj : modelToArray)
-            sints.add((Sintagma)obj);
+        for (Object obj : modelToArray)
+            sints.add((Sintagma) obj);
         Collections.sort(sints, comparator);
-        for(Sintagma s : sints)
+        for (Sintagma s : sints)
             model.addElement(s);
     }
 
@@ -965,12 +961,14 @@ public final class MainPanel extends JPanel
         private int[] indices;
         private int addIndex = -1;
         private int addCount;
+        private boolean removal;
 
         public ListItemTransferHandler()
         {
             super();
             localObjectFlavor = new ActivationDataFlavor(Object[].class,
                     DataFlavor.javaJVMLocalObjectMimeType, "Array of items");
+            removal = true;
         }
 
         @Override
@@ -999,11 +997,12 @@ public final class MainPanel extends JPanel
         @Override
         public boolean importData(TransferHandler.TransferSupport info)
         {
-            if (!canImport(info))
-                return false;
             TransferHandler.DropLocation tdl = info.getDropLocation();
-            if (!(tdl instanceof JList.DropLocation))
+            if (!(canImport(info) && tdl instanceof JList.DropLocation))
+            {
+                removal = false;
                 return false;
+            }
             JList.DropLocation dl = (JList.DropLocation) tdl;
             JList target = (JList) info.getComponent();
             DefaultListModel listModel = (DefaultListModel) target.getModel();
@@ -1017,8 +1016,13 @@ public final class MainPanel extends JPanel
                 Object[] values = (Object[]) info.getTransferable().
                         getTransferData(localObjectFlavor);
                 //estou tentando arrastar para a mesma cadeia?
-                if (((Sintagma) values[0]).set == ((Sintagma) listModel.elementAt(0)).set)
-                    return false;
+                if (listModel.size() > 0)
+                    if (((Sintagma) values[0]).set == ((Sintagma) listModel.elementAt(0)).set)
+                    {
+                        removal = false;
+                        return false;
+                    }
+                removal = true;
                 Color oldColor = null;
                 Color newColor = null;
                 boolean foundColor = false;
@@ -1056,8 +1060,8 @@ public final class MainPanel extends JPanel
                 /*TODO eu *SEI* que isso aqui tá ordenado de acordo com algum critério
                 dá para fazer inserção binária aqui em vez de inserir e só depois
                 ordenar. de O(n2) para O(log n)...  
-                */
-                
+                 */
+
                 //TODO exterminar esse sort sujo aqui no meio depois que eu garantir
                 //que o meu novo sort com os botões tá funcionando
                 Collections.sort(sints, ordenador);
@@ -1078,18 +1082,18 @@ public final class MainPanel extends JPanel
                     sint.cor = newColor;
                     listModel.addElement(sint);
                 }
-
                 return true;
             } catch (UnsupportedFlavorException | IOException ex)
             {
             }
+            removal = false;
             return false;
         }
 
         @Override
         protected void exportDone(JComponent c, Transferable data, int action)
         {
-            cleanup(c, action == MOVE);
+            cleanup(c, this.removal);
         }
 
         //TODO destruir a caixa se estiver vazia
@@ -1112,7 +1116,5 @@ public final class MainPanel extends JPanel
             MainPanel.m.highlightSelecionados();
         }
     }
-
-    
 
 }
