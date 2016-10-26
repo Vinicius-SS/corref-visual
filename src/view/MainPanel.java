@@ -63,25 +63,26 @@ public final class MainPanel extends JPanel
     private Fachada fachada = Fachada.getInstance();
     private ArrayList<Sintagma> listaSintagma, listaOriginal;
     private ArrayList<Color> colors;
-    private JList jListSnSolitarios;
-    private ArrayList<JList> jlistas, listaApoio;
+    private JList jListSnSolitarios, listaDeApoio;
+    private ArrayList<JList> jlistas;
     private String texto;
     private Container cont;
     private JSplitPane splitGroupPane, splitPane, upSplitPane, splitAllPane,
             splitApoioDeCadeias;
-    private JPanel rightGroupPanel, leftPanel, upPanel, painelApoio;
-    private JScrollPane leftGroupPanel;
-    private JButton botao;
-    private JTextPane textPane;
+    private JPanel rightGroupPanel, panelTextoPuro, upPanel, painelApoio;
+    private JScrollPane leftGroupPanel, scrollListaDeApoio;
+    private JButton botaoNovoGrupo;
+    private JTextPane textoPuroPane;
     private JMenuBar jMenuBarMain;
     private JMenu jMenuArquivo, jMenuOrdenar, jMenuAjuda;
-    private JMenuItem jMenuImportar, jMenuExportar;
+    private JMenuItem jMenuItemImportar, jMenuItemExportar;
     private JRadioButtonMenuItem jSortSolitariosPorAparicao, jSortSolitariosPorNomeAZ,
             jSortSolitariosPorNomeZA;
     private ButtonGroup ordenacaoSolitarios;
     private TransferHandler h;
-    private Map<javax.swing.JList, javax.swing.JComboBox> listsToBoxes;
-    private Map<javax.swing.JComboBox, Color> boxesToColors;
+    private Map<JList, JComboBox> listsToBoxes;
+    private Map<JComboBox, Color> boxesToColors;
+    private Map<JList, JPanel> listsToPanels;
     public static int maiorSet;
     public static MainPanel m;
     private List<Token> listTokens;
@@ -96,15 +97,15 @@ public final class MainPanel extends JPanel
         jMenuOrdenar = new javax.swing.JMenu();
         jMenuAjuda = new javax.swing.JMenu();
         jMenuBarMain = new javax.swing.JMenuBar();
-        jMenuImportar = new javax.swing.JMenuItem();
-        jMenuExportar = new javax.swing.JMenuItem();
+        jMenuItemImportar = new javax.swing.JMenuItem();
+        jMenuItemExportar = new javax.swing.JMenuItem();
         jMenuArquivo.setText("Arquivo");
         jMenuOrdenar.setText("Ordenar por...");
         jMenuAjuda.setText("Ajuda");
-        jMenuImportar.setText("Importar XML");
-        jMenuExportar.setText("Salvar alterações");
-        jMenuArquivo.add(jMenuImportar);
-        jMenuArquivo.add(jMenuExportar);
+        jMenuItemImportar.setText("Importar XML");
+        jMenuItemExportar.setText("Salvar alterações");
+        jMenuArquivo.add(jMenuItemImportar);
+        jMenuArquivo.add(jMenuItemExportar);
         jMenuBarMain.add(jMenuArquivo);
         jMenuBarMain.add(jMenuOrdenar);
         jMenuBarMain.add(jMenuAjuda);
@@ -122,26 +123,27 @@ public final class MainPanel extends JPanel
         jMenuOrdenar.add(jSortSolitariosPorAparicao);
         jMenuOrdenar.add(jSortSolitariosPorNomeAZ);
         jMenuOrdenar.add(jSortSolitariosPorNomeZA);
-        textPane = new JTextPane();
-        textPane.setEditable(false);
+        textoPuroPane = new JTextPane();
+        textoPuroPane.setEditable(false);
         jlistas = new ArrayList<>();
         colors = new ArrayList<>();
         gerarCores(10);
         upPanel = createHorizontalBoxPanel(150, 100);
         upPanel.add(jMenuBarMain);
-        leftPanel = createVerticalBoxPanel(getPreferredSize());
-        leftPanel.add(createPanelForComponent(new JScrollPane(textPane), ""));
+        panelTextoPuro = createVerticalBoxPanel(getPreferredSize());
+        panelTextoPuro.add(createPanelForComponent(new JScrollPane(textoPuroPane), ""));
         leftGroupPanel = createVerticalScrollBoxPanel(this.getPreferredSize());
         rightGroupPanel = createVerticalBoxPanel(this.getPreferredSize());
         listsToBoxes = new HashMap<>();
         boxesToColors = new HashMap<>();
+        listsToPanels = new HashMap<>();
 
         JPanel btPanel = createHorizontalBoxPanel(100, 100);
-        botao = new JButton("Novo Grupo");
-        btPanel.add(botao);
-        botao.setEnabled(false);
+        botaoNovoGrupo = new JButton("Novo Grupo");
+        btPanel.add(botaoNovoGrupo);
+        botaoNovoGrupo.setEnabled(false);
 
-        botao.addActionListener(new ActionListener()
+        botaoNovoGrupo.addActionListener(new ActionListener()
         {
             @Override
             public void actionPerformed(ActionEvent e)
@@ -151,7 +153,6 @@ public final class MainPanel extends JPanel
 
             private void addBox()
             {
-                //TODO arrumar a categoria semântica aqui depois
                 ArrayList<Sintagma> lista = new ArrayList<>();
                 JList jListSintagma = makeList(h, lista);
                 jlistas.add(jListSintagma);
@@ -223,29 +224,56 @@ public final class MainPanel extends JPanel
 
         leftGroupPanel.setViewportView(cont);
 
-        this.add(leftPanel);
+        this.add(panelTextoPuro);
         this.add(leftGroupPanel);
         this.add(rightGroupPanel);
+
+        listaDeApoio = makeList(h, new ArrayList<>());
+        listaDeApoio.setSelectionModel(
+                new DefaultListSelectionModel()
+        {
+            @Override
+            public void setSelectionInterval(int start, int end)
+            {
+                if (start != end)
+                    super.setSelectionInterval(start, end);
+                else if (isSelectedIndex(start))
+                {
+                    removeSelectionInterval(start, end);
+                    highlightSelecionados();
+                } else
+                {
+                    addSelectionInterval(start, end);
+                    highlightSelecionados();
+                }
+            }
+        });
+        scrollListaDeApoio = new JScrollPane(listaDeApoio);
+        painelApoio = createPanelForComponent(scrollListaDeApoio, "");
 
         splitGroupPane = new JSplitPane(JSplitPane.HORIZONTAL_SPLIT,
                 leftGroupPanel, rightGroupPanel);
         splitGroupPane.setResizeWeight(0.5);
         this.add(splitGroupPane);
 
-        splitPane = new JSplitPane(JSplitPane.HORIZONTAL_SPLIT, leftPanel,
+        splitPane = new JSplitPane(JSplitPane.HORIZONTAL_SPLIT, panelTextoPuro,
                 splitGroupPane);
 
         upSplitPane = new JSplitPane(JSplitPane.HORIZONTAL_SPLIT, upPanel,
                 btPanel);
         upSplitPane.setResizeWeight(0.527);
 
+//TODO fazer essa caixinha
+        //  splitApoioDeCadeias = new JSplitPane(JSplitPane.VERTICAL_SPLIT,painelApoio,cont);
         splitAllPane = new JSplitPane(JSplitPane.VERTICAL_SPLIT, upSplitPane,
                 splitPane);
-
         splitPane.setOneTouchExpandable(true);
         splitPane.setResizeWeight(0.55);
         splitAllPane.setResizeWeight(0.01);
         this.add(splitAllPane, BorderLayout.CENTER);
+        ordenador = (Sintagma s1, Sintagma s2) -> new Integer(
+                s1.snID).compareTo(s2.snID);
+
         jSortSolitariosPorAparicao.addActionListener(new ActionListener()
         {
             @Override
@@ -282,7 +310,7 @@ public final class MainPanel extends JPanel
         }
         );
 
-        jMenuImportar.addActionListener(new ActionListener()
+        jMenuItemImportar.addActionListener(new ActionListener()
         {
             @Override
             public void actionPerformed(java.awt.event.ActionEvent evt)
@@ -295,6 +323,7 @@ public final class MainPanel extends JPanel
                     fachada.getGrupoSolitario().getListaSintagmas().clear();
                     listsToBoxes.clear();
                     boxesToColors.clear();
+                    listsToPanels.clear();
                     maiorSet = -1;
                     listTokens = new ArrayList<>();
                 }
@@ -305,7 +334,7 @@ public final class MainPanel extends JPanel
                             new File("XML Novos aspas fixed"));
                     chooser.showOpenDialog(null);
                     File xml = chooser.getSelectedFile();
-                    botao.setEnabled(true);
+                    botaoNovoGrupo.setEnabled(true);
                     Document document = new SAXBuilder().build(xml);
                     String texto = document.getRootElement().getChildren().
                             get(0).getAttributeValue("conteudo");
@@ -581,7 +610,7 @@ public final class MainPanel extends JPanel
             }
         });
 
-        jMenuExportar.addActionListener(new ActionListener()
+        jMenuItemExportar.addActionListener(new ActionListener()
         {
             @Override
             public void actionPerformed(java.awt.event.ActionEvent evt)
@@ -714,9 +743,9 @@ public final class MainPanel extends JPanel
                 wordElement.setAttribute("features", word.morfo);
             }
         }
-        Comparator<org.jdom2.Element> ordenador = (org.jdom2.Element cadeia1,
+        Comparator<org.jdom2.Element> elementOrdenador = (org.jdom2.Element cadeia1,
                 org.jdom2.Element cadeia2) -> cadeia1.getName().compareTo(cadeia2.getName());
-        Collections.sort(saida.getRootElement().getChildren().get(3).getChildren(), ordenador);
+        Collections.sort(saida.getRootElement().getChildren().get(3).getChildren(), elementOrdenador);
         try
         {
             Format format = Format.getPrettyFormat();
@@ -760,7 +789,7 @@ public final class MainPanel extends JPanel
     {
         Token t = listTokens.get(s.startToken);
         int startChar = t.startChar;
-        StyledDocument doc = textPane.getStyledDocument();
+        StyledDocument doc = textoPuroPane.getStyledDocument();
         SimpleAttributeSet keyWord = new SimpleAttributeSet();
         StyleConstants.setForeground(keyWord, s.cor);
         StyleConstants.setBold(keyWord, true);
@@ -771,17 +800,17 @@ public final class MainPanel extends JPanel
     public void setTexto(String texto)
     {
         this.texto = texto;
-        textPane.setText(texto);
-        textPane.setEditable(false);
-        textPane.setBackground(Color.WHITE);
-        textPane.setBorder(null);
+        textoPuroPane.setText(texto);
+        textoPuroPane.setEditable(false);
+        textoPuroPane.setBackground(Color.WHITE);
+        textoPuroPane.setBorder(null);
         SimpleAttributeSet keyWord = new SimpleAttributeSet();
         StyleConstants.setForeground(keyWord, Color.BLACK);
         StyleConstants.setFontSize(keyWord, 15);
         StyleConstants.setAlignment(keyWord, StyleConstants.ALIGN_JUSTIFIED);
-        textPane.getStyledDocument().setParagraphAttributes(0, texto.length(),
+        textoPuroPane.getStyledDocument().setParagraphAttributes(0, texto.length(),
                 keyWord, false);
-        textPane.setVisible(true);
+        textoPuroPane.setVisible(true);
     }
 
     protected JScrollPane createVerticalScrollBoxPanel(Dimension d)
@@ -893,18 +922,13 @@ public final class MainPanel extends JPanel
         {
         }
         JFrame frame = new JFrame("CorrefVisual");
-        JFrame floating = new JFrame("Sintagmas");
         frame.setDefaultCloseOperation(WindowConstants.DO_NOTHING_ON_CLOSE);
-        floating.setDefaultCloseOperation(WindowConstants.DO_NOTHING_ON_CLOSE);
         m = new MainPanel();
         frame.getContentPane().add(m);
         frame.pack();
-        floating.pack();
         frame.setLocationRelativeTo(null);
-        floating.setLocationRelativeTo(null);
         frame.setExtendedState(JFrame.MAXIMIZED_BOTH);
         frame.setVisible(true);
-        floating.setVisible(true);
         frame.addWindowListener(new WindowAdapter()
         {
             @Override
@@ -916,11 +940,9 @@ public final class MainPanel extends JPanel
                     case JOptionPane.YES_OPTION:
                         m.export();
                         frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
-                        //floating.dispose();
                         break;
                     case JOptionPane.NO_OPTION:
                         frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
-                        //floating.dispose();
                         break;
                     case JOptionPane.CANCEL_OPTION:
                         break;
@@ -1081,13 +1103,14 @@ public final class MainPanel extends JPanel
                     newColor
                             = new Color(cores.nextInt(256), cores.nextInt(256),
                                     cores.nextInt(256));
-
                 for (Sintagma sint : sints)
                 {//arruma as cores e a categoria semântica
                     sint.categoriaSemantica = novaCategoria;
                     sint.cor = newColor;
                     listModel.addElement(sint);
                 }
+                cleanup(source, this.removal);
+                MainPanel.m.highlightSelecionados();
                 return true;
             } catch (UnsupportedFlavorException | IOException ex)
             {
@@ -1099,7 +1122,7 @@ public final class MainPanel extends JPanel
         @Override
         protected void exportDone(JComponent c, Transferable data, int action)
         {
-            cleanup(c, this.removal);
+            //cleanup(c, this.removal);
         }
 
         //TODO destruir a caixa se estiver vazia
