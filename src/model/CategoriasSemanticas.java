@@ -65,8 +65,7 @@ public enum CategoriasSemanticas
     documentos("DOCUMENTOS"),
     substâncias("SUBSTÂNCIAS"),
     produtos("PRODUTOS"),
-    outro("OUTRO"),
-    menosmenos("--")
+    outro("OUTRO")
     ;
 
     private String categ;

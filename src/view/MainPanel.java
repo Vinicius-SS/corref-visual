@@ -150,7 +150,7 @@ public final class MainPanel extends JPanel
         botaoNovoGrupo.setEnabled(false);
 
         solitariosBox = new JComboBox<>();
-        solitariosBox.setSelectedItem("--");
+        solitariosBox.setSelectedItem("OUTRO");
 
         botaoNovoGrupo.addActionListener(new ActionListener()
         {
