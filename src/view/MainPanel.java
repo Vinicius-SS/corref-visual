@@ -7,6 +7,7 @@ import java.awt.Component;
 import java.awt.Container;
 import java.awt.Dimension;
 import java.awt.EventQueue;
+import java.awt.Font;
 import java.awt.Graphics;
 import java.awt.HeadlessException;
 import java.awt.datatransfer.DataFlavor;
@@ -68,9 +69,11 @@ public final class MainPanel extends JPanel
     private String texto;
     private Container cont;
     private JSplitPane splitGroupPane, splitPane, upSplitPane, splitAllPane,
-            splitApoioDeCadeias;
-    private JPanel rightGroupPanel, panelTextoPuro, upPanel, painelApoio;
-    private JScrollPane leftGroupPanel, scrollListaDeApoio;
+            splitApoioDeSolitarios;
+    private JPanel rightGroupPanel, leftGroupJPanel, panelTextoPuro, upPanel,
+            rightGroupJPanel;
+    private JScrollPane leftGroupPanel, scrollSolitarios,
+            scrollListaDeApoio;
     private JButton botaoNovoGrupo;
     private JTextPane textoPuroPane;
     private JMenuBar jMenuBarMain;
@@ -83,8 +86,10 @@ public final class MainPanel extends JPanel
     private Map<JList, JComboBox> listsToBoxes;
     private Map<JComboBox, Color> boxesToColors;
     private Map<JList, JPanel> listsToPanels;
+    private JComboBox<String> solitariosBox;
     public static int maiorSet;
     public static MainPanel m;
+    private static boolean importedAnything;
     private List<Token> listTokens;
     private String tituloTexto;
     private List<org.jdom2.Element> cadeias, sentencas, mencoes_unicas, tokens;
@@ -134,6 +139,7 @@ public final class MainPanel extends JPanel
         panelTextoPuro.add(createPanelForComponent(new JScrollPane(textoPuroPane), ""));
         leftGroupPanel = createVerticalScrollBoxPanel(this.getPreferredSize());
         rightGroupPanel = createVerticalBoxPanel(this.getPreferredSize());
+        importedAnything = false;
         listsToBoxes = new HashMap<>();
         boxesToColors = new HashMap<>();
         listsToPanels = new HashMap<>();
@@ -142,6 +148,9 @@ public final class MainPanel extends JPanel
         botaoNovoGrupo = new JButton("Novo Grupo");
         btPanel.add(botaoNovoGrupo);
         botaoNovoGrupo.setEnabled(false);
+
+        solitariosBox = new JComboBox<>();
+        solitariosBox.setSelectedItem("--");
 
         botaoNovoGrupo.addActionListener(new ActionListener()
         {
@@ -223,11 +232,12 @@ public final class MainPanel extends JPanel
         cont.setLayout(new BoxLayout(cont, BoxLayout.PAGE_AXIS));
 
         leftGroupPanel.setViewportView(cont);
-
+        leftGroupJPanel = createPanelForComponent(leftGroupPanel, "");
+        rightGroupJPanel = new JPanel(new BorderLayout());
+        rightGroupJPanel.setBorder(BorderFactory.createTitledBorder(""));
         this.add(panelTextoPuro);
-        this.add(leftGroupPanel);
-        this.add(rightGroupPanel);
-
+        this.add(leftGroupJPanel);
+        this.add(rightGroupJPanel);
         listaDeApoio = makeList(h, new ArrayList<>());
         listaDeApoio.setSelectionModel(
                 new DefaultListSelectionModel()
@@ -248,8 +258,12 @@ public final class MainPanel extends JPanel
                 }
             }
         });
+
         scrollListaDeApoio = new JScrollPane(listaDeApoio);
-        painelApoio = createPanelForComponent(scrollListaDeApoio, "");
+        JLabel apoioLabel = new JLabel("Painel auxiliar");
+        scrollListaDeApoio.setColumnHeaderView(apoioLabel);
+
+        rightGroupJPanel.add(rightGroupPanel);
 
         splitGroupPane = new JSplitPane(JSplitPane.HORIZONTAL_SPLIT,
                 leftGroupPanel, rightGroupPanel);
@@ -263,8 +277,12 @@ public final class MainPanel extends JPanel
                 btPanel);
         upSplitPane.setResizeWeight(0.527);
 
-//TODO fazer essa caixinha
-        //  splitApoioDeCadeias = new JSplitPane(JSplitPane.VERTICAL_SPLIT,painelApoio,cont);
+        splitApoioDeSolitarios = new JSplitPane(JSplitPane.HORIZONTAL_SPLIT, scrollListaDeApoio,
+                scrollSolitarios);
+        this.add(splitApoioDeSolitarios);
+
+        upSplitPane.setResizeWeight(0.5);
+
         splitAllPane = new JSplitPane(JSplitPane.VERTICAL_SPLIT, upSplitPane,
                 splitPane);
         splitPane.setOneTouchExpandable(true);
@@ -326,6 +344,9 @@ public final class MainPanel extends JPanel
                     listsToPanels.clear();
                     maiorSet = -1;
                     listTokens = new ArrayList<>();
+
+                    rightGroupPanel.add(scrollListaDeApoio);
+                    listsToBoxes.put(listaDeApoio, solitariosBox);
                 }
                 try
                 {
@@ -472,15 +493,15 @@ public final class MainPanel extends JPanel
                     listaOriginal = new ArrayList<>();
                     for (Sintagma s : listaSintagma)
                         listaOriginal.add(s);
-                    cont.removeAll();
-                    rightGroupPanel.removeAll();
+                    //cont.removeAll();
+                    //rightGroupPanel.removeAll();
                     jListSnSolitarios = makeList(h, fachada.
                             getGrupoSolitario().getListaSintagmas());
-                    JComboBox solitariosBox = new JComboBox<String>();
-                    solitariosBox.setSelectedItem("--");
                     listsToBoxes.put(jListSnSolitarios, solitariosBox);
-                    rightGroupPanel.add(createPanelForComponent(new JScrollPane(
-                            jListSnSolitarios), ""));
+                    scrollSolitarios = new JScrollPane(jListSnSolitarios);
+                    JLabel solitariosLabel = new JLabel("Menções únicas");
+                    scrollSolitarios.setColumnHeaderView(solitariosLabel);
+                    rightGroupPanel.add(createPanelForComponent(scrollSolitarios, ""));
                     jListSnSolitarios.setSelectionModel(
                             new DefaultListSelectionModel()
                     {
@@ -601,12 +622,14 @@ public final class MainPanel extends JPanel
                             jp.setForeground(colors.get(colors.size() - 1));
                             jp.setBackground(colors.get(colors.size() - 1));
                         }
+                    splitAllPane.revalidate();
+                    splitAllPane.repaint();
+                    importedAnything = true;
                 } catch (HeadlessException | JDOMException | IOException |
                         NumberFormatException e)
                 {
+                    e.printStackTrace();
                 }
-                splitAllPane.revalidate();
-                splitAllPane.repaint();
             }
         });
 
@@ -620,8 +643,15 @@ public final class MainPanel extends JPanel
         });
     }
 
-    public void export()
+    public boolean export()
     {
+        if (listaDeApoio.getModel().getSize() > 0)
+        {
+            JOptionPane.showMessageDialog(null, "Esvazie o painel auxiliar"
+                    + " para salvar as alterações.", "Não foi possível salvar",
+                    JOptionPane.ERROR_MESSAGE);
+            return false;
+        }
         org.jdom2.Element root = new org.jdom2.Element(tituloTexto);
         Document saida = new Document(root);
         /*saida.setRootElement(root);
@@ -706,7 +736,7 @@ public final class MainPanel extends JPanel
                 }
             }
         }
-        JList jl = (JList) ((JViewport) ((JScrollPane) ((JPanel) rightGroupPanel.getComponents()[0]).
+        JList jl = (JList) ((JViewport) ((JScrollPane) ((JPanel) rightGroupPanel.getComponents()[1]).
                 getComponents()[0]).getComponents()[0]).getComponents()[0];
         //Mencoes_Unicas
         org.jdom2.Element solitariosElement = new org.jdom2.Element(
@@ -760,6 +790,7 @@ public final class MainPanel extends JPanel
         {
             JOptionPane.showMessageDialog(null, "Houve um erro no salvamento das alterações.", "ERRO", JOptionPane.ERROR_MESSAGE);
         }
+        return true;
     }
 
     public void highlightSelecionados()
@@ -777,7 +808,8 @@ public final class MainPanel extends JPanel
             jp.setForeground(colors.get(i));
             jp.setBackground(colors.get(i));
         }
-        listaLista.add(new ArrayList<>(((JList) ((JViewport) ((JScrollPane) ((JPanel) rightGroupPanel.getComponents()[0]).getComponents()[0]).getComponents()[0]).getComponents()[0]).getSelectedValuesList()));
+        listaLista.add(new ArrayList<>(((JList) ((JViewport) ((JScrollPane) ((JPanel) rightGroupPanel.getComponents()[1]).getComponents()[0]).getComponents()[0]).getComponents()[0]).getSelectedValuesList()));
+        listaLista.add(new ArrayList<>(((JList) ((JViewport) ((JScrollPane) rightGroupPanel.getComponents()[0]).getComponents()[0]).getComponents()[0]).getSelectedValuesList()));
 
         setTexto(texto);
         for (List<Sintagma> lst : listaLista)
@@ -823,7 +855,7 @@ public final class MainPanel extends JPanel
     protected JPanel createVerticalBoxPanel(Dimension d)
     {
         JPanel p = new JPanel();
-        p.setLayout(new BoxLayout(p, BoxLayout.LINE_AXIS));
+        p.setLayout(new BoxLayout(p, BoxLayout.PAGE_AXIS));
         p.setSize(d);
         p.setBorder(BorderFactory.createEmptyBorder(0, 0, 0, 10));
         return p;
@@ -934,12 +966,14 @@ public final class MainPanel extends JPanel
             @Override
             public void windowClosing(WindowEvent e)
             {
-                int option = JOptionPane.showConfirmDialog(null, "Deseja salvar as alterações feitas?");
+                int option=1;
+                if(MainPanel.importedAnything) 
+                    option = JOptionPane.showConfirmDialog(null, "Deseja salvar as alterações feitas?");
                 switch (option)
                 {
                     case JOptionPane.YES_OPTION:
-                        m.export();
-                        frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
+                        if (m.export())
+                            frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
                         break;
                     case JOptionPane.NO_OPTION:
                         frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
@@ -1040,7 +1074,7 @@ public final class MainPanel extends JPanel
                 index = max;
             addIndex = index;
             try
-            {
+            {//(O(|S|)
                 Object[] values = (Object[]) info.getTransferable().
                         getTransferData(localObjectFlavor);
                 //estou tentando arrastar para a mesma cadeia?
@@ -1055,7 +1089,7 @@ public final class MainPanel extends JPanel
                 Color newColor = null;
                 boolean foundColor = false;
                 for (Object value : values)
-                {
+                {//O(|S|)
                     if (((Sintagma) value).cor != null)
                         oldColor = ((Sintagma) value).cor;
                     int idx = index++;
@@ -1077,6 +1111,7 @@ public final class MainPanel extends JPanel
                 String novaCategoria = (String) listsToBoxes.get(target).getSelectedItem();
                 for (Object obj : modelToArray)
                 {//descobre a cor dos sintagmas;
+                    //O(|S|)
                     sints.add((Sintagma) obj);
                     if (!foundColor && ((Sintagma) obj).cor != oldColor)
                     {
@@ -1087,7 +1122,7 @@ public final class MainPanel extends JPanel
                 }
                 /*TODO eu *SEI* que isso aqui tá ordenado de acordo com algum critério
                 dá para fazer inserção binária aqui em vez de inserir e só depois
-                ordenar. de O(n2) para O(log n)...  
+                ordenar. de O(|S|^2) para O(log |S|)...  
                  */
 
                 //TODO exterminar esse sort sujo aqui no meio depois que eu garantir
@@ -1104,6 +1139,7 @@ public final class MainPanel extends JPanel
                             = new Color(cores.nextInt(256), cores.nextInt(256),
                                     cores.nextInt(256));
                 for (Sintagma sint : sints)
+                //O(|S|)
                 {//arruma as cores e a categoria semântica
                     sint.categoriaSemantica = novaCategoria;
                     sint.cor = newColor;
@@ -1114,6 +1150,7 @@ public final class MainPanel extends JPanel
                 return true;
             } catch (UnsupportedFlavorException | IOException ex)
             {
+                ex.printStackTrace();
             }
             removal = false;
             return false;
