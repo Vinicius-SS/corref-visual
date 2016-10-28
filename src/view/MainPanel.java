@@ -53,8 +53,8 @@ import org.jdom2.output.Format;
 import org.jdom2.output.XMLOutputter;
 
 /**
- * N√£o √© exatamente s√≥ o MainPanel, mas sim uma am√°lgama que tamb√©m conta com
- * 95% da l√≥gica do programa. Em um breve futuro isso vai ser refatorado.
+ * N„o È exatamente sÛ o MainPanel, mas sim uma am·lgama que tambÈm conta com
+ * 95% da lÛgica do programa. Em um breve futuro isso vai ser refatorado.
  *
  * @author Vinicius <vinicius.s.sesti@gmail.com>
  */
@@ -83,6 +83,7 @@ public final class MainPanel extends JPanel
     private JMenuItem jMenuItemImportar, jMenuItemExportar;
     private JRadioButtonMenuItem jSortSolitariosPorAparicao, jSortSolitariosPorNomeAZ,
             jSortSolitariosPorNomeZA;
+    private static KeyListener mainPanelCancelSelection;
     private ButtonGroup ordenacaoSolitarios;
     private TransferHandler h;
     private Map<JList, JComboBox> listsToBoxes;
@@ -110,7 +111,7 @@ public final class MainPanel extends JPanel
         jMenuOrdenar.setText("Ordenar por...");
         jMenuAjuda.setText("Ajuda");
         jMenuItemImportar.setText("Importar XML");
-        jMenuItemExportar.setText("Salvar altera√ß√µes");
+        jMenuItemExportar.setText("Salvar alteraÁıes");
         jMenuArquivo.add(jMenuItemImportar);
         jMenuArquivo.add(jMenuItemExportar);
         jMenuBarMain.add(jMenuArquivo);
@@ -118,12 +119,12 @@ public final class MainPanel extends JPanel
         jMenuBarMain.add(jMenuAjuda);
         ordenacaoSolitarios = new ButtonGroup();
         jSortSolitariosPorAparicao = new javax.swing.JRadioButtonMenuItem();
-        jSortSolitariosPorAparicao.setText("Apari√ß√£o no texto");
+        jSortSolitariosPorAparicao.setText("ApariÁ„o no texto");
         jSortSolitariosPorAparicao.setSelected(true);
         jSortSolitariosPorNomeAZ = new javax.swing.JRadioButtonMenuItem();
-        jSortSolitariosPorNomeAZ.setText("Ordem alfab√©tica (A->Z)");
+        jSortSolitariosPorNomeAZ.setText("Ordem alfabÈtica (A->Z)");
         jSortSolitariosPorNomeZA = new javax.swing.JRadioButtonMenuItem();
-        jSortSolitariosPorNomeZA.setText("Ordem alfab√©tica (Z->A)");
+        jSortSolitariosPorNomeZA.setText("Ordem alfabÈtica (Z->A)");
         ordenacaoSolitarios.add(jSortSolitariosPorAparicao);
         ordenacaoSolitarios.add(jSortSolitariosPorNomeAZ);
         ordenacaoSolitarios.add(jSortSolitariosPorNomeZA);
@@ -151,6 +152,25 @@ public final class MainPanel extends JPanel
         btPanel.add(botaoNovoGrupo);
         //TODO 28/10/2016
         sintagmaSearchField = new JTextField("Busca de sintagmas");
+        
+        mainPanelCancelSelection = new KeyListener() {
+            @Override
+            public void keyTyped(KeyEvent e){}
+
+            @Override
+            public void keyPressed(KeyEvent e)
+            {
+                if(e.getKeyCode()==KeyEvent.VK_ESCAPE)
+                    for(JList jl : jlistas)
+                    {
+                        jl.clearSelection();
+                    }
+            }
+
+            @Override
+            public void keyReleased(KeyEvent e){}
+        };
+        
         FocusListener sintagmaSearchFocus=new FocusListener() {
             @Override
             public void focusGained(FocusEvent e)
@@ -241,7 +261,7 @@ public final class MainPanel extends JPanel
                         super.paint(grafix);
                     }
                 });
-                //TODO acho que d√° para tirar um hashmap daqui
+                //TODO acho que d· para tirar um hashmap daqui
                 listsToBoxes.put(jListSintagma, categorias);
                 boxesToColors.put(categorias, ((BasicComboPopup) categorias
                         .getAccessibleContext().getAccessibleChild(0))
@@ -393,7 +413,7 @@ public final class MainPanel extends JPanel
             @Override
             public void actionPerformed(java.awt.event.ActionEvent evt)
             {
-                {//faxina tudo antes de importar o pr√≥ximo texto
+                {//faxina tudo antes de importar o prÛximo texto
                     pos = 0;
                     cont.removeAll();
                     rightGroupPanel.removeAll();
@@ -549,7 +569,7 @@ public final class MainPanel extends JPanel
                         pos += tt.token.length() + 1;
                         listTokens.add(tt);
                     }
-                    //guarda os originais antes de qualquer altera√ß√£o
+                    //guarda os originais antes de qualquer alteraÁ„o
                     listaOriginal = new ArrayList<>();
                     for (Sintagma s : listaSintagma)
                         listaOriginal.add(s);
@@ -557,7 +577,7 @@ public final class MainPanel extends JPanel
                             getGrupoSolitario().getListaSintagmas());
                     listsToBoxes.put(jListSnSolitarios, solitariosBox);
                     scrollSolitarios = new JScrollPane(jListSnSolitarios);
-                    JLabel solitariosLabel = new JLabel("Men√ß√µes √∫nicas");
+                    JLabel solitariosLabel = new JLabel("MenÁıes ˙nicas");
                     scrollSolitarios.setColumnHeaderView(solitariosLabel);
                     rightGroupPanel.add(createPanelForComponent(scrollSolitarios, ""));
                     jListSnSolitarios.setSelectionModel(
@@ -708,20 +728,20 @@ public final class MainPanel extends JPanel
         if (listaDeApoio.getModel().getSize() > 0)
         {
             JOptionPane.showMessageDialog(null, "Esvazie o painel auxiliar"
-                    + " para salvar as altera√ß√µes.", "N√£o foi poss√≠vel salvar",
+                    + " para salvar as alteraÁıes.", "N„o foi possÌvel salvar",
                     JOptionPane.ERROR_MESSAGE);
             return false;
         }
         org.jdom2.Element root = new org.jdom2.Element(tituloTexto);
         Document saida = new Document(root);
         /*saida.setRootElement(root);
-                tudo √© content da root
+                tudo È content da root
                 Texto*/
         org.jdom2.Element elementTexto = new org.jdom2.Element("Texto");
         elementTexto.setAttribute(new Attribute("conteudo", texto));
         saida.getRootElement().addContent(elementTexto);
         /*Sentencas
-                n√£o mexi nas senten√ßas, ent√£o s√≥ copio
+                n„o mexi nas sentenÁas, ent„o sÛ copio
          */
         org.jdom2.Element elementSentencas = new org.jdom2.Element(
                 "Sentencas");
@@ -733,7 +753,7 @@ public final class MainPanel extends JPanel
         }
         saida.getRootElement().addContent(elementSentencas);
         /*Tokens
-                mesma l√≥gica das senten√ßas
+                mesma lÛgica das sentenÁas
          */
         org.jdom2.Element elementTokens = new org.jdom2.Element("Tokens");
         for (org.jdom2.Element token : tokens)
@@ -755,7 +775,7 @@ public final class MainPanel extends JPanel
                     getComponents()[0];
             if (jl.getModel().getSize() < 1)
             {
-            } //se n√£o tiver nenhum item, nada a se fazer aqui
+            } //se n„o tiver nenhum item, nada a se fazer aqui
             else
             {
                 int setNumber = ((Sintagma) jl.getModel().
@@ -765,7 +785,7 @@ public final class MainPanel extends JPanel
                 elementCadeias.addContent(cadeia);
                 for (int j = 0; j < jl.getModel().getSize(); j++)
                 {
-                    //TODO passar isso para dentro de um m√©todo no futuro para despoluir e n√£o repetir o c√≥digo
+                    //TODO passar isso para dentro de um mÈtodo no futuro para despoluir e n„o repetir o cÛdigo
                     Sintagma sint = (Sintagma) jl.getModel().
                             getElementAt(j);
                     org.jdom2.Element sintagmaElement = new org.jdom2.Element(
@@ -845,10 +865,10 @@ public final class MainPanel extends JPanel
             if (!dirSaida.exists())
                 dirSaida.mkdir();
             exporter.output(saida, new FileWriter(dirSaida + File.separator + tituloTexto + ".xml"));
-            JOptionPane.showMessageDialog(null, "Altera√ß√µes salvas com sucesso no diret√≥rio de sa√≠da");
+            JOptionPane.showMessageDialog(null, "AlteraÁıes salvas com sucesso no diretÛrio de saÌda");
         } catch (IOException ex)
         {
-            JOptionPane.showMessageDialog(null, "Houve um erro no salvamento das altera√ß√µes.", "ERRO", JOptionPane.ERROR_MESSAGE);
+            JOptionPane.showMessageDialog(null, "Houve um erro no salvamento das alteraÁıes.", "ERRO", JOptionPane.ERROR_MESSAGE);
         }
         return true;
     }
@@ -1017,6 +1037,7 @@ public final class MainPanel extends JPanel
         frame.setDefaultCloseOperation(WindowConstants.DO_NOTHING_ON_CLOSE);
         m = new MainPanel();
         frame.getContentPane().add(m);
+        m.addKeyListener(mainPanelCancelSelection);
         frame.pack();
         frame.setLocationRelativeTo(null);
         frame.setExtendedState(JFrame.MAXIMIZED_BOTH);
@@ -1028,7 +1049,7 @@ public final class MainPanel extends JPanel
             {
                 int option = 1;
                 if (MainPanel.importedAnything)
-                    option = JOptionPane.showConfirmDialog(null, "Deseja salvar as altera√ß√µes feitas?");
+                    option = JOptionPane.showConfirmDialog(null, "Deseja salvar as alteraÁıes feitas?");
                 switch (option)
                 {
                     case JOptionPane.YES_OPTION:
@@ -1081,6 +1102,7 @@ public final class MainPanel extends JPanel
         cont.remove(destroyable);
         cont.repaint();
         leftGroupPanel.repaint();
+        boolean pause = true;
     }
 
     public class ListItemTransferHandler extends TransferHandler
@@ -1188,18 +1210,18 @@ public final class MainPanel extends JPanel
                             foundColor = true;
                     }
                 }
-                /*TODO eu *SEI* que isso aqui t√° ordenado de acordo com algum crit√©rio
-                d√° para fazer inser√ß√£o bin√°ria aqui em vez de inserir e s√≥ depois
+                /*TODO eu *SEI* que isso aqui t· ordenado de acordo com algum critÈrio
+                d· para fazer inserÁ„o bin·ria aqui em vez de inserir e sÛ depois
                 ordenar. de O(|S|^2) para O(log |S|)...  
                  */
 
                 //TODO exterminar esse sort sujo aqui no meio depois que eu garantir
-                //que o meu novo sort com os bot√µes t√° funcionando
+                //que o meu novo sort com os botıes t· funcionando
                 Collections.sort(sints, ordenador);
                 listModel.clear();
-                /*se newColor tiver chegado at√© aqui null, tem alguma coisa
-                MUITO errada pq da√≠ V√ÅRIOS sintagmas sem cor foram selecionados
-                ent√£o √© melhor simplesmente dar uma cor nova para tudo de uma vez
+                /*se newColor tiver chegado atÈ aqui null, tem alguma coisa
+                MUITO errada pq daÌ V¡RIOS sintagmas sem cor foram selecionados
+                ent„o È melhor simplesmente dar uma cor nova para tudo de uma vez
                 pq deu pau
                  */
                 if (newColor == null)
@@ -1208,7 +1230,7 @@ public final class MainPanel extends JPanel
                                     cores.nextInt(256));
                 for (Sintagma sint : sints)
                 //O(|S|)
-                {//arruma as cores e a categoria sem√¢ntica
+                {//arruma as cores e a categoria sem‚ntica
                     sint.categoriaSemantica = novaCategoria;
                     sint.cor = newColor;
                     listModel.addElement(sint);
