@@ -7,7 +7,6 @@ import java.awt.Component;
 import java.awt.Container;
 import java.awt.Dimension;
 import java.awt.EventQueue;
-import java.awt.Font;
 import java.awt.Graphics;
 import java.awt.HeadlessException;
 import java.awt.datatransfer.DataFlavor;
@@ -15,7 +14,10 @@ import java.awt.datatransfer.Transferable;
 import java.awt.datatransfer.UnsupportedFlavorException;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.FocusEvent;
+import java.awt.event.FocusListener;
 import java.awt.event.KeyEvent;
+import java.awt.event.KeyListener;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 import java.io.File;
@@ -58,7 +60,6 @@ import org.jdom2.output.XMLOutputter;
  */
 public final class MainPanel extends JPanel
 {
-
     public static int pos = 0;
     public Random cores = new Random();
     private Fachada fachada = Fachada.getInstance();
@@ -76,6 +77,7 @@ public final class MainPanel extends JPanel
             scrollListaDeApoio;
     private JButton botaoNovoGrupo;
     private JTextPane textoPuroPane;
+    private JTextField sintagmaSearchField;
     private JMenuBar jMenuBarMain;
     private JMenu jMenuArquivo, jMenuOrdenar, jMenuAjuda;
     private JMenuItem jMenuItemImportar, jMenuItemExportar;
@@ -147,6 +149,62 @@ public final class MainPanel extends JPanel
         JPanel btPanel = createHorizontalBoxPanel(100, 100);
         botaoNovoGrupo = new JButton("Novo Grupo");
         btPanel.add(botaoNovoGrupo);
+        //TODO 28/10/2016
+        sintagmaSearchField = new JTextField("Busca de sintagmas");
+        FocusListener sintagmaSearchFocus=new FocusListener() {
+            @Override
+            public void focusGained(FocusEvent e)
+            {
+                sintagmaSearchField.setText("");
+            }
+
+            @Override
+            public void focusLost(FocusEvent e)
+            {
+                String textoBuscado = sintagmaSearchField.getText();
+                if(textoBuscado.isEmpty()) return;
+                for(JList jl : jlistas)
+                {
+                    ListModel model = jl.getModel();
+                    for(int i=0;i<model.getSize();i++)
+                    {
+                        Sintagma sint = (Sintagma) model.getElementAt(i);
+                        if (sint.sn.toLowerCase().contains(textoBuscado.toLowerCase()))
+                            jl.addSelectionInterval(i, i);
+                    }       
+                }
+                highlightSelecionados();
+            }
+        };
+        sintagmaSearchField.addFocusListener(sintagmaSearchFocus);
+        sintagmaSearchField.addKeyListener(new KeyListener()
+        {
+            @Override
+            public void keyTyped(KeyEvent e)
+            {
+            }
+
+            @Override
+            public void keyPressed(KeyEvent e)
+            {
+                String textoBuscado = sintagmaSearchField.getText();
+                if(textoBuscado.isEmpty()) return;
+                int key = e.getKeyCode();
+                if (key == KeyEvent.VK_ESCAPE || key == KeyEvent.VK_ENTER)
+                {
+                    sintagmaSearchField.setFocusable(false);
+                    sintagmaSearchField.setFocusable(true);
+                }
+                
+            }
+
+            @Override
+            public void keyReleased(KeyEvent e)
+            {
+
+            }
+        });
+
         botaoNovoGrupo.setEnabled(false);
 
         solitariosBox = new JComboBox<>();
@@ -204,6 +262,7 @@ public final class MainPanel extends JPanel
 
                 jsp.setColumnHeaderView(categorias);
                 cont.add(createPanelForComponent(jsp, ""), 0);
+                listsToPanels.put(jListSintagma, (JPanel)cont.getComponent(cont.getComponentCount()-1));
                 jListSintagma.setSelectionModel(new DefaultListSelectionModel()
                 {
                     @Override
@@ -239,6 +298,7 @@ public final class MainPanel extends JPanel
         this.add(leftGroupJPanel);
         this.add(rightGroupJPanel);
         listaDeApoio = makeList(h, new ArrayList<>());
+        jlistas.add(listaDeApoio);
         listaDeApoio.setSelectionModel(
                 new DefaultListSelectionModel()
         {
@@ -493,8 +553,6 @@ public final class MainPanel extends JPanel
                     listaOriginal = new ArrayList<>();
                     for (Sintagma s : listaSintagma)
                         listaOriginal.add(s);
-                    //cont.removeAll();
-                    //rightGroupPanel.removeAll();
                     jListSnSolitarios = makeList(h, fachada.
                             getGrupoSolitario().getListaSintagmas());
                     listsToBoxes.put(jListSnSolitarios, solitariosBox);
@@ -527,6 +585,7 @@ public final class MainPanel extends JPanel
                         jlistas.add(jListSintagma);
                         JScrollPane jsp = new JScrollPane(jListSintagma);
                         cont.add(createPanelForComponent(jsp, ""));
+                        listsToPanels.put(jListSintagma, (JPanel)cont.getComponent(cont.getComponentCount()-1));
                         JComboBox<String> categorias = new JComboBox();
                         for (model.CategoriasSemanticas categs
                                 : model.CategoriasSemanticas.values())
@@ -624,6 +683,7 @@ public final class MainPanel extends JPanel
                         }
                     splitAllPane.revalidate();
                     splitAllPane.repaint();
+                    btPanel.add(createPanelForComponent(sintagmaSearchField, ""));
                     importedAnything = true;
                 } catch (HeadlessException | JDOMException | IOException |
                         NumberFormatException e)
@@ -933,8 +993,7 @@ public final class MainPanel extends JPanel
                             IllegalAccessException | IllegalArgumentException |
                             InvocationTargetException | InstantiationException ex)
                     {
-                        Logger.getLogger(MainPanel.class
-                                .getName()).log(Level.SEVERE, null, ex);
+                       ex.printStackTrace();
                     }
         });
     }
@@ -952,6 +1011,7 @@ public final class MainPanel extends JPanel
         } catch (ClassNotFoundException | InstantiationException |
                 IllegalAccessException | UnsupportedLookAndFeelException ex)
         {
+            ex.printStackTrace();
         }
         JFrame frame = new JFrame("CorrefVisual");
         frame.setDefaultCloseOperation(WindowConstants.DO_NOTHING_ON_CLOSE);
@@ -966,8 +1026,8 @@ public final class MainPanel extends JPanel
             @Override
             public void windowClosing(WindowEvent e)
             {
-                int option=1;
-                if(MainPanel.importedAnything) 
+                int option = 1;
+                if (MainPanel.importedAnything)
                     option = JOptionPane.showConfirmDialog(null, "Deseja salvar as alterações feitas?");
                 switch (option)
                 {
@@ -1013,6 +1073,14 @@ public final class MainPanel extends JPanel
         for (int i = 0; i < n * 10; i++)
             colors.
                     add(new Color(r.nextInt(256), r.nextInt(256), r.nextInt(256)));
+    }
+    
+    public void destroyBox(JPanel destroyable, JList destroyedKey)
+    {
+        jlistas.remove(destroyedKey);
+        cont.remove(destroyable);
+        cont.repaint();
+        leftGroupPanel.repaint();
     }
 
     public class ListItemTransferHandler extends TransferHandler
@@ -1175,6 +1243,7 @@ public final class MainPanel extends JPanel
                 DefaultListModel model = (DefaultListModel) src.getModel();
                 for (int i = indices.length - 1; i >= 0; i--)
                     model.remove(indices[i]);
+                if(model.isEmpty()) m.destroyBox(listsToPanels.get(src), src);
             }
             indices = null;
             addCount = 0;
