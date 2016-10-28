@@ -32,8 +32,6 @@ import java.util.HashMap;
 import java.util.Locale;
 import java.util.Map;
 import java.util.Random;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import javax.activation.*;
 import javax.swing.JList;
 import javax.swing.JPanel;
@@ -60,6 +58,7 @@ import org.jdom2.output.XMLOutputter;
  */
 public final class MainPanel extends JPanel
 {
+
     public static int pos = 0;
     public Random cores = new Random();
     private Fachada fachada = Fachada.getInstance();
@@ -152,26 +151,30 @@ public final class MainPanel extends JPanel
         btPanel.add(botaoNovoGrupo);
         //TODO 28/10/2016
         sintagmaSearchField = new JTextField("Busca de sintagmas");
-        
-        mainPanelCancelSelection = new KeyListener() {
+
+        mainPanelCancelSelection = new KeyListener()
+        {
             @Override
-            public void keyTyped(KeyEvent e){}
+            public void keyTyped(KeyEvent e)
+            {
+            }
 
             @Override
             public void keyPressed(KeyEvent e)
             {
-                if(e.getKeyCode()==KeyEvent.VK_ESCAPE)
-                    for(JList jl : jlistas)
-                    {
+                if (e.getKeyCode() == KeyEvent.VK_ESCAPE)
+                    for (JList jl : jlistas)
                         jl.clearSelection();
-                    }
             }
 
             @Override
-            public void keyReleased(KeyEvent e){}
+            public void keyReleased(KeyEvent e)
+            {
+            }
         };
-        
-        FocusListener sintagmaSearchFocus=new FocusListener() {
+
+        FocusListener sintagmaSearchFocus = new FocusListener()
+        {
             @Override
             public void focusGained(FocusEvent e)
             {
@@ -182,16 +185,17 @@ public final class MainPanel extends JPanel
             public void focusLost(FocusEvent e)
             {
                 String textoBuscado = sintagmaSearchField.getText();
-                if(textoBuscado.isEmpty()) return;
-                for(JList jl : jlistas)
+                if (textoBuscado.isEmpty())
+                    return;
+                for (JList jl : jlistas)
                 {
                     ListModel model = jl.getModel();
-                    for(int i=0;i<model.getSize();i++)
+                    for (int i = 0; i < model.getSize(); i++)
                     {
                         Sintagma sint = (Sintagma) model.getElementAt(i);
                         if (sint.sn.toLowerCase().contains(textoBuscado.toLowerCase()))
                             jl.addSelectionInterval(i, i);
-                    }       
+                    }
                 }
                 highlightSelecionados();
             }
@@ -208,14 +212,15 @@ public final class MainPanel extends JPanel
             public void keyPressed(KeyEvent e)
             {
                 String textoBuscado = sintagmaSearchField.getText();
-                if(textoBuscado.isEmpty()) return;
+                if (textoBuscado.isEmpty())
+                    return;
                 int key = e.getKeyCode();
                 if (key == KeyEvent.VK_ESCAPE || key == KeyEvent.VK_ENTER)
                 {
                     sintagmaSearchField.setFocusable(false);
                     sintagmaSearchField.setFocusable(true);
                 }
-                
+
             }
 
             @Override
@@ -282,7 +287,7 @@ public final class MainPanel extends JPanel
 
                 jsp.setColumnHeaderView(categorias);
                 cont.add(createPanelForComponent(jsp, ""), 0);
-                listsToPanels.put(jListSintagma, (JPanel)cont.getComponent(cont.getComponentCount()-1));
+                listsToPanels.put(jListSintagma, (JPanel) cont.getComponent(0));
                 jListSintagma.setSelectionModel(new DefaultListSelectionModel()
                 {
                     @Override
@@ -605,7 +610,7 @@ public final class MainPanel extends JPanel
                         jlistas.add(jListSintagma);
                         JScrollPane jsp = new JScrollPane(jListSintagma);
                         cont.add(createPanelForComponent(jsp, ""));
-                        listsToPanels.put(jListSintagma, (JPanel)cont.getComponent(cont.getComponentCount()-1));
+                        listsToPanels.put(jListSintagma, (JPanel) cont.getComponent(cont.getComponentCount() - 1));
                         JComboBox<String> categorias = new JComboBox();
                         for (model.CategoriasSemanticas categs
                                 : model.CategoriasSemanticas.values())
@@ -1013,7 +1018,7 @@ public final class MainPanel extends JPanel
                             IllegalAccessException | IllegalArgumentException |
                             InvocationTargetException | InstantiationException ex)
                     {
-                       ex.printStackTrace();
+                        ex.printStackTrace();
                     }
         });
     }
@@ -1095,12 +1100,13 @@ public final class MainPanel extends JPanel
             colors.
                     add(new Color(r.nextInt(256), r.nextInt(256), r.nextInt(256)));
     }
-    
+
     public void destroyBox(JPanel destroyable, JList destroyedKey)
     {
         jlistas.remove(destroyedKey);
         cont.remove(destroyable);
         cont.repaint();
+        leftGroupPanel.setViewportView(cont);
         leftGroupPanel.repaint();
         boolean pause = true;
     }
@@ -1265,7 +1271,8 @@ public final class MainPanel extends JPanel
                 DefaultListModel model = (DefaultListModel) src.getModel();
                 for (int i = indices.length - 1; i >= 0; i--)
                     model.remove(indices[i]);
-                if(model.isEmpty()) m.destroyBox(listsToPanels.get(src), src);
+                if (model.isEmpty())
+                    m.destroyBox(listsToPanels.get(src), src);
             }
             indices = null;
             addCount = 0;
