@@ -21,9 +21,12 @@ import java.awt.event.KeyListener;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 import java.io.File;
+import java.io.FileInputStream;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.io.InputStreamReader;
 import java.lang.reflect.InvocationTargetException;
+import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Collections;
@@ -94,6 +97,7 @@ public final class MainPanel extends JPanel
     private static boolean importedAnything;
     private List<Token> listTokens;
     private String tituloTexto;
+    private String fileName;
     private List<org.jdom2.Element> cadeias, sentencas, mencoes_unicas, tokens;
     private Comparator<Sintagma> ordenador;
 
@@ -186,8 +190,11 @@ public final class MainPanel extends JPanel
             {
                 String textoBuscado = sintagmaSearchField.getText();
                 if (textoBuscado.isEmpty())
+                {
+                    sintagmaSearchField.setText("Busca de sintagmas");
                     return;
-                for (JList jl : jlistas)
+                }
+                    for (JList jl : jlistas)
                 {
                     ListModel model = jl.getModel();
                     for (int i = 0; i < model.getSize(); i++)
@@ -271,8 +278,7 @@ public final class MainPanel extends JPanel
                 boxesToColors.put(categorias, ((BasicComboPopup) categorias
                         .getAccessibleContext().getAccessibleChild(0))
                         .getList().getSelectionBackground());
-                categorias.setSelectedItem("--");
-
+                categorias.setSelectedItem("OUTRO");
                 categorias.addActionListener(new ActionListener()
                 {
                     @Override
@@ -439,12 +445,15 @@ public final class MainPanel extends JPanel
                     chooser.setCurrentDirectory(
                             new File("XML Novos aspas fixed"));
                     chooser.showOpenDialog(null);
-                    File xml = chooser.getSelectedFile();
                     botaoNovoGrupo.setEnabled(true);
-                    Document document = new SAXBuilder().build(xml);
+                    String filePath = chooser.getSelectedFile().getAbsolutePath();
+                    fileName = chooser.getSelectedFile().getName();
+                    FileInputStream is = new FileInputStream(filePath);
+                    InputStreamReader isr = new InputStreamReader(is, StandardCharsets.ISO_8859_1);
+                    Document document = new SAXBuilder().build(isr);
+                    tituloTexto = document.getRootElement().getName();
                     String texto = document.getRootElement().getChildren().
                             get(0).getAttributeValue("conteudo");
-                    tituloTexto = document.getRootElement().getName();
                     listaSintagma = new ArrayList<>();
                     cadeias = document.getRootElement().getChildren().get(3).
                             getChildren();
@@ -490,8 +499,7 @@ public final class MainPanel extends JPanel
                                         "sintagma"),
                                 Integer.parseInt(mencao_unica.getAttributeValue(
                                         "sentenca")), words,
-                                Integer.parseInt(mencao_unica.getAttributeValue(
-                                        "id")), Integer.parseInt(mencao_unica.
+                                -1, Integer.parseInt(mencao_unica.
                                         getAttributeValue("id")),
                                 mencao_unica.getAttributeValue("nucleo"),
                                 mencao_unica.getAttributeValue("lemma"), prop,
@@ -863,13 +871,11 @@ public final class MainPanel extends JPanel
         Collections.sort(saida.getRootElement().getChildren().get(3).getChildren(), elementOrdenador);
         try
         {
-            Format format = Format.getPrettyFormat();
-            format.setEncoding("ISO-8859-1");
-            XMLOutputter exporter = new XMLOutputter(format);
+            XMLOutputter exporter = new XMLOutputter(Format.getPrettyFormat().setEncoding("ISO-8859-1"));   
             File dirSaida = new File("saida");
             if (!dirSaida.exists())
                 dirSaida.mkdir();
-            exporter.output(saida, new FileWriter(dirSaida + File.separator + tituloTexto + ".xml"));
+            exporter.output(saida, new FileWriter(dirSaida + File.separator + fileName));
             JOptionPane.showMessageDialog(null, "Alterações salvas com sucesso no diretório de saída");
         } catch (IOException ex)
         {

@@ -55,19 +55,21 @@ public enum CategoriasSemanticas
 //    SER_MITLG("EN_SER/MITLG"),
 //    SUBS_GRP("EN_SUBS/GRP"),
 //    SUBS_SUBS("EN_SUBS/SUBS");
-    abstra√ß√£o("ABSTRA√á√ÉO"),
-    comunica√ß√£o("COMUNICA√á√ÉO"),
-    pessoa("PESSOA"),
-    outros_Seres("OUTROS_SERES"),
-    organiza√ß√£o_local("ORGANIZA√á√ÉO|LOCAL"),
-    natureza("NATUREZA"),
-    evento("EVENTO"),
-    documentos("DOCUMENTOS"),
-    subst√¢ncias("SUBST√ÇNCIAS"),
-    produtos("PRODUTOS"),
-    outro("OUTRO")
+    ABSTRA«√O("ABSTRA«√O"),
+    COMUNICA«√O("COMUNICA«√O"),
+    PESSOA("PESSOA"),
+    OUTROS_SERES("OUTROS_SERES"),
+    ORGLOCAL("ORGANIZA«√O|LOCAL"),
+    NATUREZA("NATUREZA"),
+    EVENTO("EVENTO"),
+    DOCUMENTOS("DOCUMENTOS"),
+    SUBST¬NCIAS("SUBST¬NCIAS"),
+    PRODUTOS("PRODUTOS"),
+    OUTRO("OUTRO")
     ;
 
+    
+    
     private String categ;
     
     public String getCateg()
