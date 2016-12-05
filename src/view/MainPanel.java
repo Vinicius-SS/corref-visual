@@ -31,10 +31,17 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Collections;
 import java.util.Comparator;
+import java.util.Formatter;
 import java.util.HashMap;
 import java.util.Locale;
 import java.util.Map;
 import java.util.Random;
+import java.util.logging.FileHandler;
+import java.util.logging.Handler;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import java.util.logging.SimpleFormatter;
+
 import javax.activation.*;
 import javax.swing.JList;
 import javax.swing.JPanel;
@@ -61,7 +68,9 @@ import org.jdom2.output.XMLOutputter;
  */
 public final class MainPanel extends JPanel
 {
-
+	public static Logger logger = Logger.getLogger("MainPanel");
+	public static Handler handlerXML;
+	public static Handler handlerTXT;
     public static int pos = 0;
     public Random cores = new Random();
     private Fachada fachada = Fachada.getInstance();
@@ -149,6 +158,17 @@ public final class MainPanel extends JPanel
         listsToBoxes = new HashMap<>();
         boxesToColors = new HashMap<>();
         listsToPanels = new HashMap<>();
+        logger.setLevel(Level.SEVERE);
+		try {
+			handlerXML = new FileHandler("LogErros.xml");
+			handlerTXT = new FileHandler("LogErros.txt");
+			SimpleFormatter fmt = new SimpleFormatter();
+	        logger.addHandler(handlerXML);
+	        logger.addHandler(handlerTXT);
+		} catch (SecurityException | IOException e1) {
+			e1.printStackTrace();
+		}
+		
 
         JPanel btPanel = createHorizontalBoxPanel(100, 100);
         botaoNovoGrupo = new JButton("Novo Grupo");
@@ -443,7 +463,7 @@ public final class MainPanel extends JPanel
                 {
                     JFileChooser chooser = new JFileChooser();
                     chooser.setCurrentDirectory(
-                            new File("XML Novos aspas fixed"));
+                            new File("XMLs"));
                     chooser.showOpenDialog(null);
                     botaoNovoGrupo.setEnabled(true);
                     String filePath = chooser.getSelectedFile().getAbsolutePath();
@@ -1065,9 +1085,13 @@ public final class MainPanel extends JPanel
                 {
                     case JOptionPane.YES_OPTION:
                         if (m.export())
+                        {
+                        	handler.close();
                             frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
+                        }
                         break;
                     case JOptionPane.NO_OPTION:
+                    	handler.close();
                         frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
                         break;
                     case JOptionPane.CANCEL_OPTION:
@@ -1200,7 +1224,7 @@ public final class MainPanel extends JPanel
                     //ajusta o set dos sintagmas arrastados
                     if (listModel.size() <= 1)
                     {
-                        ((Sintagma) value).set = MainPanel.maiorSet++;
+                        ((Sintagma) value).set = ++MainPanel.maiorSet;
                         foundColor = true;
                         newColor = boxesToColors.get(listsToBoxes.get(target));
                     } else
@@ -1222,11 +1246,6 @@ public final class MainPanel extends JPanel
                             foundColor = true;
                     }
                 }
-                /*TODO eu *SEI* que isso aqui tá ordenado de acordo com algum critério
-                dá para fazer inserção binária aqui em vez de inserir e só depois
-                ordenar. de O(|S|^2) para O(log |S|)...  
-                 */
-
                 //TODO exterminar esse sort sujo aqui no meio depois que eu garantir
                 //que o meu novo sort com os botões tá funcionando
                 Collections.sort(sints, ordenador);
