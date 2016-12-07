@@ -91,7 +91,7 @@ public final class MainPanel extends JPanel
     private JTextField sintagmaSearchField;
     private JMenuBar jMenuBarMain;
     private JMenu jMenuArquivo, jMenuOrdenar, jMenuAjuda;
-    private JMenuItem jMenuItemImportar, jMenuItemExportar;
+    private JMenuItem jMenuItemImportar, jMenuItemExportar, jMenuItemAjuda,jMenuItemSobre;
     private JRadioButtonMenuItem jSortSolitariosPorAparicao, jSortSolitariosPorNomeAZ,
             jSortSolitariosPorNomeZA;
     private static KeyListener mainPanelCancelSelection;
@@ -104,6 +104,14 @@ public final class MainPanel extends JPanel
     public static int maiorSet;
     public static MainPanel m;
     private static boolean importedAnything;
+    private static final String [] AJUDA = {//não consegui contornar o problema do joptionpane não dar wrap automático
+            "No presente, a ferramenta é mantida por Vinicius Sesti (vinicius.sesti@acad.pucrs.br).\n"
+            + "Para qualquer problema ou dúvida, sinta-se à vontade para entrar em contato por\n"
+            + "e-mail, enviando os logs de erros (.xml e .txt) gerados pelo programa."
+            ,
+            "O CorrefVisual é uma ferramenta para a visualização e manipulação gráfica\n"
+            +"de cadeias de correferência (anotação), contando com algumas funcionalidades\n"
+            + "específicas para auxílio neste trabalho."};
     private List<Token> listTokens;
     private String tituloTexto;
     private String fileName;
@@ -113,29 +121,35 @@ public final class MainPanel extends JPanel
     private MainPanel() throws ClassNotFoundException, NoSuchMethodException
     {
         super(new BorderLayout());
-        jMenuArquivo = new javax.swing.JMenu();
-        jMenuOrdenar = new javax.swing.JMenu();
-        jMenuAjuda = new javax.swing.JMenu();
-        jMenuBarMain = new javax.swing.JMenuBar();
-        jMenuItemImportar = new javax.swing.JMenuItem();
-        jMenuItemExportar = new javax.swing.JMenuItem();
+        jMenuArquivo = new JMenu();
+        jMenuOrdenar = new JMenu();
+        jMenuAjuda = new JMenu();
+        jMenuBarMain = new JMenuBar();
+        jMenuItemImportar = new JMenuItem();
+        jMenuItemExportar = new JMenuItem();
+        jMenuItemAjuda = new JMenuItem();
+        jMenuItemSobre = new JMenuItem();
         jMenuArquivo.setText("Arquivo");
         jMenuOrdenar.setText("Ordenar por...");
         jMenuAjuda.setText("Ajuda");
         jMenuItemImportar.setText("Importar XML");
         jMenuItemExportar.setText("Salvar alterações");
+        jMenuItemAjuda.setText("Ajuda");
+        jMenuItemSobre.setText("Sobre o CorrefVisual");
         jMenuArquivo.add(jMenuItemImportar);
         jMenuArquivo.add(jMenuItemExportar);
+        jMenuAjuda.add(jMenuItemAjuda);
+        jMenuAjuda.add(jMenuItemSobre);
         jMenuBarMain.add(jMenuArquivo);
         jMenuBarMain.add(jMenuOrdenar);
         jMenuBarMain.add(jMenuAjuda);
         ordenacaoSolitarios = new ButtonGroup();
-        jSortSolitariosPorAparicao = new javax.swing.JRadioButtonMenuItem();
+        jSortSolitariosPorAparicao = new JRadioButtonMenuItem();
         jSortSolitariosPorAparicao.setText("Aparição no texto");
         jSortSolitariosPorAparicao.setSelected(true);
-        jSortSolitariosPorNomeAZ = new javax.swing.JRadioButtonMenuItem();
+        jSortSolitariosPorNomeAZ = new JRadioButtonMenuItem();
         jSortSolitariosPorNomeAZ.setText("Ordem alfabética (A->Z)");
-        jSortSolitariosPorNomeZA = new javax.swing.JRadioButtonMenuItem();
+        jSortSolitariosPorNomeZA = new JRadioButtonMenuItem();
         jSortSolitariosPorNomeZA.setText("Ordem alfabética (Z->A)");
         ordenacaoSolitarios.add(jSortSolitariosPorAparicao);
         ordenacaoSolitarios.add(jSortSolitariosPorNomeAZ);
@@ -260,6 +274,35 @@ public final class MainPanel extends JPanel
             }
         });
 
+        jMenuItemAjuda.addActionListener(new ActionListener()
+        {
+            @Override
+            public void actionPerformed(ActionEvent e)
+            {
+                JTextArea encapsulation = new JTextArea(MainPanel.AJUDA[0]);
+                encapsulation.setSize(encapsulation.getPreferredSize());
+                encapsulation.setEditable(false);
+                encapsulation.setLineWrap(true);
+                JOptionPane.showMessageDialog(null,MainPanel.AJUDA[0], "Ajuda",  JOptionPane.INFORMATION_MESSAGE);
+            }   
+        }        
+        );
+        
+        jMenuItemSobre.addActionListener(new ActionListener()
+        {
+            @Override
+            public void actionPerformed(ActionEvent e)
+            {
+                JTextArea encapsulation = new JTextArea(MainPanel.AJUDA[1]);
+                encapsulation.setSize(encapsulation.getPreferredSize());
+                encapsulation.setEditable(false);
+                encapsulation.setLineWrap(true);
+                encapsulation.setWrapStyleWord(true);
+                JOptionPane.showMessageDialog(null,MainPanel.AJUDA[1], "Sobre o CorrefVisual",  JOptionPane.INFORMATION_MESSAGE);
+            }   
+        }        
+        );
+        
         botaoNovoGrupo.setEnabled(false);
 
         solitariosBox = new JComboBox<>();
