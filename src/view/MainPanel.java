@@ -68,9 +68,9 @@ import org.jdom2.output.XMLOutputter;
  */
 public final class MainPanel extends JPanel
 {
-	public static Logger logger = Logger.getLogger("MainPanel");
-	public static Handler handlerXML;
-	public static Handler handlerTXT;
+    public static final Logger logger = Logger.getLogger(MainPanel.class.getName());
+    public static Handler handlerXML;
+    public static Handler handlerTXT;
     public static int pos = 0;
     public Random cores = new Random();
     private Fachada fachada = Fachada.getInstance();
@@ -160,12 +160,15 @@ public final class MainPanel extends JPanel
         listsToPanels = new HashMap<>();
         logger.setLevel(Level.SEVERE);
 		try {
-			handlerXML = new FileHandler("LogErros.xml");
-			handlerTXT = new FileHandler("LogErros.txt");
-			SimpleFormatter fmt = new SimpleFormatter();
-	        logger.addHandler(handlerXML);
-	        logger.addHandler(handlerTXT);
-		} catch (SecurityException | IOException e1) {
+                    handlerXML = new FileHandler("LogErros.xml");
+                    handlerTXT = new FileHandler("LogErros.txt");
+                    SimpleFormatter fmt = new SimpleFormatter();
+                    handlerTXT.setFormatter(fmt);
+                    logger.addHandler(handlerXML);
+                    logger.addHandler(handlerTXT);
+		} 
+                catch (SecurityException | IOException e1) 
+                {
 			e1.printStackTrace();
 		}
 		
@@ -741,7 +744,7 @@ public final class MainPanel extends JPanel
                 } catch (HeadlessException | JDOMException | IOException |
                         NumberFormatException e)
                 {
-                    e.printStackTrace();
+                    Logger.getLogger(MainPanel.class.getName()).log(Level.SEVERE, null, e);
                 }
             }
         });
@@ -900,6 +903,7 @@ public final class MainPanel extends JPanel
         } catch (IOException ex)
         {
             JOptionPane.showMessageDialog(null, "Houve um erro no salvamento das alterações.", "ERRO", JOptionPane.ERROR_MESSAGE);
+            Logger.getLogger(MainPanel.class.getName()).log(Level.SEVERE, null, ex);
         }
         return true;
     }
@@ -1033,19 +1037,18 @@ public final class MainPanel extends JPanel
     public static void main(String... args)
     {
 
-        EventQueue.invokeLater(()
-                -> 
-                {
-                    try
-                    {
-                        createAndShowGUI();
-
-                    } catch (ClassNotFoundException | NoSuchMethodException |
-                            IllegalAccessException | IllegalArgumentException |
-                            InvocationTargetException | InstantiationException ex)
-                    {
-                        ex.printStackTrace();
-                    }
+        EventQueue.invokeLater(() ->
+        {
+            try
+            {
+                createAndShowGUI();
+                
+            } catch (ClassNotFoundException | NoSuchMethodException |
+                    IllegalAccessException | IllegalArgumentException |
+                    InvocationTargetException | InstantiationException ex)
+            {
+                Logger.getLogger(MainPanel.class.getName()).log(Level.SEVERE, null, ex);
+            }
         });
     }
 
@@ -1062,7 +1065,7 @@ public final class MainPanel extends JPanel
         } catch (ClassNotFoundException | InstantiationException |
                 IllegalAccessException | UnsupportedLookAndFeelException ex)
         {
-            ex.printStackTrace();
+            Logger.getLogger(MainPanel.class.getName()).log(Level.SEVERE, null, ex);
         }
         JFrame frame = new JFrame("CorrefVisual");
         frame.setDefaultCloseOperation(WindowConstants.DO_NOTHING_ON_CLOSE);
@@ -1086,12 +1089,14 @@ public final class MainPanel extends JPanel
                     case JOptionPane.YES_OPTION:
                         if (m.export())
                         {
-                        	handler.close();
+                        	handlerXML.close();
+                                handlerTXT.close();
                             frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
                         }
                         break;
                     case JOptionPane.NO_OPTION:
-                    	handler.close();
+                    	handlerXML.close();
+                        handlerTXT.close();
                         frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
                         break;
                     case JOptionPane.CANCEL_OPTION:
@@ -1271,7 +1276,7 @@ public final class MainPanel extends JPanel
                 return true;
             } catch (UnsupportedFlavorException | IOException ex)
             {
-                ex.printStackTrace();
+                Logger.getLogger(MainPanel.class.getName()).log(Level.SEVERE, null, ex);
             }
             removal = false;
             return false;
