@@ -27,11 +27,11 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.lang.reflect.InvocationTargetException;
 import java.nio.charset.StandardCharsets;
+import java.util.Arrays;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Collections;
 import java.util.Comparator;
-import java.util.Formatter;
 import java.util.HashMap;
 import java.util.Locale;
 import java.util.Map;
@@ -82,11 +82,14 @@ public final class MainPanel extends JPanel
     private Container cont;
     private JSplitPane splitGroupPane, splitPane, upSplitPane, splitAllPane,
             splitApoioDeSolitarios;
+    private JSplitPane leftEditSplit,rightEditSplit,minorEditGrouping,majorEditGrouping;
     private JPanel rightGroupPanel, leftGroupJPanel, panelTextoPuro, upPanel,
             rightGroupJPanel;
     private JScrollPane leftGroupPanel, scrollSolitarios,
             scrollListaDeApoio;
     private JButton botaoNovoGrupo;
+    private JButton leftDecrementButton, leftIncrementButton, rightDecrementButton, rightIncrementButton;
+    private JLabel editarSintagmaLabel;
     private JTextPane textoPuroPane;
     private JTextField sintagmaSearchField;
     private JMenuBar jMenuBarMain;
@@ -102,6 +105,7 @@ public final class MainPanel extends JPanel
     private Map<JList, JPanel> listsToPanels;
     private JComboBox<String> solitariosBox;
     public static int maiorSet;
+    public static int howManySelected = 0;
     public static MainPanel m;
     private static boolean importedAnything;
     private static final String [] AJUDA = {//não consegui contornar o problema do joptionpane não dar wrap automático
@@ -157,8 +161,13 @@ public final class MainPanel extends JPanel
         jMenuOrdenar.add(jSortSolitariosPorAparicao);
         jMenuOrdenar.add(jSortSolitariosPorNomeAZ);
         jMenuOrdenar.add(jSortSolitariosPorNomeZA);
+        editarSintagmaLabel = new JLabel("Editar sintagma");
         textoPuroPane = new JTextPane();
         textoPuroPane.setEditable(false);
+        leftDecrementButton = new JButton("-");
+        leftIncrementButton = new JButton("+");
+        rightDecrementButton = new JButton("-");
+        rightIncrementButton = new JButton("+");
         jlistas = new ArrayList<>();
         colors = new ArrayList<>();
         gerarCores(10);
@@ -177,6 +186,10 @@ public final class MainPanel extends JPanel
                     handlerXML = new FileHandler("LogErros.xml");
                     handlerTXT = new FileHandler("LogErros.txt");
                     SimpleFormatter fmt = new SimpleFormatter();
+                    /*
+                     * formatação definida em nbproject/project.properties
+                     * run.args.extra=-J-java.util.logging.SimpleFormatter.format="%1$tc %2$s%n%4$s: %5$s%6$s%n"
+                     */
                     handlerTXT.setFormatter(fmt);
                     logger.addHandler(handlerXML);
                     logger.addHandler(handlerTXT);
@@ -238,7 +251,15 @@ public final class MainPanel extends JPanel
                     {
                         Sintagma sint = (Sintagma) model.getElementAt(i);
                         if (sint.sn.toLowerCase().contains(textoBuscado.toLowerCase()))
-                            jl.addSelectionInterval(i, i);
+                        {
+                            int [] indices = jl.getSelectedIndices();
+                            int selectedIndex = Arrays.binarySearch(indices, i);
+                            if(selectedIndex<0)
+                                {
+                                    howManySelected++;
+                                    jl.addSelectionInterval(i, i);
+                                }
+                        }
                     }
                 }
                 highlightSelecionados();
@@ -360,24 +381,7 @@ public final class MainPanel extends JPanel
                 jsp.setColumnHeaderView(categorias);
                 cont.add(createPanelForComponent(jsp, ""), 0);
                 listsToPanels.put(jListSintagma, (JPanel) cont.getComponent(0));
-                jListSintagma.setSelectionModel(new DefaultListSelectionModel()
-                {
-                    @Override
-                    public void setSelectionInterval(int start, int end)
-                    {
-                        if (start != end)
-                            super.setSelectionInterval(start, end);
-                        else if (isSelectedIndex(start))
-                        {
-                            removeSelectionInterval(start, end);
-                            highlightSelecionados();
-                        } else
-                        {
-                            addSelectionInterval(start, end);
-                            highlightSelecionados();
-                        }
-                    }
-                });
+                jListSintagma.setSelectionModel(new JListSelection());
                 splitAllPane.revalidate();
                 splitAllPane.repaint();
             }
@@ -396,26 +400,8 @@ public final class MainPanel extends JPanel
         this.add(rightGroupJPanel);
         listaDeApoio = makeList(h, new ArrayList<>());
         jlistas.add(listaDeApoio);
-        listaDeApoio.setSelectionModel(
-                new DefaultListSelectionModel()
-        {
-            @Override
-            public void setSelectionInterval(int start, int end)
-            {
-                if (start != end)
-                    super.setSelectionInterval(start, end);
-                else if (isSelectedIndex(start))
-                {
-                    removeSelectionInterval(start, end);
-                    highlightSelecionados();
-                } else
-                {
-                    addSelectionInterval(start, end);
-                    highlightSelecionados();
-                }
-            }
-        });
-
+        listaDeApoio.setSelectionModel(new JListSelection());
+       
         scrollListaDeApoio = new JScrollPane(listaDeApoio);
         JLabel apoioLabel = new JLabel("Painel auxiliar");
         scrollListaDeApoio.setColumnHeaderView(apoioLabel);
@@ -430,17 +416,30 @@ public final class MainPanel extends JPanel
         splitPane = new JSplitPane(JSplitPane.HORIZONTAL_SPLIT, panelTextoPuro,
                 splitGroupPane);
 
+        JPanel editarSintagmaPanel = new JPanel(new BorderLayout());
+        editarSintagmaPanel.add(editarSintagmaLabel);
+        
+        leftEditSplit = new JSplitPane(JSplitPane.VERTICAL_SPLIT,leftIncrementButton,leftDecrementButton);
+        leftEditSplit.setResizeWeight(0.5);
+        rightEditSplit = new JSplitPane(JSplitPane.VERTICAL_SPLIT,rightIncrementButton,rightDecrementButton);
+        rightEditSplit.setResizeWeight(0.5);
+        minorEditGrouping = new JSplitPane(JSplitPane.HORIZONTAL_SPLIT,leftEditSplit,editarSintagmaPanel);
+        leftEditSplit.setDividerLocation(0.8);
+        majorEditGrouping = new JSplitPane(JSplitPane.HORIZONTAL_SPLIT,minorEditGrouping,rightEditSplit);
+        
         upSplitPane = new JSplitPane(JSplitPane.HORIZONTAL_SPLIT, upPanel,
-                btPanel);
+                majorEditGrouping);
         upSplitPane.setResizeWeight(0.527);
-
+        
+        JSplitPane anotherUpSplitPane = new JSplitPane(JSplitPane.HORIZONTAL_SPLIT,upSplitPane,btPanel);
+        anotherUpSplitPane.setResizeWeight(0.5);
         splitApoioDeSolitarios = new JSplitPane(JSplitPane.HORIZONTAL_SPLIT, scrollListaDeApoio,
                 scrollSolitarios);
         this.add(splitApoioDeSolitarios);
 
         upSplitPane.setResizeWeight(0.5);
 
-        splitAllPane = new JSplitPane(JSplitPane.VERTICAL_SPLIT, upSplitPane,
+        splitAllPane = new JSplitPane(JSplitPane.VERTICAL_SPLIT, anotherUpSplitPane,
                 splitPane);
         splitPane.setOneTouchExpandable(true);
         splitPane.setResizeWeight(0.55);
@@ -509,7 +508,7 @@ public final class MainPanel extends JPanel
                 {
                     JFileChooser chooser = new JFileChooser();
                     chooser.setCurrentDirectory(
-                            new File("XMLs"));
+                            new File("XML_Baseline"));
                     chooser.showOpenDialog(null);
                     botaoNovoGrupo.setEnabled(true);
                     String filePath = chooser.getSelectedFile().getAbsolutePath();
@@ -659,25 +658,7 @@ public final class MainPanel extends JPanel
                     JLabel solitariosLabel = new JLabel("Menções únicas");
                     scrollSolitarios.setColumnHeaderView(solitariosLabel);
                     rightGroupPanel.add(createPanelForComponent(scrollSolitarios, ""));
-                    jListSnSolitarios.setSelectionModel(
-                            new DefaultListSelectionModel()
-                    {
-                        @Override
-                        public void setSelectionInterval(int start, int end)
-                        {
-                            if (start != end)
-                                super.setSelectionInterval(start, end);
-                            else if (isSelectedIndex(start))
-                            {
-                                removeSelectionInterval(start, end);
-                                highlightSelecionados();
-                            } else
-                            {
-                                addSelectionInterval(start, end);
-                                highlightSelecionados();
-                            }
-                        }
-                    });
+                    jListSnSolitarios.setSelectionModel((new JListSelection()));
                     for (Grupo g : fachada.getGrupos())
                     {
                         JList jListSintagma = makeList(h, g.getListaSintagmas());
@@ -718,25 +699,7 @@ public final class MainPanel extends JPanel
                         });
 
                         jsp.setColumnHeaderView(categorias);
-                        jListSintagma.setSelectionModel(
-                                new DefaultListSelectionModel()
-                        {
-                            @Override
-                            public void setSelectionInterval(int start, int end)
-                            {
-                                if (start != end)
-                                    super.setSelectionInterval(start, end);
-                                else if (isSelectedIndex(start))
-                                {
-                                    removeSelectionInterval(start, end);
-                                    highlightSelecionados();
-                                } else
-                                {
-                                    addSelectionInterval(start, end);
-                                    highlightSelecionados();
-                                }
-                            }
-                        });
+                        jListSintagma.setSelectionModel((new JListSelection()));
                     }
                     jlistas.add(jListSnSolitarios);
                     cont.repaint();
@@ -1187,6 +1150,26 @@ public final class MainPanel extends JPanel
         leftGroupPanel.setViewportView(cont);
         leftGroupPanel.repaint();
         boolean pause = true;
+    }
+    
+    public class JListSelection extends DefaultListSelectionModel
+    {
+        @Override
+        public void setSelectionInterval(int start, int end)
+        {
+             if (start != end)
+                super.setSelectionInterval(start, end);
+            else if (isSelectedIndex(start))
+            {
+                removeSelectionInterval(start, end);
+                highlightSelecionados();
+            } 
+            else
+            {
+                addSelectionInterval(start, end);
+                highlightSelecionados();
+            }
+        }
     }
 
     public class ListItemTransferHandler extends TransferHandler
