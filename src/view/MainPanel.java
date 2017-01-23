@@ -33,15 +33,16 @@ import java.util.List;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.Locale;
 import java.util.Map;
 import java.util.Random;
+import java.util.Set;
 import java.util.logging.FileHandler;
 import java.util.logging.Handler;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import java.util.logging.SimpleFormatter;
-
 import javax.activation.*;
 import javax.swing.JList;
 import javax.swing.JPanel;
@@ -61,11 +62,9 @@ import org.jdom2.output.Format;
 import org.jdom2.output.XMLOutputter;
 
 /**
- * Não é exatamente só o MainPanel, mas sim uma amálgama que também conta com
- * 95% da lógica do programa. Em um breve futuro isso vai ser refatorado.
- *
  * @author Vinicius <vinicius.s.sesti@gmail.com>
  */
+//em um (espero) breve futuro, isso vai ser refatorado
 public final class MainPanel extends JPanel
 {
     public static final Logger logger = Logger.getLogger(MainPanel.class.getName());
@@ -103,9 +102,10 @@ public final class MainPanel extends JPanel
     private Map<JList, JComboBox> listsToBoxes;
     private Map<JComboBox, Color> boxesToColors;
     private Map<JList, JPanel> listsToPanels;
+    private Map<JListSelection, JList> selectionsToLists;
     private JComboBox<String> solitariosBox;
     public static int maiorSet;
-    public static int howManySelected = 0;
+    private Set<Sintagma> selectedSintagmas;
     public static MainPanel m;
     private static boolean importedAnything;
     private static final String [] AJUDA = {//não consegui contornar o problema do joptionpane não dar wrap automático
@@ -181,6 +181,7 @@ public final class MainPanel extends JPanel
         listsToBoxes = new HashMap<>();
         boxesToColors = new HashMap<>();
         listsToPanels = new HashMap<>();
+        selectionsToLists = new HashMap<>();
         logger.setLevel(Level.SEVERE);
 		try {
                     handlerXML = new FileHandler("LogErros.xml");
@@ -206,6 +207,28 @@ public final class MainPanel extends JPanel
         //TODO 28/10/2016
         sintagmaSearchField = new JTextField("Busca de sintagmas");
 
+        //dá para condensar melhor esses actionlisteners e acabar com esse boilerplate
+        leftDecrementButton.addActionListener(
+                (ActionEvent evt) -> 
+                {
+                    EditarSintagmaButtons.editarSintagma(EditarSintagmaButtons.LEFT_DECREMENT,selectedSintagmas);
+                });
+        leftIncrementButton.addActionListener(
+                (ActionEvent evt) -> 
+                {
+                    EditarSintagmaButtons.editarSintagma(EditarSintagmaButtons.LEFT_INCREMENT,selectedSintagmas);
+                });
+        rightDecrementButton.addActionListener(
+                (ActionEvent evt) -> 
+                {
+                    EditarSintagmaButtons.editarSintagma(EditarSintagmaButtons.RIGHT_DECREMENT,selectedSintagmas);
+                });
+        rightIncrementButton.addActionListener(
+                (ActionEvent evt) -> 
+                {
+                    EditarSintagmaButtons.editarSintagma(EditarSintagmaButtons.RIGHT_INCREMENT,selectedSintagmas);
+                });
+        
         mainPanelCancelSelection = new KeyListener()
         {
             @Override
@@ -217,8 +240,11 @@ public final class MainPanel extends JPanel
             public void keyPressed(KeyEvent e)
             {
                 if (e.getKeyCode() == KeyEvent.VK_ESCAPE)
+                {
                     for (JList jl : jlistas)
                         jl.clearSelection();
+                    selectedSintagmas.clear();
+                }
             }
 
             @Override
@@ -252,13 +278,8 @@ public final class MainPanel extends JPanel
                         Sintagma sint = (Sintagma) model.getElementAt(i);
                         if (sint.sn.toLowerCase().contains(textoBuscado.toLowerCase()))
                         {
-                            int [] indices = jl.getSelectedIndices();
-                            int selectedIndex = Arrays.binarySearch(indices, i);
-                            if(selectedIndex<0)
-                                {
-                                    howManySelected++;
-                                    jl.addSelectionInterval(i, i);
-                                }
+                            selectedSintagmas.add(sint);
+                            jl.addSelectionInterval(i, i);      
                         }
                     }
                 }
@@ -295,34 +316,24 @@ public final class MainPanel extends JPanel
             }
         });
 
-        jMenuItemAjuda.addActionListener(new ActionListener()
+        jMenuItemAjuda.addActionListener((ActionEvent e) ->
         {
-            @Override
-            public void actionPerformed(ActionEvent e)
-            {
-                JTextArea encapsulation = new JTextArea(MainPanel.AJUDA[0]);
-                encapsulation.setSize(encapsulation.getPreferredSize());
-                encapsulation.setEditable(false);
-                encapsulation.setLineWrap(true);
-                JOptionPane.showMessageDialog(null,MainPanel.AJUDA[0], "Ajuda",  JOptionPane.INFORMATION_MESSAGE);
-            }   
-        }        
-        );
+            JTextArea encapsulation = new JTextArea(MainPanel.AJUDA[0]);
+            encapsulation.setSize(encapsulation.getPreferredSize());
+            encapsulation.setEditable(false);
+            encapsulation.setLineWrap(true);
+            JOptionPane.showMessageDialog(null,MainPanel.AJUDA[0], "Ajuda",  JOptionPane.INFORMATION_MESSAGE);
+        });
         
-        jMenuItemSobre.addActionListener(new ActionListener()
+        jMenuItemSobre.addActionListener((ActionEvent e) ->
         {
-            @Override
-            public void actionPerformed(ActionEvent e)
-            {
-                JTextArea encapsulation = new JTextArea(MainPanel.AJUDA[1]);
-                encapsulation.setSize(encapsulation.getPreferredSize());
-                encapsulation.setEditable(false);
-                encapsulation.setLineWrap(true);
-                encapsulation.setWrapStyleWord(true);
-                JOptionPane.showMessageDialog(null,MainPanel.AJUDA[1], "Sobre o CorrefVisual",  JOptionPane.INFORMATION_MESSAGE);
-            }   
-        }        
-        );
+            JTextArea encapsulation = new JTextArea(MainPanel.AJUDA[1]);
+            encapsulation.setSize(encapsulation.getPreferredSize());
+            encapsulation.setEditable(false);
+            encapsulation.setLineWrap(true);
+            encapsulation.setWrapStyleWord(true);
+            JOptionPane.showMessageDialog(null,MainPanel.AJUDA[1], "Sobre o CorrefVisual",  JOptionPane.INFORMATION_MESSAGE);
+        });
         
         botaoNovoGrupo.setEnabled(false);
 
@@ -366,22 +377,19 @@ public final class MainPanel extends JPanel
                         .getAccessibleContext().getAccessibleChild(0))
                         .getList().getSelectionBackground());
                 categorias.setSelectedItem("OUTRO");
-                categorias.addActionListener(new ActionListener()
+                categorias.addActionListener((ActionEvent e) ->
                 {
-                    @Override
-                    public void actionPerformed(ActionEvent e)
-                    {
-                        String newCateg = (String) categorias.getSelectedItem();
-                        DefaultListModel<Sintagma> listaAlterada = (DefaultListModel) jListSintagma.getModel();
-                        for (int i = 0; i < listaAlterada.getSize(); i++)
-                            ((Sintagma) listaAlterada.getElementAt(i)).categoriaSemantica = newCateg;
-                    }
+                    String newCateg = (String) categorias.getSelectedItem();
+                    DefaultListModel<Sintagma> listaAlterada = (DefaultListModel) jListSintagma.getModel();
+                    for (int i = 0; i < listaAlterada.getSize(); i++)
+                        ((Sintagma) listaAlterada.getElementAt(i)).categoriaSemantica = newCateg;
                 });
 
                 jsp.setColumnHeaderView(categorias);
                 cont.add(createPanelForComponent(jsp, ""), 0);
                 listsToPanels.put(jListSintagma, (JPanel) cont.getComponent(0));
                 jListSintagma.setSelectionModel(new JListSelection());
+                selectionsToLists.put((JListSelection) jListSintagma.getSelectionModel(), jListSintagma);
                 splitAllPane.revalidate();
                 splitAllPane.repaint();
             }
@@ -401,7 +409,7 @@ public final class MainPanel extends JPanel
         listaDeApoio = makeList(h, new ArrayList<>());
         jlistas.add(listaDeApoio);
         listaDeApoio.setSelectionModel(new JListSelection());
-       
+        selectionsToLists.put((JListSelection) listaDeApoio.getSelectionModel(), listaDeApoio);
         scrollListaDeApoio = new JScrollPane(listaDeApoio);
         JLabel apoioLabel = new JLabel("Painel auxiliar");
         scrollListaDeApoio.setColumnHeaderView(apoioLabel);
@@ -448,41 +456,26 @@ public final class MainPanel extends JPanel
         ordenador = (Sintagma s1, Sintagma s2) -> new Integer(
                 s1.snID).compareTo(s2.snID);
 
-        jSortSolitariosPorAparicao.addActionListener(new ActionListener()
+        jSortSolitariosPorAparicao.addActionListener((ActionEvent evt) ->
         {
-            @Override
-            public void actionPerformed(ActionEvent evt)
-            {
-                ordenador = (Sintagma s1, Sintagma s2) -> new Integer(
-                        s1.snID).compareTo(s2.snID);
-                ordenaTudo();
-            }
-        }
-        );
+            ordenador = (Sintagma s1, Sintagma s2) -> new Integer(
+                    s1.snID).compareTo(s2.snID);
+            ordenaTudo();
+        });
 
-        jSortSolitariosPorNomeAZ.addActionListener(new ActionListener()
+        jSortSolitariosPorNomeAZ.addActionListener((ActionEvent evt) ->
         {
-            @Override
-            public void actionPerformed(ActionEvent evt)
-            {
-                ordenador = (Sintagma s1, Sintagma s2)
-                        -> s1.sn.toLowerCase().compareTo(s2.sn.toLowerCase());
-                ordenaTudo();
-            }
-        }
-        );
+            ordenador = (Sintagma s1, Sintagma s2)
+                    -> s1.sn.toLowerCase().compareTo(s2.sn.toLowerCase());
+            ordenaTudo();
+        });
 
-        jSortSolitariosPorNomeZA.addActionListener(new ActionListener()
+        jSortSolitariosPorNomeZA.addActionListener((ActionEvent evt) ->
         {
-            @Override
-            public void actionPerformed(ActionEvent evt)
-            {
-                ordenador = (Sintagma s1, Sintagma s2)
-                        -> s2.sn.toLowerCase().compareTo(s1.sn.toLowerCase());
-                ordenaTudo();
-            }
-        }
-        );
+            ordenador = (Sintagma s1, Sintagma s2)
+                    -> s2.sn.toLowerCase().compareTo(s1.sn.toLowerCase());
+            ordenaTudo();
+        });
 
         jMenuItemImportar.addActionListener(new ActionListener()
         {
@@ -499,6 +492,7 @@ public final class MainPanel extends JPanel
                     boxesToColors.clear();
                     listsToPanels.clear();
                     maiorSet = -1;
+                    selectedSintagmas = new HashSet<>();
                     listTokens = new ArrayList<>();
 
                     rightGroupPanel.add(scrollListaDeApoio);
@@ -659,6 +653,7 @@ public final class MainPanel extends JPanel
                     scrollSolitarios.setColumnHeaderView(solitariosLabel);
                     rightGroupPanel.add(createPanelForComponent(scrollSolitarios, ""));
                     jListSnSolitarios.setSelectionModel((new JListSelection()));
+                    selectionsToLists.put((JListSelection) jListSnSolitarios.getSelectionModel(), jListSnSolitarios);
                     for (Grupo g : fachada.getGrupos())
                     {
                         JList jListSintagma = makeList(h, g.getListaSintagmas());
@@ -686,20 +681,17 @@ public final class MainPanel extends JPanel
                                 .getAccessibleContext().getAccessibleChild(0))
                                 .getList().getSelectionBackground());
                         categorias.setSelectedItem(g.getListaSintagmas().get(0).categoriaSemantica);
-                        categorias.addActionListener(new ActionListener()
+                        categorias.addActionListener((ActionEvent e) ->
                         {
-                            @Override
-                            public void actionPerformed(ActionEvent e)
-                            {
-                                String newCateg = (String) categorias.getSelectedItem();
-                                DefaultListModel<Sintagma> listaAlterada = (DefaultListModel) jListSintagma.getModel();
-                                for (int i = 0; i < listaAlterada.getSize(); i++)
-                                    ((Sintagma) listaAlterada.getElementAt(i)).categoriaSemantica = newCateg;
-                            }
+                            String newCateg = (String) categorias.getSelectedItem();
+                            DefaultListModel<Sintagma> listaAlterada = (DefaultListModel) jListSintagma.getModel();
+                            for (int i = 0; i < listaAlterada.getSize(); i++)
+                                ((Sintagma) listaAlterada.getElementAt(i)).categoriaSemantica = newCateg;
                         });
 
                         jsp.setColumnHeaderView(categorias);
                         jListSintagma.setSelectionModel((new JListSelection()));
+                        selectionsToLists.put((JListSelection) jListSintagma.getSelectionModel(), jListSintagma);
                     }
                     jlistas.add(jListSnSolitarios);
                     cont.repaint();
@@ -714,6 +706,7 @@ public final class MainPanel extends JPanel
                                 for (JList jlista : jlistas)
                                 {
                                     jlista.clearSelection();
+                                    selectedSintagmas.clear();
                                     highlightSelecionados();
                                 }
                             }
@@ -755,13 +748,9 @@ public final class MainPanel extends JPanel
             }
         });
 
-        jMenuItemExportar.addActionListener(new ActionListener()
+        jMenuItemExportar.addActionListener((java.awt.event.ActionEvent evt) ->
         {
-            @Override
-            public void actionPerformed(java.awt.event.ActionEvent evt)
-            {
-                export();
-            }
+            export();
         });
     }
 
@@ -1111,7 +1100,6 @@ public final class MainPanel extends JPanel
             }
         }
         );
-
     }
 
     public void ordenaTudo()
@@ -1157,15 +1145,24 @@ public final class MainPanel extends JPanel
         @Override
         public void setSelectionInterval(int start, int end)
         {
-             if (start != end)
-                super.setSelectionInterval(start, end);
-            else if (isSelectedIndex(start))
+            JList selector = selectionsToLists.get(this);
+            DefaultListModel elements = (DefaultListModel) selector.getModel();
+            if (start != end) //seleciona de start a end
             {
+                for(int i=start;i<=end;i++)
+                    selectedSintagmas.add((Sintagma)elements.getElementAt(i));
+                super.setSelectionInterval(start, end);
+            }
+            else if (isSelectedIndex(start)) //start==end; desseleciona de start a end
+            {
+                for(int i=start;i<=end;i++)
+                    selectedSintagmas.remove((Sintagma)elements.getElementAt(i));
                 removeSelectionInterval(start, end);
                 highlightSelecionados();
             } 
-            else
+            else //start==end; seleciona apenas o start (um so selecionado)
             {
+                selectedSintagmas.add((Sintagma)elements.getElementAt(start));
                 addSelectionInterval(start, end);
                 highlightSelecionados();
             }
@@ -1336,5 +1333,37 @@ public final class MainPanel extends JPanel
             MainPanel.m.highlightSelecionados();
         }
     }
-
+    public static class EditarSintagmaButtons
+    {
+        public static final int LEFT_DECREMENT=0,LEFT_INCREMENT=1,
+                                RIGHT_DECREMENT=2,RIGHT_INCREMENT=3;
+        public static void editarSintagma(int operacao, Set selectedSintagmas)
+        {
+            if(selectedSintagmas.isEmpty())
+                JOptionPane.showMessageDialog(null,"Não há nenhum sintagma selecionado para edição.",
+                                                "Erro",JOptionPane.ERROR_MESSAGE);     
+            else if(selectedSintagmas.size()>1)
+                JOptionPane.showMessageDialog(null,"Deve haver apenas um sintagma selecionado para edição.",
+                                                "Erro",JOptionPane.ERROR_MESSAGE);
+            else
+            {
+                Sintagma editado = (Sintagma)selectedSintagmas.iterator().next();
+                switch(operacao)
+                {
+                    case LEFT_DECREMENT:
+                        if (editado.startToken==editado.endToken)
+                        {
+                            aa
+                        }
+                        break;
+                    case LEFT_INCREMENT:
+                        break;
+                    case RIGHT_DECREMENT:
+                        break;
+                    case RIGHT_INCREMENT:
+                        break;
+                }
+            }
+        }
+    }
 }
