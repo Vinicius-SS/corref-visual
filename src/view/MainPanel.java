@@ -77,7 +77,7 @@ public final class MainPanel extends JPanel
     private ArrayList<Color> colors;
     private JList jListSnSolitarios, listaDeApoio;
     private ArrayList<JList> jlistas;
-    private String texto;
+    private static String texto;
     private Container cont;
     private JSplitPane splitGroupPane, splitPane, upSplitPane, splitAllPane,
             splitApoioDeSolitarios;
@@ -99,6 +99,7 @@ public final class MainPanel extends JPanel
     private static KeyListener mainPanelCancelSelection;
     private ButtonGroup ordenacaoSolitarios;
     private TransferHandler h;
+    public static List<Word> wordList;
     private Map<JList, JComboBox> listsToBoxes;
     private Map<JComboBox, Color> boxesToColors;
     private Map<JList, JPanel> listsToPanels;
@@ -116,10 +117,10 @@ public final class MainPanel extends JPanel
             "O CorrefVisual é uma ferramenta para a visualização e manipulação gráfica\n"
             +"de cadeias de correferência (anotação), contando com algumas funcionalidades\n"
             + "específicas para auxílio neste trabalho."};
-    private List<Token> listTokens;
+    public static List<Token> listTokens;
     private String tituloTexto;
     private String fileName;
-    private List<org.jdom2.Element> cadeias, sentencas, mencoes_unicas, tokens;
+    private static List<org.jdom2.Element> cadeias, sentencas, mencoes_unicas, tokens;
     private Comparator<Sintagma> ordenador;
 
     private MainPanel() throws ClassNotFoundException, NoSuchMethodException
@@ -627,12 +628,6 @@ public final class MainPanel extends JPanel
                     setTexto(texto);
                     fachada.organizaGrupos();
                     fachada.ordenaPorQtdFilhos();
-                    for (int i = 0; i < listaSintagma.size(); i++)
-                    {
-                        Sintagma s = listaSintagma.get(i);
-                        s.startToken = s.words.get(0).tokenID;
-                        s.endToken = s.words.get(s.words.size() - 1).tokenID;
-                    }
                     for (org.jdom2.Element token : tokens)
                     {
                         Token tt = new Token(token.getAttributeValue("token"),
@@ -640,6 +635,14 @@ public final class MainPanel extends JPanel
                         tt.endChar = tt.startChar + tt.token.length() + 1;
                         pos += tt.token.length() + 1;
                         listTokens.add(tt);
+                    }
+                    for (int i = 0; i < listaSintagma.size(); i++)
+                    {
+                        Sintagma s = listaSintagma.get(i);
+                        s.startToken = s.words.get(0).tokenID;
+                        s.endToken = s.words.get(s.words.size() - 1).tokenID;
+                        s.startChar = listTokens.get(s.startToken).startChar;
+                        s.endChar = listTokens.get(s.endToken).endChar;
                     }
                     //guarda os originais antes de qualquer alteração
                     listaOriginal = new ArrayList<>();
@@ -1352,15 +1355,62 @@ public final class MainPanel extends JPanel
                 {
                     case LEFT_DECREMENT:
                         if (editado.startToken==editado.endToken)
+                            JOptionPane.showMessageDialog(null, "ERRO: o sintagma deve"
+                                    + " ter mais de uma palavra para ser reduzido.", "Erro", JOptionPane.ERROR_MESSAGE);
+                        else
                         {
-                            aa
+                            editado.startToken++;
+                            int removedSize = editado.words.get(0).word.length()+1;
+                            editado.startChar+=removedSize;
+                            editado.sn = editado.sn.substring(removedSize);
+                            editado.words.remove(0);
                         }
                         break;
                     case LEFT_INCREMENT:
+                        if(editado.startToken==0)
+                            JOptionPane.showMessageDialog(null, "ERRO: o sintagma já está no começo do texto,"
+                                    + " é impossível aumentar mais.", "Erro", JOptionPane.ERROR_MESSAGE);
+                        else
+                        {
+                            editado.startToken--;
+                            int addedSize = listTokens.get(editado.startToken).token.length()+1;
+                            editado.startChar -= addedSize;
+                            editado.sn = texto.substring(editado.startChar, editado.startChar+addedSize)+editado.sn;
+                            org.jdom2.Element newWord = tokens.get(editado.startToken);
+                            editado.words.add(0, new Word
+                            (
+                             newWord.getAttributeValue("token"),
+                             newWord.getAttributeValue("pos"),
+                             newWord.getAttributeValue("features"),
+                             newWord.getAttributeValue("lemam"),
+                             editado.sentenca,
+                             Integer.parseInt(newWord.getName().split("_")[1])
+                            ));
+                        }
                         break;
                     case RIGHT_DECREMENT:
+                         if (editado.startToken==editado.endToken)
+                            JOptionPane.showMessageDialog(null, "ERRO: o sintagma deve"
+                                    + " ter mais de uma palavra para ser reduzido.", "Erro", JOptionPane.ERROR_MESSAGE);
+                         else
+                         {
+                            editado.endToken--;
+                            int removedSize = editado.words.get(editado.words.size()-1).word.length()+1;
+                            editado.endChar-=removedSize;
+                            editado.sn = editado.sn.substring(0,editado.sn.length()-removedSize);
+                            editado.words.remove(editado.words.size()-1);                             
+                         }
                         break;
                     case RIGHT_INCREMENT:
+                        if(editado.endToken==tokens.size()-1)
+                        {
+                            JOptionPane.showMessageDialog(null, "ERRO: o sintagma já está no final do texto,"
+                                    + " é impossível aumentar mais.", "Erro", JOptionPane.ERROR_MESSAGE);
+                        }
+                        else
+                        {
+                            
+                        }
                         break;
                 }
             }
