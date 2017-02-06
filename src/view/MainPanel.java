@@ -1382,7 +1382,7 @@ public final class MainPanel extends JPanel
                              newWord.getAttributeValue("token"),
                              newWord.getAttributeValue("pos"),
                              newWord.getAttributeValue("features"),
-                             newWord.getAttributeValue("lemam"),
+                             newWord.getAttributeValue("lemma"),
                              editado.sentenca,
                              Integer.parseInt(newWord.getName().split("_")[1])
                             ));
@@ -1409,7 +1409,20 @@ public final class MainPanel extends JPanel
                         }
                         else
                         {
-                            
+                            editado.endToken++;
+                            int addedSize = listTokens.get(editado.endToken).token.length()+1;
+                            editado.endChar += addedSize;
+                            editado.sn = editado.sn+" "+listTokens.get(editado.endToken).token;
+                            org.jdom2.Element newWord = tokens.get(editado.endToken);
+                            editado.words.add(new Word
+                            (
+                                newWord.getAttributeValue("token"),
+                                newWord.getAttributeValue("pos"),
+                                newWord.getAttributeValue("features"),
+                                newWord.getAttributeValue("lemma"),
+                                editado.sentenca,
+                                Integer.parseInt(newWord.getName().split("_")[1])
+                            ));
                         }
                         break;
                 }
