@@ -162,7 +162,7 @@ public final class MainPanel extends JPanel
         jMenuOrdenar.add(jSortSolitariosPorAparicao);
         jMenuOrdenar.add(jSortSolitariosPorNomeAZ);
         jMenuOrdenar.add(jSortSolitariosPorNomeZA);
-        editarSintagmaLabel = new JLabel("Editar sintagma");
+        editarSintagmaLabel = new JLabel("Editar sintagma",SwingConstants.CENTER);
         textoPuroPane = new JTextPane();
         textoPuroPane.setEditable(false);
         leftDecrementButton = new JButton("-");
@@ -205,7 +205,6 @@ public final class MainPanel extends JPanel
         JPanel btPanel = createHorizontalBoxPanel(100, 100);
         botaoNovoGrupo = new JButton("Novo Grupo");
         btPanel.add(botaoNovoGrupo);
-        //TODO 28/10/2016
         sintagmaSearchField = new JTextField("Busca de sintagmas");
 
         //dá para condensar melhor esses actionlisteners e acabar com esse boilerplate
@@ -435,6 +434,7 @@ public final class MainPanel extends JPanel
         minorEditGrouping = new JSplitPane(JSplitPane.HORIZONTAL_SPLIT,leftEditSplit,editarSintagmaPanel);
         leftEditSplit.setDividerLocation(0.8);
         majorEditGrouping = new JSplitPane(JSplitPane.HORIZONTAL_SPLIT,minorEditGrouping,rightEditSplit);
+        majorEditGrouping.setResizeWeight(1);
         
         upSplitPane = new JSplitPane(JSplitPane.HORIZONTAL_SPLIT, upPanel,
                 majorEditGrouping);
