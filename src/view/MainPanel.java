@@ -82,8 +82,8 @@ public final class MainPanel extends JPanel
     private JSplitPane splitGroupPane, splitPane, upSplitPane, splitAllPane,
             splitApoioDeSolitarios;
     private JSplitPane leftEditSplit,rightEditSplit,minorEditGrouping,majorEditGrouping;
-    private JPanel rightGroupPanel, leftGroupJPanel, panelTextoPuro, upPanel,
-            rightGroupJPanel;
+    private JPanel rightGroupPanel, leftGroupJPanel, upPanel,
+            rightGroupJPanel, panelTextoPuro;
     private JScrollPane leftGroupPanel, scrollSolitarios,
             scrollListaDeApoio;
     private JButton botaoNovoGrupo;
@@ -428,9 +428,9 @@ public final class MainPanel extends JPanel
         JPanel editarSintagmaPanel = new JPanel(new BorderLayout());
         editarSintagmaPanel.add(editarSintagmaLabel);
         
-        leftEditSplit = new JSplitPane(JSplitPane.VERTICAL_SPLIT,leftIncrementButton,leftDecrementButton);
+        leftEditSplit = new JSplitPane(JSplitPane.HORIZONTAL_SPLIT,leftIncrementButton,leftDecrementButton);
         leftEditSplit.setResizeWeight(0.5);
-        rightEditSplit = new JSplitPane(JSplitPane.VERTICAL_SPLIT,rightIncrementButton,rightDecrementButton);
+        rightEditSplit = new JSplitPane(JSplitPane.HORIZONTAL_SPLIT,rightDecrementButton,rightIncrementButton);
         rightEditSplit.setResizeWeight(0.5);
         minorEditGrouping = new JSplitPane(JSplitPane.HORIZONTAL_SPLIT,leftEditSplit,editarSintagmaPanel);
         leftEditSplit.setDividerLocation(0.8);
@@ -1338,6 +1338,12 @@ public final class MainPanel extends JPanel
     }
     public static class EditarSintagmaButtons
     {
+        public static void repaintPanels()
+        {
+            MainPanel.m.repaint();
+            MainPanel.m.highlightSelecionados();
+        }
+        
         public static final int LEFT_DECREMENT=0,LEFT_INCREMENT=1,
                                 RIGHT_DECREMENT=2,RIGHT_INCREMENT=3;
         public static void editarSintagma(int operacao, Set selectedSintagmas)
@@ -1365,6 +1371,7 @@ public final class MainPanel extends JPanel
                             editado.sn = editado.sn.substring(removedSize);
                             editado.words.remove(0);
                         }
+                        repaintPanels();
                         break;
                     case LEFT_INCREMENT:
                         if(editado.startToken==0)
@@ -1387,6 +1394,7 @@ public final class MainPanel extends JPanel
                              Integer.parseInt(newWord.getName().split("_")[1])
                             ));
                         }
+                        repaintPanels();
                         break;
                     case RIGHT_DECREMENT:
                          if (editado.startToken==editado.endToken)
@@ -1400,6 +1408,7 @@ public final class MainPanel extends JPanel
                             editado.sn = editado.sn.substring(0,editado.sn.length()-removedSize);
                             editado.words.remove(editado.words.size()-1);                             
                          }
+                        repaintPanels(); 
                         break;
                     case RIGHT_INCREMENT:
                         if(editado.endToken==tokens.size()-1)
@@ -1424,6 +1433,7 @@ public final class MainPanel extends JPanel
                                 Integer.parseInt(newWord.getName().split("_")[1])
                             ));
                         }
+                        repaintPanels();
                         break;
                 }
             }
