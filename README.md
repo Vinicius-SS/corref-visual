@@ -10,4 +10,4 @@ O Corref-Visual exige o **Java 8** instalado.
 
 Para **Windows**, basta clicar duas vezes em CorrefVisual.jar.
 
-Para **MacOS** e **Linux**, deve-se navegar para o diretório contendo o arquivo .jar, abrir um terminal e executar o comando `java -Dfile.encoding=ISO8859-1 -jar CorrefVisual.jar`
+Para **Linux**, deve-se navegar para o diretório contendo o arquivo .jar, abrir um terminal e executar o comando `java -Dfile.encoding=ISO8859-1 -jar CorrefVisual.jar`
