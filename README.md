@@ -1,23 +1,13 @@
-﻿# Corref-Visual
+# Corref-Visual
 
-This tool aims for easy reading of documents along with the highlight of coreferences and allowing the manipulation of these entities, for correcting the output of a correference resolution system, thus bringing improvements in coreference resolution process. The solution we provided is a tool using the Java programming language to create a Graphical User Interface for visualization and manipulation. 
+Programa com uma interface amigável para a visualização e manipulação de cadeias de correferência geradas pelo **CORP**, um sistema de resolução de correferências para o português baseado em regras. 
 
-The result is to a tool that facilitates the reading and identification of correference chains, the tool also keeps the changes made on a text so that the correference resolution system can be evaluated.
+Para uma explicação mais detalhada de suas funcionalidades, visualize "Coreference guidelines".
 
-## Using the program
+## Executando o Corref-Visual
 
-### Setting the input up
+O Corref-Visual exige o **Java 8** instalado.
 
-Executing the program requires Java 8. To import a text first, click on “Configurações > Entrada de Dados” and navigate to the root directory of your input data, which needs to be structured such as the example available [here](https://www.dropbox.com/s/sr0jy47fzu8mjb5/Corref%20Visual%20example.tar.gz?dl=0). The compressed root directory should contain three additional folders (the “logs” subdirectory may be ignored): **sentences** and **binaries**, containing the binary files for sentences and noun phrases; and **texts**, containing raw text. The raw text and both binary files **__must__** have the same filename.
+Para **Windows**, basta clicar duas vezes em CorrefVisual.jar.
 
-After configuring the input source, click on “Arquivo > Importar Texto” and choose the raw text file you wish to import.
-
-### Manipulating the chains
-
-If the importing process was done correctly, there should be the raw text in the left panel. The boxes immediately to the right of the raw text should each contain a different chain of coreferent noun phrases and the right panel displays lone (non-coreferent) noun phrases.
-
-Noun phrases may be dragged from one chain to the other. It is possible to manually create new coreference chains by clicking on button labelled “Novo grupo”.
-
-## Future work
-
-[ ] Flexibilization of input format to accept XML files instead.
+Para **MacOS** e **Linux**, deve-se navegar para o diretório contendo o arquivo .jar, abrir um terminal e executar o comando `java -Dfile.encoding=ISO8859-1 -jar CorrefVisual.jar`
