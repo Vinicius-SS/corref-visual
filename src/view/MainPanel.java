@@ -27,7 +27,6 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.lang.reflect.InvocationTargetException;
 import java.nio.charset.StandardCharsets;
-import java.util.Arrays;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Collections;
@@ -710,8 +709,8 @@ public final class MainPanel extends JPanel
                                 {
                                     jlista.clearSelection();
                                     selectedSintagmas.clear();
-                                    highlightSelecionados();
                                 }
+                                highlightSelecionados();
                             }
                         };
                         KeyStroke enter = KeyStroke.getKeyStroke(
@@ -940,6 +939,7 @@ public final class MainPanel extends JPanel
         StyleConstants.setBold(keyWord, true);
         StyleConstants.setFontSize(keyWord, 18);
         doc.setCharacterAttributes(startChar, s.sn.length(), keyWord, false);
+        System.out.println(s.sn+" : "+s.sn.length());
     }
 
     public void setTexto(String texto)
