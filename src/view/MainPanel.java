@@ -95,7 +95,7 @@ public final class MainPanel extends JPanel
     private JMenuItem jMenuItemImportar, jMenuItemExportar, jMenuItemAjuda,jMenuItemSobre;
     private JRadioButtonMenuItem jSortSolitariosPorAparicao, jSortSolitariosPorNomeAZ,
             jSortSolitariosPorNomeZA;
-    private static KeyListener mainPanelCancelSelection;
+    private static KeyListener cancelSelections;
     private ButtonGroup ordenacaoSolitarios;
     private TransferHandler h;
     public static List<Word> wordList;
@@ -108,6 +108,7 @@ public final class MainPanel extends JPanel
     private Set<Sintagma> selectedSintagmas;
     public static MainPanel m;
     private static boolean importedAnything;
+    private static File suggestedOutput = new File(".");
     private static final String [] AJUDA = {//não consegui contornar o problema do joptionpane não dar wrap automático
             "No presente, a ferramenta é mantida por Vinicius Sesti (vinicius.sesti@acad.pucrs.br).\n"
             + "Para qualquer problema ou dúvida, sinta-se à vontade para entrar em contato por\n"
@@ -228,7 +229,7 @@ public final class MainPanel extends JPanel
                     EditarSintagmaButtons.editarSintagma(EditarSintagmaButtons.RIGHT_INCREMENT,selectedSintagmas);
                 });
         
-        mainPanelCancelSelection = new KeyListener()
+        cancelSelections = new KeyListener()
         {
             @Override
             public void keyTyped(KeyEvent e)
@@ -242,7 +243,7 @@ public final class MainPanel extends JPanel
                 {
                     for (JList jl : jlistas)
                         jl.clearSelection();
-                    selectedSintagmas.clear();
+                    highlightSelecionados();
                 }
             }
 
@@ -389,6 +390,7 @@ public final class MainPanel extends JPanel
                 listsToPanels.put(jListSintagma, (JPanel) cont.getComponent(0));
                 jListSintagma.setSelectionModel(new JListSelection());
                 selectionsToLists.put((JListSelection) jListSintagma.getSelectionModel(), jListSintagma);
+                jListSintagma.addKeyListener(cancelSelections);
                 splitAllPane.revalidate();
                 splitAllPane.repaint();
             }
@@ -502,9 +504,10 @@ public final class MainPanel extends JPanel
                 {
                     JFileChooser chooser = new JFileChooser();
                     chooser.setCurrentDirectory(
-                            new File("XML_Baseline"));
+                            new File("."));
                     chooser.showOpenDialog(null);
                     botaoNovoGrupo.setEnabled(true);
+                    
                     String filePath = chooser.getSelectedFile().getAbsolutePath();
                     fileName = chooser.getSelectedFile().getName();
                     FileInputStream is = new FileInputStream(filePath);
@@ -720,6 +723,7 @@ public final class MainPanel extends JPanel
                         ActionMap actionMap1 = jl.getActionMap();
                         actionMap1.put(ACTION_KEY, actionListener);
                         jl.setActionMap(actionMap1);
+                        jl.addKeyListener(cancelSelections);
                     }
                     Component[] component1 = cont.getComponents();
                     for (int i = 0; i < component1.length; i++)
@@ -752,11 +756,34 @@ public final class MainPanel extends JPanel
 
         jMenuItemExportar.addActionListener((java.awt.event.ActionEvent evt) ->
         {
-            export();
+            exportDialogBox();
         });
     }
+   
+    public boolean exportDialogBox()
+    {
+        JFileChooser chooser = new JFileChooser();
+        chooser.setCurrentDirectory(suggestedOutput);
+        chooser.setDialogTitle("Selecione a pasta de saída");
+        chooser.setSelectedFile(suggestedOutput);
+        chooser.setFileSelectionMode(JFileChooser.DIRECTORIES_ONLY);
+        chooser.setAcceptAllFileFilterUsed(false);
+        boolean cancelou = chooser.showSaveDialog(null) == 1;
+        File output = chooser.getSelectedFile();
+        if(output==null||cancelou) 
+        {
+            JOptionPane.showMessageDialog(null,"Salvamento cancelado","Aviso",JOptionPane.INFORMATION_MESSAGE);
+            return false;
+        }
+        else
+        {
+            System.out.println(output.getAbsolutePath());
+            suggestedOutput = new File(output.getAbsolutePath());
+            return export(output);
+        }
+    }
 
-    public boolean export()
+    public boolean export(File output)
     {
         if (listaDeApoio.getModel().getSize() > 0)
         {
@@ -891,11 +918,8 @@ public final class MainPanel extends JPanel
         Collections.sort(saida.getRootElement().getChildren().get(3).getChildren(), elementOrdenador);
         try
         {
-            XMLOutputter exporter = new XMLOutputter(Format.getPrettyFormat().setEncoding("ISO-8859-1"));   
-            File dirSaida = new File("saida");
-            if (!dirSaida.exists())
-                dirSaida.mkdir();
-            exporter.output(saida, new FileWriter(dirSaida + File.separator + fileName));
+            XMLOutputter exporter = new XMLOutputter(Format.getPrettyFormat().setEncoding("ISO-8859-1"));
+            exporter.output(saida, new FileWriter(output.getAbsolutePath()+File.separator+fileName));
             JOptionPane.showMessageDialog(null, "Alterações salvas com sucesso no diretório de saída");
         } catch (IOException ex)
         {
@@ -1069,7 +1093,7 @@ public final class MainPanel extends JPanel
         frame.setDefaultCloseOperation(WindowConstants.DO_NOTHING_ON_CLOSE);
         m = new MainPanel();
         frame.getContentPane().add(m);
-        m.addKeyListener(mainPanelCancelSelection);
+        m.addKeyListener(cancelSelections);
         frame.pack();
         frame.setLocationRelativeTo(null);
         frame.setExtendedState(JFrame.MAXIMIZED_BOTH);
@@ -1085,10 +1109,10 @@ public final class MainPanel extends JPanel
                 switch (option)
                 {
                     case JOptionPane.YES_OPTION:
-                        if (m.export())
+                        if (m.exportDialogBox())
                         {
-                        	handlerXML.close();
-                                handlerTXT.close();
+                            handlerXML.close();
+                            handlerTXT.close();
                             frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
                         }
                         break;
@@ -1128,9 +1152,11 @@ public final class MainPanel extends JPanel
     private void gerarCores(int n)
     {
         Random r = new Random();
+        int red = 5*255/8-r.nextInt(5*256/8);
+        int green = 5*255/8-r.nextInt(5*256/8);
+        int blue = 5*255/8-r.nextInt(5*256/8);
         for (int i = 0; i < n * 10; i++)
-            colors.
-                    add(new Color(r.nextInt(256), r.nextInt(256), r.nextInt(256)));
+            colors.add(new Color(red, green, blue));
     }
 
     public void destroyBox(JPanel destroyable, JList destroyedKey)
