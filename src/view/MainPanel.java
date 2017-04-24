@@ -86,7 +86,8 @@ public final class MainPanel extends JPanel
     private JScrollPane leftGroupPanel, scrollSolitarios,
             scrollListaDeApoio;
     private JButton botaoNovoGrupo;
-    private JButton leftDecrementButton, leftIncrementButton, rightDecrementButton, rightIncrementButton;
+    private JButton leftDecrementButton, leftIncrementButton, rightDecrementButton, rightIncrementButton,
+            criarSintagmaButton;
     private JLabel editarSintagmaLabel;
     private JTextPane textoPuroPane;
     private JTextField sintagmaSearchField;
@@ -169,6 +170,8 @@ public final class MainPanel extends JPanel
         leftIncrementButton = new JButton("+");
         rightDecrementButton = new JButton("-");
         rightIncrementButton = new JButton("+");
+        criarSintagmaButton = new JButton("Criar sintagma");
+        criarSintagmaButton.setEnabled(false);
         jlistas = new ArrayList<>();
         colors = new ArrayList<>();
         gerarCores(10);
@@ -228,6 +231,43 @@ public final class MainPanel extends JPanel
                 {
                     EditarSintagmaButtons.editarSintagma(EditarSintagmaButtons.RIGHT_INCREMENT,selectedSintagmas);
                 });
+        
+        criarSintagmaButton.addActionListener(new ActionListener() 
+        {
+            @Override
+            public void actionPerformed(ActionEvent evt) 
+            {
+                int firstSelectedPos = textoPuroPane.getSelectionStart();
+                int lastSelectedPos = textoPuroPane.getSelectionEnd()-1; //
+                if(texto.charAt(firstSelectedPos)==' ') 
+                    firstSelectedPos++;
+                if(texto.charAt(lastSelectedPos)==' ') 
+                    lastSelectedPos--;
+                if(firstSelectedPos == lastSelectedPos) return;
+                int startIndex=-1, endIndex=-1;
+                boolean foundStart=false;
+                for(int i=0;i<listTokens.size() && (!foundStart || listTokens.get(i).endChar-listTokens.get(i).token.length()
+                        <=lastSelectedPos);i++)
+                {
+                    if(!foundStart && listTokens.get(i).startChar+listTokens.get(i).token.length()-1>=firstSelectedPos) //seleção total/parcial
+                    {
+                        foundStart = true;
+                        startIndex = i;
+                    }
+                    if(foundStart && listTokens.get(i).endChar-listTokens.get(i).token.length()+1<=lastSelectedPos) //seleção total/parcial                       
+                        endIndex = i; 
+                }//marquei os tokens selecionados, agora adiciono as words para o sintagma novo
+                //if(startIndex == -1 || endIndex == -1) return;
+                List<Word> words = new ArrayList<>();
+                String sintagma = new String("");
+                for(int i=startIndex;i<=endIndex;i++)
+                {
+                    words.add(wordList.get(i)); //já tenho as words...
+                    sintagma+=(i==startIndex ? "" : " ")+wordList.get(i).word;
+                }
+                System.out.println(sintagma);
+            }
+        });
         
         cancelSelections = new KeyListener()
         {
@@ -437,11 +477,17 @@ public final class MainPanel extends JPanel
         majorEditGrouping = new JSplitPane(JSplitPane.HORIZONTAL_SPLIT,minorEditGrouping,rightEditSplit);
         majorEditGrouping.setResizeWeight(1);
         
+        
+        
         upSplitPane = new JSplitPane(JSplitPane.HORIZONTAL_SPLIT, upPanel,
-                majorEditGrouping);
+                criarSintagmaButton);
         upSplitPane.setResizeWeight(0.527);
         
-        JSplitPane anotherUpSplitPane = new JSplitPane(JSplitPane.HORIZONTAL_SPLIT,upSplitPane,btPanel);
+        JSplitPane splitCriarSintagma = new JSplitPane(JSplitPane.HORIZONTAL_SPLIT,upSplitPane,majorEditGrouping);
+        splitCriarSintagma.setResizeWeight(0.48);
+        upSplitPane.setDividerLocation(0.6);
+        
+        JSplitPane anotherUpSplitPane = new JSplitPane(JSplitPane.HORIZONTAL_SPLIT,splitCriarSintagma,btPanel);
         anotherUpSplitPane.setResizeWeight(0.5);
         splitApoioDeSolitarios = new JSplitPane(JSplitPane.HORIZONTAL_SPLIT, scrollListaDeApoio,
                 scrollSolitarios);
@@ -449,6 +495,8 @@ public final class MainPanel extends JPanel
 
         upSplitPane.setResizeWeight(0.5);
 
+        //JSplitPane splitCriarSintagma = new ;
+        
         splitAllPane = new JSplitPane(JSplitPane.VERTICAL_SPLIT, anotherUpSplitPane,
                 splitPane);
         splitPane.setOneTouchExpandable(true);
@@ -496,7 +544,7 @@ public final class MainPanel extends JPanel
                     maiorSet = -1;
                     selectedSintagmas = new HashSet<>();
                     listTokens = new ArrayList<>();
-
+                    wordList = new ArrayList<>();
                     rightGroupPanel.add(scrollListaDeApoio);
                     listsToBoxes.put(listaDeApoio, solitariosBox);
                 }
@@ -507,6 +555,7 @@ public final class MainPanel extends JPanel
                             new File("."));
                     chooser.showOpenDialog(null);
                     botaoNovoGrupo.setEnabled(true);
+                    criarSintagmaButton.setEnabled(true);
                     
                     String filePath = chooser.getSelectedFile().getAbsolutePath();
                     fileName = chooser.getSelectedFile().getName();
@@ -535,7 +584,7 @@ public final class MainPanel extends JPanel
                         ArrayList<model.Word> words = new ArrayList<>();
                         for (org.jdom2.Element word : mencao_unica.getChildren())
                         {
-                            model.Word w = new model.Word(word.
+                            Word w = new model.Word(word.
                                     getAttributeValue("token"),
                                     word.getAttributeValue("pos"), word.
                                     getAttributeValue("features"),
@@ -634,9 +683,15 @@ public final class MainPanel extends JPanel
                     {
                         Token tt = new Token(token.getAttributeValue("token"),
                                 pos);
-                        tt.endChar = tt.startChar + tt.token.length() + 1;
+                        tt.endChar = tt.startChar + tt.token.length()-1;
                         pos += tt.token.length() + 1;
                         listTokens.add(tt);
+                        wordList.add(new Word(token.getAttributeValue("token"),
+                                          token.getAttributeValue("pos"),
+                                          token.getAttributeValue("features"),
+                                          token.getAttributeValue("lemma"),
+                                          Integer.parseInt(token.getAttributeValue("sentenca")),
+                                          Integer.parseInt(token.getName().split("_")[1])));                       
                     }
                     for (int i = 0; i < listaSintagma.size(); i++)
                     {
@@ -777,7 +832,6 @@ public final class MainPanel extends JPanel
         }
         else
         {
-            System.out.println(output.getAbsolutePath());
             suggestedOutput = new File(output.getAbsolutePath());
             return export(output);
         }
@@ -963,12 +1017,12 @@ public final class MainPanel extends JPanel
         StyleConstants.setBold(keyWord, true);
         StyleConstants.setFontSize(keyWord, 18);
         doc.setCharacterAttributes(startChar, s.sn.length(), keyWord, false);
-        System.out.println(s.sn+" : "+s.sn.length());
+        //System.out.println(s.sn+" : "+s.sn.length());
     }
 
     public void setTexto(String texto)
     {
-        this.texto = texto;
+        MainPanel.texto = texto;
         textoPuroPane.setText(texto);
         textoPuroPane.setEditable(false);
         textoPuroPane.setBackground(Color.WHITE);
@@ -981,6 +1035,8 @@ public final class MainPanel extends JPanel
                 keyWord, false);
         textoPuroPane.setVisible(true);
     }
+    
+    
 
     protected JScrollPane createVerticalScrollBoxPanel(Dimension d)
     {
