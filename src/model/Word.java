@@ -5,12 +5,12 @@ import java.io.Serializable;
 public class Word implements Serializable
 {
 
-    public String word;
-    public String pos;
-    public String morfo;
-    public String lemma;
-    public int sentenca;
-    public int tokenID;
+    public final String word;
+    public final String pos;
+    public final String morfo;
+    public final String lemma;
+    public final int sentenca;
+    public final int tokenID;
 
     public Word(String word, String pos, String morfo, String lemma, int sentenca, int tokenID)
     {
@@ -20,5 +20,11 @@ public class Word implements Serializable
         this.lemma = lemma;
         this.sentenca = sentenca;
         this.tokenID = tokenID;
+    }
+    
+    @Override
+    public String toString()
+    {
+        return word;
     }
 }

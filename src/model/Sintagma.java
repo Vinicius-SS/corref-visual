@@ -3,6 +3,7 @@ package model;
 import java.awt.Color;
 import java.io.Serializable;
 import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Classe usada para modelar os sintagmas que são agrupados nas cadeias.
@@ -15,11 +16,10 @@ public class Sintagma implements Serializable
     public String textName;
     public String sn;
     public int sentenca;
-    public ArrayList<Word> words;
+    public List<Word> words;
     public int set;
     public int snID;
     public String nucleo;
-    public String lemma;
     public boolean prop;
     public String genero;
     public String numero;
@@ -28,7 +28,6 @@ public class Sintagma implements Serializable
     public boolean shallow;
     public ArrayList<Integer> paiDe;
     public int filhoDe;
-    public int globalID;
     public Color cor;
     public String categoriaSemantica;
     public int startToken;
@@ -36,7 +35,7 @@ public class Sintagma implements Serializable
     public int startChar;
     public int endChar;
 
-    public Sintagma(String textName, String sn, int sentenca, ArrayList<Word> words, int set, int snID, String nucleo, String lemma, boolean prop, String genero, String numero, boolean nucleoPronome, String groupedBy, boolean shallow, ArrayList<Integer> paiDe, int filhoDe, String categoriaSemantica)
+    public Sintagma(String textName, String sn, int sentenca, List<Word> words, int set, int snID, String nucleo, String categoriaSemantica)
     {
         this.textName = textName;
         this.sn = sn;
@@ -45,16 +44,6 @@ public class Sintagma implements Serializable
         this.set = set;
         this.snID = snID;
         this.nucleo = nucleo;
-        this.lemma = lemma;
-        this.prop = prop;
-        this.genero = genero;
-        this.numero = numero;
-        this.nucleoPronome = nucleoPronome;
-        this.groupedBy = groupedBy;
-        this.shallow = shallow;
-        this.paiDe = paiDe;
-        this.filhoDe = filhoDe;
-        this.globalID=0;
         this.categoriaSemantica = categoriaSemantica;
     }
 

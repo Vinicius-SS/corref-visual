@@ -49,6 +49,7 @@ import static javax.swing.TransferHandler.MOVE;
 import javax.swing.*;
 import javax.swing.plaf.basic.BasicComboPopup;
 import javax.swing.text.*;
+import model.CategoriasSemanticas;
 import model.Grupo;
 import model.Sintagma;
 import model.Token;
@@ -70,6 +71,7 @@ public final class MainPanel extends JPanel
     public static Handler handlerXML;
     public static Handler handlerTXT;
     public static int pos = 0;
+    public static int highestID = 0;
     public Random cores = new Random();
     private Fachada fachada = Fachada.getInstance();
     private ArrayList<Sintagma> listaSintagma, listaOriginal;
@@ -107,6 +109,10 @@ public final class MainPanel extends JPanel
     private JComboBox<String> solitariosBox;
     public static int maiorSet;
     private Set<Sintagma> selectedSintagmas;
+    private Word newNucleo;
+    private String newSintagma;
+    private List<Word> newSintagmaWords;
+    private NewSintagmaFrame nsf;
     public static MainPanel m;
     private static boolean importedAnything;
     private static File suggestedOutput = new File(".");
@@ -201,7 +207,6 @@ public final class MainPanel extends JPanel
 		} 
                 catch (SecurityException | IOException e1) 
                 {
-			e1.printStackTrace();
 		}
 		
 
@@ -232,40 +237,56 @@ public final class MainPanel extends JPanel
                     EditarSintagmaButtons.editarSintagma(EditarSintagmaButtons.RIGHT_INCREMENT,selectedSintagmas);
                 });
         
+        nsf = new NewSintagmaFrame(new ArrayList<>());
+        nsf.addWindowListener(new WindowAdapter()
+        {
+            @Override
+            public void windowClosing(WindowEvent e)
+            {
+                newNucleo = nsf.getSelection();
+                Sintagma s = new Sintagma(tituloTexto,newSintagma,newNucleo.sentenca,newSintagmaWords,
+                    -1,++MainPanel.highestID,newNucleo.word,CategoriasSemanticas.OUTRO.getCateg());
+                fachada.addSintagmaNoGrupo(s);
+                cont.repaint();
+            }
+        });
+        
         criarSintagmaButton.addActionListener(new ActionListener() 
         {
             @Override
             public void actionPerformed(ActionEvent evt) 
             {
-                int firstSelectedPos = textoPuroPane.getSelectionStart();
-                int lastSelectedPos = textoPuroPane.getSelectionEnd()-1; //
-                if(texto.charAt(firstSelectedPos)==' ') 
-                    firstSelectedPos++;
-                if(texto.charAt(lastSelectedPos)==' ') 
-                    lastSelectedPos--;
-                if(firstSelectedPos == lastSelectedPos) return;
-                int startIndex=-1, endIndex=-1;
-                boolean foundStart=false;
-                for(int i=0;i<listTokens.size() && (!foundStart || listTokens.get(i).endChar-listTokens.get(i).token.length()
-                        <=lastSelectedPos);i++)
-                {
-                    if(!foundStart && listTokens.get(i).startChar+listTokens.get(i).token.length()-1>=firstSelectedPos) //seleção total/parcial
+                    int firstSelectedPos = textoPuroPane.getSelectionStart();
+                    int lastSelectedPos = textoPuroPane.getSelectionEnd()-1; //
+                    if(firstSelectedPos == lastSelectedPos ||
+                            firstSelectedPos == texto.length() || lastSelectedPos == texto.length()+1) return;
+                    if(texto.charAt(firstSelectedPos)==' ')
+                        firstSelectedPos++;
+                    if(texto.charAt(lastSelectedPos)==' ')
+                        lastSelectedPos--;
+                    int startIndex=-1, endIndex=-1;
+                    boolean foundStart=false;
+                    for(int i=0;i<listTokens.size() && (!foundStart || listTokens.get(i).endChar-listTokens.get(i).token.length()
+                            <=lastSelectedPos);i++)
                     {
-                        foundStart = true;
-                        startIndex = i;
+                        if(!foundStart && listTokens.get(i).startChar+listTokens.get(i).token.length()-1>=firstSelectedPos) //seleção total/parcial
+                        {
+                            foundStart = true;
+                            startIndex = i;
+                        }
+                        if(foundStart && listTokens.get(i).endChar-listTokens.get(i).token.length()+1<=lastSelectedPos) //seleção total/parcial
+                            endIndex = i;
+                    }//marquei os tokens selecionados, agora adiciono as words para o sintagma novo
+                    //if(startIndex == -1 || endIndex == -1) return;
+                    List<Word> newSintagmaWords = new ArrayList<>();
+                    newSintagma = "";
+                    for(int i=startIndex;i<=endIndex;i++)
+                    {
+                        newSintagmaWords.add(wordList.get(i)); //já tenho as words...
+                        newSintagma+=(i==startIndex ? "" : " ")+wordList.get(i).word;
                     }
-                    if(foundStart && listTokens.get(i).endChar-listTokens.get(i).token.length()+1<=lastSelectedPos) //seleção total/parcial                       
-                        endIndex = i; 
-                }//marquei os tokens selecionados, agora adiciono as words para o sintagma novo
-                //if(startIndex == -1 || endIndex == -1) return;
-                List<Word> words = new ArrayList<>();
-                String sintagma = new String("");
-                for(int i=startIndex;i<=endIndex;i++)
-                {
-                    words.add(wordList.get(i)); //já tenho as words...
-                    sintagma+=(i==startIndex ? "" : " ")+wordList.get(i).word;
-                }
-                System.out.println(sintagma);
+                    nsf.setWords(newSintagmaWords);
+                    nsf.setVisible(true);                    
             }
         });
         
@@ -577,10 +598,6 @@ public final class MainPanel extends JPanel
                     for (org.jdom2.Element mencao_unica : mencoes_unicas)
                     {
                         //para cada sintagma cria as words
-                        boolean prop = false;
-                        boolean featured = false;
-                        String genero = "";
-                        String numero = "";
                         ArrayList<model.Word> words = new ArrayList<>();
                         for (org.jdom2.Element word : mencao_unica.getChildren())
                         {
@@ -594,29 +611,15 @@ public final class MainPanel extends JPanel
                                     Integer.parseInt(
                                             word.getName().split("_")[1]));
                             words.add(w);
-                            if (w.pos.equals("prop"))
-                                prop = true;
-                            if (!featured && w.morfo.contains("="))
-                            {
-                                String[] morfos = w.morfo.split("=");
-                                genero = morfos[0];
-                                numero = morfos[1];
-                                featured = true;
-                            }
                         }
                         //cria o sintagma
                         Sintagma s = new Sintagma(document.getRootElement().
-                                getName(), mencao_unica.getAttributeValue(
-                                        "sintagma"),
-                                Integer.parseInt(mencao_unica.getAttributeValue(
-                                        "sentenca")), words,
-                                -1, Integer.parseInt(mencao_unica.
-                                        getAttributeValue("id")),
-                                mencao_unica.getAttributeValue("nucleo"),
-                                mencao_unica.getAttributeValue("lemma"), prop,
-                                genero, numero, false, "", false,
-                                new ArrayList<>(), new Integer(0), mencao_unica.
-                                getAttributeValue("Categoria"));
+                                getName(), mencao_unica.getAttributeValue("sintagma"),
+                            Integer.parseInt(mencao_unica.getAttributeValue("sentenca")), words,-1, 
+                            Integer.parseInt(mencao_unica.getAttributeValue("id")),
+                            mencao_unica.getAttributeValue("nucleo"),
+                            mencao_unica.getAttributeValue("Categoria"));
+                        if(s.snID > highestID) highestID = s.snID;
                         listaSintagma.add(s);
                     }
                     for (org.jdom2.Element cadeia : cadeias)
@@ -625,10 +628,6 @@ public final class MainPanel extends JPanel
                         {
                             //para cada sintagma
                             //cria as words
-                            boolean prop = false;
-                            boolean featured = false;
-                            String genero = "";
-                            String numero = "";
                             ArrayList<model.Word> words = new ArrayList<>();
                             for (org.jdom2.Element word : sintagma.getChildren())
                             {
@@ -642,31 +641,16 @@ public final class MainPanel extends JPanel
                                         Integer.parseInt(word.getName().split(
                                                 "_")[1]));
                                 words.add(w);
-                                if (w.pos.equals("prop"))
-                                    prop = true;
-                                if (!featured && w.morfo.contains("="))
-                                {
-                                    String[] morfos = w.morfo.split("=");
-                                    genero = morfos[0];
-                                    numero = morfos[1];
-                                    featured = true;
-                                }
                             }
                             //cria o sintagma
                             Sintagma s = new Sintagma(document.getRootElement().
-                                    getName(), sintagma.getAttributeValue(
-                                            "sintagma"),
-                                    Integer.parseInt(sintagma.getAttributeValue(
-                                            "sentenca")), words,
-                                    Integer.parseInt(
-                                            cadeia.getName().split("_")[1]),
-                                    Integer.parseInt(sintagma.getAttributeValue(
-                                            "id")),
-                                    sintagma.getAttributeValue("nucleo"),
-                                    sintagma.getAttributeValue("lemma"), prop,
-                                    genero, numero, false, "", false,
-                                    new ArrayList<>(), new Integer(0), sintagma.
-                                    getAttributeValue("Categoria"));
+                                getName(), sintagma.getAttributeValue("sintagma"),
+                                Integer.parseInt(sintagma.getAttributeValue("sentenca")), words,
+                                Integer.parseInt(cadeia.getName().split("_")[1]),
+                                Integer.parseInt(sintagma.getAttributeValue("id")),
+                                sintagma.getAttributeValue("nucleo"),
+                                sintagma.getAttributeValue("Categoria"));
+                            if(s.snID > highestID) highestID = s.snID;
                             listaSintagma.add(s);
                         }
                     for (Sintagma s : listaSintagma)
@@ -814,7 +798,7 @@ public final class MainPanel extends JPanel
             exportDialogBox();
         });
     }
-   
+    
     public boolean exportDialogBox()
     {
         JFileChooser chooser = new JFileChooser();
@@ -1418,6 +1402,7 @@ public final class MainPanel extends JPanel
             MainPanel.m.highlightSelecionados();
         }
     }
+    
     public static class EditarSintagmaButtons
     {
         public static void repaintPanels()
